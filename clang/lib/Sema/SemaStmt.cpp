@@ -3520,6 +3520,38 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc, Stmt *In
   if (ForRangeStmt.isInvalid())
     return ForRangeStmt;
 
+  CXXForRangeStmt *f = cast<CXXForRangeStmt>(ForRangeStmt.get());
+
+  // Check for presence of random access iterator
+  // Build a __begin + 1 expression and see if it compiles
+  VarDecl *BeginVar = cast<VarDecl>(f->getBeginStmt()->getSingleDecl());
+  QualType BeginType = BeginVar->getType();
+  const QualType BeginRefNonRefType = BeginType.getNonReferenceType();
+  auto BeginRef = BuildDeclRefExpr(BeginVar, BeginRefNonRefType,
+                              VK_LValue, ColonLoc);
+  ExprResult IncrExpr = ActOnUnaryOp(S, ColonLoc, tok::plusplus, BeginRef.get());
+  if (!IncrExpr.isInvalid()) {
+    // give warning about for range only supporting random access!
+    Diag(ForLoc, diag::note_for_range_invalid_iterator);
+  } else {
+    // don't give warning :)
+    Diag(ForLoc, diag::note_for_range_invalid_iterator);
+
+  }
+//  if (!IncrExpr.isInvalid() && CoawaitLoc.isValid())
+//    // FIXME: getCurScope() should not be used during template instantiation.
+//    // We should pick up the set of unqualified lookup results for operator
+//    // co_await during the initial parse.
+//    IncrExpr = ActOnCoawaitExpr(S, CoawaitLoc, IncrExpr.get());
+//  if (!IncrExpr.isInvalid())
+//    IncrExpr = ActOnFinishFullExpr(IncrExpr.get(), /*DiscardedValue*/ false);
+//  if (IncrExpr.isInvalid()) {
+//    Diag(RangeLoc, diag::note_for_range_invalid_iterator)
+//        << RangeLoc << 2 << BeginRangeRef.get()->getType() ;
+//    NoteForRangeBeginEndFunction(*this, BeginExpr.get(), BEF_begin);
+//    return StmtError();
+//  }
+
   return BuildCilkForRangeStmt(cast_or_null<CXXForRangeStmt>(ForRangeStmt.get()));
 }
 
