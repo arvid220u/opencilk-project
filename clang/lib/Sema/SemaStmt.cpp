@@ -3498,6 +3498,8 @@ static void SearchForReturnInStmt(Sema &Self, Stmt *S) {
 
 // TODO: add comment
 StmtResult Sema::FinishCilkForRangeStmt(Stmt *S, Stmt *B) {
+  if (!S)
+    return StmtError();
   CilkForRangeStmt *CilkForRange = cast<CilkForRangeStmt>(S);
   StmtResult ForRange = FinishCXXForRangeStmt(CilkForRange->getCXXForRangeStmt(), B);
   if (ForRange.isInvalid())
