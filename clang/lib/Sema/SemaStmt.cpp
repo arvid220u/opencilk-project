@@ -3530,6 +3530,7 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc, Stmt *In
   ExprResult BeginRef = BuildDeclRefExpr(BeginVar, BeginRefNonRefType,
                               VK_LValue, ColonLoc);
   ExprResult IncrExpr = ActOnUnaryOp(S, ColonLoc, tok::plusplus, BeginRef.get());
+  ExprResult AddExpr = ActOnBinOp(S, ColonLoc, tok::plus, BeginRef.get(), ActOnIntegerConstant(ColonLoc, 1).get());
   if (!IncrExpr.isInvalid()) {
     // give warning about for range only supporting random access!
     Diag(ForLoc, diag::note_arvid_test_test);
