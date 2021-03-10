@@ -3527,7 +3527,7 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc, Stmt *In
   VarDecl *BeginVar = cast<VarDecl>(f->getBeginStmt()->getSingleDecl());
   QualType BeginType = BeginVar->getType();
   const QualType BeginRefNonRefType = BeginType.getNonReferenceType();
-  auto BeginRef = BuildDeclRefExpr(BeginVar, BeginRefNonRefType,
+  ExprResult BeginRef = BuildDeclRefExpr(BeginVar, BeginRefNonRefType,
                               VK_LValue, ColonLoc);
   ExprResult IncrExpr = ActOnUnaryOp(S, ColonLoc, tok::plusplus, BeginRef.get());
   if (!IncrExpr.isInvalid()) {
