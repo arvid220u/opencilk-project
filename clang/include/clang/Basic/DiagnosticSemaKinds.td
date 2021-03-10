@@ -2372,6 +2372,10 @@ def err_for_range_dereference : Error<
   "with '*'?">;
 def note_for_range_invalid_iterator : Note <
   "in implicit call to 'operator%select{!=|*|++}0' for iterator of type %1">;
+def note_arvid_test_test : Note <
+  "this is a test message lololol">;
+def note_arvid_test_test2 : Note <
+  "this is a test2 message lololol">;
 def note_for_range_begin_end : Note<
   "selected '%select{begin|end}0' %select{function|template }1%2 with iterator type %3">;
 def warn_for_range_const_reference_copy : Warning<

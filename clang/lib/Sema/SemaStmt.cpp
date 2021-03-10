@@ -3532,10 +3532,10 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc, Stmt *In
   ExprResult IncrExpr = ActOnUnaryOp(S, ColonLoc, tok::plusplus, BeginRef.get());
   if (!IncrExpr.isInvalid()) {
     // give warning about for range only supporting random access!
-    Diag(ForLoc, diag::note_for_range_invalid_iterator);
+    Diag(ForLoc, diag::note_arvid_test_test);
   } else {
     // don't give warning :)
-    Diag(ForLoc, diag::note_for_range_invalid_iterator);
+    Diag(ForLoc, diag::note_arvid_test_test2);
 
   }
 //  if (!IncrExpr.isInvalid() && CoawaitLoc.isValid())
