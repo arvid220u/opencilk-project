@@ -1,4 +1,4 @@
-// RUN: %clang_cc1 -std=c++1z -verify %s
+// RUN: %clang_cc1 -std=c++17 -verify %s
 
 // To test the range-based cilk_for, we want to test it on real containers.
 // Clang-test does not support including the standard library, so we could either define mocks
@@ -308,7 +308,7 @@
 # if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 119 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0/bits/c++config.h" 3
 #  define _GLIBCXX17_CONSTEXPR constexpr
 # else
@@ -324,7 +324,7 @@
 # if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 127 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0/bits/c++config.h" 3
 #  define _GLIBCXX17_INLINE inline
 # else
@@ -383,7 +383,7 @@
 #if __cpp_noexcept_function_type
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 161 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0/bits/c++config.h" 3
 #define _GLIBCXX_NOEXCEPT_PARM , bool _NE
 #define _GLIBCXX_NOEXCEPT_QUAL noexcept (_NE)
@@ -2487,7 +2487,7 @@ namespace std
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 574 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/x86_64-linux-gnu/c++/7.4.0/bits/c++config.h" 3
 // In C++17 mathematical special functions are in namespace std.
 # define _GLIBCXX_USE_STD_SPEC_FUNCS 1
@@ -5698,7 +5698,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 96 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 # define __cpp_lib_bool_constant 201505
   template<bool __v>
@@ -5766,7 +5766,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus >= 201703L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 158 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 
 #define __cpp_lib_logical_traits 201510
@@ -5902,7 +5902,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if defined(__GLIBCXX_TYPE_INT_N_0)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 287 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
   template<>
     struct __is_integral_helper<__GLIBCXX_TYPE_INT_N_0>
@@ -5985,7 +5985,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if !defined(__STRICT_ANSI__) && defined(_GLIBCXX_USE_FLOAT128) && !defined(__CUDACC__)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 346 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
   template<>
     struct __is_floating_point_helper<__float128>
@@ -7419,7 +7419,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if defined(__GLIBCXX_TYPE_INT_N_0)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 1750 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
   template<>
     struct __make_unsigned<__GLIBCXX_TYPE_INT_N_0>
@@ -7569,7 +7569,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if defined(__GLIBCXX_TYPE_INT_N_0)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 1869 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
   template<>
     struct __make_signed<unsigned __GLIBCXX_TYPE_INT_N_0>
@@ -8603,7 +8603,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 2831 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 # define __cpp_lib_is_invocable 201703
 
@@ -8679,7 +8679,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 2901 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 # define __cpp_lib_type_trait_variable_templates 201510L
 template <typename _Tp>
@@ -8851,14 +8851,14 @@ template <typename _From, typename _To>
 #elif defined(__is_identifier)
 #endif
 #endif /* disabled by -frewrite-includes */
-#elif 0 /* evaluated by -frewrite-includes */
+#elif 1 /* evaluated by -frewrite-includes */
 # 3062 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 // For non-GNU compilers:
 #if 0 /* disabled by -frewrite-includes */
 # if ! __is_identifier(__has_unique_object_representations)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 3064 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 #  define _GLIBCXX_HAVE_BUILTIN_HAS_UNIQ_OBJ_REP 1
 # endif
@@ -8895,14 +8895,14 @@ template <typename _From, typename _To>
 #elif defined(__is_identifier)
 #endif
 #endif /* disabled by -frewrite-includes */
-#elif 0 /* evaluated by -frewrite-includes */
+#elif 1 /* evaluated by -frewrite-includes */
 # 3087 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 // For non-GNU compilers:
 #if 0 /* disabled by -frewrite-includes */
 # if ! __is_identifier(__is_aggregate)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 3089 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/type_traits" 3
 #  define _GLIBCXX_HAVE_BUILTIN_IS_AGGREGATE 1
 # endif
@@ -9008,7 +9008,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 124 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/move.h" 3
   // _GLIBCXX_RESOLVE_LIB_DEFECTS
   // 2296. std::addressof should be constexpr
@@ -9564,7 +9564,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cpp_deduction_guides >= 201606
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 442 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_pair.h" 3
   template<typename _T1, typename _T2> pair(_T1, _T2) -> pair<_T1, _T2>;
 #endif
@@ -10581,7 +10581,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 69 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_iterator.h" 3
 # define __cpp_lib_array_constexpr 201603
 #endif
@@ -15875,7 +15875,7 @@ namespace std
 #if __cpp_aligned_new
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 83 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/new" 3
   enum class align_val_t: size_t {};
 #endif
@@ -15959,7 +15959,7 @@ void operator delete[](void*, const std::nothrow_t&) _GLIBCXX_USE_NOEXCEPT
 #if __cpp_aligned_new
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 143 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/new" 3
 void* operator new(std::size_t, std::align_val_t)
   __attribute__((__externally_visible__));
@@ -16008,7 +16008,7 @@ inline void operator delete[](void*, void*) _GLIBCXX_USE_NOEXCEPT { }
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 180 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/new" 3
 #if 0 /* disabled by -frewrite-includes */
 #if __GNUC__ >= 7
@@ -16022,14 +16022,14 @@ inline void operator delete[](void*, void*) _GLIBCXX_USE_NOEXCEPT { }
 #elif defined __has_builtin
 #endif
 #endif /* disabled by -frewrite-includes */
-#elif 0 /* evaluated by -frewrite-includes */
+#elif 1 /* evaluated by -frewrite-includes */
 # 183 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/new" 3
 // For non-GNU compilers:
 #if 0 /* disabled by -frewrite-includes */
 # if __has_builtin(__builtin_launder)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 185 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/new" 3
 #  define _GLIBCXX_HAVE_BUILTIN_LAUNDER 1
 # endif
@@ -16169,7 +16169,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cpp_aligned_new
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 105 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/ext/new_allocator.h" 3
 	if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
 	  {
@@ -16189,7 +16189,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cpp_aligned_new
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 119 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/ext/new_allocator.h" 3
 	if (alignof(_Tp) > __STDCPP_DEFAULT_NEW_ALIGNMENT__)
 	  {
@@ -17694,7 +17694,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 210 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_construct.h" 3
   template <typename _Tp>
     inline void
@@ -17793,13 +17793,749 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 60 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_uninitialized.h" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <utility>
 #endif /* expanded by -frewrite-includes */
 # 60 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_uninitialized.h" 3
-# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_uninitialized.h" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 1 3
+// <utility> -*- C++ -*-
+
+// Copyright (C) 2001-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/*
+ *
+ * Copyright (c) 1994
+ * Hewlett-Packard Company
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Hewlett-Packard Company makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ *
+ *
+ * Copyright (c) 1996,1997
+ * Silicon Graphics Computer Systems, Inc.
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Silicon Graphics makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ */
+
+/** @file include/utility
+ *  This is a Standard C++ Library header.
+ */
+
+#ifndef _GLIBCXX_UTILITY
+#define _GLIBCXX_UTILITY 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 59 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+/**
+ * @defgroup utilities Utilities
+ *
+ * Components deemed generally useful. Includes pair, tuple,
+ * forward/move helpers, ratio, function object, metaprogramming and
+ * type traits, time, date, and memory functions.
+ */
+
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/c++config.h>
+#endif /* expanded by -frewrite-includes */
+# 68 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+# 69 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/stl_relops.h>
+#endif /* expanded by -frewrite-includes */
+# 69 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_relops.h" 1 3
+// std::rel_ops implementation -*- C++ -*-
+
+// Copyright (C) 2001-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the, 2009 Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/*
+ *
+ * Copyright (c) 1994
+ * Hewlett-Packard Company
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Hewlett-Packard Company makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ *
+ * Copyright (c) 1996,1997
+ * Silicon Graphics
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Silicon Graphics makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ *
+ */
+
+/** @file bits/stl_relops.h
+ *  This is an internal header file, included by other library headers.
+ *  Do not attempt to use it directly. @headername{utility}
+ *
+ *  Inclusion of this file has been removed from
+ *  all of the other STL headers for safety reasons, except std_utility.h.
+ *  For more information, see the thread of about twenty messages starting
+ *  with http://gcc.gnu.org/ml/libstdc++/2001-01/msg00223.html, or
+ *  http://gcc.gnu.org/onlinedocs/libstdc++/faq.html#faq.ambiguous_overloads
+ *
+ *  Short summary: the rel_ops operators should be avoided for the present.
+ */
+
+#ifndef _STL_RELOPS_H
+#define _STL_RELOPS_H 1
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+  namespace rel_ops
+  {
+  _GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+    /** @namespace std::rel_ops
+     *  @brief  The generated relational operators are sequestered here.
+     */
+
+    /**
+     *  @brief Defines @c != for arbitrary types, in terms of @c ==.
+     *  @param  __x  A thing.
+     *  @param  __y  Another thing.
+     *  @return   __x != __y
+     *
+     *  This function uses @c == to determine its result.
+     */
+    template <class _Tp>
+      inline bool
+      operator!=(const _Tp& __x, const _Tp& __y)
+      { return !(__x == __y); }
+
+    /**
+     *  @brief Defines @c > for arbitrary types, in terms of @c <.
+     *  @param  __x  A thing.
+     *  @param  __y  Another thing.
+     *  @return   __x > __y
+     *
+     *  This function uses @c < to determine its result.
+     */
+    template <class _Tp>
+      inline bool
+      operator>(const _Tp& __x, const _Tp& __y)
+      { return __y < __x; }
+
+    /**
+     *  @brief Defines @c <= for arbitrary types, in terms of @c <.
+     *  @param  __x  A thing.
+     *  @param  __y  Another thing.
+     *  @return   __x <= __y
+     *
+     *  This function uses @c < to determine its result.
+     */
+    template <class _Tp>
+      inline bool
+      operator<=(const _Tp& __x, const _Tp& __y)
+      { return !(__y < __x); }
+
+    /**
+     *  @brief Defines @c >= for arbitrary types, in terms of @c <.
+     *  @param  __x  A thing.
+     *  @param  __y  Another thing.
+     *  @return   __x >= __y
+     *
+     *  This function uses @c < to determine its result.
+     */
+    template <class _Tp>
+      inline bool
+      operator>=(const _Tp& __x, const _Tp& __y)
+      { return !(__x < __y); }
+
+  _GLIBCXX_END_NAMESPACE_VERSION
+  } // namespace rel_ops
+
+} // namespace std
+
+#endif /* _STL_RELOPS_H */
+# 135 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_relops.h" 3
+# 70 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 2 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/stl_pair.h>
+#endif /* expanded by -frewrite-includes */
+# 70 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+# 71 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 73 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+#if 0 /* expanded by -frewrite-includes */
+#include <type_traits>
+#endif /* expanded by -frewrite-includes */
+# 74 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+# 75 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/move.h>
+#endif /* expanded by -frewrite-includes */
+# 75 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+# 76 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <initializer_list>
+#endif /* expanded by -frewrite-includes */
+# 76 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 1 3
+// std::initializer_list support -*- C++ -*-
+
+// Copyright (C) 2008-2017 Free Software Foundation, Inc.
+//
+// This file is part of GCC.
+//
+// GCC is free software; you can redistribute it and/or modify
+// it under the terms of the GNU General Public License as published by
+// the Free Software Foundation; either version 3, or (at your option)
+// any later version.
+//
+// GCC is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+//
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file initializer_list
+ *  This is a Standard C++ Library header.
+ */
+
+#ifndef _INITIALIZER_LIST
+#define _INITIALIZER_LIST
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+#if 0 /* expanded by -frewrite-includes */
+# include <bits/c++0x_warning.h>
+#endif /* expanded by -frewrite-includes */
+# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+#else // C++0x
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+
+#pragma GCC visibility push(default)
+
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/c++config.h>
+#endif /* expanded by -frewrite-includes */
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+
+namespace std
+{
+  /// initializer_list
+  template<class _E>
+    class initializer_list
+    {
+    public:
+      typedef _E 		value_type;
+      typedef const _E& 	reference;
+      typedef const _E& 	const_reference;
+      typedef size_t 		size_type;
+      typedef const _E* 	iterator;
+      typedef const _E* 	const_iterator;
+
+    private:
+      iterator			_M_array;
+      size_type			_M_len;
+
+      // The compiler can call a private constructor.
+      constexpr initializer_list(const_iterator __a, size_type __l)
+      : _M_array(__a), _M_len(__l) { }
+
+    public:
+      constexpr initializer_list() noexcept
+      : _M_array(0), _M_len(0) { }
+
+      // Number of elements.
+      constexpr size_type
+      size() const noexcept { return _M_len; }
+
+      // First element.
+      constexpr const_iterator
+      begin() const noexcept { return _M_array; }
+
+      // One past the last element.
+      constexpr const_iterator
+      end() const noexcept { return begin() + size(); }
+    };
+
+  /**
+   *  @brief  Return an iterator pointing to the first element of
+   *          the initializer_list.
+   *  @param  __ils  Initializer list.
+   */
+  template<class _Tp>
+    constexpr const _Tp*
+    begin(initializer_list<_Tp> __ils) noexcept
+    { return __ils.begin(); }
+
+  /**
+   *  @brief  Return an iterator pointing to one past the last element
+   *          of the initializer_list.
+   *  @param  __ils  Initializer list.
+   */
+  template<class _Tp>
+    constexpr const _Tp*
+    end(initializer_list<_Tp> __ils) noexcept
+    { return __ils.end(); }
+}
+
+#pragma GCC visibility pop
+
+#endif // C++11
+# 106 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+
+#endif // _INITIALIZER_LIST
+# 108 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
+# 77 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 2 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+  /// Finds the size of a given tuple type.
+  template<typename _Tp>
+    struct tuple_size;
+
+  // _GLIBCXX_RESOLVE_LIB_DEFECTS
+  // 2770. tuple_size<const T> specialization is not SFINAE compatible
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus <= 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 90 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+  template<typename _Tp, typename = void>
+    struct __tuple_size_cv_impl { };
+
+  template<typename _Tp>
+    struct __tuple_size_cv_impl<_Tp, __void_t<decltype(tuple_size<_Tp>::value)>>
+    : integral_constant<size_t, tuple_size<_Tp>::value> { };
+
+  // _GLIBCXX_RESOLVE_LIB_DEFECTS
+  // 2313. tuple_size should always derive from integral_constant<size_t, N>
+  template<typename _Tp>
+    struct tuple_size<const _Tp> : __tuple_size_cv_impl<_Tp> { };
+
+  template<typename _Tp>
+    struct tuple_size<volatile _Tp> : __tuple_size_cv_impl<_Tp> { };
+
+  template<typename _Tp>
+    struct tuple_size<const volatile _Tp> : __tuple_size_cv_impl<_Tp> { };
+#else
+# 108 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+  template<typename _Tp,
+	   typename _Up = typename remove_cv<_Tp>::type,
+	   typename = typename enable_if<is_same<_Tp, _Up>::value>::type,
+	   size_t = tuple_size<_Tp>::value>
+    using __enable_if_has_tuple_size = _Tp;
+
+  template<typename _Tp>
+    struct tuple_size<const __enable_if_has_tuple_size<_Tp>>
+    : public tuple_size<_Tp> { };
+
+  template<typename _Tp>
+    struct tuple_size<volatile __enable_if_has_tuple_size<_Tp>>
+    : public tuple_size<_Tp> { };
+
+  template<typename _Tp>
+    struct tuple_size<const volatile __enable_if_has_tuple_size<_Tp>>
+    : public tuple_size<_Tp> { };
+#endif
+# 126 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+  /// Gives the type of the ith element of a given tuple type.
+  template<std::size_t __i, typename _Tp>
+    struct tuple_element;
+
+  // Duplicate of C++14's tuple_element_t for internal use in C++11 mode
+  template<std::size_t __i, typename _Tp>
+    using __tuple_element_t = typename tuple_element<__i, _Tp>::type;
+
+  template<std::size_t __i, typename _Tp>
+    struct tuple_element<__i, const _Tp>
+    {
+      typedef typename add_const<__tuple_element_t<__i, _Tp>>::type type;
+    };
+
+  template<std::size_t __i, typename _Tp>
+    struct tuple_element<__i, volatile _Tp>
+    {
+      typedef typename add_volatile<__tuple_element_t<__i, _Tp>>::type type;
+    };
+
+  template<std::size_t __i, typename _Tp>
+    struct tuple_element<__i, const volatile _Tp>
+    {
+      typedef typename add_cv<__tuple_element_t<__i, _Tp>>::type type;
+    };
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 154 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+#define __cpp_lib_tuple_element_t 201402
+
+  template<std::size_t __i, typename _Tp>
+    using tuple_element_t = typename tuple_element<__i, _Tp>::type;
+#endif
+# 159 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+  // Various functions which give std::pair a tuple-like interface.
+
+  /// Partial specialization for std::pair
+  template<typename _T1, typename _T2>
+    struct __is_tuple_like_impl<std::pair<_T1, _T2>> : true_type
+    { };
+
+  /// Partial specialization for std::pair
+  template<class _Tp1, class _Tp2>
+    struct tuple_size<std::pair<_Tp1, _Tp2>>
+    : public integral_constant<std::size_t, 2> { };
+
+  /// Partial specialization for std::pair
+  template<class _Tp1, class _Tp2>
+    struct tuple_element<0, std::pair<_Tp1, _Tp2>>
+    { typedef _Tp1 type; };
+
+  /// Partial specialization for std::pair
+  template<class _Tp1, class _Tp2>
+    struct tuple_element<1, std::pair<_Tp1, _Tp2>>
+    { typedef _Tp2 type; };
+
+  template<std::size_t _Int>
+    struct __pair_get;
+
+  template<>
+    struct __pair_get<0>
+    {
+      template<typename _Tp1, typename _Tp2>
+        static constexpr _Tp1&
+        __get(std::pair<_Tp1, _Tp2>& __pair) noexcept
+        { return __pair.first; }
+
+      template<typename _Tp1, typename _Tp2>
+        static constexpr _Tp1&&
+        __move_get(std::pair<_Tp1, _Tp2>&& __pair) noexcept
+        { return std::forward<_Tp1>(__pair.first); }
+
+      template<typename _Tp1, typename _Tp2>
+        static constexpr const _Tp1&
+        __const_get(const std::pair<_Tp1, _Tp2>& __pair) noexcept
+        { return __pair.first; }
+    };
+
+  template<>
+    struct __pair_get<1>
+    {
+      template<typename _Tp1, typename _Tp2>
+        static constexpr _Tp2&
+        __get(std::pair<_Tp1, _Tp2>& __pair) noexcept
+        { return __pair.second; }
+
+      template<typename _Tp1, typename _Tp2>
+        static constexpr _Tp2&&
+        __move_get(std::pair<_Tp1, _Tp2>&& __pair) noexcept
+        { return std::forward<_Tp2>(__pair.second); }
+
+      template<typename _Tp1, typename _Tp2>
+        static constexpr const _Tp2&
+        __const_get(const std::pair<_Tp1, _Tp2>& __pair) noexcept
+        { return __pair.second; }
+    };
+
+  template<std::size_t _Int, class _Tp1, class _Tp2>
+    constexpr typename tuple_element<_Int, std::pair<_Tp1, _Tp2>>::type&
+    get(std::pair<_Tp1, _Tp2>& __in) noexcept
+    { return __pair_get<_Int>::__get(__in); }
+
+  template<std::size_t _Int, class _Tp1, class _Tp2>
+    constexpr typename tuple_element<_Int, std::pair<_Tp1, _Tp2>>::type&&
+    get(std::pair<_Tp1, _Tp2>&& __in) noexcept
+    { return __pair_get<_Int>::__move_get(std::move(__in)); }
+
+  template<std::size_t _Int, class _Tp1, class _Tp2>
+    constexpr const typename tuple_element<_Int, std::pair<_Tp1, _Tp2>>::type&
+    get(const std::pair<_Tp1, _Tp2>& __in) noexcept
+    { return __pair_get<_Int>::__const_get(__in); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 239 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+#define __cpp_lib_tuples_by_type 201304
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&
+    get(pair<_Tp, _Up>& __p) noexcept
+    { return __p.first; }
+
+  template <typename _Tp, typename _Up>
+    constexpr const _Tp&
+    get(const pair<_Tp, _Up>& __p) noexcept
+    { return __p.first; }
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&&
+    get(pair<_Tp, _Up>&& __p) noexcept
+    { return std::move(__p.first); }
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&
+    get(pair<_Up, _Tp>& __p) noexcept
+    { return __p.second; }
+
+  template <typename _Tp, typename _Up>
+    constexpr const _Tp&
+    get(const pair<_Up, _Tp>& __p) noexcept
+    { return __p.second; }
+
+  template <typename _Tp, typename _Up>
+    constexpr _Tp&&
+    get(pair<_Up, _Tp>&& __p) noexcept
+    { return std::move(__p.second); }
+
+#define __cpp_lib_exchange_function 201304
+
+  /// Assign @p __new_val to @p __obj and return its previous value.
+  template <typename _Tp, typename _Up = _Tp>
+    inline _Tp
+    exchange(_Tp& __obj, _Up&& __new_val)
+    { return std::__exchange(__obj, std::forward<_Up>(__new_val)); }
+#endif
+# 280 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+  // Stores a tuple of indices.  Used by tuple and pair, and by bind() to
+  // extract the elements in a tuple.
+  template<size_t... _Indexes> struct _Index_tuple { };
+
+  // Concatenates two _Index_tuples.
+  template<typename _Itup1, typename _Itup2> struct _Itup_cat;
+
+  template<size_t... _Ind1, size_t... _Ind2>
+    struct _Itup_cat<_Index_tuple<_Ind1...>, _Index_tuple<_Ind2...>>
+    {
+      using __type = _Index_tuple<_Ind1..., (_Ind2 + sizeof...(_Ind1))...>;
+    };
+
+  // Builds an _Index_tuple<0, 1, 2, ..., _Num-1>.
+  template<size_t _Num>
+    struct _Build_index_tuple
+    : _Itup_cat<typename _Build_index_tuple<_Num / 2>::__type,
+		typename _Build_index_tuple<_Num - _Num / 2>::__type>
+    { };
+
+  template<>
+    struct _Build_index_tuple<1>
+    {
+      typedef _Index_tuple<0> __type;
+    };
+
+  template<>
+    struct _Build_index_tuple<0>
+    {
+      typedef _Index_tuple<> __type;
+    };
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 314 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+#define __cpp_lib_integer_sequence 201304
+
+  /// Class template integer_sequence
+  template<typename _Tp, _Tp... _Idx>
+    struct integer_sequence
+    {
+      typedef _Tp value_type;
+      static constexpr size_t size() noexcept { return sizeof...(_Idx); }
+    };
+
+  template<typename _Tp, _Tp _Num,
+	   typename _ISeq = typename _Build_index_tuple<_Num>::__type>
+    struct _Make_integer_sequence;
+
+  template<typename _Tp, _Tp _Num,  size_t... _Idx>
+    struct _Make_integer_sequence<_Tp, _Num, _Index_tuple<_Idx...>>
+    {
+      static_assert( _Num >= 0,
+		     "Cannot make integer sequence of negative length" );
+
+      typedef integer_sequence<_Tp, static_cast<_Tp>(_Idx)...> __type;
+    };
+
+  /// Alias template make_integer_sequence
+  template<typename _Tp, _Tp _Num>
+    using make_integer_sequence
+      = typename _Make_integer_sequence<_Tp, _Num>::__type;
+
+  /// Alias template index_sequence
+  template<size_t... _Idx>
+    using index_sequence = integer_sequence<size_t, _Idx...>;
+
+  /// Alias template make_index_sequence
+  template<size_t _Num>
+    using make_index_sequence = make_integer_sequence<size_t, _Num>;
+
+  /// Alias template index_sequence_for
+  template<typename... _Types>
+    using index_sequence_for = make_index_sequence<sizeof...(_Types)>;
+#endif
+# 355 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 357 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+  struct in_place_t {
+    explicit in_place_t() = default;
+  };
+
+  inline constexpr in_place_t in_place{};
+
+  template<typename _Tp> struct in_place_type_t
+  {
+    explicit in_place_type_t() = default;
+  };
+
+  template<typename _Tp>
+    inline constexpr in_place_type_t<_Tp> in_place_type{};
+
+  template<size_t _Idx> struct in_place_index_t
+  {
+    explicit in_place_index_t() = default;
+  };
+
+  template<size_t _Idx>
+    inline constexpr in_place_index_t<_Idx> in_place_index{};
+
+  template<typename>
+    struct __is_in_place_type_impl : false_type
+    { };
+
+  template<typename _Tp>
+    struct __is_in_place_type_impl<in_place_type_t<_Tp>> : true_type
+    { };
+
+  template<typename _Tp>
+    struct __is_in_place_type
+      : public __is_in_place_type_impl<_Tp>
+    { };
+
+#define  __cpp_lib_as_const 201510
+  template<typename _Tp>
+    constexpr add_const_t<_Tp>& as_const(_Tp& __t) noexcept { return __t; }
+
+  template<typename _Tp>
+    void as_const(const _Tp&&) = delete;
+
+#endif // C++17
+# 401 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+_GLIBCXX_END_NAMESPACE_VERSION
+} // namespace
+
+#endif
+# 406 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+
+#endif /* _GLIBCXX_UTILITY */
+# 408 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
+# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_uninitialized.h" 2 3
 #endif
 # 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_uninitialized.h" 3
 
@@ -18610,7 +19346,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 830 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_uninitialized.h" 3
   template <typename _ForwardIterator>
     inline void
@@ -18759,134 +19495,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #include <initializer_list>
 #endif /* expanded by -frewrite-includes */
 # 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_vector.h" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 1 3
-// std::initializer_list support -*- C++ -*-
-
-// Copyright (C) 2008-2017 Free Software Foundation, Inc.
-//
-// This file is part of GCC.
-//
-// GCC is free software; you can redistribute it and/or modify
-// it under the terms of the GNU General Public License as published by
-// the Free Software Foundation; either version 3, or (at your option)
-// any later version.
-//
-// GCC is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-//
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/** @file initializer_list
- *  This is a Standard C++ Library header.
- */
-
-#ifndef _INITIALIZER_LIST
-#define _INITIALIZER_LIST
-
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
-# 34 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-#if 0 /* expanded by -frewrite-includes */
-# include <bits/c++0x_warning.h>
-#endif /* expanded by -frewrite-includes */
-# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-#else // C++0x
-# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-
-#pragma GCC visibility push(default)
-
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/c++config.h>
-#endif /* expanded by -frewrite-includes */
-# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-
-namespace std
-{
-  /// initializer_list
-  template<class _E>
-    class initializer_list
-    {
-    public:
-      typedef _E 		value_type;
-      typedef const _E& 	reference;
-      typedef const _E& 	const_reference;
-      typedef size_t 		size_type;
-      typedef const _E* 	iterator;
-      typedef const _E* 	const_iterator;
-
-    private:
-      iterator			_M_array;
-      size_type			_M_len;
-
-      // The compiler can call a private constructor.
-      constexpr initializer_list(const_iterator __a, size_type __l)
-      : _M_array(__a), _M_len(__l) { }
-
-    public:
-      constexpr initializer_list() noexcept
-      : _M_array(0), _M_len(0) { }
-
-      // Number of elements.
-      constexpr size_type
-      size() const noexcept { return _M_len; }
-
-      // First element.
-      constexpr const_iterator
-      begin() const noexcept { return _M_array; }
-
-      // One past the last element.
-      constexpr const_iterator
-      end() const noexcept { return begin() + size(); }
-    };
-
-  /**
-   *  @brief  Return an iterator pointing to the first element of
-   *          the initializer_list.
-   *  @param  __ils  Initializer list.
-   */
-  template<class _Tp>
-    constexpr const _Tp*
-    begin(initializer_list<_Tp> __ils) noexcept
-    { return __ils.begin(); }
-
-  /**
-   *  @brief  Return an iterator pointing to one past the last element
-   *          of the initializer_list.
-   *  @param  __ils  Initializer list.
-   */
-  template<class _Tp>
-    constexpr const _Tp*
-    end(initializer_list<_Tp> __ils) noexcept
-    { return __ils.end(); }
-}
-
-#pragma GCC visibility pop
-
-#endif // C++11
-# 106 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-
-#endif // _INITIALIZER_LIST
-# 108 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/initializer_list" 3
-# 64 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_vector.h" 2 3
+# 64 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_vector.h" 3
 #endif
 # 65 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_vector.h" 3
 
@@ -19877,7 +20486,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 958 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_vector.h" 3
 	reference
 #else
@@ -21883,7 +22492,7 @@ template<typename _Alloc>
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 1060 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_bvector.h" 3
       reference
 #else
@@ -21898,7 +22507,7 @@ template<typename _Alloc>
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 1068 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_bvector.h" 3
 	return back();
 #endif
@@ -22701,7 +23310,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus >= 201703L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 234 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/range_access.h" 3
 #define __cpp_lib_nonmember_container_access 201411
 
@@ -22907,7 +23516,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 91 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/vector.tcc" 3
       typename vector<_Tp, _Alloc>::reference
 #else
@@ -22930,7 +23539,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 107 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/vector.tcc" 3
 	return back();
 #endif
@@ -23850,616 +24459,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #include <utility>
 #endif /* expanded by -frewrite-includes */
 # 2 "test.cpp"
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 1 3
-// <utility> -*- C++ -*-
-
-// Copyright (C) 2001-2017 Free Software Foundation, Inc.
-//
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/*
- *
- * Copyright (c) 1994
- * Hewlett-Packard Company
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Hewlett-Packard Company makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
- *
- *
- * Copyright (c) 1996,1997
- * Silicon Graphics Computer Systems, Inc.
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Silicon Graphics makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
- */
-
-/** @file include/utility
- *  This is a Standard C++ Library header.
- */
-
-#ifndef _GLIBCXX_UTILITY
-#define _GLIBCXX_UTILITY 1
-
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
-# 59 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-/**
- * @defgroup utilities Utilities
- *
- * Components deemed generally useful. Includes pair, tuple,
- * forward/move helpers, ratio, function object, metaprogramming and
- * type traits, time, date, and memory functions.
- */
-
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/c++config.h>
-#endif /* expanded by -frewrite-includes */
-# 68 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-# 69 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/stl_relops.h>
-#endif /* expanded by -frewrite-includes */
-# 69 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_relops.h" 1 3
-// std::rel_ops implementation -*- C++ -*-
-
-// Copyright (C) 2001-2017 Free Software Foundation, Inc.
-//
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the, 2009 Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/*
- *
- * Copyright (c) 1994
- * Hewlett-Packard Company
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Hewlett-Packard Company makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
- *
- * Copyright (c) 1996,1997
- * Silicon Graphics
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Silicon Graphics makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
- *
- */
-
-/** @file bits/stl_relops.h
- *  This is an internal header file, included by other library headers.
- *  Do not attempt to use it directly. @headername{utility}
- *
- *  Inclusion of this file has been removed from
- *  all of the other STL headers for safety reasons, except std_utility.h.
- *  For more information, see the thread of about twenty messages starting
- *  with http://gcc.gnu.org/ml/libstdc++/2001-01/msg00223.html, or
- *  http://gcc.gnu.org/onlinedocs/libstdc++/faq.html#faq.ambiguous_overloads
- *
- *  Short summary: the rel_ops operators should be avoided for the present.
- */
-
-#ifndef _STL_RELOPS_H
-#define _STL_RELOPS_H 1
-
-namespace std _GLIBCXX_VISIBILITY(default)
-{
-  namespace rel_ops
-  {
-  _GLIBCXX_BEGIN_NAMESPACE_VERSION
-
-    /** @namespace std::rel_ops
-     *  @brief  The generated relational operators are sequestered here.
-     */
-
-    /**
-     *  @brief Defines @c != for arbitrary types, in terms of @c ==.
-     *  @param  __x  A thing.
-     *  @param  __y  Another thing.
-     *  @return   __x != __y
-     *
-     *  This function uses @c == to determine its result.
-     */
-    template <class _Tp>
-      inline bool
-      operator!=(const _Tp& __x, const _Tp& __y)
-      { return !(__x == __y); }
-
-    /**
-     *  @brief Defines @c > for arbitrary types, in terms of @c <.
-     *  @param  __x  A thing.
-     *  @param  __y  Another thing.
-     *  @return   __x > __y
-     *
-     *  This function uses @c < to determine its result.
-     */
-    template <class _Tp>
-      inline bool
-      operator>(const _Tp& __x, const _Tp& __y)
-      { return __y < __x; }
-
-    /**
-     *  @brief Defines @c <= for arbitrary types, in terms of @c <.
-     *  @param  __x  A thing.
-     *  @param  __y  Another thing.
-     *  @return   __x <= __y
-     *
-     *  This function uses @c < to determine its result.
-     */
-    template <class _Tp>
-      inline bool
-      operator<=(const _Tp& __x, const _Tp& __y)
-      { return !(__y < __x); }
-
-    /**
-     *  @brief Defines @c >= for arbitrary types, in terms of @c <.
-     *  @param  __x  A thing.
-     *  @param  __y  Another thing.
-     *  @return   __x >= __y
-     *
-     *  This function uses @c < to determine its result.
-     */
-    template <class _Tp>
-      inline bool
-      operator>=(const _Tp& __x, const _Tp& __y)
-      { return !(__x < __y); }
-
-  _GLIBCXX_END_NAMESPACE_VERSION
-  } // namespace rel_ops
-
-} // namespace std
-
-#endif /* _STL_RELOPS_H */
-# 135 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_relops.h" 3
-# 70 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 2 3
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/stl_pair.h>
-#endif /* expanded by -frewrite-includes */
-# 70 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-# 71 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 73 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-# 74 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-# 75 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/move.h>
-#endif /* expanded by -frewrite-includes */
-# 75 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-# 76 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
-#endif /* expanded by -frewrite-includes */
-# 76 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-# 77 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-namespace std _GLIBCXX_VISIBILITY(default)
-{
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
-
-  /// Finds the size of a given tuple type.
-  template<typename _Tp>
-    struct tuple_size;
-
-  // _GLIBCXX_RESOLVE_LIB_DEFECTS
-  // 2770. tuple_size<const T> specialization is not SFINAE compatible
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus <= 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 90 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-  template<typename _Tp, typename = void>
-    struct __tuple_size_cv_impl { };
-
-  template<typename _Tp>
-    struct __tuple_size_cv_impl<_Tp, __void_t<decltype(tuple_size<_Tp>::value)>>
-    : integral_constant<size_t, tuple_size<_Tp>::value> { };
-
-  // _GLIBCXX_RESOLVE_LIB_DEFECTS
-  // 2313. tuple_size should always derive from integral_constant<size_t, N>
-  template<typename _Tp>
-    struct tuple_size<const _Tp> : __tuple_size_cv_impl<_Tp> { };
-
-  template<typename _Tp>
-    struct tuple_size<volatile _Tp> : __tuple_size_cv_impl<_Tp> { };
-
-  template<typename _Tp>
-    struct tuple_size<const volatile _Tp> : __tuple_size_cv_impl<_Tp> { };
-#else
-# 108 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-  template<typename _Tp,
-	   typename _Up = typename remove_cv<_Tp>::type,
-	   typename = typename enable_if<is_same<_Tp, _Up>::value>::type,
-	   size_t = tuple_size<_Tp>::value>
-    using __enable_if_has_tuple_size = _Tp;
-
-  template<typename _Tp>
-    struct tuple_size<const __enable_if_has_tuple_size<_Tp>>
-    : public tuple_size<_Tp> { };
-
-  template<typename _Tp>
-    struct tuple_size<volatile __enable_if_has_tuple_size<_Tp>>
-    : public tuple_size<_Tp> { };
-
-  template<typename _Tp>
-    struct tuple_size<const volatile __enable_if_has_tuple_size<_Tp>>
-    : public tuple_size<_Tp> { };
-#endif
-# 126 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-  /// Gives the type of the ith element of a given tuple type.
-  template<std::size_t __i, typename _Tp>
-    struct tuple_element;
-
-  // Duplicate of C++14's tuple_element_t for internal use in C++11 mode
-  template<std::size_t __i, typename _Tp>
-    using __tuple_element_t = typename tuple_element<__i, _Tp>::type;
-
-  template<std::size_t __i, typename _Tp>
-    struct tuple_element<__i, const _Tp>
-    {
-      typedef typename add_const<__tuple_element_t<__i, _Tp>>::type type;
-    };
-
-  template<std::size_t __i, typename _Tp>
-    struct tuple_element<__i, volatile _Tp>
-    {
-      typedef typename add_volatile<__tuple_element_t<__i, _Tp>>::type type;
-    };
-
-  template<std::size_t __i, typename _Tp>
-    struct tuple_element<__i, const volatile _Tp>
-    {
-      typedef typename add_cv<__tuple_element_t<__i, _Tp>>::type type;
-    };
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 154 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-#define __cpp_lib_tuple_element_t 201402
-
-  template<std::size_t __i, typename _Tp>
-    using tuple_element_t = typename tuple_element<__i, _Tp>::type;
-#endif
-# 159 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-  // Various functions which give std::pair a tuple-like interface.
-
-  /// Partial specialization for std::pair
-  template<typename _T1, typename _T2>
-    struct __is_tuple_like_impl<std::pair<_T1, _T2>> : true_type
-    { };
-
-  /// Partial specialization for std::pair
-  template<class _Tp1, class _Tp2>
-    struct tuple_size<std::pair<_Tp1, _Tp2>>
-    : public integral_constant<std::size_t, 2> { };
-
-  /// Partial specialization for std::pair
-  template<class _Tp1, class _Tp2>
-    struct tuple_element<0, std::pair<_Tp1, _Tp2>>
-    { typedef _Tp1 type; };
-
-  /// Partial specialization for std::pair
-  template<class _Tp1, class _Tp2>
-    struct tuple_element<1, std::pair<_Tp1, _Tp2>>
-    { typedef _Tp2 type; };
-
-  template<std::size_t _Int>
-    struct __pair_get;
-
-  template<>
-    struct __pair_get<0>
-    {
-      template<typename _Tp1, typename _Tp2>
-        static constexpr _Tp1&
-        __get(std::pair<_Tp1, _Tp2>& __pair) noexcept
-        { return __pair.first; }
-
-      template<typename _Tp1, typename _Tp2>
-        static constexpr _Tp1&&
-        __move_get(std::pair<_Tp1, _Tp2>&& __pair) noexcept
-        { return std::forward<_Tp1>(__pair.first); }
-
-      template<typename _Tp1, typename _Tp2>
-        static constexpr const _Tp1&
-        __const_get(const std::pair<_Tp1, _Tp2>& __pair) noexcept
-        { return __pair.first; }
-    };
-
-  template<>
-    struct __pair_get<1>
-    {
-      template<typename _Tp1, typename _Tp2>
-        static constexpr _Tp2&
-        __get(std::pair<_Tp1, _Tp2>& __pair) noexcept
-        { return __pair.second; }
-
-      template<typename _Tp1, typename _Tp2>
-        static constexpr _Tp2&&
-        __move_get(std::pair<_Tp1, _Tp2>&& __pair) noexcept
-        { return std::forward<_Tp2>(__pair.second); }
-
-      template<typename _Tp1, typename _Tp2>
-        static constexpr const _Tp2&
-        __const_get(const std::pair<_Tp1, _Tp2>& __pair) noexcept
-        { return __pair.second; }
-    };
-
-  template<std::size_t _Int, class _Tp1, class _Tp2>
-    constexpr typename tuple_element<_Int, std::pair<_Tp1, _Tp2>>::type&
-    get(std::pair<_Tp1, _Tp2>& __in) noexcept
-    { return __pair_get<_Int>::__get(__in); }
-
-  template<std::size_t _Int, class _Tp1, class _Tp2>
-    constexpr typename tuple_element<_Int, std::pair<_Tp1, _Tp2>>::type&&
-    get(std::pair<_Tp1, _Tp2>&& __in) noexcept
-    { return __pair_get<_Int>::__move_get(std::move(__in)); }
-
-  template<std::size_t _Int, class _Tp1, class _Tp2>
-    constexpr const typename tuple_element<_Int, std::pair<_Tp1, _Tp2>>::type&
-    get(const std::pair<_Tp1, _Tp2>& __in) noexcept
-    { return __pair_get<_Int>::__const_get(__in); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 239 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-#define __cpp_lib_tuples_by_type 201304
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&
-    get(pair<_Tp, _Up>& __p) noexcept
-    { return __p.first; }
-
-  template <typename _Tp, typename _Up>
-    constexpr const _Tp&
-    get(const pair<_Tp, _Up>& __p) noexcept
-    { return __p.first; }
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&&
-    get(pair<_Tp, _Up>&& __p) noexcept
-    { return std::move(__p.first); }
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&
-    get(pair<_Up, _Tp>& __p) noexcept
-    { return __p.second; }
-
-  template <typename _Tp, typename _Up>
-    constexpr const _Tp&
-    get(const pair<_Up, _Tp>& __p) noexcept
-    { return __p.second; }
-
-  template <typename _Tp, typename _Up>
-    constexpr _Tp&&
-    get(pair<_Up, _Tp>&& __p) noexcept
-    { return std::move(__p.second); }
-
-#define __cpp_lib_exchange_function 201304
-
-  /// Assign @p __new_val to @p __obj and return its previous value.
-  template <typename _Tp, typename _Up = _Tp>
-    inline _Tp
-    exchange(_Tp& __obj, _Up&& __new_val)
-    { return std::__exchange(__obj, std::forward<_Up>(__new_val)); }
-#endif
-# 280 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-  // Stores a tuple of indices.  Used by tuple and pair, and by bind() to
-  // extract the elements in a tuple.
-  template<size_t... _Indexes> struct _Index_tuple { };
-
-  // Concatenates two _Index_tuples.
-  template<typename _Itup1, typename _Itup2> struct _Itup_cat;
-
-  template<size_t... _Ind1, size_t... _Ind2>
-    struct _Itup_cat<_Index_tuple<_Ind1...>, _Index_tuple<_Ind2...>>
-    {
-      using __type = _Index_tuple<_Ind1..., (_Ind2 + sizeof...(_Ind1))...>;
-    };
-
-  // Builds an _Index_tuple<0, 1, 2, ..., _Num-1>.
-  template<size_t _Num>
-    struct _Build_index_tuple
-    : _Itup_cat<typename _Build_index_tuple<_Num / 2>::__type,
-		typename _Build_index_tuple<_Num - _Num / 2>::__type>
-    { };
-
-  template<>
-    struct _Build_index_tuple<1>
-    {
-      typedef _Index_tuple<0> __type;
-    };
-
-  template<>
-    struct _Build_index_tuple<0>
-    {
-      typedef _Index_tuple<> __type;
-    };
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 314 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-#define __cpp_lib_integer_sequence 201304
-
-  /// Class template integer_sequence
-  template<typename _Tp, _Tp... _Idx>
-    struct integer_sequence
-    {
-      typedef _Tp value_type;
-      static constexpr size_t size() noexcept { return sizeof...(_Idx); }
-    };
-
-  template<typename _Tp, _Tp _Num,
-	   typename _ISeq = typename _Build_index_tuple<_Num>::__type>
-    struct _Make_integer_sequence;
-
-  template<typename _Tp, _Tp _Num,  size_t... _Idx>
-    struct _Make_integer_sequence<_Tp, _Num, _Index_tuple<_Idx...>>
-    {
-      static_assert( _Num >= 0,
-		     "Cannot make integer sequence of negative length" );
-
-      typedef integer_sequence<_Tp, static_cast<_Tp>(_Idx)...> __type;
-    };
-
-  /// Alias template make_integer_sequence
-  template<typename _Tp, _Tp _Num>
-    using make_integer_sequence
-      = typename _Make_integer_sequence<_Tp, _Num>::__type;
-
-  /// Alias template index_sequence
-  template<size_t... _Idx>
-    using index_sequence = integer_sequence<size_t, _Idx...>;
-
-  /// Alias template make_index_sequence
-  template<size_t _Num>
-    using make_index_sequence = make_integer_sequence<size_t, _Num>;
-
-  /// Alias template index_sequence_for
-  template<typename... _Types>
-    using index_sequence_for = make_index_sequence<sizeof...(_Types)>;
-#endif
-# 355 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 357 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-  struct in_place_t {
-    explicit in_place_t() = default;
-  };
-
-  inline constexpr in_place_t in_place{};
-
-  template<typename _Tp> struct in_place_type_t
-  {
-    explicit in_place_type_t() = default;
-  };
-
-  template<typename _Tp>
-    inline constexpr in_place_type_t<_Tp> in_place_type{};
-
-  template<size_t _Idx> struct in_place_index_t
-  {
-    explicit in_place_index_t() = default;
-  };
-
-  template<size_t _Idx>
-    inline constexpr in_place_index_t<_Idx> in_place_index{};
-
-  template<typename>
-    struct __is_in_place_type_impl : false_type
-    { };
-
-  template<typename _Tp>
-    struct __is_in_place_type_impl<in_place_type_t<_Tp>> : true_type
-    { };
-
-  template<typename _Tp>
-    struct __is_in_place_type
-      : public __is_in_place_type_impl<_Tp>
-    { };
-
-#define  __cpp_lib_as_const 201510
-  template<typename _Tp>
-    constexpr add_const_t<_Tp>& as_const(_Tp& __t) noexcept { return __t; }
-
-  template<typename _Tp>
-    void as_const(const _Tp&&) = delete;
-
-#endif // C++17
-# 401 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-_GLIBCXX_END_NAMESPACE_VERSION
-} // namespace
-
-#endif
-# 406 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-
-#endif /* _GLIBCXX_UTILITY */
-# 408 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/utility" 3
-# 3 "test.cpp" 2
+# 3 "test.cpp"
 #if 0 /* expanded by -frewrite-includes */
 #include <set>
 #endif /* expanded by -frewrite-includes */
@@ -26168,2825 +26168,123 @@ namespace __gnu_cxx
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 72 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
 #if 0 /* expanded by -frewrite-includes */
 # include <bits/node_handle.h>
 #endif /* expanded by -frewrite-includes */
 # 72 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-# 73 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-#endif
-# 74 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 1 3
+// Node handles for containers -*- C++ -*-
+
+// Copyright (C) 2016-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file bits/node_handle.h
+ *  This is an internal header file, included by other library headers.
+ *  Do not attempt to use it directly.
+ *  @headername{map,set,unordered_map,unordered_set}
+ */
+
+#ifndef _NODE_HANDLE
+#define _NODE_HANDLE 1
 
-namespace std _GLIBCXX_VISIBILITY(default)
-{
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 80 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-# define __cpp_lib_generic_associative_lookup 201304
-#endif
-# 82 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-  // Red-black tree class, designed for use in implementing STL
-  // associative containers (set, multiset, map, and multimap). The
-  // insertion and deletion algorithms are based on those in Cormen,
-  // Leiserson, and Rivest, Introduction to Algorithms (MIT Press,
-  // 1990), except that
-  //
-  // (1) the header cell is maintained with links not only to the root
-  // but also to the leftmost node of the tree, to enable constant
-  // time begin(), and to the rightmost node of the tree, to enable
-  // linear time performance when used with the generic set algorithms
-  // (set_union, etc.)
-  // 
-  // (2) when a node being deleted has two children its successor node
-  // is relinked into its place, rather than copied, so that the only
-  // iterators invalidated are those referring to the deleted node.
-
-  enum _Rb_tree_color { _S_red = false, _S_black = true };
-
-  struct _Rb_tree_node_base
-  {
-    typedef _Rb_tree_node_base* _Base_ptr;
-    typedef const _Rb_tree_node_base* _Const_Base_ptr;
-
-    _Rb_tree_color	_M_color;
-    _Base_ptr		_M_parent;
-    _Base_ptr		_M_left;
-    _Base_ptr		_M_right;
-
-    static _Base_ptr
-    _S_minimum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-    {
-      while (__x->_M_left != 0) __x = __x->_M_left;
-      return __x;
-    }
-
-    static _Const_Base_ptr
-    _S_minimum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-    {
-      while (__x->_M_left != 0) __x = __x->_M_left;
-      return __x;
-    }
-
-    static _Base_ptr
-    _S_maximum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-    {
-      while (__x->_M_right != 0) __x = __x->_M_right;
-      return __x;
-    }
-
-    static _Const_Base_ptr
-    _S_maximum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-    {
-      while (__x->_M_right != 0) __x = __x->_M_right;
-      return __x;
-    }
-  };
-
-  // Helper type offering value initialization guarantee on the compare functor.
-  template<typename _Key_compare>
-    struct _Rb_tree_key_compare
-    {
-      _Key_compare		_M_key_compare;
-
-      _Rb_tree_key_compare()
-      _GLIBCXX_NOEXCEPT_IF(
-	is_nothrow_default_constructible<_Key_compare>::value)
-      : _M_key_compare()
-      { }
-
-      _Rb_tree_key_compare(const _Key_compare& __comp)
-      : _M_key_compare(__comp)
-      { }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 157 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      // Copy constructor added for consistency with C++98 mode.
-      _Rb_tree_key_compare(const _Rb_tree_key_compare&) = default;
-
-      _Rb_tree_key_compare(_Rb_tree_key_compare&& __x)
-	noexcept(is_nothrow_copy_constructible<_Key_compare>::value)
-      : _M_key_compare(__x._M_key_compare)
-      { }
-#endif
-# 165 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    };
-
-  // Helper type to manage default initialization of node count and header.
-  struct _Rb_tree_header
-  {
-    _Rb_tree_node_base	_M_header;
-    size_t		_M_node_count; // Keeps track of size of tree.
-
-    _Rb_tree_header() _GLIBCXX_NOEXCEPT
-    {
-      _M_header._M_color = _S_red;
-      _M_reset();
-    }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 180 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _Rb_tree_header(_Rb_tree_header&& __x) noexcept
-    {
-      if (__x._M_header._M_parent != nullptr)
-	_M_move_data(__x);
-      else
-	{
-	  _M_header._M_color = _S_red;
-	  _M_reset();
-	}
-    }
-#endif
-# 191 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-    void
-    _M_move_data(_Rb_tree_header& __from)
-    {
-      _M_header._M_color = __from._M_header._M_color;
-      _M_header._M_parent = __from._M_header._M_parent;
-      _M_header._M_left = __from._M_header._M_left;
-      _M_header._M_right = __from._M_header._M_right;
-      _M_header._M_parent->_M_parent = &_M_header;
-      _M_node_count = __from._M_node_count;
-
-      __from._M_reset();
-    }
-
-    void
-    _M_reset()
-    {
-      _M_header._M_parent = 0;
-      _M_header._M_left = &_M_header;
-      _M_header._M_right = &_M_header;
-      _M_node_count = 0;
-    }
-  };
-
-  template<typename _Val>
-    struct _Rb_tree_node : public _Rb_tree_node_base
-    {
-      typedef _Rb_tree_node<_Val>* _Link_type;
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 221 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      _Val _M_value_field;
-
-      _Val*
-      _M_valptr()
-      { return std::__addressof(_M_value_field); }
-
-      const _Val*
-      _M_valptr() const
-      { return std::__addressof(_M_value_field); }
-#else
-# 231 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      __gnu_cxx::__aligned_membuf<_Val> _M_storage;
-
-      _Val*
-      _M_valptr()
-      { return _M_storage._M_ptr(); }
-
-      const _Val*
-      _M_valptr() const
-      { return _M_storage._M_ptr(); }
-#endif
-# 241 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    };
-
-  _GLIBCXX_PURE _Rb_tree_node_base*
-  _Rb_tree_increment(_Rb_tree_node_base* __x) throw ();
-
-  _GLIBCXX_PURE const _Rb_tree_node_base*
-  _Rb_tree_increment(const _Rb_tree_node_base* __x) throw ();
-
-  _GLIBCXX_PURE _Rb_tree_node_base*
-  _Rb_tree_decrement(_Rb_tree_node_base* __x) throw ();
-
-  _GLIBCXX_PURE const _Rb_tree_node_base*
-  _Rb_tree_decrement(const _Rb_tree_node_base* __x) throw ();
-
-  template<typename _Tp>
-    struct _Rb_tree_iterator
-    {
-      typedef _Tp  value_type;
-      typedef _Tp& reference;
-      typedef _Tp* pointer;
-
-      typedef bidirectional_iterator_tag iterator_category;
-      typedef ptrdiff_t                  difference_type;
-
-      typedef _Rb_tree_iterator<_Tp>        _Self;
-      typedef _Rb_tree_node_base::_Base_ptr _Base_ptr;
-      typedef _Rb_tree_node<_Tp>*           _Link_type;
-
-      _Rb_tree_iterator() _GLIBCXX_NOEXCEPT
-      : _M_node() { }
-
-      explicit
-      _Rb_tree_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      : _M_node(__x) { }
-
-      reference
-      operator*() const _GLIBCXX_NOEXCEPT
-      { return *static_cast<_Link_type>(_M_node)->_M_valptr(); }
-
-      pointer
-      operator->() const _GLIBCXX_NOEXCEPT
-      { return static_cast<_Link_type> (_M_node)->_M_valptr(); }
-
-      _Self&
-      operator++() _GLIBCXX_NOEXCEPT
-      {
-	_M_node = _Rb_tree_increment(_M_node);
-	return *this;
-      }
-
-      _Self
-      operator++(int) _GLIBCXX_NOEXCEPT
-      {
-	_Self __tmp = *this;
-	_M_node = _Rb_tree_increment(_M_node);
-	return __tmp;
-      }
-
-      _Self&
-      operator--() _GLIBCXX_NOEXCEPT
-      {
-	_M_node = _Rb_tree_decrement(_M_node);
-	return *this;
-      }
-
-      _Self
-      operator--(int) _GLIBCXX_NOEXCEPT
-      {
-	_Self __tmp = *this;
-	_M_node = _Rb_tree_decrement(_M_node);
-	return __tmp;
-      }
-
-      bool
-      operator==(const _Self& __x) const _GLIBCXX_NOEXCEPT
-      { return _M_node == __x._M_node; }
-
-      bool
-      operator!=(const _Self& __x) const _GLIBCXX_NOEXCEPT
-      { return _M_node != __x._M_node; }
-
-      _Base_ptr _M_node;
-  };
-
-  template<typename _Tp>
-    struct _Rb_tree_const_iterator
-    {
-      typedef _Tp        value_type;
-      typedef const _Tp& reference;
-      typedef const _Tp* pointer;
-
-      typedef _Rb_tree_iterator<_Tp> iterator;
-
-      typedef bidirectional_iterator_tag iterator_category;
-      typedef ptrdiff_t                  difference_type;
-
-      typedef _Rb_tree_const_iterator<_Tp>        _Self;
-      typedef _Rb_tree_node_base::_Const_Base_ptr _Base_ptr;
-      typedef const _Rb_tree_node<_Tp>*           _Link_type;
-
-      _Rb_tree_const_iterator() _GLIBCXX_NOEXCEPT
-      : _M_node() { }
-
-      explicit
-      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      : _M_node(__x) { }
-
-      _Rb_tree_const_iterator(const iterator& __it) _GLIBCXX_NOEXCEPT
-      : _M_node(__it._M_node) { }
-
-      iterator
-      _M_const_cast() const _GLIBCXX_NOEXCEPT
-      { return iterator(const_cast<typename iterator::_Base_ptr>(_M_node)); }
-
-      reference
-      operator*() const _GLIBCXX_NOEXCEPT
-      { return *static_cast<_Link_type>(_M_node)->_M_valptr(); }
-
-      pointer
-      operator->() const _GLIBCXX_NOEXCEPT
-      { return static_cast<_Link_type>(_M_node)->_M_valptr(); }
-
-      _Self&
-      operator++() _GLIBCXX_NOEXCEPT
-      {
-	_M_node = _Rb_tree_increment(_M_node);
-	return *this;
-      }
-
-      _Self
-      operator++(int) _GLIBCXX_NOEXCEPT
-      {
-	_Self __tmp = *this;
-	_M_node = _Rb_tree_increment(_M_node);
-	return __tmp;
-      }
-
-      _Self&
-      operator--() _GLIBCXX_NOEXCEPT
-      {
-	_M_node = _Rb_tree_decrement(_M_node);
-	return *this;
-      }
-
-      _Self
-      operator--(int) _GLIBCXX_NOEXCEPT
-      {
-	_Self __tmp = *this;
-	_M_node = _Rb_tree_decrement(_M_node);
-	return __tmp;
-      }
-
-      bool
-      operator==(const _Self& __x) const _GLIBCXX_NOEXCEPT
-      { return _M_node == __x._M_node; }
-
-      bool
-      operator!=(const _Self& __x) const _GLIBCXX_NOEXCEPT
-      { return _M_node != __x._M_node; }
-
-      _Base_ptr _M_node;
-    };
-
-  template<typename _Val>
-    inline bool
-    operator==(const _Rb_tree_iterator<_Val>& __x,
-               const _Rb_tree_const_iterator<_Val>& __y) _GLIBCXX_NOEXCEPT
-    { return __x._M_node == __y._M_node; }
-
-  template<typename _Val>
-    inline bool
-    operator!=(const _Rb_tree_iterator<_Val>& __x,
-               const _Rb_tree_const_iterator<_Val>& __y) _GLIBCXX_NOEXCEPT
-    { return __x._M_node != __y._M_node; }
-
-  void
-  _Rb_tree_insert_and_rebalance(const bool __insert_left,
-                                _Rb_tree_node_base* __x,
-                                _Rb_tree_node_base* __p,
-                                _Rb_tree_node_base& __header) throw ();
-
-  _Rb_tree_node_base*
-  _Rb_tree_rebalance_for_erase(_Rb_tree_node_base* const __z,
-			       _Rb_tree_node_base& __header) throw ();
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 427 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-  template<typename _Cmp, typename _SfinaeType, typename = __void_t<>>
-    struct __has_is_transparent
-    { };
-
-  template<typename _Cmp, typename _SfinaeType>
-    struct __has_is_transparent<_Cmp, _SfinaeType,
-				__void_t<typename _Cmp::is_transparent>>
-    { typedef void type; };
-#endif
-# 436 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 438 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-  template<typename _Tree1, typename _Cmp2>
-    struct _Rb_tree_merge_helper { };
-#endif
-# 441 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc = allocator<_Val> >
-    class _Rb_tree
-    {
-      typedef typename __gnu_cxx::__alloc_traits<_Alloc>::template
-        rebind<_Rb_tree_node<_Val> >::other _Node_allocator;
-
-      typedef __gnu_cxx::__alloc_traits<_Node_allocator> _Alloc_traits;
-
-    protected:
-      typedef _Rb_tree_node_base* 		_Base_ptr;
-      typedef const _Rb_tree_node_base* 	_Const_Base_ptr;
-      typedef _Rb_tree_node<_Val>* 		_Link_type;
-      typedef const _Rb_tree_node<_Val>*	_Const_Link_type;
-
-    private:
-      // Functor recycling a pool of nodes and using allocation once the pool
-      // is empty.
-      struct _Reuse_or_alloc_node
-      {
-	_Reuse_or_alloc_node(_Rb_tree& __t)
-	  : _M_root(__t._M_root()), _M_nodes(__t._M_rightmost()), _M_t(__t)
-	{
-	  if (_M_root)
-	    {
-	      _M_root->_M_parent = 0;
-
-	      if (_M_nodes->_M_left)
-		_M_nodes = _M_nodes->_M_left;
-	    }
-	  else
-	    _M_nodes = 0;
-	}
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 477 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	_Reuse_or_alloc_node(const _Reuse_or_alloc_node&) = delete;
-#endif
-# 479 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-	~_Reuse_or_alloc_node()
-	{ _M_t._M_erase(static_cast<_Link_type>(_M_root)); }
-
-	template<typename _Arg>
-	  _Link_type
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 486 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  operator()(const _Arg& __arg)
-#else
-# 488 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  operator()(_Arg&& __arg)
-#endif
-# 490 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  {
-	    _Link_type __node = static_cast<_Link_type>(_M_extract());
-	    if (__node)
-	      {
-		_M_t._M_destroy_node(__node);
-		_M_t._M_construct_node(__node, _GLIBCXX_FORWARD(_Arg, __arg));
-		return __node;
-	      }
-
-	    return _M_t._M_create_node(_GLIBCXX_FORWARD(_Arg, __arg));
-	  }
-
-      private:
-	_Base_ptr
-	_M_extract()
-	{
-	  if (!_M_nodes)
-	    return _M_nodes;
-
-	  _Base_ptr __node = _M_nodes;
-	  _M_nodes = _M_nodes->_M_parent;
-	  if (_M_nodes)
-	    {
-	      if (_M_nodes->_M_right == __node)
-		{
-		  _M_nodes->_M_right = 0;
-
-		  if (_M_nodes->_M_left)
-		    {
-		      _M_nodes = _M_nodes->_M_left;
-
-		      while (_M_nodes->_M_right)
-			_M_nodes = _M_nodes->_M_right;
-
-		      if (_M_nodes->_M_left)
-			_M_nodes = _M_nodes->_M_left;
-		    }
-		}
-	      else // __node is on the left.
-		_M_nodes->_M_left = 0;
-	    }
-	  else
-	    _M_root = 0;
-
-	  return __node;
-	}
-
-	_Base_ptr _M_root;
-	_Base_ptr _M_nodes;
-	_Rb_tree& _M_t;
-      };
-
-      // Functor similar to the previous one but without any pool of nodes to
-      // recycle.
-      struct _Alloc_node
-      {
-	_Alloc_node(_Rb_tree& __t)
-	  : _M_t(__t) { }
-
-	template<typename _Arg>
-	  _Link_type
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 552 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  operator()(const _Arg& __arg) const
-#else
-# 554 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  operator()(_Arg&& __arg) const
-#endif
-# 556 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  { return _M_t._M_create_node(_GLIBCXX_FORWARD(_Arg, __arg)); }
-
-      private:
-	_Rb_tree& _M_t;
-      };
-
-    public:
-      typedef _Key 				key_type;
-      typedef _Val 				value_type;
-      typedef value_type* 			pointer;
-      typedef const value_type* 		const_pointer;
-      typedef value_type& 			reference;
-      typedef const value_type& 		const_reference;
-      typedef size_t 				size_type;
-      typedef ptrdiff_t 			difference_type;
-      typedef _Alloc 				allocator_type;
-
-      _Node_allocator&
-      _M_get_Node_allocator() _GLIBCXX_NOEXCEPT
-      { return *static_cast<_Node_allocator*>(&this->_M_impl); }
-      
-      const _Node_allocator&
-      _M_get_Node_allocator() const _GLIBCXX_NOEXCEPT
-      { return *static_cast<const _Node_allocator*>(&this->_M_impl); }
-
-      allocator_type
-      get_allocator() const _GLIBCXX_NOEXCEPT
-      { return allocator_type(_M_get_Node_allocator()); }
-
-    protected:
-      _Link_type
-      _M_get_node()
-      { return _Alloc_traits::allocate(_M_get_Node_allocator(), 1); }
-
-      void
-      _M_put_node(_Link_type __p) _GLIBCXX_NOEXCEPT
-      { _Alloc_traits::deallocate(_M_get_Node_allocator(), __p, 1); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 595 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      void
-      _M_construct_node(_Link_type __node, const value_type& __x)
-      {
-	__try
-	  { get_allocator().construct(__node->_M_valptr(), __x); }
-	__catch(...)
-	  {
-	    _M_put_node(__node);
-	    __throw_exception_again;
-	  }
-      }
-
-      _Link_type
-      _M_create_node(const value_type& __x)
-      {
-	_Link_type __tmp = _M_get_node();
-	_M_construct_node(__tmp, __x);
-	return __tmp;
-      }
-
-      void
-      _M_destroy_node(_Link_type __p)
-      { get_allocator().destroy(__p->_M_valptr()); }
-#else
-# 619 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      template<typename... _Args>
-	void
-	_M_construct_node(_Link_type __node, _Args&&... __args)
-	{
-	  __try
-	    {
-	      ::new(__node) _Rb_tree_node<_Val>;
-	      _Alloc_traits::construct(_M_get_Node_allocator(),
-				       __node->_M_valptr(),
-				       std::forward<_Args>(__args)...);
-	    }
-	  __catch(...)
-	    {
-	      __node->~_Rb_tree_node<_Val>();
-	      _M_put_node(__node);
-	      __throw_exception_again;
-	    }
-	}
-
-      template<typename... _Args>
-        _Link_type
-        _M_create_node(_Args&&... __args)
-	{
-	  _Link_type __tmp = _M_get_node();
-	  _M_construct_node(__tmp, std::forward<_Args>(__args)...);
-	  return __tmp;
-	}
-
-      void
-      _M_destroy_node(_Link_type __p) noexcept
-      {
-	_Alloc_traits::destroy(_M_get_Node_allocator(), __p->_M_valptr());
-	__p->~_Rb_tree_node<_Val>();
-      }
-#endif
-# 654 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-      void
-      _M_drop_node(_Link_type __p) _GLIBCXX_NOEXCEPT
-      {
-	_M_destroy_node(__p);
-	_M_put_node(__p);
-      }
-
-      template<typename _NodeGen>
-	_Link_type
-	_M_clone_node(_Const_Link_type __x, _NodeGen& __node_gen)
-	{
-	  _Link_type __tmp = __node_gen(*__x->_M_valptr());
-	  __tmp->_M_color = __x->_M_color;
-	  __tmp->_M_left = 0;
-	  __tmp->_M_right = 0;
-	  return __tmp;
-	}
-
-    protected:
-      // Unused _Is_pod_comparator is kept as it is part of mangled name.
-      template<typename _Key_compare,
-	       bool /* _Is_pod_comparator */ = __is_pod(_Key_compare)>
-        struct _Rb_tree_impl
-	: public _Node_allocator
-	, public _Rb_tree_key_compare<_Key_compare>
-	, public _Rb_tree_header
-        {
-	  typedef _Rb_tree_key_compare<_Key_compare> _Base_key_compare;
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 685 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  _Rb_tree_impl()
-	  { }
-#else
-# 688 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  _Rb_tree_impl() = default;
-	  _Rb_tree_impl(_Rb_tree_impl&&) = default;
-#endif
-# 691 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-	  _Rb_tree_impl(const _Rb_tree_impl& __x)
-	  : _Node_allocator(_Alloc_traits::_S_select_on_copy(__x))
-	  , _Base_key_compare(__x._M_key_compare)
-	  { }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 698 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  _Rb_tree_impl(const _Key_compare& __comp, const _Node_allocator& __a)
-	  : _Node_allocator(__a), _Base_key_compare(__comp)
-	  { }
-#else
-# 702 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  _Rb_tree_impl(const _Key_compare& __comp, _Node_allocator&& __a)
-	  : _Node_allocator(std::move(__a)), _Base_key_compare(__comp)
-	  { }
-#endif
-# 706 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	};
-
-      _Rb_tree_impl<_Compare> _M_impl;
-
-    protected:
-      _Base_ptr&
-      _M_root() _GLIBCXX_NOEXCEPT
-      { return this->_M_impl._M_header._M_parent; }
-
-      _Const_Base_ptr
-      _M_root() const _GLIBCXX_NOEXCEPT
-      { return this->_M_impl._M_header._M_parent; }
-
-      _Base_ptr&
-      _M_leftmost() _GLIBCXX_NOEXCEPT
-      { return this->_M_impl._M_header._M_left; }
-
-      _Const_Base_ptr
-      _M_leftmost() const _GLIBCXX_NOEXCEPT
-      { return this->_M_impl._M_header._M_left; }
-
-      _Base_ptr&
-      _M_rightmost() _GLIBCXX_NOEXCEPT
-      { return this->_M_impl._M_header._M_right; }
-
-      _Const_Base_ptr
-      _M_rightmost() const _GLIBCXX_NOEXCEPT
-      { return this->_M_impl._M_header._M_right; }
-
-      _Link_type
-      _M_begin() _GLIBCXX_NOEXCEPT
-      { return static_cast<_Link_type>(this->_M_impl._M_header._M_parent); }
-
-      _Const_Link_type
-      _M_begin() const _GLIBCXX_NOEXCEPT
-      {
-	return static_cast<_Const_Link_type>
-	  (this->_M_impl._M_header._M_parent);
-      }
-
-      _Base_ptr
-      _M_end() _GLIBCXX_NOEXCEPT
-      { return &this->_M_impl._M_header; }
-
-      _Const_Base_ptr
-      _M_end() const _GLIBCXX_NOEXCEPT
-      { return &this->_M_impl._M_header; }
-
-      static const_reference
-      _S_value(_Const_Link_type __x)
-      { return *__x->_M_valptr(); }
-
-      static const _Key&
-      _S_key(_Const_Link_type __x)
-      { return _KeyOfValue()(_S_value(__x)); }
-
-      static _Link_type
-      _S_left(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return static_cast<_Link_type>(__x->_M_left); }
-
-      static _Const_Link_type
-      _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return static_cast<_Const_Link_type>(__x->_M_left); }
-
-      static _Link_type
-      _S_right(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return static_cast<_Link_type>(__x->_M_right); }
-
-      static _Const_Link_type
-      _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return static_cast<_Const_Link_type>(__x->_M_right); }
-
-      static const_reference
-      _S_value(_Const_Base_ptr __x)
-      { return *static_cast<_Const_Link_type>(__x)->_M_valptr(); }
-
-      static const _Key&
-      _S_key(_Const_Base_ptr __x)
-      { return _KeyOfValue()(_S_value(__x)); }
-
-      static _Base_ptr
-      _S_minimum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return _Rb_tree_node_base::_S_minimum(__x); }
-
-      static _Const_Base_ptr
-      _S_minimum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return _Rb_tree_node_base::_S_minimum(__x); }
-
-      static _Base_ptr
-      _S_maximum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return _Rb_tree_node_base::_S_maximum(__x); }
-
-      static _Const_Base_ptr
-      _S_maximum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
-      { return _Rb_tree_node_base::_S_maximum(__x); }
-
-    public:
-      typedef _Rb_tree_iterator<value_type>       iterator;
-      typedef _Rb_tree_const_iterator<value_type> const_iterator;
-
-      typedef std::reverse_iterator<iterator>       reverse_iterator;
-      typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 810 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      using node_type = _Node_handle<_Key, _Val, _Node_allocator>;
-      using insert_return_type = _Node_insert_return<
-	conditional_t<is_same_v<_Key, _Val>, const_iterator, iterator>,
-	node_type>;
-#endif
-# 815 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-      pair<_Base_ptr, _Base_ptr>
-      _M_get_insert_unique_pos(const key_type& __k);
-
-      pair<_Base_ptr, _Base_ptr>
-      _M_get_insert_equal_pos(const key_type& __k);
-
-      pair<_Base_ptr, _Base_ptr>
-      _M_get_insert_hint_unique_pos(const_iterator __pos,
-				    const key_type& __k);
-
-      pair<_Base_ptr, _Base_ptr>
-      _M_get_insert_hint_equal_pos(const_iterator __pos,
-				   const key_type& __k);
-
-    private:
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 832 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      template<typename _Arg, typename _NodeGen>
-        iterator
-	_M_insert_(_Base_ptr __x, _Base_ptr __y, _Arg&& __v, _NodeGen&);
-
-      iterator
-      _M_insert_node(_Base_ptr __x, _Base_ptr __y, _Link_type __z);
-
-      template<typename _Arg>
-        iterator
-        _M_insert_lower(_Base_ptr __y, _Arg&& __v);
-
-      template<typename _Arg>
-        iterator
-        _M_insert_equal_lower(_Arg&& __x);
-
-      iterator
-      _M_insert_lower_node(_Base_ptr __p, _Link_type __z);
-
-      iterator
-      _M_insert_equal_lower_node(_Link_type __z);
-#else
-# 853 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      template<typename _NodeGen>
-	iterator
-	_M_insert_(_Base_ptr __x, _Base_ptr __y,
-		   const value_type& __v, _NodeGen&);
-
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // 233. Insertion hints in associative containers.
-      iterator
-      _M_insert_lower(_Base_ptr __y, const value_type& __v);
-
-      iterator
-      _M_insert_equal_lower(const value_type& __x);
-#endif
-# 866 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-      template<typename _NodeGen>
-	_Link_type
-	_M_copy(_Const_Link_type __x, _Base_ptr __p, _NodeGen&);
-
-      template<typename _NodeGen>
-	_Link_type
-	_M_copy(const _Rb_tree& __x, _NodeGen& __gen)
-	{
-	  _Link_type __root = _M_copy(__x._M_begin(), _M_end(), __gen);
-	  _M_leftmost() = _S_minimum(__root);
-	  _M_rightmost() = _S_maximum(__root);
-	  _M_impl._M_node_count = __x._M_impl._M_node_count;
-	  return __root;
-	}
-
-      _Link_type
-      _M_copy(const _Rb_tree& __x)
-      {
-	_Alloc_node __an(*this);
-	return _M_copy(__x, __an);
-      }
-
-      void
-      _M_erase(_Link_type __x);
-
-      iterator
-      _M_lower_bound(_Link_type __x, _Base_ptr __y,
-		     const _Key& __k);
-
-      const_iterator
-      _M_lower_bound(_Const_Link_type __x, _Const_Base_ptr __y,
-		     const _Key& __k) const;
-
-      iterator
-      _M_upper_bound(_Link_type __x, _Base_ptr __y,
-		     const _Key& __k);
-
-      const_iterator
-      _M_upper_bound(_Const_Link_type __x, _Const_Base_ptr __y,
-		     const _Key& __k) const;
-
-    public:
-      // allocation/deallocation
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 911 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      _Rb_tree() { }
-#else
-# 913 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      _Rb_tree() = default;
-#endif
-# 915 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-      _Rb_tree(const _Compare& __comp,
-	       const allocator_type& __a = allocator_type())
-      : _M_impl(__comp, _Node_allocator(__a)) { }
-
-      _Rb_tree(const _Rb_tree& __x)
-      : _M_impl(__x._M_impl)
-      {
-	if (__x._M_root() != 0)
-	  _M_root() = _M_copy(__x);
-      }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 928 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      _Rb_tree(const allocator_type& __a)
-      : _M_impl(_Compare(), _Node_allocator(__a))
-      { }
-
-      _Rb_tree(const _Rb_tree& __x, const allocator_type& __a)
-      : _M_impl(__x._M_impl._M_key_compare, _Node_allocator(__a))
-      {
-	if (__x._M_root() != nullptr)
-	  _M_root() = _M_copy(__x);
-      }
-
-      _Rb_tree(_Rb_tree&&) = default;
-
-      _Rb_tree(_Rb_tree&& __x, const allocator_type& __a)
-      : _Rb_tree(std::move(__x), _Node_allocator(__a))
-      { }
-
-      _Rb_tree(_Rb_tree&& __x, _Node_allocator&& __a);
-#endif
-# 947 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-      ~_Rb_tree() _GLIBCXX_NOEXCEPT
-      { _M_erase(_M_begin()); }
-
-      _Rb_tree&
-      operator=(const _Rb_tree& __x);
-
-      // Accessors.
-      _Compare
-      key_comp() const
-      { return _M_impl._M_key_compare; }
-
-      iterator
-      begin() _GLIBCXX_NOEXCEPT
-      { return iterator(this->_M_impl._M_header._M_left); }
-
-      const_iterator
-      begin() const _GLIBCXX_NOEXCEPT
-      { return const_iterator(this->_M_impl._M_header._M_left); }
-
-      iterator
-      end() _GLIBCXX_NOEXCEPT
-      { return iterator(&this->_M_impl._M_header); }
-
-      const_iterator
-      end() const _GLIBCXX_NOEXCEPT
-      { return const_iterator(&this->_M_impl._M_header); }
-
-      reverse_iterator
-      rbegin() _GLIBCXX_NOEXCEPT
-      { return reverse_iterator(end()); }
-
-      const_reverse_iterator
-      rbegin() const _GLIBCXX_NOEXCEPT
-      { return const_reverse_iterator(end()); }
-
-      reverse_iterator
-      rend() _GLIBCXX_NOEXCEPT
-      { return reverse_iterator(begin()); }
-
-      const_reverse_iterator
-      rend() const _GLIBCXX_NOEXCEPT
-      { return const_reverse_iterator(begin()); }
-
-      bool
-      empty() const _GLIBCXX_NOEXCEPT
-      { return _M_impl._M_node_count == 0; }
-
-      size_type
-      size() const _GLIBCXX_NOEXCEPT 
-      { return _M_impl._M_node_count; }
-
-      size_type
-      max_size() const _GLIBCXX_NOEXCEPT
-      { return _Alloc_traits::max_size(_M_get_Node_allocator()); }
-
-      void
-      swap(_Rb_tree& __t)
-      _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value);
-
-      // Insert/erase.
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1009 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      template<typename _Arg>
-        pair<iterator, bool>
-        _M_insert_unique(_Arg&& __x);
-
-      template<typename _Arg>
-        iterator
-        _M_insert_equal(_Arg&& __x);
-
-      template<typename _Arg, typename _NodeGen>
-        iterator
-	_M_insert_unique_(const_iterator __pos, _Arg&& __x, _NodeGen&);
-
-      template<typename _Arg>
-	iterator
-	_M_insert_unique_(const_iterator __pos, _Arg&& __x)
-	{
-	  _Alloc_node __an(*this);
-	  return _M_insert_unique_(__pos, std::forward<_Arg>(__x), __an);
-	}
-
-      template<typename _Arg, typename _NodeGen>
-	iterator
-	_M_insert_equal_(const_iterator __pos, _Arg&& __x, _NodeGen&);
-
-      template<typename _Arg>
-	iterator
-	_M_insert_equal_(const_iterator __pos, _Arg&& __x)
-	{
-	  _Alloc_node __an(*this);
-	  return _M_insert_equal_(__pos, std::forward<_Arg>(__x), __an);
-	}
-
-      template<typename... _Args>
-	pair<iterator, bool>
-	_M_emplace_unique(_Args&&... __args);
-
-      template<typename... _Args>
-	iterator
-	_M_emplace_equal(_Args&&... __args);
-
-      template<typename... _Args>
-	iterator
-	_M_emplace_hint_unique(const_iterator __pos, _Args&&... __args);
-
-      template<typename... _Args>
-	iterator
-	_M_emplace_hint_equal(const_iterator __pos, _Args&&... __args);
-#else
-# 1057 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      pair<iterator, bool>
-      _M_insert_unique(const value_type& __x);
-
-      iterator
-      _M_insert_equal(const value_type& __x);
-
-      template<typename _NodeGen>
-	iterator
-	_M_insert_unique_(const_iterator __pos, const value_type& __x,
-			  _NodeGen&);
-
-      iterator
-      _M_insert_unique_(const_iterator __pos, const value_type& __x)
-      {
-	_Alloc_node __an(*this);
-	return _M_insert_unique_(__pos, __x, __an);
-      }
-
-      template<typename _NodeGen>
-	iterator
-	_M_insert_equal_(const_iterator __pos, const value_type& __x,
-			 _NodeGen&);
-      iterator
-      _M_insert_equal_(const_iterator __pos, const value_type& __x)
-      {
-	_Alloc_node __an(*this);
-	return _M_insert_equal_(__pos, __x, __an);
-      }
-#endif
-# 1086 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-      template<typename _InputIterator>
-        void
-        _M_insert_unique(_InputIterator __first, _InputIterator __last);
-
-      template<typename _InputIterator>
-        void
-        _M_insert_equal(_InputIterator __first, _InputIterator __last);
-
-    private:
-      void
-      _M_erase_aux(const_iterator __position);
-
-      void
-      _M_erase_aux(const_iterator __first, const_iterator __last);
-
-    public:
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1104 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 130. Associative erase should return an iterator.
-      _GLIBCXX_ABI_TAG_CXX11
-      iterator
-      erase(const_iterator __position)
-      {
-	__glibcxx_assert(__position != end());
-	const_iterator __result = __position;
-	++__result;
-	_M_erase_aux(__position);
-	return __result._M_const_cast();
-      }
-
-      // LWG 2059.
-      _GLIBCXX_ABI_TAG_CXX11
-      iterator
-      erase(iterator __position)
-      {
-	__glibcxx_assert(__position != end());
-	iterator __result = __position;
-	++__result;
-	_M_erase_aux(__position);
-	return __result;
-      }
-#else
-# 1129 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      void
-      erase(iterator __position)
-      {
-	__glibcxx_assert(__position != end());
-	_M_erase_aux(__position);
-      }
-
-      void
-      erase(const_iterator __position)
-      {
-	__glibcxx_assert(__position != end());
-	_M_erase_aux(__position);
-      }
-#endif
-# 1143 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      size_type
-      erase(const key_type& __x);
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1147 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 130. Associative erase should return an iterator.
-      _GLIBCXX_ABI_TAG_CXX11
-      iterator
-      erase(const_iterator __first, const_iterator __last)
-      {
-	_M_erase_aux(__first, __last);
-	return __last._M_const_cast();
-      }
-#else
-# 1157 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      void
-      erase(iterator __first, iterator __last)
-      { _M_erase_aux(__first, __last); }
-
-      void
-      erase(const_iterator __first, const_iterator __last)
-      { _M_erase_aux(__first, __last); }
-#endif
-# 1165 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      void
-      erase(const key_type* __first, const key_type* __last);
-
-      void
-      clear() _GLIBCXX_NOEXCEPT
-      {
-        _M_erase(_M_begin());
-	_M_impl._M_reset();
-      }
-
-      // Set operations.
-      iterator
-      find(const key_type& __k);
-
-      const_iterator
-      find(const key_type& __k) const;
-
-      size_type
-      count(const key_type& __k) const;
-
-      iterator
-      lower_bound(const key_type& __k)
-      { return _M_lower_bound(_M_begin(), _M_end(), __k); }
-
-      const_iterator
-      lower_bound(const key_type& __k) const
-      { return _M_lower_bound(_M_begin(), _M_end(), __k); }
-
-      iterator
-      upper_bound(const key_type& __k)
-      { return _M_upper_bound(_M_begin(), _M_end(), __k); }
-
-      const_iterator
-      upper_bound(const key_type& __k) const
-      { return _M_upper_bound(_M_begin(), _M_end(), __k); }
-
-      pair<iterator, iterator>
-      equal_range(const key_type& __k);
-
-      pair<const_iterator, const_iterator>
-      equal_range(const key_type& __k) const;
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1208 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	iterator
-	_M_find_tr(const _Kt& __k)
-	{
-	  const _Rb_tree* __const_this = this;
-	  return __const_this->_M_find_tr(__k)._M_const_cast();
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	const_iterator
-	_M_find_tr(const _Kt& __k) const
-	{
-	  auto __j = _M_lower_bound_tr(__k);
-	  if (__j != end() && _M_impl._M_key_compare(__k, _S_key(__j._M_node)))
-	    __j = end();
-	  return __j;
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	size_type
-	_M_count_tr(const _Kt& __k) const
-	{
-	  auto __p = _M_equal_range_tr(__k);
-	  return std::distance(__p.first, __p.second);
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	iterator
-	_M_lower_bound_tr(const _Kt& __k)
-	{
-	  const _Rb_tree* __const_this = this;
-	  return __const_this->_M_lower_bound_tr(__k)._M_const_cast();
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	const_iterator
-	_M_lower_bound_tr(const _Kt& __k) const
-	{
-	  auto __x = _M_begin();
-	  auto __y = _M_end();
-	  while (__x != 0)
-	    if (!_M_impl._M_key_compare(_S_key(__x), __k))
-	      {
-		__y = __x;
-		__x = _S_left(__x);
-	      }
-	    else
-	      __x = _S_right(__x);
-	  return const_iterator(__y);
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	iterator
-	_M_upper_bound_tr(const _Kt& __k)
-	{
-	  const _Rb_tree* __const_this = this;
-	  return __const_this->_M_upper_bound_tr(__k)._M_const_cast();
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	const_iterator
-	_M_upper_bound_tr(const _Kt& __k) const
-	{
-	  auto __x = _M_begin();
-	  auto __y = _M_end();
-	  while (__x != 0)
-	    if (_M_impl._M_key_compare(__k, _S_key(__x)))
-	      {
-		__y = __x;
-		__x = _S_left(__x);
-	      }
-	    else
-	      __x = _S_right(__x);
-	  return const_iterator(__y);
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	pair<iterator, iterator>
-	_M_equal_range_tr(const _Kt& __k)
-	{
-	  const _Rb_tree* __const_this = this;
-	  auto __ret = __const_this->_M_equal_range_tr(__k);
-	  return { __ret.first._M_const_cast(), __ret.second._M_const_cast() };
-	}
-
-      template<typename _Kt,
-	       typename _Req =
-		 typename __has_is_transparent<_Compare, _Kt>::type>
-	pair<const_iterator, const_iterator>
-	_M_equal_range_tr(const _Kt& __k) const
-	{
-	  auto __low = _M_lower_bound_tr(__k);
-	  auto __high = __low;
-	  auto& __cmp = _M_impl._M_key_compare;
-	  while (__high != end() && !__cmp(__k, _S_key(__high._M_node)))
-	    ++__high;
-	  return { __low, __high };
-	}
-#endif
-# 1323 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-      // Debugging.
-      bool
-      __rb_verify() const;
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1329 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      _Rb_tree&
-      operator=(_Rb_tree&&)
-      noexcept(_Alloc_traits::_S_nothrow_move()
-	       && is_nothrow_move_assignable<_Compare>::value);
-
-      template<typename _Iterator>
-	void
-	_M_assign_unique(_Iterator, _Iterator);
-
-      template<typename _Iterator>
-	void
-	_M_assign_equal(_Iterator, _Iterator);
-
-    private:
-      // Move elements from container with equal allocator.
-      void
-      _M_move_data(_Rb_tree& __x, std::true_type)
-      { _M_impl._M_move_data(__x._M_impl); }
-
-      // Move elements from container with possibly non-equal allocator,
-      // which might result in a copy not a move.
-      void
-      _M_move_data(_Rb_tree&, std::false_type);
-
-      // Move assignment from container with equal allocator.
-      void
-      _M_move_assign(_Rb_tree&, std::true_type);
-
-      // Move assignment from container with possibly non-equal allocator,
-      // which might result in a copy not a move.
-      void
-      _M_move_assign(_Rb_tree&, std::false_type);
-#endif
-# 1362 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 1364 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    public:
-      /// Re-insert an extracted node.
-      insert_return_type
-      _M_reinsert_node_unique(node_type&& __nh)
-      {
-	insert_return_type __ret;
-	if (__nh.empty())
-	  __ret.position = end();
-	else
-	  {
-	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
-
-	    auto __res = _M_get_insert_unique_pos(__nh._M_key());
-	    if (__res.second)
-	      {
-		__ret.position
-		  = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
-		__nh._M_ptr = nullptr;
-		__ret.inserted = true;
-	      }
-	    else
-	      {
-		__ret.node = std::move(__nh);
-		__ret.position = iterator(__res.first);
-		__ret.inserted = false;
-	      }
-	  }
-	return __ret;
-      }
-
-      /// Re-insert an extracted node.
-      iterator
-      _M_reinsert_node_equal(node_type&& __nh)
-      {
-	iterator __ret;
-	if (__nh.empty())
-	  __ret = end();
-	else
-	  {
-	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
-	    auto __res = _M_get_insert_equal_pos(__nh._M_key());
-	    if (__res.second)
-	      __ret = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
-	    else
-	      __ret = _M_insert_equal_lower_node(__nh._M_ptr);
-	    __nh._M_ptr = nullptr;
-	  }
-	return __ret;
-      }
-
-      /// Re-insert an extracted node.
-      iterator
-      _M_reinsert_node_hint_unique(const_iterator __hint, node_type&& __nh)
-      {
-	iterator __ret;
-	if (__nh.empty())
-	  __ret = end();
-	else
-	  {
-	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
-	    auto __res = _M_get_insert_hint_unique_pos(__hint, __nh._M_key());
-	    if (__res.second)
-	      {
-		__ret = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
-		__nh._M_ptr = nullptr;
-	      }
-	    else
-	      __ret = iterator(__res.first);
-	  }
-	return __ret;
-      }
-
-      /// Re-insert an extracted node.
-      iterator
-      _M_reinsert_node_hint_equal(const_iterator __hint, node_type&& __nh)
-      {
-	iterator __ret;
-	if (__nh.empty())
-	  __ret = end();
-	else
-	  {
-	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
-	    auto __res = _M_get_insert_hint_equal_pos(__hint, __nh._M_key());
-	    if (__res.second)
-	      __ret = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
-	    else
-	      __ret = _M_insert_equal_lower_node(__nh._M_ptr);
-	    __nh._M_ptr = nullptr;
-	  }
-	return __ret;
-      }
-
-      /// Extract a node.
-      node_type
-      extract(const_iterator __pos)
-      {
-	auto __ptr = _Rb_tree_rebalance_for_erase(
-	    __pos._M_const_cast()._M_node, _M_impl._M_header);
-	--_M_impl._M_node_count;
-	return { static_cast<_Link_type>(__ptr), _M_get_Node_allocator() };
-      }
-
-      /// Extract a node.
-      node_type
-      extract(const key_type& __k)
-      {
-	node_type __nh;
-	auto __pos = find(__k);
-	if (__pos != end())
-	  __nh = extract(const_iterator(__pos));
-	return __nh;
-      }
-
-      template<typename _Compare2>
-	using _Compatible_tree
-	  = _Rb_tree<_Key, _Val, _KeyOfValue, _Compare2, _Alloc>;
-
-      template<typename, typename>
-	friend class _Rb_tree_merge_helper;
-
-      /// Merge from a compatible container into one with unique keys.
-      template<typename _Compare2>
-	void
-	_M_merge_unique(_Compatible_tree<_Compare2>& __src) noexcept
-	{
-	  using _Merge_helper = _Rb_tree_merge_helper<_Rb_tree, _Compare2>;
-	  for (auto __i = __src.begin(), __end = __src.end(); __i != __end;)
-	    {
-	      auto __pos = __i++;
-	      auto __res = _M_get_insert_unique_pos(_KeyOfValue()(*__pos));
-	      if (__res.second)
-		{
-		  auto& __src_impl = _Merge_helper::_S_get_impl(__src);
-		  auto __ptr = _Rb_tree_rebalance_for_erase(
-		      __pos._M_node, __src_impl._M_header);
-		  --__src_impl._M_node_count;
-		  _M_insert_node(__res.first, __res.second,
-				 static_cast<_Link_type>(__ptr));
-		}
-	    }
-	}
-
-      /// Merge from a compatible container into one with equivalent keys.
-      template<typename _Compare2>
-	void
-	_M_merge_equal(_Compatible_tree<_Compare2>& __src) noexcept
-	{
-	  using _Merge_helper = _Rb_tree_merge_helper<_Rb_tree, _Compare2>;
-	  for (auto __i = __src.begin(), __end = __src.end(); __i != __end;)
-	    {
-	      auto __pos = __i++;
-	      auto __res = _M_get_insert_equal_pos(_KeyOfValue()(*__pos));
-	      if (__res.second)
-		{
-		  auto& __src_impl = _Merge_helper::_S_get_impl(__src);
-		  auto __ptr = _Rb_tree_rebalance_for_erase(
-		      __pos._M_node, __src_impl._M_header);
-		  --__src_impl._M_node_count;
-		  _M_insert_node(__res.first, __res.second,
-				 static_cast<_Link_type>(__ptr));
-		}
-	    }
-	}
-#endif // C++17
-# 1528 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    };
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline bool
-    operator==(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
-	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
-    {
-      return __x.size() == __y.size()
-	     && std::equal(__x.begin(), __x.end(), __y.begin());
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline bool
-    operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
-	      const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
-    {
-      return std::lexicographical_compare(__x.begin(), __x.end(), 
-					  __y.begin(), __y.end());
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline bool
-    operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
-	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
-    { return !(__x == __y); }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline bool
-    operator>(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
-	      const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
-    { return __y < __x; }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline bool
-    operator<=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
-	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
-    { return !(__y < __x); }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline bool
-    operator>=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
-	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
-    { return !(__x < __y); }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline void
-    swap(_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
-	 _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
-    { __x.swap(__y); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1586 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _Rb_tree(_Rb_tree&& __x, _Node_allocator&& __a)
-    : _M_impl(__x._M_impl._M_key_compare, std::move(__a))
-    {
-      using __eq = typename _Alloc_traits::is_always_equal;
-      if (__x._M_root() != nullptr)
-	_M_move_data(__x, __eq());
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_move_data(_Rb_tree& __x, std::false_type)
-    {
-      if (_M_get_Node_allocator() == __x._M_get_Node_allocator())
-	_M_move_data(__x, std::true_type());
-      else
-	{
-	  _Alloc_node __an(*this);
-	  auto __lbd =
-	    [&__an](const value_type& __cval)
-	    {
-	      auto& __val = const_cast<value_type&>(__cval);
-	      return __an(std::move_if_noexcept(__val));
-	    };
-	  _M_root() = _M_copy(__x, __lbd);
-	}
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_move_assign(_Rb_tree& __x, true_type)
-    {
-      clear();
-      if (__x._M_root() != nullptr)
-	_M_move_data(__x, std::true_type());
-      std::__alloc_on_move(_M_get_Node_allocator(),
-			   __x._M_get_Node_allocator());
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_move_assign(_Rb_tree& __x, false_type)
-    {
-      if (_M_get_Node_allocator() == __x._M_get_Node_allocator())
-	return _M_move_assign(__x, true_type{});
-
-      // Try to move each node reusing existing nodes and copying __x nodes
-      // structure.
-      _Reuse_or_alloc_node __roan(*this);
-      _M_impl._M_reset();
-      if (__x._M_root() != nullptr)
-	{
-	  auto __lbd =
-	    [&__roan](const value_type& __cval)
-	    {
-	      auto& __val = const_cast<value_type&>(__cval);
-	      return __roan(std::move_if_noexcept(__val));
-	    };
-	  _M_root() = _M_copy(__x, __lbd);
-	  __x.clear();
-	}
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    inline _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    operator=(_Rb_tree&& __x)
-    noexcept(_Alloc_traits::_S_nothrow_move()
-	     && is_nothrow_move_assignable<_Compare>::value)
-    {
-      _M_impl._M_key_compare = std::move(__x._M_impl._M_key_compare);
-      _M_move_assign(__x, __bool_constant<_Alloc_traits::_S_nothrow_move()>());
-      return *this;
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    template<typename _Iterator>
-      void
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_assign_unique(_Iterator __first, _Iterator __last)
-      {
-	_Reuse_or_alloc_node __roan(*this);
-	_M_impl._M_reset();
-	for (; __first != __last; ++__first)
-	  _M_insert_unique_(end(), *__first, __roan);
-      }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    template<typename _Iterator>
-      void
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_assign_equal(_Iterator __first, _Iterator __last)
-      {
-	_Reuse_or_alloc_node __roan(*this);
-	_M_impl._M_reset();
-	for (; __first != __last; ++__first)
-	  _M_insert_equal_(end(), *__first, __roan);
-      }
-#endif
-# 1696 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    operator=(const _Rb_tree& __x)
-    {
-      if (this != &__x)
-	{
-	  // Note that _Key may be a constant type.
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1707 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-	  if (_Alloc_traits::_S_propagate_on_copy_assign())
-	    {
-	      auto& __this_alloc = this->_M_get_Node_allocator();
-	      auto& __that_alloc = __x._M_get_Node_allocator();
-	      if (!_Alloc_traits::_S_always_equal()
-		  && __this_alloc != __that_alloc)
-		{
-		  // Replacement allocator cannot free existing storage, we need
-		  // to erase nodes first.
-		  clear();
-		  std::__alloc_on_copy(__this_alloc, __that_alloc);
-		}
-	    }
-#endif
-# 1721 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-	  _Reuse_or_alloc_node __roan(*this);
-	  _M_impl._M_reset();
-	  _M_impl._M_key_compare = __x._M_impl._M_key_compare;
-	  if (__x._M_root() != 0)
-	    _M_root() = _M_copy(__x, __roan);
-	}
-
-      return *this;
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1735 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _Arg, typename _NodeGen>
-#else
-# 1737 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _NodeGen>
-#endif
-# 1739 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_insert_(_Base_ptr __x, _Base_ptr __p,
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1743 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-		 _Arg&& __v,
-#else
-# 1745 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-		 const _Val& __v,
-#endif
-# 1747 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-		 _NodeGen& __node_gen)
-      {
-	bool __insert_left = (__x != 0 || __p == _M_end()
-			      || _M_impl._M_key_compare(_KeyOfValue()(__v),
-							_S_key(__p)));
-
-	_Link_type __z = __node_gen(_GLIBCXX_FORWARD(_Arg, __v));
-
-	_Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
-				      this->_M_impl._M_header);
-	++_M_impl._M_node_count;
-	return iterator(__z);
-      }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1764 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _Arg>
-#endif
-# 1766 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1769 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_lower(_Base_ptr __p, _Arg&& __v)
-#else
-# 1771 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_lower(_Base_ptr __p, const _Val& __v)
-#endif
-# 1773 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    {
-      bool __insert_left = (__p == _M_end()
-			    || !_M_impl._M_key_compare(_S_key(__p),
-						       _KeyOfValue()(__v)));
-
-      _Link_type __z = _M_create_node(_GLIBCXX_FORWARD(_Arg, __v));
-
-      _Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
-				    this->_M_impl._M_header);
-      ++_M_impl._M_node_count;
-      return iterator(__z);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1789 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _Arg>
-#endif
-# 1791 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 1794 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_equal_lower(_Arg&& __v)
-#else
-# 1796 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_equal_lower(const _Val& __v)
-#endif
-# 1798 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    {
-      _Link_type __x = _M_begin();
-      _Base_ptr __y = _M_end();
-      while (__x != 0)
-	{
-	  __y = __x;
-	  __x = !_M_impl._M_key_compare(_S_key(__x), _KeyOfValue()(__v)) ?
-	        _S_left(__x) : _S_right(__x);
-	}
-      return _M_insert_lower(__y, _GLIBCXX_FORWARD(_Arg, __v));
-    }
-
-  template<typename _Key, typename _Val, typename _KoV,
-	   typename _Compare, typename _Alloc>
-    template<typename _NodeGen>
-      typename _Rb_tree<_Key, _Val, _KoV, _Compare, _Alloc>::_Link_type
-      _Rb_tree<_Key, _Val, _KoV, _Compare, _Alloc>::
-      _M_copy(_Const_Link_type __x, _Base_ptr __p, _NodeGen& __node_gen)
-      {
-	// Structural copy. __x and __p must be non-null.
-	_Link_type __top = _M_clone_node(__x, __node_gen);
-	__top->_M_parent = __p;
-
-	__try
-	  {
-	    if (__x->_M_right)
-	      __top->_M_right = _M_copy(_S_right(__x), __top, __node_gen);
-	    __p = __top;
-	    __x = _S_left(__x);
-
-	    while (__x != 0)
-	      {
-		_Link_type __y = _M_clone_node(__x, __node_gen);
-		__p->_M_left = __y;
-		__y->_M_parent = __p;
-		if (__x->_M_right)
-		  __y->_M_right = _M_copy(_S_right(__x), __y, __node_gen);
-		__p = __y;
-		__x = _S_left(__x);
-	      }
-	  }
-	__catch(...)
-	  {
-	    _M_erase(__top);
-	    __throw_exception_again;
-	  }
-	return __top;
-      }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_erase(_Link_type __x)
-    {
-      // Erase without rebalancing.
-      while (__x != 0)
-	{
-	  _M_erase(_S_right(__x));
-	  _Link_type __y = _S_left(__x);
-	  _M_drop_node(__x);
-	  __x = __y;
-	}
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue,
-		      _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_lower_bound(_Link_type __x, _Base_ptr __y,
-		   const _Key& __k)
-    {
-      while (__x != 0)
-	if (!_M_impl._M_key_compare(_S_key(__x), __k))
-	  __y = __x, __x = _S_left(__x);
-	else
-	  __x = _S_right(__x);
-      return iterator(__y);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue,
-		      _Compare, _Alloc>::const_iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_lower_bound(_Const_Link_type __x, _Const_Base_ptr __y,
-		   const _Key& __k) const
-    {
-      while (__x != 0)
-	if (!_M_impl._M_key_compare(_S_key(__x), __k))
-	  __y = __x, __x = _S_left(__x);
-	else
-	  __x = _S_right(__x);
-      return const_iterator(__y);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue,
-		      _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_upper_bound(_Link_type __x, _Base_ptr __y,
-		   const _Key& __k)
-    {
-      while (__x != 0)
-	if (_M_impl._M_key_compare(__k, _S_key(__x)))
-	  __y = __x, __x = _S_left(__x);
-	else
-	  __x = _S_right(__x);
-      return iterator(__y);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue,
-		      _Compare, _Alloc>::const_iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_upper_bound(_Const_Link_type __x, _Const_Base_ptr __y,
-		   const _Key& __k) const
-    {
-      while (__x != 0)
-	if (_M_impl._M_key_compare(__k, _S_key(__x)))
-	  __y = __x, __x = _S_left(__x);
-	else
-	  __x = _S_right(__x);
-      return const_iterator(__y);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::iterator,
-	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::iterator>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    equal_range(const _Key& __k)
-    {
-      _Link_type __x = _M_begin();
-      _Base_ptr __y = _M_end();
-      while (__x != 0)
-	{
-	  if (_M_impl._M_key_compare(_S_key(__x), __k))
-	    __x = _S_right(__x);
-	  else if (_M_impl._M_key_compare(__k, _S_key(__x)))
-	    __y = __x, __x = _S_left(__x);
-	  else
-	    {
-	      _Link_type __xu(__x);
-	      _Base_ptr __yu(__y);
-	      __y = __x, __x = _S_left(__x);
-	      __xu = _S_right(__xu);
-	      return pair<iterator,
-		          iterator>(_M_lower_bound(__x, __y, __k),
-				    _M_upper_bound(__xu, __yu, __k));
-	    }
-	}
-      return pair<iterator, iterator>(iterator(__y),
-				      iterator(__y));
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::const_iterator,
-	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::const_iterator>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    equal_range(const _Key& __k) const
-    {
-      _Const_Link_type __x = _M_begin();
-      _Const_Base_ptr __y = _M_end();
-      while (__x != 0)
-	{
-	  if (_M_impl._M_key_compare(_S_key(__x), __k))
-	    __x = _S_right(__x);
-	  else if (_M_impl._M_key_compare(__k, _S_key(__x)))
-	    __y = __x, __x = _S_left(__x);
-	  else
-	    {
-	      _Const_Link_type __xu(__x);
-	      _Const_Base_ptr __yu(__y);
-	      __y = __x, __x = _S_left(__x);
-	      __xu = _S_right(__xu);
-	      return pair<const_iterator,
-		          const_iterator>(_M_lower_bound(__x, __y, __k),
-					  _M_upper_bound(__xu, __yu, __k));
-	    }
-	}
-      return pair<const_iterator, const_iterator>(const_iterator(__y),
-						  const_iterator(__y));
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    swap(_Rb_tree& __t)
-    _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value)
-    {
-      if (_M_root() == 0)
-	{
-	  if (__t._M_root() != 0)
-	    _M_impl._M_move_data(__t._M_impl);
-	}
-      else if (__t._M_root() == 0)
-	__t._M_impl._M_move_data(_M_impl);
-      else
-	{
-	  std::swap(_M_root(),__t._M_root());
-	  std::swap(_M_leftmost(),__t._M_leftmost());
-	  std::swap(_M_rightmost(),__t._M_rightmost());
-	  
-	  _M_root()->_M_parent = _M_end();
-	  __t._M_root()->_M_parent = __t._M_end();
-	  std::swap(this->_M_impl._M_node_count, __t._M_impl._M_node_count);
-	}
-      // No need to swap header's color as it does not change.
-      std::swap(this->_M_impl._M_key_compare, __t._M_impl._M_key_compare);
-
-      _Alloc_traits::_S_on_swap(_M_get_Node_allocator(),
-				__t._M_get_Node_allocator());
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr,
-	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_get_insert_unique_pos(const key_type& __k)
-    {
-      typedef pair<_Base_ptr, _Base_ptr> _Res;
-      _Link_type __x = _M_begin();
-      _Base_ptr __y = _M_end();
-      bool __comp = true;
-      while (__x != 0)
-	{
-	  __y = __x;
-	  __comp = _M_impl._M_key_compare(__k, _S_key(__x));
-	  __x = __comp ? _S_left(__x) : _S_right(__x);
-	}
-      iterator __j = iterator(__y);
-      if (__comp)
-	{
-	  if (__j == begin())
-	    return _Res(__x, __y);
-	  else
-	    --__j;
-	}
-      if (_M_impl._M_key_compare(_S_key(__j._M_node), __k))
-	return _Res(__x, __y);
-      return _Res(__j._M_node, 0);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr,
-	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_get_insert_equal_pos(const key_type& __k)
-    {
-      typedef pair<_Base_ptr, _Base_ptr> _Res;
-      _Link_type __x = _M_begin();
-      _Base_ptr __y = _M_end();
-      while (__x != 0)
-	{
-	  __y = __x;
-	  __x = _M_impl._M_key_compare(__k, _S_key(__x)) ?
-	        _S_left(__x) : _S_right(__x);
-	}
-      return _Res(__x, __y);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2078 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _Arg>
-#endif
-# 2080 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::iterator, bool>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2084 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_unique(_Arg&& __v)
-#else
-# 2086 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_unique(const _Val& __v)
-#endif
-# 2088 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    {
-      typedef pair<iterator, bool> _Res;
-      pair<_Base_ptr, _Base_ptr> __res
-	= _M_get_insert_unique_pos(_KeyOfValue()(__v));
-
-      if (__res.second)
-	{
-	  _Alloc_node __an(*this);
-	  return _Res(_M_insert_(__res.first, __res.second,
-				 _GLIBCXX_FORWARD(_Arg, __v), __an),
-		      true);
-	}
-
-      return _Res(iterator(__res.first), false);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2107 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _Arg>
-#endif
-# 2109 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2112 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_equal(_Arg&& __v)
-#else
-# 2114 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    _M_insert_equal(const _Val& __v)
-#endif
-# 2116 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    {
-      pair<_Base_ptr, _Base_ptr> __res
-	= _M_get_insert_equal_pos(_KeyOfValue()(__v));
-      _Alloc_node __an(*this);
-      return _M_insert_(__res.first, __res.second,
-			_GLIBCXX_FORWARD(_Arg, __v), __an);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr,
-         typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_get_insert_hint_unique_pos(const_iterator __position,
-				  const key_type& __k)
-    {
-      iterator __pos = __position._M_const_cast();
-      typedef pair<_Base_ptr, _Base_ptr> _Res;
-
-      // end()
-      if (__pos._M_node == _M_end())
-	{
-	  if (size() > 0
-	      && _M_impl._M_key_compare(_S_key(_M_rightmost()), __k))
-	    return _Res(0, _M_rightmost());
-	  else
-	    return _M_get_insert_unique_pos(__k);
-	}
-      else if (_M_impl._M_key_compare(__k, _S_key(__pos._M_node)))
-	{
-	  // First, try before...
-	  iterator __before = __pos;
-	  if (__pos._M_node == _M_leftmost()) // begin()
-	    return _Res(_M_leftmost(), _M_leftmost());
-	  else if (_M_impl._M_key_compare(_S_key((--__before)._M_node), __k))
-	    {
-	      if (_S_right(__before._M_node) == 0)
-		return _Res(0, __before._M_node);
-	      else
-		return _Res(__pos._M_node, __pos._M_node);
-	    }
-	  else
-	    return _M_get_insert_unique_pos(__k);
-	}
-      else if (_M_impl._M_key_compare(_S_key(__pos._M_node), __k))
-	{
-	  // ... then try after.
-	  iterator __after = __pos;
-	  if (__pos._M_node == _M_rightmost())
-	    return _Res(0, _M_rightmost());
-	  else if (_M_impl._M_key_compare(__k, _S_key((++__after)._M_node)))
-	    {
-	      if (_S_right(__pos._M_node) == 0)
-		return _Res(0, __pos._M_node);
-	      else
-		return _Res(__after._M_node, __after._M_node);
-	    }
-	  else
-	    return _M_get_insert_unique_pos(__k);
-	}
-      else
-	// Equivalent keys.
-	return _Res(__pos._M_node, 0);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2186 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _Arg, typename _NodeGen>
-#else
-# 2188 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _NodeGen>
-#endif
-# 2190 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_insert_unique_(const_iterator __position,
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2194 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-			_Arg&& __v,
-#else
-# 2196 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-			const _Val& __v,
-#endif
-# 2198 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-			_NodeGen& __node_gen)
-    {
-      pair<_Base_ptr, _Base_ptr> __res
-	= _M_get_insert_hint_unique_pos(__position, _KeyOfValue()(__v));
-
-      if (__res.second)
-	return _M_insert_(__res.first, __res.second,
-			  _GLIBCXX_FORWARD(_Arg, __v),
-			  __node_gen);
-      return iterator(__res.first);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr,
-         typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			   _Compare, _Alloc>::_Base_ptr>
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_get_insert_hint_equal_pos(const_iterator __position, const key_type& __k)
-    {
-      iterator __pos = __position._M_const_cast();
-      typedef pair<_Base_ptr, _Base_ptr> _Res;
-
-      // end()
-      if (__pos._M_node == _M_end())
-	{
-	  if (size() > 0
-	      && !_M_impl._M_key_compare(__k, _S_key(_M_rightmost())))
-	    return _Res(0, _M_rightmost());
-	  else
-	    return _M_get_insert_equal_pos(__k);
-	}
-      else if (!_M_impl._M_key_compare(_S_key(__pos._M_node), __k))
-	{
-	  // First, try before...
-	  iterator __before = __pos;
-	  if (__pos._M_node == _M_leftmost()) // begin()
-	    return _Res(_M_leftmost(), _M_leftmost());
-	  else if (!_M_impl._M_key_compare(__k, _S_key((--__before)._M_node)))
-	    {
-	      if (_S_right(__before._M_node) == 0)
-		return _Res(0, __before._M_node);
-	      else
-		return _Res(__pos._M_node, __pos._M_node);
-	    }
-	  else
-	    return _M_get_insert_equal_pos(__k);
-	}
-      else
-	{
-	  // ... then try after.  
-	  iterator __after = __pos;
-	  if (__pos._M_node == _M_rightmost())
-	    return _Res(0, _M_rightmost());
-	  else if (!_M_impl._M_key_compare(_S_key((++__after)._M_node), __k))
-	    {
-	      if (_S_right(__pos._M_node) == 0)
-		return _Res(0, __pos._M_node);
-	      else
-		return _Res(__after._M_node, __after._M_node);
-	    }
-	  else
-	    return _Res(0, 0);
-	}
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2268 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _Arg, typename _NodeGen>
-#else
-# 2270 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-    template<typename _NodeGen>
-#endif
-# 2272 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_insert_equal_(const_iterator __position,
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2276 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-		       _Arg&& __v,
-#else
-# 2278 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-		       const _Val& __v,
-#endif
-# 2280 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-		       _NodeGen& __node_gen)
-      {
-	pair<_Base_ptr, _Base_ptr> __res
-	  = _M_get_insert_hint_equal_pos(__position, _KeyOfValue()(__v));
-
-	if (__res.second)
-	  return _M_insert_(__res.first, __res.second,
-			    _GLIBCXX_FORWARD(_Arg, __v),
-			    __node_gen);
-
-	return _M_insert_equal_lower(_GLIBCXX_FORWARD(_Arg, __v));
-      }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 2294 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_insert_node(_Base_ptr __x, _Base_ptr __p, _Link_type __z)
-    {
-      bool __insert_left = (__x != 0 || __p == _M_end()
-			    || _M_impl._M_key_compare(_S_key(__z),
-						      _S_key(__p)));
-
-      _Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
-				    this->_M_impl._M_header);
-      ++_M_impl._M_node_count;
-      return iterator(__z);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_insert_lower_node(_Base_ptr __p, _Link_type __z)
-    {
-      bool __insert_left = (__p == _M_end()
-			    || !_M_impl._M_key_compare(_S_key(__p),
-						       _S_key(__z)));
-
-      _Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
-				    this->_M_impl._M_header);
-      ++_M_impl._M_node_count;
-      return iterator(__z);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_insert_equal_lower_node(_Link_type __z)
-    {
-      _Link_type __x = _M_begin();
-      _Base_ptr __y = _M_end();
-      while (__x != 0)
-	{
-	  __y = __x;
-	  __x = !_M_impl._M_key_compare(_S_key(__x), _S_key(__z)) ?
-	        _S_left(__x) : _S_right(__x);
-	}
-      return _M_insert_lower_node(__y, __z);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    template<typename... _Args>
-      pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
-			     _Compare, _Alloc>::iterator, bool>
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_emplace_unique(_Args&&... __args)
-      {
-	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
-
-	__try
-	  {
-	    typedef pair<iterator, bool> _Res;
-	    auto __res = _M_get_insert_unique_pos(_S_key(__z));
-	    if (__res.second)
-	      return _Res(_M_insert_node(__res.first, __res.second, __z), true);
-	
-	    _M_drop_node(__z);
-	    return _Res(iterator(__res.first), false);
-	  }
-	__catch(...)
-	  {
-	    _M_drop_node(__z);
-	    __throw_exception_again;
-	  }
-      }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    template<typename... _Args>
-      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_emplace_equal(_Args&&... __args)
-      {
-	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
-
-	__try
-	  {
-	    auto __res = _M_get_insert_equal_pos(_S_key(__z));
-	    return _M_insert_node(__res.first, __res.second, __z);
-	  }
-	__catch(...)
-	  {
-	    _M_drop_node(__z);
-	    __throw_exception_again;
-	  }
-      }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    template<typename... _Args>
-      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_emplace_hint_unique(const_iterator __pos, _Args&&... __args)
-      {
-	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
-
-	__try
-	  {
-	    auto __res = _M_get_insert_hint_unique_pos(__pos, _S_key(__z));
-
-	    if (__res.second)
-	      return _M_insert_node(__res.first, __res.second, __z);
-
-	    _M_drop_node(__z);
-	    return iterator(__res.first);
-	  }
-	__catch(...)
-	  {
-	    _M_drop_node(__z);
-	    __throw_exception_again;
-	  }
-      }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    template<typename... _Args>
-      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
-      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-      _M_emplace_hint_equal(const_iterator __pos, _Args&&... __args)
-      {
-	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
-
-	__try
-	  {
-	    auto __res = _M_get_insert_hint_equal_pos(__pos, _S_key(__z));
-
-	    if (__res.second)
-	      return _M_insert_node(__res.first, __res.second, __z);
-
-	    return _M_insert_equal_lower_node(__z);
-	  }
-	__catch(...)
-	  {
-	    _M_drop_node(__z);
-	    __throw_exception_again;
-	  }
-      }
-#endif
-# 2442 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-  template<typename _Key, typename _Val, typename _KoV,
-           typename _Cmp, typename _Alloc>
-    template<class _II>
-      void
-      _Rb_tree<_Key, _Val, _KoV, _Cmp, _Alloc>::
-      _M_insert_unique(_II __first, _II __last)
-      {
-	_Alloc_node __an(*this);
-	for (; __first != __last; ++__first)
-	  _M_insert_unique_(end(), *__first, __an);
-      }
-
-  template<typename _Key, typename _Val, typename _KoV,
-           typename _Cmp, typename _Alloc>
-    template<class _II>
-      void
-      _Rb_tree<_Key, _Val, _KoV, _Cmp, _Alloc>::
-      _M_insert_equal(_II __first, _II __last)
-      {
-	_Alloc_node __an(*this);
-	for (; __first != __last; ++__first)
-	  _M_insert_equal_(end(), *__first, __an);
-      }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_erase_aux(const_iterator __position)
-    {
-      _Link_type __y =
-	static_cast<_Link_type>(_Rb_tree_rebalance_for_erase
-				(const_cast<_Base_ptr>(__position._M_node),
-				 this->_M_impl._M_header));
-      _M_drop_node(__y);
-      --_M_impl._M_node_count;
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    _M_erase_aux(const_iterator __first, const_iterator __last)
-    {
-      if (__first == begin() && __last == end())
-	clear();
-      else
-	while (__first != __last)
-	  _M_erase_aux(__first++);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    erase(const _Key& __x)
-    {
-      pair<iterator, iterator> __p = equal_range(__x);
-      const size_type __old_size = size();
-      _M_erase_aux(__p.first, __p.second);
-      return __old_size - size();
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    void
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    erase(const _Key* __first, const _Key* __last)
-    {
-      while (__first != __last)
-	erase(*__first++);
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue,
-		      _Compare, _Alloc>::iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    find(const _Key& __k)
-    {
-      iterator __j = _M_lower_bound(_M_begin(), _M_end(), __k);
-      return (__j == end()
-	      || _M_impl._M_key_compare(__k,
-					_S_key(__j._M_node))) ? end() : __j;
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue,
-		      _Compare, _Alloc>::const_iterator
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    find(const _Key& __k) const
-    {
-      const_iterator __j = _M_lower_bound(_M_begin(), _M_end(), __k);
-      return (__j == end()
-	      || _M_impl._M_key_compare(__k, 
-					_S_key(__j._M_node))) ? end() : __j;
-    }
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type
-    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
-    count(const _Key& __k) const
-    {
-      pair<const_iterator, const_iterator> __p = equal_range(__k);
-      const size_type __n = std::distance(__p.first, __p.second);
-      return __n;
-    }
-
-  _GLIBCXX_PURE unsigned int
-  _Rb_tree_black_count(const _Rb_tree_node_base* __node,
-                       const _Rb_tree_node_base* __root) throw ();
-
-  template<typename _Key, typename _Val, typename _KeyOfValue,
-           typename _Compare, typename _Alloc>
-    bool
-    _Rb_tree<_Key,_Val,_KeyOfValue,_Compare,_Alloc>::__rb_verify() const
-    {
-      if (_M_impl._M_node_count == 0 || begin() == end())
-	return _M_impl._M_node_count == 0 && begin() == end()
-	       && this->_M_impl._M_header._M_left == _M_end()
-	       && this->_M_impl._M_header._M_right == _M_end();
-
-      unsigned int __len = _Rb_tree_black_count(_M_leftmost(), _M_root());
-      for (const_iterator __it = begin(); __it != end(); ++__it)
-	{
-	  _Const_Link_type __x = static_cast<_Const_Link_type>(__it._M_node);
-	  _Const_Link_type __L = _S_left(__x);
-	  _Const_Link_type __R = _S_right(__x);
-
-	  if (__x->_M_color == _S_red)
-	    if ((__L && __L->_M_color == _S_red)
-		|| (__R && __R->_M_color == _S_red))
-	      return false;
-
-	  if (__L && _M_impl._M_key_compare(_S_key(__x), _S_key(__L)))
-	    return false;
-	  if (__R && _M_impl._M_key_compare(_S_key(__R), _S_key(__x)))
-	    return false;
-
-	  if (!__L && !__R && _Rb_tree_black_count(__x, _M_root()) != __len)
-	    return false;
-	}
-
-      if (_M_leftmost() != _Rb_tree_node_base::_S_minimum(_M_root()))
-	return false;
-      if (_M_rightmost() != _Rb_tree_node_base::_S_maximum(_M_root()))
-	return false;
-      return true;
-    }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 2596 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-  // Allow access to internals of compatible _Rb_tree specializations.
-  template<typename _Key, typename _Val, typename _Sel, typename _Cmp1,
-	   typename _Alloc, typename _Cmp2>
-    struct _Rb_tree_merge_helper<_Rb_tree<_Key, _Val, _Sel, _Cmp1, _Alloc>,
-				 _Cmp2>
-    {
-    private:
-      friend class _Rb_tree<_Key, _Val, _Sel, _Cmp1, _Alloc>;
-
-      static auto&
-      _S_get_impl(_Rb_tree<_Key, _Val, _Sel, _Cmp2, _Alloc>& __tree)
-      { return __tree._M_impl; }
-    };
-#endif // C++17
-# 2610 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-
-_GLIBCXX_END_NAMESPACE_VERSION
-} // namespace
-
-#endif
-# 2615 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
-# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 2 3
 #if 0 /* expanded by -frewrite-includes */
-#include <bits/stl_set.h>
+#pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 1 3
-// Set implementation -*- C++ -*-
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+# define __cpp_lib_node_extract 201606
+
+#if 0 /* expanded by -frewrite-includes */
+#include <optional>
+#endif /* expanded by -frewrite-includes */
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 1 3
+// <optional> -*- C++ -*-
+
+// Copyright (C) 2013-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file include/optional
+ *  This is a Standard C++ Library header.
+ */
+
+#ifndef _GLIBCXX_OPTIONAL
+#define _GLIBCXX_OPTIONAL 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 33 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201703L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+
+#if 0 /* expanded by -frewrite-includes */
+#include <utility>
+#endif /* expanded by -frewrite-includes */
+# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <type_traits>
+#endif /* expanded by -frewrite-includes */
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <stdexcept>
+#endif /* expanded by -frewrite-includes */
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 1 3
+// Standard exception classes  -*- C++ -*-
 
 // Copyright (C) 2001-2017 Free Software Foundation, Inc.
 //
@@ -29010,2262 +26308,31 @@ _GLIBCXX_END_NAMESPACE_VERSION
 // see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
 // <http://www.gnu.org/licenses/>.
 
-/*
- *
- * Copyright (c) 1994
- * Hewlett-Packard Company
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Hewlett-Packard Company makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
- *
- *
- * Copyright (c) 1996,1997
- * Silicon Graphics Computer Systems, Inc.
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Silicon Graphics makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
+/** @file include/stdexcept
+ *  This is a Standard C++ Library header.
  */
 
-/** @file bits/stl_set.h
- *  This is an internal header file, included by other library headers.
- *  Do not attempt to use it directly. @headername{set}
- */
-
-#ifndef _STL_SET_H
-#define _STL_SET_H 1
-
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/concept_check.h>
-#endif /* expanded by -frewrite-includes */
-# 59 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-# 60 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
-#endif /* expanded by -frewrite-includes */
-# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-#endif
-# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-namespace std _GLIBCXX_VISIBILITY(default)
-{
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
-
-  template<typename _Key, typename _Compare, typename _Alloc>
-    class multiset;
-
-  /**
-   *  @brief A standard container made up of unique keys, which can be
-   *  retrieved in logarithmic time.
-   *
-   *  @ingroup associative_containers
-   *
-   *  @tparam _Key  Type of key objects.
-   *  @tparam _Compare  Comparison function object type, defaults to less<_Key>.
-   *  @tparam _Alloc  Allocator type, defaults to allocator<_Key>.
-   *
-   *  Meets the requirements of a <a href="tables.html#65">container</a>, a
-   *  <a href="tables.html#66">reversible container</a>, and an
-   *  <a href="tables.html#69">associative container</a> (using unique keys).
-   *
-   *  Sets support bidirectional iterators.
-   *
-   *  The private tree data is declared exactly the same way for set and
-   *  multiset; the distinction is made entirely in how the tree functions are
-   *  called (*_unique versus *_equal, same as the standard).
-  */
-  template<typename _Key, typename _Compare = std::less<_Key>,
-	   typename _Alloc = std::allocator<_Key> >
-    class set
-    {
-#ifdef _GLIBCXX_CONCEPT_CHECKS
-      // concept requirements
-      typedef typename _Alloc::value_type		_Alloc_value_type;
-#if 0 /* disabled by -frewrite-includes */
-# if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 99 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      __glibcxx_class_requires(_Key, _SGIAssignableConcept)
-# endif
-# 101 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      __glibcxx_class_requires4(_Compare, bool, _Key, _Key,
-				_BinaryFunctionConcept)
-      __glibcxx_class_requires2(_Key, _Alloc_value_type, _SameTypeConcept)
-#endif
-# 105 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-    public:
-      // typedefs:
-      //@{
-      /// Public typedefs.
-      typedef _Key     key_type;
-      typedef _Key     value_type;
-      typedef _Compare key_compare;
-      typedef _Compare value_compare;
-      typedef _Alloc   allocator_type;
-      //@}
-
-    private:
-      typedef typename __gnu_cxx::__alloc_traits<_Alloc>::template
-	rebind<_Key>::other _Key_alloc_type;
-
-      typedef _Rb_tree<key_type, value_type, _Identity<value_type>,
-		       key_compare, _Key_alloc_type> _Rep_type;
-      _Rep_type _M_t;  // Red-black tree representing set.
-
-      typedef __gnu_cxx::__alloc_traits<_Key_alloc_type> _Alloc_traits;
-
-    public:
-      //@{
-      ///  Iterator-related typedefs.
-      typedef typename _Alloc_traits::pointer		 pointer;
-      typedef typename _Alloc_traits::const_pointer	 const_pointer;
-      typedef typename _Alloc_traits::reference		 reference;
-      typedef typename _Alloc_traits::const_reference	 const_reference;
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 103. set::iterator is required to be modifiable,
-      // but this allows modification of keys.
-      typedef typename _Rep_type::const_iterator	 iterator;
-      typedef typename _Rep_type::const_iterator	 const_iterator;
-      typedef typename _Rep_type::const_reverse_iterator reverse_iterator;
-      typedef typename _Rep_type::const_reverse_iterator const_reverse_iterator;
-      typedef typename _Rep_type::size_type		 size_type;
-      typedef typename _Rep_type::difference_type	 difference_type;
-      //@}
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 146 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      using node_type = typename _Rep_type::node_type;
-      using insert_return_type = typename _Rep_type::insert_return_type;
-#endif
-# 149 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      // allocation/deallocation
-      /**
-       *  @brief  Default constructor creates no elements.
-       */
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 155 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      set() : _M_t() { }
-#else
-# 157 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      set() = default;
-#endif
-# 159 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      /**
-       *  @brief  Creates a %set with no elements.
-       *  @param  __comp  Comparator to use.
-       *  @param  __a  An allocator object.
-       */
-      explicit
-      set(const _Compare& __comp,
-	  const allocator_type& __a = allocator_type())
-      : _M_t(__comp, _Key_alloc_type(__a)) { }
-
-      /**
-       *  @brief  Builds a %set from a range.
-       *  @param  __first  An input iterator.
-       *  @param  __last  An input iterator.
-       *
-       *  Create a %set consisting of copies of the elements from
-       *  [__first,__last).  This is linear in N if the range is
-       *  already sorted, and NlogN otherwise (where N is
-       *  distance(__first,__last)).
-       */
-      template<typename _InputIterator>
-	set(_InputIterator __first, _InputIterator __last)
-	: _M_t()
-	{ _M_t._M_insert_unique(__first, __last); }
-
-      /**
-       *  @brief  Builds a %set from a range.
-       *  @param  __first  An input iterator.
-       *  @param  __last  An input iterator.
-       *  @param  __comp  A comparison functor.
-       *  @param  __a  An allocator object.
-       *
-       *  Create a %set consisting of copies of the elements from
-       *  [__first,__last).  This is linear in N if the range is
-       *  already sorted, and NlogN otherwise (where N is
-       *  distance(__first,__last)).
-       */
-      template<typename _InputIterator>
-	set(_InputIterator __first, _InputIterator __last,
-	    const _Compare& __comp,
-	    const allocator_type& __a = allocator_type())
-	: _M_t(__comp, _Key_alloc_type(__a))
-	{ _M_t._M_insert_unique(__first, __last); }
-
-      /**
-       *  @brief  %Set copy constructor.
-       *
-       *  Whether the allocator is copied depends on the allocator traits.
-       */
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 210 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      set(const set& __x)
-      : _M_t(__x._M_t) { }
-#else
-# 213 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      set(const set&) = default;
-
-     /**
-       *  @brief %Set move constructor
-       *
-       *  The newly-created %set contains the exact contents of the moved
-       *  instance. The moved instance is a valid, but unspecified, %set.
-       */
-      set(set&&) = default;
-
-      /**
-       *  @brief  Builds a %set from an initializer_list.
-       *  @param  __l  An initializer_list.
-       *  @param  __comp  A comparison functor.
-       *  @param  __a  An allocator object.
-       *
-       *  Create a %set consisting of copies of the elements in the list.
-       *  This is linear in N if the list is already sorted, and NlogN
-       *  otherwise (where N is @a __l.size()).
-       */
-      set(initializer_list<value_type> __l,
-	  const _Compare& __comp = _Compare(),
-	  const allocator_type& __a = allocator_type())
-      : _M_t(__comp, _Key_alloc_type(__a))
-      { _M_t._M_insert_unique(__l.begin(), __l.end()); }
-
-      /// Allocator-extended default constructor.
-      explicit
-      set(const allocator_type& __a)
-      : _M_t(_Compare(), _Key_alloc_type(__a)) { }
-
-      /// Allocator-extended copy constructor.
-      set(const set& __x, const allocator_type& __a)
-      : _M_t(__x._M_t, _Key_alloc_type(__a)) { }
-
-      /// Allocator-extended move constructor.
-      set(set&& __x, const allocator_type& __a)
-      noexcept(is_nothrow_copy_constructible<_Compare>::value
-	       && _Alloc_traits::_S_always_equal())
-      : _M_t(std::move(__x._M_t), _Key_alloc_type(__a)) { }
-
-      /// Allocator-extended initialier-list constructor.
-      set(initializer_list<value_type> __l, const allocator_type& __a)
-      : _M_t(_Compare(), _Key_alloc_type(__a))
-      { _M_t._M_insert_unique(__l.begin(), __l.end()); }
-
-      /// Allocator-extended range constructor.
-      template<typename _InputIterator>
-	set(_InputIterator __first, _InputIterator __last,
-	    const allocator_type& __a)
-	: _M_t(_Compare(), _Key_alloc_type(__a))
-	{ _M_t._M_insert_unique(__first, __last); }
-
-      /**
-       *  The dtor only erases the elements, and note that if the elements
-       *  themselves are pointers, the pointed-to memory is not touched in any
-       *  way. Managing the pointer is the user's responsibility.
-       */
-      ~set() = default;
-#endif
-# 273 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      /**
-       *  @brief  %Set assignment operator.
-       *
-       *  Whether the allocator is copied depends on the allocator traits.
-       */
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 280 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      set&
-      operator=(const set& __x)
-      {
-	_M_t = __x._M_t;
-	return *this;
-      }
-#else
-# 287 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      set&
-      operator=(const set&) = default;
-
-      /// Move assignment operator.
-      set&
-      operator=(set&&) = default;
-
-      /**
-       *  @brief  %Set list assignment operator.
-       *  @param  __l  An initializer_list.
-       *
-       *  This function fills a %set with copies of the elements in the
-       *  initializer list @a __l.
-       *
-       *  Note that the assignment completely changes the %set and
-       *  that the resulting %set's size is the same as the number
-       *  of elements assigned.
-       */
-      set&
-      operator=(initializer_list<value_type> __l)
-      {
-	_M_t._M_assign_unique(__l.begin(), __l.end());
-	return *this;
-      }
-#endif
-# 312 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      // accessors:
-
-      ///  Returns the comparison object with which the %set was constructed.
-      key_compare
-      key_comp() const
-      { return _M_t.key_comp(); }
-      ///  Returns the comparison object with which the %set was constructed.
-      value_compare
-      value_comp() const
-      { return _M_t.key_comp(); }
-      ///  Returns the allocator object with which the %set was constructed.
-      allocator_type
-      get_allocator() const _GLIBCXX_NOEXCEPT
-      { return allocator_type(_M_t.get_allocator()); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points to the first
-       *  element in the %set.  Iteration is done in ascending order according
-       *  to the keys.
-       */
-      iterator
-      begin() const _GLIBCXX_NOEXCEPT
-      { return _M_t.begin(); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points one past the last
-       *  element in the %set.  Iteration is done in ascending order according
-       *  to the keys.
-       */
-      iterator
-      end() const _GLIBCXX_NOEXCEPT
-      { return _M_t.end(); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points to the last
-       *  element in the %set.  Iteration is done in descending order according
-       *  to the keys.
-       */
-      reverse_iterator
-      rbegin() const _GLIBCXX_NOEXCEPT
-      { return _M_t.rbegin(); }
-
-      /**
-       *  Returns a read-only (constant) reverse iterator that points to the
-       *  last pair in the %set.  Iteration is done in descending order
-       *  according to the keys.
-       */
-      reverse_iterator
-      rend() const _GLIBCXX_NOEXCEPT
-      { return _M_t.rend(); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 365 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      /**
-       *  Returns a read-only (constant) iterator that points to the first
-       *  element in the %set.  Iteration is done in ascending order according
-       *  to the keys.
-       */
-      iterator
-      cbegin() const noexcept
-      { return _M_t.begin(); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points one past the last
-       *  element in the %set.  Iteration is done in ascending order according
-       *  to the keys.
-       */
-      iterator
-      cend() const noexcept
-      { return _M_t.end(); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points to the last
-       *  element in the %set.  Iteration is done in descending order according
-       *  to the keys.
-       */
-      reverse_iterator
-      crbegin() const noexcept
-      { return _M_t.rbegin(); }
-
-      /**
-       *  Returns a read-only (constant) reverse iterator that points to the
-       *  last pair in the %set.  Iteration is done in descending order
-       *  according to the keys.
-       */
-      reverse_iterator
-      crend() const noexcept
-      { return _M_t.rend(); }
-#endif
-# 401 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      ///  Returns true if the %set is empty.
-      bool
-      empty() const _GLIBCXX_NOEXCEPT
-      { return _M_t.empty(); }
-
-      ///  Returns the size of the %set.
-      size_type
-      size() const _GLIBCXX_NOEXCEPT
-      { return _M_t.size(); }
-
-      ///  Returns the maximum size of the %set.
-      size_type
-      max_size() const _GLIBCXX_NOEXCEPT
-      { return _M_t.max_size(); }
-
-      /**
-       *  @brief  Swaps data with another %set.
-       *  @param  __x  A %set of the same element and allocator types.
-       *
-       *  This exchanges the elements between two sets in constant
-       *  time.  (It is only swapping a pointer, an integer, and an
-       *  instance of the @c Compare type (which itself is often
-       *  stateless and empty), so it should be quite fast.)  Note
-       *  that the global std::swap() function is specialized such
-       *  that std::swap(s1,s2) will feed to this function.
-       *
-       *  Whether the allocators are swapped depends on the allocator traits.
-       */
-      void
-      swap(set& __x)
-      _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value)
-      { _M_t.swap(__x._M_t); }
-
-      // insert/erase
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 437 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      /**
-       *  @brief Attempts to build and insert an element into the %set.
-       *  @param __args  Arguments used to generate an element.
-       *  @return  A pair, of which the first element is an iterator that points
-       *           to the possibly inserted element, and the second is a bool
-       *           that is true if the element was actually inserted.
-       *
-       *  This function attempts to build and insert an element into the %set.
-       *  A %set relies on unique keys and thus an element is only inserted if
-       *  it is not already present in the %set.
-       *
-       *  Insertion requires logarithmic time.
-       */
-      template<typename... _Args>
-	std::pair<iterator, bool>
-	emplace(_Args&&... __args)
-	{ return _M_t._M_emplace_unique(std::forward<_Args>(__args)...); }
-
-      /**
-       *  @brief Attempts to insert an element into the %set.
-       *  @param  __pos  An iterator that serves as a hint as to where the
-       *                element should be inserted.
-       *  @param  __args  Arguments used to generate the element to be
-       *                 inserted.
-       *  @return An iterator that points to the element with key equivalent to
-       *          the one generated from @a __args (may or may not be the
-       *          element itself).
-       *
-       *  This function is not concerned about whether the insertion took place,
-       *  and thus does not return a boolean like the single-argument emplace()
-       *  does.  Note that the first parameter is only a hint and can
-       *  potentially improve the performance of the insertion process.  A bad
-       *  hint would cause no gains in efficiency.
-       *
-       *  For more on @a hinting, see:
-       *  https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
-       *
-       *  Insertion requires logarithmic time (if the hint is not taken).
-       */
-      template<typename... _Args>
-	iterator
-	emplace_hint(const_iterator __pos, _Args&&... __args)
-	{
-	  return _M_t._M_emplace_hint_unique(__pos,
-					     std::forward<_Args>(__args)...);
-	}
-#endif
-# 484 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      /**
-       *  @brief Attempts to insert an element into the %set.
-       *  @param  __x  Element to be inserted.
-       *  @return  A pair, of which the first element is an iterator that points
-       *           to the possibly inserted element, and the second is a bool
-       *           that is true if the element was actually inserted.
-       *
-       *  This function attempts to insert an element into the %set.  A %set
-       *  relies on unique keys and thus an element is only inserted if it is
-       *  not already present in the %set.
-       *
-       *  Insertion requires logarithmic time.
-       */
-      std::pair<iterator, bool>
-      insert(const value_type& __x)
-      {
-	std::pair<typename _Rep_type::iterator, bool> __p =
-	  _M_t._M_insert_unique(__x);
-	return std::pair<iterator, bool>(__p.first, __p.second);
-      }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 507 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      std::pair<iterator, bool>
-      insert(value_type&& __x)
-      {
-	std::pair<typename _Rep_type::iterator, bool> __p =
-	  _M_t._M_insert_unique(std::move(__x));
-	return std::pair<iterator, bool>(__p.first, __p.second);
-      }
-#endif
-# 515 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      /**
-       *  @brief Attempts to insert an element into the %set.
-       *  @param  __position  An iterator that serves as a hint as to where the
-       *                    element should be inserted.
-       *  @param  __x  Element to be inserted.
-       *  @return An iterator that points to the element with key of
-       *           @a __x (may or may not be the element passed in).
-       *
-       *  This function is not concerned about whether the insertion took place,
-       *  and thus does not return a boolean like the single-argument insert()
-       *  does.  Note that the first parameter is only a hint and can
-       *  potentially improve the performance of the insertion process.  A bad
-       *  hint would cause no gains in efficiency.
-       *
-       *  For more on @a hinting, see:
-       *  https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
-       *
-       *  Insertion requires logarithmic time (if the hint is not taken).
-       */
-      iterator
-      insert(const_iterator __position, const value_type& __x)
-      { return _M_t._M_insert_unique_(__position, __x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 540 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      iterator
-      insert(const_iterator __position, value_type&& __x)
-      { return _M_t._M_insert_unique_(__position, std::move(__x)); }
-#endif
-# 544 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      /**
-       *  @brief A template function that attempts to insert a range
-       *  of elements.
-       *  @param  __first  Iterator pointing to the start of the range to be
-       *                   inserted.
-       *  @param  __last  Iterator pointing to the end of the range.
-       *
-       *  Complexity similar to that of the range constructor.
-       */
-      template<typename _InputIterator>
-	void
-	insert(_InputIterator __first, _InputIterator __last)
-	{ _M_t._M_insert_unique(__first, __last); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 560 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      /**
-       *  @brief Attempts to insert a list of elements into the %set.
-       *  @param  __l  A std::initializer_list<value_type> of elements
-       *               to be inserted.
-       *
-       *  Complexity similar to that of the range constructor.
-       */
-      void
-      insert(initializer_list<value_type> __l)
-      { this->insert(__l.begin(), __l.end()); }
-#endif
-# 571 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 573 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      /// Extract a node.
-      node_type
-      extract(const_iterator __pos)
-      {
-	__glibcxx_assert(__pos != end());
-	return _M_t.extract(__pos);
-      }
-
-      /// Extract a node.
-      node_type
-      extract(const key_type& __x)
-      { return _M_t.extract(__x); }
-
-      /// Re-insert an extracted node.
-      insert_return_type
-      insert(node_type&& __nh)
-      { return _M_t._M_reinsert_node_unique(std::move(__nh)); }
-
-      /// Re-insert an extracted node.
-      iterator
-      insert(const_iterator __hint, node_type&& __nh)
-      { return _M_t._M_reinsert_node_hint_unique(__hint, std::move(__nh)); }
-
-      template<typename, typename>
-	friend class _Rb_tree_merge_helper;
-
-      template<typename _Compare1>
-	void
-	merge(set<_Key, _Compare1, _Alloc>& __source)
-	{
-	  using _Merge_helper = _Rb_tree_merge_helper<set, _Compare1>;
-	  _M_t._M_merge_unique(_Merge_helper::_S_get_tree(__source));
-	}
-
-      template<typename _Compare1>
-	void
-	merge(set<_Key, _Compare1, _Alloc>&& __source)
-	{ merge(__source); }
-
-      template<typename _Compare1>
-	void
-	merge(multiset<_Key, _Compare1, _Alloc>& __source)
-	{
-	  using _Merge_helper = _Rb_tree_merge_helper<set, _Compare1>;
-	  _M_t._M_merge_unique(_Merge_helper::_S_get_tree(__source));
-	}
-
-      template<typename _Compare1>
-	void
-	merge(multiset<_Key, _Compare1, _Alloc>&& __source)
-	{ merge(__source); }
-#endif // C++17
-# 625 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 627 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 130. Associative erase should return an iterator.
-      /**
-       *  @brief Erases an element from a %set.
-       *  @param  __position  An iterator pointing to the element to be erased.
-       *  @return An iterator pointing to the element immediately following
-       *          @a __position prior to the element being erased. If no such
-       *          element exists, end() is returned.
-       *
-       *  This function erases an element, pointed to by the given iterator,
-       *  from a %set.  Note that this function only erases the element, and
-       *  that if the element is itself a pointer, the pointed-to memory is not
-       *  touched in any way.  Managing the pointer is the user's
-       *  responsibility.
-       */
-      _GLIBCXX_ABI_TAG_CXX11
-      iterator
-      erase(const_iterator __position)
-      { return _M_t.erase(__position); }
-#else
-# 647 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      /**
-       *  @brief Erases an element from a %set.
-       *  @param  position  An iterator pointing to the element to be erased.
-       *
-       *  This function erases an element, pointed to by the given iterator,
-       *  from a %set.  Note that this function only erases the element, and
-       *  that if the element is itself a pointer, the pointed-to memory is not
-       *  touched in any way.  Managing the pointer is the user's
-       *  responsibility.
-       */
-      void
-      erase(iterator __position)
-      { _M_t.erase(__position); }
-#endif
-# 661 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      /**
-       *  @brief Erases elements according to the provided key.
-       *  @param  __x  Key of element to be erased.
-       *  @return  The number of elements erased.
-       *
-       *  This function erases all the elements located by the given key from
-       *  a %set.
-       *  Note that this function only erases the element, and that if
-       *  the element is itself a pointer, the pointed-to memory is not touched
-       *  in any way.  Managing the pointer is the user's responsibility.
-       */
-      size_type
-      erase(const key_type& __x)
-      { return _M_t.erase(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 678 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 130. Associative erase should return an iterator.
-      /**
-       *  @brief Erases a [__first,__last) range of elements from a %set.
-       *  @param  __first  Iterator pointing to the start of the range to be
-       *                 erased.
-
-       *  @param __last Iterator pointing to the end of the range to
-       *  be erased.
-       *  @return The iterator @a __last.
-       *
-       *  This function erases a sequence of elements from a %set.
-       *  Note that this function only erases the element, and that if
-       *  the element is itself a pointer, the pointed-to memory is not touched
-       *  in any way.  Managing the pointer is the user's responsibility.
-       */
-      _GLIBCXX_ABI_TAG_CXX11
-      iterator
-      erase(const_iterator __first, const_iterator __last)
-      { return _M_t.erase(__first, __last); }
-#else
-# 699 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      /**
-       *  @brief Erases a [first,last) range of elements from a %set.
-       *  @param  __first  Iterator pointing to the start of the range to be
-       *                 erased.
-       *  @param __last Iterator pointing to the end of the range to
-       *  be erased.
-       *
-       *  This function erases a sequence of elements from a %set.
-       *  Note that this function only erases the element, and that if
-       *  the element is itself a pointer, the pointed-to memory is not touched
-       *  in any way.  Managing the pointer is the user's responsibility.
-       */
-      void
-      erase(iterator __first, iterator __last)
-      { _M_t.erase(__first, __last); }
-#endif
-# 715 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-      /**
-       *  Erases all elements in a %set.  Note that this function only erases
-       *  the elements, and that if the elements themselves are pointers, the
-       *  pointed-to memory is not touched in any way.  Managing the pointer is
-       *  the user's responsibility.
-       */
-      void
-      clear() _GLIBCXX_NOEXCEPT
-      { _M_t.clear(); }
-
-      // set operations:
-
-      //@{
-      /**
-       *  @brief  Finds the number of elements.
-       *  @param  __x  Element to located.
-       *  @return  Number of elements with specified key.
-       *
-       *  This function only makes sense for multisets; for set the result will
-       *  either be 0 (not present) or 1 (present).
-       */
-      size_type
-      count(const key_type& __x) const
-      { return _M_t.find(__x) == _M_t.end() ? 0 : 1; }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 742 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      template<typename _Kt>
-	auto
-	count(const _Kt& __x) const
-	-> decltype(_M_t._M_count_tr(__x))
-	{ return _M_t._M_count_tr(__x); }
-#endif
-# 748 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      //@}
-
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // 214.  set::find() missing const overload
-      //@{
-      /**
-       *  @brief Tries to locate an element in a %set.
-       *  @param  __x  Element to be located.
-       *  @return  Iterator pointing to sought-after element, or end() if not
-       *           found.
-       *
-       *  This function takes a key and tries to locate the element with which
-       *  the key matches.  If successful the function returns an iterator
-       *  pointing to the sought after element.  If unsuccessful it returns the
-       *  past-the-end ( @c end() ) iterator.
-       */
-      iterator
-      find(const key_type& __x)
-      { return _M_t.find(__x); }
-
-      const_iterator
-      find(const key_type& __x) const
-      { return _M_t.find(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 773 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      template<typename _Kt>
-	auto
-	find(const _Kt& __x)
-	-> decltype(iterator{_M_t._M_find_tr(__x)})
-	{ return iterator{_M_t._M_find_tr(__x)}; }
-
-      template<typename _Kt>
-	auto
-	find(const _Kt& __x) const
-	-> decltype(const_iterator{_M_t._M_find_tr(__x)})
-	{ return const_iterator{_M_t._M_find_tr(__x)}; }
-#endif
-# 785 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      //@}
-
-      //@{
-      /**
-       *  @brief Finds the beginning of a subsequence matching given key.
-       *  @param  __x  Key to be located.
-       *  @return  Iterator pointing to first element equal to or greater
-       *           than key, or end().
-       *
-       *  This function returns the first element of a subsequence of elements
-       *  that matches the given key.  If unsuccessful it returns an iterator
-       *  pointing to the first element that has a greater value than given key
-       *  or end() if no such element exists.
-       */
-      iterator
-      lower_bound(const key_type& __x)
-      { return _M_t.lower_bound(__x); }
-
-      const_iterator
-      lower_bound(const key_type& __x) const
-      { return _M_t.lower_bound(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 808 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      template<typename _Kt>
-	auto
-	lower_bound(const _Kt& __x)
-	-> decltype(iterator(_M_t._M_lower_bound_tr(__x)))
-	{ return iterator(_M_t._M_lower_bound_tr(__x)); }
-
-      template<typename _Kt>
-	auto
-	lower_bound(const _Kt& __x) const
-	-> decltype(const_iterator(_M_t._M_lower_bound_tr(__x)))
-	{ return const_iterator(_M_t._M_lower_bound_tr(__x)); }
-#endif
-# 820 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      //@}
-
-      //@{
-      /**
-       *  @brief Finds the end of a subsequence matching given key.
-       *  @param  __x  Key to be located.
-       *  @return Iterator pointing to the first element
-       *          greater than key, or end().
-       */
-      iterator
-      upper_bound(const key_type& __x)
-      { return _M_t.upper_bound(__x); }
-
-      const_iterator
-      upper_bound(const key_type& __x) const
-      { return _M_t.upper_bound(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 838 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      template<typename _Kt>
-	auto
-	upper_bound(const _Kt& __x)
-	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
-	{ return iterator(_M_t._M_upper_bound_tr(__x)); }
-
-      template<typename _Kt>
-	auto
-	upper_bound(const _Kt& __x) const
-	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
-	{ return const_iterator(_M_t._M_upper_bound_tr(__x)); }
-#endif
-# 850 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      //@}
-
-      //@{
-      /**
-       *  @brief Finds a subsequence matching given key.
-       *  @param  __x  Key to be located.
-       *  @return  Pair of iterators that possibly points to the subsequence
-       *           matching given key.
-       *
-       *  This function is equivalent to
-       *  @code
-       *    std::make_pair(c.lower_bound(val),
-       *                   c.upper_bound(val))
-       *  @endcode
-       *  (but is faster than making the calls separately).
-       *
-       *  This function probably only makes sense for multisets.
-       */
-      std::pair<iterator, iterator>
-      equal_range(const key_type& __x)
-      { return _M_t.equal_range(__x); }
-
-      std::pair<const_iterator, const_iterator>
-      equal_range(const key_type& __x) const
-      { return _M_t.equal_range(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 877 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      template<typename _Kt>
-	auto
-	equal_range(const _Kt& __x)
-	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
-	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
-
-      template<typename _Kt>
-	auto
-	equal_range(const _Kt& __x) const
-	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
-	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
-#endif
-# 889 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-      //@}
-
-      template<typename _K1, typename _C1, typename _A1>
-	friend bool
-	operator==(const set<_K1, _C1, _A1>&, const set<_K1, _C1, _A1>&);
-
-      template<typename _K1, typename _C1, typename _A1>
-	friend bool
-	operator<(const set<_K1, _C1, _A1>&, const set<_K1, _C1, _A1>&);
-    };
-
-
-  /**
-   *  @brief  Set equality comparison.
-   *  @param  __x  A %set.
-   *  @param  __y  A %set of the same type as @a x.
-   *  @return  True iff the size and elements of the sets are equal.
-   *
-   *  This is an equivalence relation.  It is linear in the size of the sets.
-   *  Sets are considered equivalent if their sizes are equal, and if
-   *  corresponding elements compare equal.
-  */
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator==(const set<_Key, _Compare, _Alloc>& __x,
-	       const set<_Key, _Compare, _Alloc>& __y)
-    { return __x._M_t == __y._M_t; }
-
-  /**
-   *  @brief  Set ordering relation.
-   *  @param  __x  A %set.
-   *  @param  __y  A %set of the same type as @a x.
-   *  @return  True iff @a __x is lexicographically less than @a __y.
-   *
-   *  This is a total ordering relation.  It is linear in the size of the
-   *  sets.  The elements must be comparable with @c <.
-   *
-   *  See std::lexicographical_compare() for how the determination is made.
-  */
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator<(const set<_Key, _Compare, _Alloc>& __x,
-	      const set<_Key, _Compare, _Alloc>& __y)
-    { return __x._M_t < __y._M_t; }
-
-  ///  Returns !(x == y).
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator!=(const set<_Key, _Compare, _Alloc>& __x,
-	       const set<_Key, _Compare, _Alloc>& __y)
-    { return !(__x == __y); }
-
-  ///  Returns y < x.
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator>(const set<_Key, _Compare, _Alloc>& __x,
-	      const set<_Key, _Compare, _Alloc>& __y)
-    { return __y < __x; }
-
-  ///  Returns !(y < x)
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator<=(const set<_Key, _Compare, _Alloc>& __x,
-	       const set<_Key, _Compare, _Alloc>& __y)
-    { return !(__y < __x); }
-
-  ///  Returns !(x < y)
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator>=(const set<_Key, _Compare, _Alloc>& __x,
-	       const set<_Key, _Compare, _Alloc>& __y)
-    { return !(__x < __y); }
-
-  /// See std::set::swap().
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline void
-    swap(set<_Key, _Compare, _Alloc>& __x, set<_Key, _Compare, _Alloc>& __y)
-    _GLIBCXX_NOEXCEPT_IF(noexcept(__x.swap(__y)))
-    { __x.swap(__y); }
-
-_GLIBCXX_END_NAMESPACE_CONTAINER
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 972 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
-  // Allow std::set access to internals of compatible sets.
-  template<typename _Val, typename _Cmp1, typename _Alloc, typename _Cmp2>
-    struct
-    _Rb_tree_merge_helper<_GLIBCXX_STD_C::set<_Val, _Cmp1, _Alloc>, _Cmp2>
-    {
-    private:
-      friend class _GLIBCXX_STD_C::set<_Val, _Cmp1, _Alloc>;
-
-      static auto&
-      _S_get_tree(_GLIBCXX_STD_C::set<_Val, _Cmp2, _Alloc>& __set)
-      { return __set._M_t; }
-
-      static auto&
-      _S_get_tree(_GLIBCXX_STD_C::multiset<_Val, _Cmp2, _Alloc>& __set)
-      { return __set._M_t; }
-    };
-_GLIBCXX_END_NAMESPACE_VERSION
-#endif // C++17
-# 991 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-
-} //namespace std
-#endif /* _STL_SET_H */
-# 994 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
-# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 2 3
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/stl_multiset.h>
-#endif /* expanded by -frewrite-includes */
-# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 1 3
-// Multiset implementation -*- C++ -*-
-
-// Copyright (C) 2001-2017 Free Software Foundation, Inc.
 //
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
+// ISO C++ 19.1  Exception classes
+//
 
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/*
- *
- * Copyright (c) 1994
- * Hewlett-Packard Company
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Hewlett-Packard Company makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
- *
- *
- * Copyright (c) 1996
- * Silicon Graphics Computer Systems, Inc.
- *
- * Permission to use, copy, modify, distribute and sell this software
- * and its documentation for any purpose is hereby granted without fee,
- * provided that the above copyright notice appear in all copies and
- * that both that copyright notice and this permission notice appear
- * in supporting documentation.  Silicon Graphics makes no
- * representations about the suitability of this software for any
- * purpose.  It is provided "as is" without express or implied warranty.
- */
-
-/** @file bits/stl_multiset.h
- *  This is an internal header file, included by other library headers.
- *  Do not attempt to use it directly. @headername{set}
- */
-
-#ifndef _STL_MULTISET_H
-#define _STL_MULTISET_H 1
+#ifndef _GLIBCXX_STDEXCEPT
+#define _GLIBCXX_STDEXCEPT 1
 
 #if 0 /* expanded by -frewrite-includes */
-#include <bits/concept_check.h>
+#pragma GCC system_header
 #endif /* expanded by -frewrite-includes */
-# 59 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-# 60 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
+
 #if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
+#include <exception>
 #endif /* expanded by -frewrite-includes */
-# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-#endif
-# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-namespace std _GLIBCXX_VISIBILITY(default)
-{
-_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
-
-  template<typename _Key, typename _Compare, typename _Alloc>
-    class set;
-
-  /**
-   *  @brief A standard container made up of elements, which can be retrieved
-   *  in logarithmic time.
-   *
-   *  @ingroup associative_containers
-   *
-   *
-   *  @tparam _Key  Type of key objects.
-   *  @tparam _Compare  Comparison function object type, defaults to less<_Key>.
-   *  @tparam _Alloc  Allocator type, defaults to allocator<_Key>.
-   *
-   *  Meets the requirements of a <a href="tables.html#65">container</a>, a
-   *  <a href="tables.html#66">reversible container</a>, and an
-   *  <a href="tables.html#69">associative container</a> (using equivalent
-   *  keys).  For a @c multiset<Key> the key_type and value_type are Key.
-   *
-   *  Multisets support bidirectional iterators.
-   *
-   *  The private tree data is declared exactly the same way for set and
-   *  multiset; the distinction is made entirely in how the tree functions are
-   *  called (*_unique versus *_equal, same as the standard).
-  */
-  template <typename _Key, typename _Compare = std::less<_Key>,
-	    typename _Alloc = std::allocator<_Key> >
-    class multiset
-    {
-#ifdef _GLIBCXX_CONCEPT_CHECKS
-      // concept requirements
-      typedef typename _Alloc::value_type		_Alloc_value_type;
-#if 0 /* disabled by -frewrite-includes */
-# if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 101 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      __glibcxx_class_requires(_Key, _SGIAssignableConcept)
-# endif
-# 103 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      __glibcxx_class_requires4(_Compare, bool, _Key, _Key,
-				_BinaryFunctionConcept)
-      __glibcxx_class_requires2(_Key, _Alloc_value_type, _SameTypeConcept)
-#endif
-# 107 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-    public:
-      // typedefs:
-      typedef _Key     key_type;
-      typedef _Key     value_type;
-      typedef _Compare key_compare;
-      typedef _Compare value_compare;
-      typedef _Alloc   allocator_type;
-
-    private:
-      /// This turns a red-black tree into a [multi]set.
-      typedef typename __gnu_cxx::__alloc_traits<_Alloc>::template
-	rebind<_Key>::other _Key_alloc_type;
-
-      typedef _Rb_tree<key_type, value_type, _Identity<value_type>,
-		       key_compare, _Key_alloc_type> _Rep_type;
-      /// The actual tree structure.
-      _Rep_type _M_t;
-
-      typedef __gnu_cxx::__alloc_traits<_Key_alloc_type> _Alloc_traits;
-
-    public:
-      typedef typename _Alloc_traits::pointer		 pointer;
-      typedef typename _Alloc_traits::const_pointer	 const_pointer;
-      typedef typename _Alloc_traits::reference		 reference;
-      typedef typename _Alloc_traits::const_reference	 const_reference;
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 103. set::iterator is required to be modifiable,
-      // but this allows modification of keys.
-      typedef typename _Rep_type::const_iterator	 iterator;
-      typedef typename _Rep_type::const_iterator	 const_iterator;
-      typedef typename _Rep_type::const_reverse_iterator reverse_iterator;
-      typedef typename _Rep_type::const_reverse_iterator const_reverse_iterator;
-      typedef typename _Rep_type::size_type		 size_type;
-      typedef typename _Rep_type::difference_type	 difference_type;
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 144 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      using node_type = typename _Rep_type::node_type;
-#endif
-# 146 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      // allocation/deallocation
-      /**
-       *  @brief  Default constructor creates no elements.
-       */
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 152 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      multiset() : _M_t() { }
-#else
-# 154 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      multiset() = default;
-#endif
-# 156 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      /**
-       *  @brief  Creates a %multiset with no elements.
-       *  @param  __comp  Comparator to use.
-       *  @param  __a  An allocator object.
-       */
-      explicit
-      multiset(const _Compare& __comp,
-	       const allocator_type& __a = allocator_type())
-      : _M_t(__comp, _Key_alloc_type(__a)) { }
-
-      /**
-       *  @brief  Builds a %multiset from a range.
-       *  @param  __first  An input iterator.
-       *  @param  __last  An input iterator.
-       *
-       *  Create a %multiset consisting of copies of the elements from
-       *  [first,last).  This is linear in N if the range is already sorted,
-       *  and NlogN otherwise (where N is distance(__first,__last)).
-       */
-      template<typename _InputIterator>
-	multiset(_InputIterator __first, _InputIterator __last)
-	: _M_t()
-	{ _M_t._M_insert_equal(__first, __last); }
-
-      /**
-       *  @brief  Builds a %multiset from a range.
-       *  @param  __first  An input iterator.
-       *  @param  __last  An input iterator.
-       *  @param  __comp  A comparison functor.
-       *  @param  __a  An allocator object.
-       *
-       *  Create a %multiset consisting of copies of the elements from
-       *  [__first,__last).  This is linear in N if the range is already sorted,
-       *  and NlogN otherwise (where N is distance(__first,__last)).
-       */
-      template<typename _InputIterator>
-	multiset(_InputIterator __first, _InputIterator __last,
-		 const _Compare& __comp,
-		 const allocator_type& __a = allocator_type())
-	: _M_t(__comp, _Key_alloc_type(__a))
-	{ _M_t._M_insert_equal(__first, __last); }
-
-      /**
-       *  @brief  %Multiset copy constructor.
-       *
-       *  Whether the allocator is copied depends on the allocator traits.
-       */
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 205 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      multiset(const multiset& __x)
-      : _M_t(__x._M_t) { }
-#else
-# 208 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      multiset(const multiset&) = default;
-
-     /**
-       *  @brief  %Multiset move constructor.
-       *
-       *  The newly-created %multiset contains the exact contents of the
-       *  moved instance. The moved instance is a valid, but unspecified
-       *  %multiset.
-       */
-      multiset(multiset&&) = default;
-
-      /**
-       *  @brief  Builds a %multiset from an initializer_list.
-       *  @param  __l  An initializer_list.
-       *  @param  __comp  A comparison functor.
-       *  @param  __a  An allocator object.
-       *
-       *  Create a %multiset consisting of copies of the elements from
-       *  the list.  This is linear in N if the list is already sorted,
-       *  and NlogN otherwise (where N is @a __l.size()).
-       */
-      multiset(initializer_list<value_type> __l,
-	       const _Compare& __comp = _Compare(),
-	       const allocator_type& __a = allocator_type())
-      : _M_t(__comp, _Key_alloc_type(__a))
-      { _M_t._M_insert_equal(__l.begin(), __l.end()); }
-
-      /// Allocator-extended default constructor.
-      explicit
-      multiset(const allocator_type& __a)
-      : _M_t(_Compare(), _Key_alloc_type(__a)) { }
-
-      /// Allocator-extended copy constructor.
-      multiset(const multiset& __m, const allocator_type& __a)
-      : _M_t(__m._M_t, _Key_alloc_type(__a)) { }
-
-      /// Allocator-extended move constructor.
-      multiset(multiset&& __m, const allocator_type& __a)
-      noexcept(is_nothrow_copy_constructible<_Compare>::value
-	       && _Alloc_traits::_S_always_equal())
-      : _M_t(std::move(__m._M_t), _Key_alloc_type(__a)) { }
-
-      /// Allocator-extended initialier-list constructor.
-      multiset(initializer_list<value_type> __l, const allocator_type& __a)
-      : _M_t(_Compare(), _Key_alloc_type(__a))
-      { _M_t._M_insert_equal(__l.begin(), __l.end()); }
-
-      /// Allocator-extended range constructor.
-      template<typename _InputIterator>
-	multiset(_InputIterator __first, _InputIterator __last,
-		 const allocator_type& __a)
-	: _M_t(_Compare(), _Key_alloc_type(__a))
-	{ _M_t._M_insert_equal(__first, __last); }
-
-      /**
-       *  The dtor only erases the elements, and note that if the elements
-       *  themselves are pointers, the pointed-to memory is not touched in any
-       *  way. Managing the pointer is the user's responsibility.
-       */
-      ~multiset() = default;
-#endif
-# 269 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      /**
-       *  @brief  %Multiset assignment operator.
-       *
-       *  Whether the allocator is copied depends on the allocator traits.
-       */
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 276 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      multiset&
-      operator=(const multiset& __x)
-      {
-	_M_t = __x._M_t;
-	return *this;
-      }
-#else
-# 283 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      multiset&
-      operator=(const multiset&) = default;
-
-      /// Move assignment operator.
-      multiset&
-      operator=(multiset&&) = default;
-
-      /**
-       *  @brief  %Multiset list assignment operator.
-       *  @param  __l  An initializer_list.
-       *
-       *  This function fills a %multiset with copies of the elements in the
-       *  initializer list @a __l.
-       *
-       *  Note that the assignment completely changes the %multiset and
-       *  that the resulting %multiset's size is the same as the number
-       *  of elements assigned.
-       */
-      multiset&
-      operator=(initializer_list<value_type> __l)
-      {
-	_M_t._M_assign_equal(__l.begin(), __l.end());
-	return *this;
-      }
-#endif
-# 308 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      // accessors:
-
-      ///  Returns the comparison object.
-      key_compare
-      key_comp() const
-      { return _M_t.key_comp(); }
-      ///  Returns the comparison object.
-      value_compare
-      value_comp() const
-      { return _M_t.key_comp(); }
-      ///  Returns the memory allocation object.
-      allocator_type
-      get_allocator() const _GLIBCXX_NOEXCEPT
-      { return allocator_type(_M_t.get_allocator()); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points to the first
-       *  element in the %multiset.  Iteration is done in ascending order
-       *  according to the keys.
-       */
-      iterator
-      begin() const _GLIBCXX_NOEXCEPT
-      { return _M_t.begin(); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points one past the last
-       *  element in the %multiset.  Iteration is done in ascending order
-       *  according to the keys.
-       */
-      iterator
-      end() const _GLIBCXX_NOEXCEPT
-      { return _M_t.end(); }
-
-      /**
-       *  Returns a read-only (constant) reverse iterator that points to the
-       *  last element in the %multiset.  Iteration is done in descending order
-       *  according to the keys.
-       */
-      reverse_iterator
-      rbegin() const _GLIBCXX_NOEXCEPT
-      { return _M_t.rbegin(); }
-
-      /**
-       *  Returns a read-only (constant) reverse iterator that points to the
-       *  last element in the %multiset.  Iteration is done in descending order
-       *  according to the keys.
-       */
-      reverse_iterator
-      rend() const _GLIBCXX_NOEXCEPT
-      { return _M_t.rend(); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 361 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      /**
-       *  Returns a read-only (constant) iterator that points to the first
-       *  element in the %multiset.  Iteration is done in ascending order
-       *  according to the keys.
-       */
-      iterator
-      cbegin() const noexcept
-      { return _M_t.begin(); }
-
-      /**
-       *  Returns a read-only (constant) iterator that points one past the last
-       *  element in the %multiset.  Iteration is done in ascending order
-       *  according to the keys.
-       */
-      iterator
-      cend() const noexcept
-      { return _M_t.end(); }
-
-      /**
-       *  Returns a read-only (constant) reverse iterator that points to the
-       *  last element in the %multiset.  Iteration is done in descending order
-       *  according to the keys.
-       */
-      reverse_iterator
-      crbegin() const noexcept
-      { return _M_t.rbegin(); }
-
-      /**
-       *  Returns a read-only (constant) reverse iterator that points to the
-       *  last element in the %multiset.  Iteration is done in descending order
-       *  according to the keys.
-       */
-      reverse_iterator
-      crend() const noexcept
-      { return _M_t.rend(); }
-#endif
-# 397 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      ///  Returns true if the %set is empty.
-      bool
-      empty() const _GLIBCXX_NOEXCEPT
-      { return _M_t.empty(); }
-
-      ///  Returns the size of the %set.
-      size_type
-      size() const _GLIBCXX_NOEXCEPT
-      { return _M_t.size(); }
-
-      ///  Returns the maximum size of the %set.
-      size_type
-      max_size() const _GLIBCXX_NOEXCEPT
-      { return _M_t.max_size(); }
-
-      /**
-       *  @brief  Swaps data with another %multiset.
-       *  @param  __x  A %multiset of the same element and allocator types.
-       *
-       *  This exchanges the elements between two multisets in constant time.
-       *  (It is only swapping a pointer, an integer, and an instance of the @c
-       *  Compare type (which itself is often stateless and empty), so it should
-       *  be quite fast.)
-       *  Note that the global std::swap() function is specialized such that
-       *  std::swap(s1,s2) will feed to this function.
-       *
-       *  Whether the allocators are swapped depends on the allocator traits.
-       */
-      void
-      swap(multiset& __x)
-      _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value)
-      { _M_t.swap(__x._M_t); }
-
-      // insert/erase
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 433 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      /**
-       *  @brief Builds and inserts an element into the %multiset.
-       *  @param  __args  Arguments used to generate the element instance to be
-       *                 inserted.
-       *  @return An iterator that points to the inserted element.
-       *
-       *  This function inserts an element into the %multiset.  Contrary
-       *  to a std::set the %multiset does not rely on unique keys and thus
-       *  multiple copies of the same element can be inserted.
-       *
-       *  Insertion requires logarithmic time.
-       */
-      template<typename... _Args>
-	iterator
-	emplace(_Args&&... __args)
-	{ return _M_t._M_emplace_equal(std::forward<_Args>(__args)...); }
-
-      /**
-       *  @brief Builds and inserts an element into the %multiset.
-       *  @param  __pos  An iterator that serves as a hint as to where the
-       *                element should be inserted.
-       *  @param  __args  Arguments used to generate the element instance to be
-       *                 inserted.
-       *  @return An iterator that points to the inserted element.
-       *
-       *  This function inserts an element into the %multiset.  Contrary
-       *  to a std::set the %multiset does not rely on unique keys and thus
-       *  multiple copies of the same element can be inserted.
-       *
-       *  Note that the first parameter is only a hint and can potentially
-       *  improve the performance of the insertion process.  A bad hint would
-       *  cause no gains in efficiency.
-       *
-       *  See https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
-       *  for more on @a hinting.
-       *
-       *  Insertion requires logarithmic time (if the hint is not taken).
-       */
-      template<typename... _Args>
-	iterator
-	emplace_hint(const_iterator __pos, _Args&&... __args)
-	{
-	  return _M_t._M_emplace_hint_equal(__pos,
-					    std::forward<_Args>(__args)...);
-	}
-#endif
-# 479 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      /**
-       *  @brief Inserts an element into the %multiset.
-       *  @param  __x  Element to be inserted.
-       *  @return An iterator that points to the inserted element.
-       *
-       *  This function inserts an element into the %multiset.  Contrary
-       *  to a std::set the %multiset does not rely on unique keys and thus
-       *  multiple copies of the same element can be inserted.
-       *
-       *  Insertion requires logarithmic time.
-       */
-      iterator
-      insert(const value_type& __x)
-      { return _M_t._M_insert_equal(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 496 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      iterator
-      insert(value_type&& __x)
-      { return _M_t._M_insert_equal(std::move(__x)); }
-#endif
-# 500 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      /**
-       *  @brief Inserts an element into the %multiset.
-       *  @param  __position  An iterator that serves as a hint as to where the
-       *                    element should be inserted.
-       *  @param  __x  Element to be inserted.
-       *  @return An iterator that points to the inserted element.
-       *
-       *  This function inserts an element into the %multiset.  Contrary
-       *  to a std::set the %multiset does not rely on unique keys and thus
-       *  multiple copies of the same element can be inserted.
-       *
-       *  Note that the first parameter is only a hint and can potentially
-       *  improve the performance of the insertion process.  A bad hint would
-       *  cause no gains in efficiency.
-       *
-       *  See https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
-       *  for more on @a hinting.
-       *
-       *  Insertion requires logarithmic time (if the hint is not taken).
-       */
-      iterator
-      insert(const_iterator __position, const value_type& __x)
-      { return _M_t._M_insert_equal_(__position, __x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 526 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      iterator
-      insert(const_iterator __position, value_type&& __x)
-      { return _M_t._M_insert_equal_(__position, std::move(__x)); }
-#endif
-# 530 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      /**
-       *  @brief A template function that tries to insert a range of elements.
-       *  @param  __first  Iterator pointing to the start of the range to be
-       *                   inserted.
-       *  @param  __last  Iterator pointing to the end of the range.
-       *
-       *  Complexity similar to that of the range constructor.
-       */
-      template<typename _InputIterator>
-	void
-	insert(_InputIterator __first, _InputIterator __last)
-	{ _M_t._M_insert_equal(__first, __last); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 545 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      /**
-       *  @brief Attempts to insert a list of elements into the %multiset.
-       *  @param  __l  A std::initializer_list<value_type> of elements
-       *               to be inserted.
-       *
-       *  Complexity similar to that of the range constructor.
-       */
-      void
-      insert(initializer_list<value_type> __l)
-      { this->insert(__l.begin(), __l.end()); }
-#endif
-# 556 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 558 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      /// Extract a node.
-      node_type
-      extract(const_iterator __pos)
-      {
-	__glibcxx_assert(__pos != end());
-	return _M_t.extract(__pos);
-      }
-
-      /// Extract a node.
-      node_type
-      extract(const key_type& __x)
-      { return _M_t.extract(__x); }
-
-      /// Re-insert an extracted node.
-      iterator
-      insert(node_type&& __nh)
-      { return _M_t._M_reinsert_node_equal(std::move(__nh)); }
-
-      /// Re-insert an extracted node.
-      iterator
-      insert(const_iterator __hint, node_type&& __nh)
-      { return _M_t._M_reinsert_node_hint_equal(__hint, std::move(__nh)); }
-
-      template<typename, typename>
-	friend class _Rb_tree_merge_helper;
-
-      template<typename _Compare1>
-	void
-	merge(multiset<_Key, _Compare1, _Alloc>& __source)
-	{
-	  using _Merge_helper = _Rb_tree_merge_helper<multiset, _Compare1>;
-	  _M_t._M_merge_equal(_Merge_helper::_S_get_tree(__source));
-	}
-
-      template<typename _Compare1>
-	void
-	merge(multiset<_Key, _Compare1, _Alloc>&& __source)
-	{ merge(__source); }
-
-      template<typename _Compare1>
-	void
-	merge(set<_Key, _Compare1, _Alloc>& __source)
-	{
-	  using _Merge_helper = _Rb_tree_merge_helper<multiset, _Compare1>;
-	  _M_t._M_merge_equal(_Merge_helper::_S_get_tree(__source));
-	}
-
-      template<typename _Compare1>
-	void
-	merge(set<_Key, _Compare1, _Alloc>&& __source)
-	{ merge(__source); }
-#endif // C++17
-# 610 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 612 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 130. Associative erase should return an iterator.
-      /**
-       *  @brief Erases an element from a %multiset.
-       *  @param  __position  An iterator pointing to the element to be erased.
-       *  @return An iterator pointing to the element immediately following
-       *          @a position prior to the element being erased. If no such
-       *          element exists, end() is returned.
-       *
-       *  This function erases an element, pointed to by the given iterator,
-       *  from a %multiset.  Note that this function only erases the element,
-       *  and that if the element is itself a pointer, the pointed-to memory is
-       *  not touched in any way.  Managing the pointer is the user's
-       *  responsibility.
-       */
-      _GLIBCXX_ABI_TAG_CXX11
-      iterator
-      erase(const_iterator __position)
-      { return _M_t.erase(__position); }
-#else
-# 632 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      /**
-       *  @brief Erases an element from a %multiset.
-       *  @param  __position  An iterator pointing to the element to be erased.
-       *
-       *  This function erases an element, pointed to by the given iterator,
-       *  from a %multiset.  Note that this function only erases the element,
-       *  and that if the element is itself a pointer, the pointed-to memory is
-       *  not touched in any way.  Managing the pointer is the user's
-       *  responsibility.
-       */
-      void
-      erase(iterator __position)
-      { _M_t.erase(__position); }
-#endif
-# 646 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      /**
-       *  @brief Erases elements according to the provided key.
-       *  @param  __x  Key of element to be erased.
-       *  @return  The number of elements erased.
-       *
-       *  This function erases all elements located by the given key from a
-       *  %multiset.
-       *  Note that this function only erases the element, and that if
-       *  the element is itself a pointer, the pointed-to memory is not touched
-       *  in any way.  Managing the pointer is the user's responsibility.
-       */
-      size_type
-      erase(const key_type& __x)
-      { return _M_t.erase(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus >= 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 663 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // DR 130. Associative erase should return an iterator.
-      /**
-       *  @brief Erases a [first,last) range of elements from a %multiset.
-       *  @param  __first  Iterator pointing to the start of the range to be
-       *                   erased.
-       *  @param __last Iterator pointing to the end of the range to
-       *                be erased.
-       *  @return The iterator @a last.
-       *
-       *  This function erases a sequence of elements from a %multiset.
-       *  Note that this function only erases the elements, and that if
-       *  the elements themselves are pointers, the pointed-to memory is not
-       *  touched in any way.  Managing the pointer is the user's
-       *  responsibility.
-       */
-      _GLIBCXX_ABI_TAG_CXX11
-      iterator
-      erase(const_iterator __first, const_iterator __last)
-      { return _M_t.erase(__first, __last); }
-#else
-# 684 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      /**
-       *  @brief Erases a [first,last) range of elements from a %multiset.
-       *  @param  first  Iterator pointing to the start of the range to be
-       *                 erased.
-       *  @param  last  Iterator pointing to the end of the range to be erased.
-       *
-       *  This function erases a sequence of elements from a %multiset.
-       *  Note that this function only erases the elements, and that if
-       *  the elements themselves are pointers, the pointed-to memory is not
-       *  touched in any way.  Managing the pointer is the user's
-       *  responsibility.
-       */
-      void
-      erase(iterator __first, iterator __last)
-      { _M_t.erase(__first, __last); }
-#endif
-# 700 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-      /**
-       *  Erases all elements in a %multiset.  Note that this function only
-       *  erases the elements, and that if the elements themselves are pointers,
-       *  the pointed-to memory is not touched in any way.  Managing the pointer
-       *  is the user's responsibility.
-       */
-      void
-      clear() _GLIBCXX_NOEXCEPT
-      { _M_t.clear(); }
-
-      // multiset operations:
-
-      //@{
-      /**
-       *  @brief Finds the number of elements with given key.
-       *  @param  __x  Key of elements to be located.
-       *  @return Number of elements with specified key.
-       */
-      size_type
-      count(const key_type& __x) const
-      { return _M_t.count(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 724 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      template<typename _Kt>
-	auto
-	count(const _Kt& __x) const -> decltype(_M_t._M_count_tr(__x))
-	{ return _M_t._M_count_tr(__x); }
-#endif
-# 729 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      //@}
-
-      // _GLIBCXX_RESOLVE_LIB_DEFECTS
-      // 214.  set::find() missing const overload
-      //@{
-      /**
-       *  @brief Tries to locate an element in a %set.
-       *  @param  __x  Element to be located.
-       *  @return  Iterator pointing to sought-after element, or end() if not
-       *           found.
-       *
-       *  This function takes a key and tries to locate the element with which
-       *  the key matches.  If successful the function returns an iterator
-       *  pointing to the sought after element.  If unsuccessful it returns the
-       *  past-the-end ( @c end() ) iterator.
-       */
-      iterator
-      find(const key_type& __x)
-      { return _M_t.find(__x); }
-
-      const_iterator
-      find(const key_type& __x) const
-      { return _M_t.find(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 754 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      template<typename _Kt>
-	auto
-	find(const _Kt& __x)
-	-> decltype(iterator{_M_t._M_find_tr(__x)})
-	{ return iterator{_M_t._M_find_tr(__x)}; }
-
-      template<typename _Kt>
-	auto
-	find(const _Kt& __x) const
-	-> decltype(const_iterator{_M_t._M_find_tr(__x)})
-	{ return const_iterator{_M_t._M_find_tr(__x)}; }
-#endif
-# 766 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      //@}
-
-      //@{
-      /**
-       *  @brief Finds the beginning of a subsequence matching given key.
-       *  @param  __x  Key to be located.
-       *  @return  Iterator pointing to first element equal to or greater
-       *           than key, or end().
-       *
-       *  This function returns the first element of a subsequence of elements
-       *  that matches the given key.  If unsuccessful it returns an iterator
-       *  pointing to the first element that has a greater value than given key
-       *  or end() if no such element exists.
-       */
-      iterator
-      lower_bound(const key_type& __x)
-      { return _M_t.lower_bound(__x); }
-
-      const_iterator
-      lower_bound(const key_type& __x) const
-      { return _M_t.lower_bound(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 789 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      template<typename _Kt>
-	auto
-	lower_bound(const _Kt& __x)
-	-> decltype(iterator(_M_t._M_lower_bound_tr(__x)))
-	{ return iterator(_M_t._M_lower_bound_tr(__x)); }
-
-      template<typename _Kt>
-	auto
-	lower_bound(const _Kt& __x) const
-	-> decltype(iterator(_M_t._M_lower_bound_tr(__x)))
-	{ return iterator(_M_t._M_lower_bound_tr(__x)); }
-#endif
-# 801 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      //@}
-
-      //@{
-      /**
-       *  @brief Finds the end of a subsequence matching given key.
-       *  @param  __x  Key to be located.
-       *  @return Iterator pointing to the first element
-       *          greater than key, or end().
-       */
-      iterator
-      upper_bound(const key_type& __x)
-      { return _M_t.upper_bound(__x); }
-
-      const_iterator
-      upper_bound(const key_type& __x) const
-      { return _M_t.upper_bound(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 819 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      template<typename _Kt>
-	auto
-	upper_bound(const _Kt& __x)
-	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
-	{ return iterator(_M_t._M_upper_bound_tr(__x)); }
-
-      template<typename _Kt>
-	auto
-	upper_bound(const _Kt& __x) const
-	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
-	{ return iterator(_M_t._M_upper_bound_tr(__x)); }
-#endif
-# 831 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      //@}
-
-      //@{
-      /**
-       *  @brief Finds a subsequence matching given key.
-       *  @param  __x  Key to be located.
-       *  @return  Pair of iterators that possibly points to the subsequence
-       *           matching given key.
-       *
-       *  This function is equivalent to
-       *  @code
-       *    std::make_pair(c.lower_bound(val),
-       *                   c.upper_bound(val))
-       *  @endcode
-       *  (but is faster than making the calls separately).
-       *
-       *  This function probably only makes sense for multisets.
-       */
-      std::pair<iterator, iterator>
-      equal_range(const key_type& __x)
-      { return _M_t.equal_range(__x); }
-
-      std::pair<const_iterator, const_iterator>
-      equal_range(const key_type& __x) const
-      { return _M_t.equal_range(__x); }
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
-# 858 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      template<typename _Kt>
-	auto
-	equal_range(const _Kt& __x)
-	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
-	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
-
-      template<typename _Kt>
-	auto
-	equal_range(const _Kt& __x) const
-	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
-	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
-#endif
-# 870 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-      //@}
-
-      template<typename _K1, typename _C1, typename _A1>
-	friend bool
-	operator==(const multiset<_K1, _C1, _A1>&,
-		   const multiset<_K1, _C1, _A1>&);
-
-      template<typename _K1, typename _C1, typename _A1>
-	friend bool
-	operator< (const multiset<_K1, _C1, _A1>&,
-		   const multiset<_K1, _C1, _A1>&);
-    };
-
-  /**
-   *  @brief  Multiset equality comparison.
-   *  @param  __x  A %multiset.
-   *  @param  __y  A %multiset of the same type as @a __x.
-   *  @return  True iff the size and elements of the multisets are equal.
-   *
-   *  This is an equivalence relation.  It is linear in the size of the
-   *  multisets.
-   *  Multisets are considered equivalent if their sizes are equal, and if
-   *  corresponding elements compare equal.
-  */
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator==(const multiset<_Key, _Compare, _Alloc>& __x,
-	       const multiset<_Key, _Compare, _Alloc>& __y)
-    { return __x._M_t == __y._M_t; }
-
-  /**
-   *  @brief  Multiset ordering relation.
-   *  @param  __x  A %multiset.
-   *  @param  __y  A %multiset of the same type as @a __x.
-   *  @return  True iff @a __x is lexicographically less than @a __y.
-   *
-   *  This is a total ordering relation.  It is linear in the size of the
-   *  sets.  The elements must be comparable with @c <.
-   *
-   *  See std::lexicographical_compare() for how the determination is made.
-  */
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator<(const multiset<_Key, _Compare, _Alloc>& __x,
-	      const multiset<_Key, _Compare, _Alloc>& __y)
-    { return __x._M_t < __y._M_t; }
-
-  ///  Returns !(x == y).
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator!=(const multiset<_Key, _Compare, _Alloc>& __x,
-	       const multiset<_Key, _Compare, _Alloc>& __y)
-    { return !(__x == __y); }
-
-  ///  Returns y < x.
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator>(const multiset<_Key,_Compare,_Alloc>& __x,
-	      const multiset<_Key,_Compare,_Alloc>& __y)
-    { return __y < __x; }
-
-  ///  Returns !(y < x)
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator<=(const multiset<_Key, _Compare, _Alloc>& __x,
-	       const multiset<_Key, _Compare, _Alloc>& __y)
-    { return !(__y < __x); }
-
-  ///  Returns !(x < y)
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline bool
-    operator>=(const multiset<_Key, _Compare, _Alloc>& __x,
-	       const multiset<_Key, _Compare, _Alloc>& __y)
-    { return !(__x < __y); }
-
-  /// See std::multiset::swap().
-  template<typename _Key, typename _Compare, typename _Alloc>
-    inline void
-    swap(multiset<_Key, _Compare, _Alloc>& __x,
-	 multiset<_Key, _Compare, _Alloc>& __y)
-    _GLIBCXX_NOEXCEPT_IF(noexcept(__x.swap(__y)))
-    { __x.swap(__y); }
-
-_GLIBCXX_END_NAMESPACE_CONTAINER
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus > 201402L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 956 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-_GLIBCXX_BEGIN_NAMESPACE_VERSION
-  // Allow std::multiset access to internals of compatible sets.
-  template<typename _Val, typename _Cmp1, typename _Alloc, typename _Cmp2>
-    struct
-    _Rb_tree_merge_helper<_GLIBCXX_STD_C::multiset<_Val, _Cmp1, _Alloc>,
-			  _Cmp2>
-    {
-    private:
-      friend class _GLIBCXX_STD_C::multiset<_Val, _Cmp1, _Alloc>;
-
-      static auto&
-      _S_get_tree(_GLIBCXX_STD_C::set<_Val, _Cmp2, _Alloc>& __set)
-      { return __set._M_t; }
-
-      static auto&
-      _S_get_tree(_GLIBCXX_STD_C::multiset<_Val, _Cmp2, _Alloc>& __set)
-      { return __set._M_t; }
-    };
-_GLIBCXX_END_NAMESPACE_VERSION
-#endif // C++17
-# 976 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-
-} // namespace std
-
-#endif /* _STL_MULTISET_H */
-# 980 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
-# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 2 3
-#if 0 /* expanded by -frewrite-includes */
-#include <bits/range_access.h>
-#endif /* expanded by -frewrite-includes */
-# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-# 64 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-
-#ifdef _GLIBCXX_DEBUG
-#if 0 /* expanded by -frewrite-includes */
-# include <debug/set>
-#endif /* expanded by -frewrite-includes */
-# 66 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-# 67 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-#endif
-# 68 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-
-#ifdef _GLIBCXX_PROFILE
-#if 0 /* expanded by -frewrite-includes */
-# include <profile/set>
-#endif /* expanded by -frewrite-includes */
-# 70 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-# 71 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-#endif
-# 72 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-
-#endif /* _GLIBCXX_SET */
-# 74 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
-# 4 "test.cpp" 2
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <string>
 #endif /* expanded by -frewrite-includes */
-# 4 "test.cpp"
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
 # 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string" 1 3
 // Components for manipulating sequences of characters -*- C++ -*-
 
@@ -36602,7 +31669,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 218 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/char_traits.h" 3
 #define __cpp_lib_constexpr_char_traits 201611
 
@@ -36693,7 +31760,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 303 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/char_traits.h" 3
 	if (__builtin_constant_p(__n)
 	    && __constant_char_array_p(__s1, __n)
@@ -36713,7 +31780,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 317 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/char_traits.h" 3
 	if (__constant_string_p(__s))
 	  return __gnu_cxx::char_traits<char_type>::length(__s);
@@ -36729,7 +31796,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 327 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/char_traits.h" 3
 	if (__builtin_constant_p(__n)
 	    && __builtin_constant_p(__a)
@@ -36820,7 +31887,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 412 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/char_traits.h" 3
 	if (__builtin_constant_p(__n)
 	    && __constant_char_array_p(__s1, __n)
@@ -36841,7 +31908,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 427 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/char_traits.h" 3
 	if (__constant_string_p(__s))
 	  return __gnu_cxx::char_traits<char_type>::length(__s);
@@ -36858,7 +31925,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 438 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/char_traits.h" 3
 	if (__builtin_constant_p(__n)
 	    && __builtin_constant_p(__a)
@@ -46906,13 +41973,3039 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 48 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
 #if 0 /* expanded by -frewrite-includes */
 # include <string_view>
 #endif /* expanded by -frewrite-includes */
 # 48 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
-# 49 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 1 3
+// Components for manipulating non-owning sequences of characters -*- C++ -*-
+
+// Copyright (C) 2013-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file string_view
+ *  This is a Standard C++ Library header.
+ */
+
+//
+// N3762 basic_string_view library
+//
+
+#ifndef _GLIBCXX_STRING_VIEW
+#define _GLIBCXX_STRING_VIEW 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201703L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+#if 0 /* expanded by -frewrite-includes */
+#include <limits>
+#endif /* expanded by -frewrite-includes */
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 1 3
+// The template and inlines for the numeric_limits classes. -*- C++ -*-
+
+// Copyright (C) 1999-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file include/limits
+ *  This is a Standard C++ Library header.
+ */
+
+// Note: this is not a conforming implementation.
+// Written by Gabriel Dos Reis <gdr@codesourcery.com>
+
+//
+// ISO 14882:1998
+// 18.2.1
+//
+
+#ifndef _GLIBCXX_NUMERIC_LIMITS
+#define _GLIBCXX_NUMERIC_LIMITS 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/c++config.h>
+#endif /* expanded by -frewrite-includes */
+# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+# 43 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+//
+// The numeric_limits<> traits document implementation-defined aspects
+// of fundamental arithmetic data types (integers and floating points).
+// From Standard C++ point of view, there are 14 such types:
+//   * integers
+//         bool							(1)
+//         char, signed char, unsigned char, wchar_t            (4)
+//         short, unsigned short				(2)
+//         int, unsigned					(2)
+//         long, unsigned long					(2)
+//
+//   * floating points
+//         float						(1)
+//         double						(1)
+//         long double						(1)
+//
+// GNU C++ understands (where supported by the host C-library)
+//   * integer
+//         long long, unsigned long long			(2)
+//
+// which brings us to 16 fundamental arithmetic data types in GNU C++.
+//
+//
+// Since a numeric_limits<> is a bit tricky to get right, we rely on
+// an interface composed of macros which should be defined in config/os
+// or config/cpu when they differ from the generic (read arbitrary)
+// definitions given here.
+//
+
+// These values can be overridden in the target configuration file.
+// The default values are appropriate for many 32-bit targets.
+
+// GCC only intrinsically supports modulo integral types.  The only remaining
+// integral exceptional values is division by zero.  Only targets that do not
+// signal division by zero in some "hard to ignore" way should use false.
+#ifndef __glibcxx_integral_traps
+# define __glibcxx_integral_traps true
+#endif
+# 82 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+// float
+//
+
+// Default values.  Should be overridden in configuration files if necessary.
+
+#ifndef __glibcxx_float_has_denorm_loss
+#  define __glibcxx_float_has_denorm_loss false
+#endif
+# 91 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifndef __glibcxx_float_traps
+#  define __glibcxx_float_traps false
+#endif
+# 94 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifndef __glibcxx_float_tinyness_before
+#  define __glibcxx_float_tinyness_before false
+#endif
+# 97 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+// double
+
+// Default values.  Should be overridden in configuration files if necessary.
+
+#ifndef __glibcxx_double_has_denorm_loss
+#  define __glibcxx_double_has_denorm_loss false
+#endif
+# 105 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifndef __glibcxx_double_traps
+#  define __glibcxx_double_traps false
+#endif
+# 108 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifndef __glibcxx_double_tinyness_before
+#  define __glibcxx_double_tinyness_before false
+#endif
+# 111 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+// long double
+
+// Default values.  Should be overridden in configuration files if necessary.
+
+#ifndef __glibcxx_long_double_has_denorm_loss
+#  define __glibcxx_long_double_has_denorm_loss false
+#endif
+# 119 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifndef __glibcxx_long_double_traps
+#  define __glibcxx_long_double_traps false
+#endif
+# 122 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifndef __glibcxx_long_double_tinyness_before
+#  define __glibcxx_long_double_tinyness_before false
+#endif
+# 125 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+// You should not need to define any macros below this point.
+
+#define __glibcxx_signed_b(T,B)	((T)(-1) < 0)
+
+#define __glibcxx_min_b(T,B)					\
+  (__glibcxx_signed_b (T,B) ? -__glibcxx_max_b (T,B) - 1 : (T)0)
+
+#define __glibcxx_max_b(T,B)						\
+  (__glibcxx_signed_b (T,B) ?						\
+   (((((T)1 << (__glibcxx_digits_b (T,B) - 1)) - 1) << 1) + 1) : ~(T)0)
+
+#define __glibcxx_digits_b(T,B)				\
+  (B - __glibcxx_signed_b (T,B))
+
+// The fraction 643/2136 approximates log10(2) to 7 significant digits.
+#define __glibcxx_digits10_b(T,B)		\
+  (__glibcxx_digits_b (T,B) * 643L / 2136)
+
+#define __glibcxx_signed(T) \
+  __glibcxx_signed_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_min(T) \
+  __glibcxx_min_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_max(T) \
+  __glibcxx_max_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_digits(T) \
+  __glibcxx_digits_b (T, sizeof(T) * __CHAR_BIT__)
+#define __glibcxx_digits10(T) \
+  __glibcxx_digits10_b (T, sizeof(T) * __CHAR_BIT__)
+
+#define __glibcxx_max_digits10(T) \
+  (2 + (T) * 643L / 2136)
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+  /**
+   *  @brief Describes the rounding style for floating-point types.
+   *
+   *  This is used in the std::numeric_limits class.
+  */
+  enum float_round_style
+  {
+    round_indeterminate       = -1,    /// Intermediate.
+    round_toward_zero         = 0,     /// To zero.
+    round_to_nearest          = 1,     /// To the nearest representable value.
+    round_toward_infinity     = 2,     /// To infinity.
+    round_toward_neg_infinity = 3      /// To negative infinity.
+  };
+
+  /**
+   *  @brief Describes the denormalization for floating-point types.
+   *
+   *  These values represent the presence or absence of a variable number
+   *  of exponent bits.  This type is used in the std::numeric_limits class.
+  */
+  enum float_denorm_style
+  {
+    /// Indeterminate at compile time whether denormalized values are allowed.
+    denorm_indeterminate = -1,
+    /// The type does not allow denormalized values.
+    denorm_absent        = 0,
+    /// The type allows denormalized values.
+    denorm_present       = 1
+  };
+
+  /**
+   *  @brief Part of std::numeric_limits.
+   *
+   *  The @c static @c const members are usable as integral constant
+   *  expressions.
+   *
+   *  @note This is a separate class for purposes of efficiency; you
+   *        should only access these members as part of an instantiation
+   *        of the std::numeric_limits class.
+  */
+  struct __numeric_limits_base
+  {
+    /** This will be true for all fundamental types (which have
+	specializations), and false for everything else.  */
+    static _GLIBCXX_USE_CONSTEXPR bool is_specialized = false;
+
+    /** The number of @c radix digits that be represented without change:  for
+	integer types, the number of non-sign bits in the mantissa; for
+	floating types, the number of @c radix digits in the mantissa.  */
+    static _GLIBCXX_USE_CONSTEXPR int digits = 0;
+
+    /** The number of base 10 digits that can be represented without change. */
+    static _GLIBCXX_USE_CONSTEXPR int digits10 = 0;
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 217 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+    /** The number of base 10 digits required to ensure that values which
+	differ are always differentiated.  */
+    static constexpr int max_digits10 = 0;
+#endif
+# 221 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+    /** True if the type is signed.  */
+    static _GLIBCXX_USE_CONSTEXPR bool is_signed = false;
+
+    /** True if the type is integer.  */
+    static _GLIBCXX_USE_CONSTEXPR bool is_integer = false;
+
+    /** True if the type uses an exact representation. All integer types are
+	exact, but not all exact types are integer.  For example, rational and
+	fixed-exponent representations are exact but not integer. */
+    static _GLIBCXX_USE_CONSTEXPR bool is_exact = false;
+
+    /** For integer types, specifies the base of the representation.  For
+	floating types, specifies the base of the exponent representation.  */
+    static _GLIBCXX_USE_CONSTEXPR int radix = 0;
+
+    /** The minimum negative integer such that @c radix raised to the power of
+	(one less than that integer) is a normalized floating point number.  */
+    static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+
+    /** The minimum negative integer such that 10 raised to that power is in
+	the range of normalized floating point numbers.  */
+    static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+
+    /** The maximum positive integer such that @c radix raised to the power of
+	(one less than that integer) is a representable finite floating point
+	number.  */
+    static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+
+    /** The maximum positive integer such that 10 raised to that power is in
+	the range of representable finite floating point numbers.  */
+    static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+    /** True if the type has a representation for positive infinity.  */
+    static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+
+    /** True if the type has a representation for a quiet (non-signaling)
+	Not a Number.  */
+    static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+
+    /** True if the type has a representation for a signaling
+	Not a Number.  */
+    static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+
+    /** See std::float_denorm_style for more information.  */
+    static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm = denorm_absent;
+
+    /** True if loss of accuracy is detected as a denormalization loss,
+	rather than as an inexact result. */
+    static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+    /** True if-and-only-if the type adheres to the IEC 559 standard, also
+	known as IEEE 754.  (Only makes sense for floating point types.)  */
+    static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+
+    /** True if the set of values representable by the type is
+	finite.  All built-in types are bounded, this member would be
+	false for arbitrary precision types. */
+    static _GLIBCXX_USE_CONSTEXPR bool is_bounded = false;
+
+    /** True if the type is @e modulo. A type is modulo if, for any
+	operation involving +, -, or * on values of that type whose
+	result would fall outside the range [min(),max()], the value
+	returned differs from the true value by an integer multiple of
+	max() - min() + 1. On most machines, this is false for floating
+	types, true for unsigned integers, and true for signed integers.
+	See PR22200 about signed integers.  */
+    static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+    /** True if trapping is implemented for this type.  */
+    static _GLIBCXX_USE_CONSTEXPR bool traps = false;
+
+    /** True if tininess is detected before rounding.  (see IEC 559)  */
+    static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+
+    /** See std::float_round_style for more information.  This is only
+	meaningful for floating types; integer types will all be
+	round_toward_zero.  */
+    static _GLIBCXX_USE_CONSTEXPR float_round_style round_style =
+						    round_toward_zero;
+  };
+
+  /**
+   *  @brief Properties of fundamental types.
+   *
+   *  This class allows a program to obtain information about the
+   *  representation of a fundamental type on a given platform.  For
+   *  non-fundamental types, the functions will return 0 and the data
+   *  members will all be @c false.
+  */
+  template<typename _Tp>
+    struct numeric_limits : public __numeric_limits_base
+    {
+      /** The minimum finite value, or for floating types with
+	  denormalization, the minimum positive normalized value.  */
+      static _GLIBCXX_CONSTEXPR _Tp
+      min() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+
+      /** The maximum finite value.  */
+      static _GLIBCXX_CONSTEXPR _Tp
+      max() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 324 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      /** A finite value x such that there is no other finite value y
+       *  where y < x.  */
+      static constexpr _Tp
+      lowest() noexcept { return _Tp(); }
+#endif
+# 329 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      /** The @e machine @e epsilon:  the difference between 1 and the least
+	  value greater than 1 that is representable.  */
+      static _GLIBCXX_CONSTEXPR _Tp
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+
+      /** The maximum rounding error measurement (see LIA-1).  */
+      static _GLIBCXX_CONSTEXPR _Tp
+      round_error() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+
+      /** The representation of positive infinity, if @c has_infinity.  */
+      static _GLIBCXX_CONSTEXPR _Tp
+      infinity() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+
+      /** The representation of a quiet Not a Number,
+	  if @c has_quiet_NaN. */
+      static _GLIBCXX_CONSTEXPR _Tp
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+
+      /** The representation of a signaling Not a Number, if
+	  @c has_signaling_NaN. */
+      static _GLIBCXX_CONSTEXPR _Tp
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+
+      /** The minimum positive denormalized value.  For types where
+	  @c has_denorm is false, this is the minimum positive normalized
+	  value.  */
+      static _GLIBCXX_CONSTEXPR _Tp
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return _Tp(); }
+    };
+
+  // _GLIBCXX_RESOLVE_LIB_DEFECTS
+  // 559. numeric_limits<const T>
+
+  template<typename _Tp>
+    struct numeric_limits<const _Tp>
+    : public numeric_limits<_Tp> { };
+
+  template<typename _Tp>
+    struct numeric_limits<volatile _Tp>
+    : public numeric_limits<_Tp> { };
+
+  template<typename _Tp>
+    struct numeric_limits<const volatile _Tp>
+    : public numeric_limits<_Tp> { };
+
+  // Now there follow 16 explicit specializations.  Yes, 16.  Make sure
+  // you get the count right. (18 in C++11 mode, with char16_t and char32_t.)
+
+  // _GLIBCXX_RESOLVE_LIB_DEFECTS
+  // 184. numeric_limits<bool> wording problems
+
+  /// numeric_limits<bool> specialization.
+  template<>
+    struct numeric_limits<bool>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR bool
+      min() _GLIBCXX_USE_NOEXCEPT { return false; }
+
+      static _GLIBCXX_CONSTEXPR bool
+      max() _GLIBCXX_USE_NOEXCEPT { return true; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 394 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr bool
+      lowest() noexcept { return min(); }
+#endif
+# 397 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR int digits = 1;
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = 0;
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 400 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 402 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR bool
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return false; }
+
+      static _GLIBCXX_CONSTEXPR bool
+      round_error() _GLIBCXX_USE_NOEXCEPT { return false; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR bool
+      infinity() _GLIBCXX_USE_NOEXCEPT { return false; }
+
+      static _GLIBCXX_CONSTEXPR bool
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return false; }
+
+      static _GLIBCXX_CONSTEXPR bool
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return false; }
+
+      static _GLIBCXX_CONSTEXPR bool
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return false; }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      // It is not clear what it means for a boolean type to trap.
+      // This is a DR on the LWG issue list.  Here, I use integer
+      // promotion semantics.
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<char> specialization.
+  template<>
+    struct numeric_limits<char>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR char
+      min() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_min(char); }
+
+      static _GLIBCXX_CONSTEXPR char
+      max() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_max(char); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 463 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr char
+      lowest() noexcept { return min(); }
+#endif
+# 466 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __glibcxx_digits (char);
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = __glibcxx_digits10 (char);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 470 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 472 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = __glibcxx_signed (char);
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR char
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR char
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR
+      char infinity() _GLIBCXX_USE_NOEXCEPT { return char(); }
+
+      static _GLIBCXX_CONSTEXPR char
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return char(); }
+
+      static _GLIBCXX_CONSTEXPR char
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return char(); }
+
+      static _GLIBCXX_CONSTEXPR char
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return static_cast<char>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = !is_signed;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<signed char> specialization.
+  template<>
+    struct numeric_limits<signed char>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR signed char
+      min() _GLIBCXX_USE_NOEXCEPT { return -__SCHAR_MAX__ - 1; }
+
+      static _GLIBCXX_CONSTEXPR signed char
+      max() _GLIBCXX_USE_NOEXCEPT { return __SCHAR_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 530 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr signed char
+      lowest() noexcept { return min(); }
+#endif
+# 533 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __glibcxx_digits (signed char);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (signed char);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 538 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 540 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR signed char
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR signed char
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR signed char
+      infinity() _GLIBCXX_USE_NOEXCEPT { return static_cast<signed char>(0); }
+
+      static _GLIBCXX_CONSTEXPR signed char
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<signed char>(0); }
+
+      static _GLIBCXX_CONSTEXPR signed char
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<signed char>(0); }
+
+      static _GLIBCXX_CONSTEXPR signed char
+      denorm_min() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<signed char>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<unsigned char> specialization.
+  template<>
+    struct numeric_limits<unsigned char>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      min() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      max() _GLIBCXX_USE_NOEXCEPT { return __SCHAR_MAX__ * 2U + 1; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 600 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr unsigned char
+      lowest() noexcept { return min(); }
+#endif
+# 603 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits
+       = __glibcxx_digits (unsigned char);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (unsigned char);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 609 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 611 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      infinity() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned char>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned char>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned char>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned char
+      denorm_min() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned char>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = true;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<wchar_t> specialization.
+  template<>
+    struct numeric_limits<wchar_t>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      min() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_min (wchar_t); }
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      max() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_max (wchar_t); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 673 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr wchar_t
+      lowest() noexcept { return min(); }
+#endif
+# 676 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __glibcxx_digits (wchar_t);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (wchar_t);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 681 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 683 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = __glibcxx_signed (wchar_t);
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      infinity() _GLIBCXX_USE_NOEXCEPT { return wchar_t(); }
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return wchar_t(); }
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return wchar_t(); }
+
+      static _GLIBCXX_CONSTEXPR wchar_t
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return wchar_t(); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = !is_signed;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 729 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+  /// numeric_limits<char16_t> specialization.
+  template<>
+    struct numeric_limits<char16_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char16_t
+      min() noexcept { return __glibcxx_min (char16_t); }
+
+      static constexpr char16_t
+      max() noexcept { return __glibcxx_max (char16_t); }
+
+      static constexpr char16_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = __glibcxx_digits (char16_t);
+      static constexpr int digits10 = __glibcxx_digits10 (char16_t);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = __glibcxx_signed (char16_t);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char16_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char16_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char16_t
+      infinity() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      quiet_NaN() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      signaling_NaN() noexcept { return char16_t(); }
+
+      static constexpr char16_t
+      denorm_min() noexcept { return char16_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = __glibcxx_integral_traps;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style = round_toward_zero;
+    };
+
+  /// numeric_limits<char32_t> specialization.
+  template<>
+    struct numeric_limits<char32_t>
+    {
+      static constexpr bool is_specialized = true;
+
+      static constexpr char32_t
+      min() noexcept { return __glibcxx_min (char32_t); }
+
+      static constexpr char32_t
+      max() noexcept { return __glibcxx_max (char32_t); }
+
+      static constexpr char32_t
+      lowest() noexcept { return min(); }
+
+      static constexpr int digits = __glibcxx_digits (char32_t);
+      static constexpr int digits10 = __glibcxx_digits10 (char32_t);
+      static constexpr int max_digits10 = 0;
+      static constexpr bool is_signed = __glibcxx_signed (char32_t);
+      static constexpr bool is_integer = true;
+      static constexpr bool is_exact = true;
+      static constexpr int radix = 2;
+
+      static constexpr char32_t
+      epsilon() noexcept { return 0; }
+
+      static constexpr char32_t
+      round_error() noexcept { return 0; }
+
+      static constexpr int min_exponent = 0;
+      static constexpr int min_exponent10 = 0;
+      static constexpr int max_exponent = 0;
+      static constexpr int max_exponent10 = 0;
+
+      static constexpr bool has_infinity = false;
+      static constexpr bool has_quiet_NaN = false;
+      static constexpr bool has_signaling_NaN = false;
+      static constexpr float_denorm_style has_denorm = denorm_absent;
+      static constexpr bool has_denorm_loss = false;
+
+      static constexpr char32_t
+      infinity() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      quiet_NaN() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      signaling_NaN() noexcept { return char32_t(); }
+
+      static constexpr char32_t
+      denorm_min() noexcept { return char32_t(); }
+
+      static constexpr bool is_iec559 = false;
+      static constexpr bool is_bounded = true;
+      static constexpr bool is_modulo = !is_signed;
+
+      static constexpr bool traps = __glibcxx_integral_traps;
+      static constexpr bool tinyness_before = false;
+      static constexpr float_round_style round_style = round_toward_zero;
+    };
+#endif
+# 851 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+  /// numeric_limits<short> specialization.
+  template<>
+    struct numeric_limits<short>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR short
+      min() _GLIBCXX_USE_NOEXCEPT { return -__SHRT_MAX__ - 1; }
+
+      static _GLIBCXX_CONSTEXPR short
+      max() _GLIBCXX_USE_NOEXCEPT { return __SHRT_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 865 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr short
+      lowest() noexcept { return min(); }
+#endif
+# 868 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __glibcxx_digits (short);
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = __glibcxx_digits10 (short);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 872 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 874 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR short
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR short
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR short
+      infinity() _GLIBCXX_USE_NOEXCEPT { return short(); }
+
+      static _GLIBCXX_CONSTEXPR short
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return short(); }
+
+      static _GLIBCXX_CONSTEXPR short
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return short(); }
+
+      static _GLIBCXX_CONSTEXPR short
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return short(); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<unsigned short> specialization.
+  template<>
+    struct numeric_limits<unsigned short>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      min() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      max() _GLIBCXX_USE_NOEXCEPT { return __SHRT_MAX__ * 2U + 1; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 932 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr unsigned short
+      lowest() noexcept { return min(); }
+#endif
+# 935 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits
+       = __glibcxx_digits (unsigned short);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (unsigned short);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 941 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 943 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      infinity() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned short>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned short>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned short>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned short
+      denorm_min() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned short>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = true;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<int> specialization.
+  template<>
+    struct numeric_limits<int>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR int
+      min() _GLIBCXX_USE_NOEXCEPT { return -__INT_MAX__ - 1; }
+
+      static _GLIBCXX_CONSTEXPR int
+      max() _GLIBCXX_USE_NOEXCEPT { return __INT_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1005 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int
+      lowest() noexcept { return min(); }
+#endif
+# 1008 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __glibcxx_digits (int);
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = __glibcxx_digits10 (int);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1012 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 1014 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR int
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR int
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR int
+      infinity() _GLIBCXX_USE_NOEXCEPT { return static_cast<int>(0); }
+
+      static _GLIBCXX_CONSTEXPR int
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<int>(0); }
+
+      static _GLIBCXX_CONSTEXPR int
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<int>(0); }
+
+      static _GLIBCXX_CONSTEXPR int
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return static_cast<int>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<unsigned int> specialization.
+  template<>
+    struct numeric_limits<unsigned int>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      min() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      max() _GLIBCXX_USE_NOEXCEPT { return __INT_MAX__ * 2U + 1; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1072 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr unsigned int
+      lowest() noexcept { return min(); }
+#endif
+# 1075 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits
+       = __glibcxx_digits (unsigned int);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (unsigned int);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1081 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 1083 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      infinity() _GLIBCXX_USE_NOEXCEPT { return static_cast<unsigned int>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned int>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned int>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned int
+      denorm_min() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned int>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = true;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<long> specialization.
+  template<>
+    struct numeric_limits<long>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR long
+      min() _GLIBCXX_USE_NOEXCEPT { return -__LONG_MAX__ - 1; }
+
+      static _GLIBCXX_CONSTEXPR long
+      max() _GLIBCXX_USE_NOEXCEPT { return __LONG_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1144 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr long
+      lowest() noexcept { return min(); }
+#endif
+# 1147 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __glibcxx_digits (long);
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = __glibcxx_digits10 (long);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1151 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 1153 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR long
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR long
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR long
+      infinity() _GLIBCXX_USE_NOEXCEPT { return static_cast<long>(0); }
+
+      static _GLIBCXX_CONSTEXPR long
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<long>(0); }
+
+      static _GLIBCXX_CONSTEXPR long
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<long>(0); }
+
+      static _GLIBCXX_CONSTEXPR long
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return static_cast<long>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<unsigned long> specialization.
+  template<>
+    struct numeric_limits<unsigned long>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      min() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      max() _GLIBCXX_USE_NOEXCEPT { return __LONG_MAX__ * 2UL + 1; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1211 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr unsigned long
+      lowest() noexcept { return min(); }
+#endif
+# 1214 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits
+       = __glibcxx_digits (unsigned long);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (unsigned long);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1220 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 1222 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      infinity() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned long
+      denorm_min() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = true;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<long long> specialization.
+  template<>
+    struct numeric_limits<long long>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR long long
+      min() _GLIBCXX_USE_NOEXCEPT { return -__LONG_LONG_MAX__ - 1; }
+
+      static _GLIBCXX_CONSTEXPR long long
+      max() _GLIBCXX_USE_NOEXCEPT { return __LONG_LONG_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1284 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr long long
+      lowest() noexcept { return min(); }
+#endif
+# 1287 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits
+       = __glibcxx_digits (long long);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (long long);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1293 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 1295 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR long long
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR long long
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR long long
+      infinity() _GLIBCXX_USE_NOEXCEPT { return static_cast<long long>(0); }
+
+      static _GLIBCXX_CONSTEXPR long long
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return static_cast<long long>(0); }
+
+      static _GLIBCXX_CONSTEXPR long long
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<long long>(0); }
+
+      static _GLIBCXX_CONSTEXPR long long
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return static_cast<long long>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+  /// numeric_limits<unsigned long long> specialization.
+  template<>
+    struct numeric_limits<unsigned long long>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      min() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      max() _GLIBCXX_USE_NOEXCEPT { return __LONG_LONG_MAX__ * 2ULL + 1; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1354 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr unsigned long long
+      lowest() noexcept { return min(); }
+#endif
+# 1357 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits
+       = __glibcxx_digits (unsigned long long);
+      static _GLIBCXX_USE_CONSTEXPR int digits10
+       = __glibcxx_digits10 (unsigned long long);
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1363 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10 = 0;
+#endif
+# 1365 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true;
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2;
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+       = denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false;
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      infinity() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long long>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long long>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long long>(0); }
+
+      static _GLIBCXX_CONSTEXPR unsigned long long
+      denorm_min() _GLIBCXX_USE_NOEXCEPT
+      { return static_cast<unsigned long long>(0); }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = true;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_toward_zero;
+    };
+
+#if 0 /* disabled by -frewrite-includes */
+#if !defined(__STRICT_ANSI__)
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 1415 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+#define __INT_N(TYPE, BITSIZE, EXT, UEXT)			\
+  template<> 									\
+    struct numeric_limits<TYPE> 						\
+    { 										\
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true; 		\
+ 										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+	min() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_min_b (TYPE, BITSIZE); } \
+ 										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+      max() _GLIBCXX_USE_NOEXCEPT { return __glibcxx_max_b (TYPE, BITSIZE); } 	\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR int digits 					\
+       = BITSIZE - 1; 								\
+      static _GLIBCXX_USE_CONSTEXPR int digits10 				\
+       = (BITSIZE - 1) * 643L / 2136; 						\
+      										\
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true; 			\
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2; 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; } 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; } 			\
+ 										\
+      EXT									\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0; 			\
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0; 			\
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0; 			\
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0; 			\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false; 		\
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false; 		\
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm 		\
+       = denorm_absent; 							\
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false; 		\
+ 										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+      infinity() _GLIBCXX_USE_NOEXCEPT 						\
+      { return static_cast<TYPE>(0); } 						\
+ 										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT 					\
+      { return static_cast<TYPE>(0); } 						\
+       										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT 					\
+      { return static_cast<TYPE>(0); } 						\
+       										\
+      static _GLIBCXX_CONSTEXPR TYPE 						\
+      denorm_min() _GLIBCXX_USE_NOEXCEPT 					\
+      { return static_cast<TYPE>(0); } 						\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false; 			\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR bool traps 					\
+       = __glibcxx_integral_traps; 						\
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false; 		\
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style 		\
+       = round_toward_zero; 							\
+    }; 										\
+ 										\
+  template<> 									\
+    struct numeric_limits<unsigned TYPE> 					\
+    { 										\
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true; 		\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      min() _GLIBCXX_USE_NOEXCEPT { return 0; } 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      max() _GLIBCXX_USE_NOEXCEPT						\
+      { return  __glibcxx_max_b (unsigned TYPE, BITSIZE); }			\
+ 										\
+      UEXT									\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR int digits 					\
+       = BITSIZE; 								\
+      static _GLIBCXX_USE_CONSTEXPR int digits10 				\
+       = BITSIZE * 643L / 2136; 						\
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = false; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = true; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = true; 			\
+      static _GLIBCXX_USE_CONSTEXPR int radix = 2; 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return 0; } 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0; } 			\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = 0; 			\
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = 0; 			\
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = 0; 			\
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = 0; 			\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = false; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = false; 		\
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = false; 		\
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm 		\
+       = denorm_absent; 							\
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss = false; 		\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      infinity() _GLIBCXX_USE_NOEXCEPT 						\
+      { return static_cast<unsigned TYPE>(0); } 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT 					\
+      { return static_cast<unsigned TYPE>(0); } 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT 					\
+      { return static_cast<unsigned TYPE>(0); } 				\
+ 										\
+      static _GLIBCXX_CONSTEXPR unsigned TYPE 					\
+      denorm_min() _GLIBCXX_USE_NOEXCEPT 					\
+      { return static_cast<unsigned TYPE>(0); } 				\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559 = false; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true; 			\
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = true; 			\
+ 										\
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_integral_traps; 	\
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before = false; 		\
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style 		\
+       = round_toward_zero; 							\
+    };
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 1553 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+#define __INT_N_201103(TYPE)							\
+      static constexpr TYPE 							\
+      lowest() noexcept { return min(); }					\
+      static constexpr int max_digits10 = 0;
+
+#define __INT_N_U201103(TYPE)							\
+      static constexpr unsigned TYPE 						\
+      lowest() noexcept { return min(); }					\
+      static constexpr int max_digits10 = 0;
+
+#else
+# 1565 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#define __INT_N_201103(TYPE)
+#define __INT_N_U201103(TYPE)
+#endif
+# 1568 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+#ifdef __GLIBCXX_TYPE_INT_N_0
+  __INT_N(__GLIBCXX_TYPE_INT_N_0, __GLIBCXX_BITSIZE_INT_N_0,
+	  __INT_N_201103 (__GLIBCXX_TYPE_INT_N_0), __INT_N_U201103 (__GLIBCXX_TYPE_INT_N_0))
+#endif
+# 1573 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifdef __GLIBCXX_TYPE_INT_N_1
+  __INT_N (__GLIBCXX_TYPE_INT_N_1, __GLIBCXX_BITSIZE_INT_N_1,
+	  __INT_N_201103 (__GLIBCXX_TYPE_INT_N_1), __INT_N_U201103 (__GLIBCXX_TYPE_INT_N_1))
+#endif
+# 1577 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifdef __GLIBCXX_TYPE_INT_N_2
+  __INT_N (__GLIBCXX_TYPE_INT_N_2, __GLIBCXX_BITSIZE_INT_N_2,
+	  __INT_N_201103 (__GLIBCXX_TYPE_INT_N_2), __INT_N_U201103 (__GLIBCXX_TYPE_INT_N_2))
+#endif
+# 1581 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+#ifdef __GLIBCXX_TYPE_INT_N_3
+  __INT_N (__GLIBCXX_TYPE_INT_N_3, __GLIBCXX_BITSIZE_INT_N_3,
+	  __INT_N_201103 (__GLIBCXX_TYPE_INT_N_3), __INT_N_U201103 (__GLIBCXX_TYPE_INT_N_3))
+#endif
+# 1585 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+#undef __INT_N
+#undef __INT_N_201103
+#undef __INT_N_U201103
+
+#endif
+# 1591 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+  /// numeric_limits<float> specialization.
+  template<>
+    struct numeric_limits<float>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR float
+      min() _GLIBCXX_USE_NOEXCEPT { return __FLT_MIN__; }
+
+      static _GLIBCXX_CONSTEXPR float
+      max() _GLIBCXX_USE_NOEXCEPT { return __FLT_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1605 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr float
+      lowest() noexcept { return -__FLT_MAX__; }
+#endif
+# 1608 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __FLT_MANT_DIG__;
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = __FLT_DIG__;
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1612 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10
+	 = __glibcxx_max_digits10 (__FLT_MANT_DIG__);
+#endif
+# 1615 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = false;
+      static _GLIBCXX_USE_CONSTEXPR int radix = __FLT_RADIX__;
+
+      static _GLIBCXX_CONSTEXPR float
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return __FLT_EPSILON__; }
+
+      static _GLIBCXX_CONSTEXPR float
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0.5F; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = __FLT_MIN_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = __FLT_MIN_10_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = __FLT_MAX_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = __FLT_MAX_10_EXP__;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = __FLT_HAS_INFINITY__;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = __FLT_HAS_QUIET_NAN__;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = has_quiet_NaN;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+	= bool(__FLT_HAS_DENORM__) ? denorm_present : denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss
+       = __glibcxx_float_has_denorm_loss;
+
+      static _GLIBCXX_CONSTEXPR float
+      infinity() _GLIBCXX_USE_NOEXCEPT { return __builtin_huge_valf(); }
+
+      static _GLIBCXX_CONSTEXPR float
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return __builtin_nanf(""); }
+
+      static _GLIBCXX_CONSTEXPR float
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return __builtin_nansf(""); }
+
+      static _GLIBCXX_CONSTEXPR float
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return __FLT_DENORM_MIN__; }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559
+	= has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_float_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before
+       = __glibcxx_float_tinyness_before;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_to_nearest;
+    };
+
+#undef __glibcxx_float_has_denorm_loss
+#undef __glibcxx_float_traps
+#undef __glibcxx_float_tinyness_before
+
+  /// numeric_limits<double> specialization.
+  template<>
+    struct numeric_limits<double>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR double
+      min() _GLIBCXX_USE_NOEXCEPT { return __DBL_MIN__; }
+
+      static _GLIBCXX_CONSTEXPR double
+      max() _GLIBCXX_USE_NOEXCEPT { return __DBL_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1680 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr double
+      lowest() noexcept { return -__DBL_MAX__; }
+#endif
+# 1683 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __DBL_MANT_DIG__;
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = __DBL_DIG__;
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1687 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr int max_digits10
+	 = __glibcxx_max_digits10 (__DBL_MANT_DIG__);
+#endif
+# 1690 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = false;
+      static _GLIBCXX_USE_CONSTEXPR int radix = __FLT_RADIX__;
+
+      static _GLIBCXX_CONSTEXPR double
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return __DBL_EPSILON__; }
+
+      static _GLIBCXX_CONSTEXPR double
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0.5; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = __DBL_MIN_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = __DBL_MIN_10_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = __DBL_MAX_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = __DBL_MAX_10_EXP__;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = __DBL_HAS_INFINITY__;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = __DBL_HAS_QUIET_NAN__;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = has_quiet_NaN;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+	= bool(__DBL_HAS_DENORM__) ? denorm_present : denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss
+        = __glibcxx_double_has_denorm_loss;
+
+      static _GLIBCXX_CONSTEXPR double
+      infinity() _GLIBCXX_USE_NOEXCEPT { return __builtin_huge_val(); }
+
+      static _GLIBCXX_CONSTEXPR double
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return __builtin_nan(""); }
+
+      static _GLIBCXX_CONSTEXPR double
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return __builtin_nans(""); }
+
+      static _GLIBCXX_CONSTEXPR double
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return __DBL_DENORM_MIN__; }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559
+	= has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_double_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before
+       = __glibcxx_double_tinyness_before;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style
+       = round_to_nearest;
+    };
+
+#undef __glibcxx_double_has_denorm_loss
+#undef __glibcxx_double_traps
+#undef __glibcxx_double_tinyness_before
+
+  /// numeric_limits<long double> specialization.
+  template<>
+    struct numeric_limits<long double>
+    {
+      static _GLIBCXX_USE_CONSTEXPR bool is_specialized = true;
+
+      static _GLIBCXX_CONSTEXPR long double
+      min() _GLIBCXX_USE_NOEXCEPT { return __LDBL_MIN__; }
+
+      static _GLIBCXX_CONSTEXPR long double
+      max() _GLIBCXX_USE_NOEXCEPT { return __LDBL_MAX__; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1755 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static constexpr long double
+      lowest() noexcept { return -__LDBL_MAX__; }
+#endif
+# 1758 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+
+      static _GLIBCXX_USE_CONSTEXPR int digits = __LDBL_MANT_DIG__;
+      static _GLIBCXX_USE_CONSTEXPR int digits10 = __LDBL_DIG__;
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1762 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR int max_digits10
+	 = __glibcxx_max_digits10 (__LDBL_MANT_DIG__);
+#endif
+# 1765 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+      static _GLIBCXX_USE_CONSTEXPR bool is_signed = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_integer = false;
+      static _GLIBCXX_USE_CONSTEXPR bool is_exact = false;
+      static _GLIBCXX_USE_CONSTEXPR int radix = __FLT_RADIX__;
+
+      static _GLIBCXX_CONSTEXPR long double
+      epsilon() _GLIBCXX_USE_NOEXCEPT { return __LDBL_EPSILON__; }
+
+      static _GLIBCXX_CONSTEXPR long double
+      round_error() _GLIBCXX_USE_NOEXCEPT { return 0.5L; }
+
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent = __LDBL_MIN_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int min_exponent10 = __LDBL_MIN_10_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent = __LDBL_MAX_EXP__;
+      static _GLIBCXX_USE_CONSTEXPR int max_exponent10 = __LDBL_MAX_10_EXP__;
+
+      static _GLIBCXX_USE_CONSTEXPR bool has_infinity = __LDBL_HAS_INFINITY__;
+      static _GLIBCXX_USE_CONSTEXPR bool has_quiet_NaN = __LDBL_HAS_QUIET_NAN__;
+      static _GLIBCXX_USE_CONSTEXPR bool has_signaling_NaN = has_quiet_NaN;
+      static _GLIBCXX_USE_CONSTEXPR float_denorm_style has_denorm
+	= bool(__LDBL_HAS_DENORM__) ? denorm_present : denorm_absent;
+      static _GLIBCXX_USE_CONSTEXPR bool has_denorm_loss
+	= __glibcxx_long_double_has_denorm_loss;
+
+      static _GLIBCXX_CONSTEXPR long double
+      infinity() _GLIBCXX_USE_NOEXCEPT { return __builtin_huge_vall(); }
+
+      static _GLIBCXX_CONSTEXPR long double
+      quiet_NaN() _GLIBCXX_USE_NOEXCEPT { return __builtin_nanl(""); }
+
+      static _GLIBCXX_CONSTEXPR long double
+      signaling_NaN() _GLIBCXX_USE_NOEXCEPT { return __builtin_nansl(""); }
+
+      static _GLIBCXX_CONSTEXPR long double
+      denorm_min() _GLIBCXX_USE_NOEXCEPT { return __LDBL_DENORM_MIN__; }
+
+      static _GLIBCXX_USE_CONSTEXPR bool is_iec559
+	= has_infinity && has_quiet_NaN && has_denorm == denorm_present;
+      static _GLIBCXX_USE_CONSTEXPR bool is_bounded = true;
+      static _GLIBCXX_USE_CONSTEXPR bool is_modulo = false;
+
+      static _GLIBCXX_USE_CONSTEXPR bool traps = __glibcxx_long_double_traps;
+      static _GLIBCXX_USE_CONSTEXPR bool tinyness_before =
+					 __glibcxx_long_double_tinyness_before;
+      static _GLIBCXX_USE_CONSTEXPR float_round_style round_style =
+						      round_to_nearest;
+    };
+
+#undef __glibcxx_long_double_has_denorm_loss
+#undef __glibcxx_long_double_traps
+#undef __glibcxx_long_double_tinyness_before
+
+_GLIBCXX_END_NAMESPACE_VERSION
+} // namespace
+
+#undef __glibcxx_signed
+#undef __glibcxx_min
+#undef __glibcxx_max
+#undef __glibcxx_digits
+#undef __glibcxx_digits10
+#undef __glibcxx_max_digits10
+
+#endif // _GLIBCXX_NUMERIC_LIMITS
+# 1828 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/limits" 3
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 2 3
+#if 0 /* expanded by -frewrite-includes */
+#include <iosfwd>
+#endif /* expanded by -frewrite-includes */
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/char_traits.h>
+#endif /* expanded by -frewrite-includes */
+# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+# 43 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/functional_hash.h>
+#endif /* expanded by -frewrite-includes */
+# 43 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+# 44 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/range_access.h>
+#endif /* expanded by -frewrite-includes */
+# 44 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+# 45 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+#define __cpp_lib_string_view 201603
+
+  /**
+   *  @class basic_string_view <string_view>
+   *  @brief  A non-owning reference to a string.
+   *
+   *  @ingroup strings
+   *  @ingroup sequences
+   *
+   *  @tparam _CharT  Type of character
+   *  @tparam _Traits  Traits for character type, defaults to
+   *                   char_traits<_CharT>.
+   *
+   *  A basic_string_view looks like this:
+   *
+   *  @code
+   *    _CharT*    _M_str
+   *    size_t     _M_len
+   *  @endcode
+   */
+  template<typename _CharT, typename _Traits = std::char_traits<_CharT>>
+    class basic_string_view
+    {
+    public:
+
+      // types
+      using traits_type = _Traits;
+      using value_type = _CharT;
+      using pointer = const _CharT*;
+      using const_pointer = const _CharT*;
+      using reference = const _CharT&;
+      using const_reference = const _CharT&;
+      using const_iterator = const _CharT*;
+      using iterator = const_iterator;
+      using const_reverse_iterator = std::reverse_iterator<const_iterator>;
+      using reverse_iterator = const_reverse_iterator;
+      using size_type = size_t;
+      using difference_type = ptrdiff_t;
+      static constexpr size_type npos = size_type(-1);
+
+      // [string.view.cons], construct/copy
+
+      constexpr
+      basic_string_view() noexcept
+      : _M_len{0}, _M_str{nullptr}
+      { }
+
+      constexpr basic_string_view(const basic_string_view&) noexcept = default;
+
+      constexpr basic_string_view(const _CharT* __str)
+      : _M_len{__str == nullptr ? 0 : traits_type::length(__str)},
+	_M_str{__str}
+      { }
+
+      constexpr basic_string_view(const _CharT* __str, size_type __len)
+      : _M_len{__len},
+        _M_str{__str}
+      { }
+
+      constexpr basic_string_view&
+      operator=(const basic_string_view&) noexcept = default;
+
+      // [string.view.iterators], iterators
+
+      constexpr const_iterator
+      begin() const noexcept
+      { return this->_M_str; }
+
+      constexpr const_iterator
+      end() const noexcept
+      { return this->_M_str + this->_M_len; }
+
+      constexpr const_iterator
+      cbegin() const noexcept
+      { return this->_M_str; }
+
+      constexpr const_iterator
+      cend() const noexcept
+      { return this->_M_str + this->_M_len; }
+
+      constexpr const_reverse_iterator
+      rbegin() const noexcept
+      { return const_reverse_iterator(this->end()); }
+
+      constexpr const_reverse_iterator
+      rend() const noexcept
+      { return const_reverse_iterator(this->begin()); }
+
+      constexpr const_reverse_iterator
+      crbegin() const noexcept
+      { return const_reverse_iterator(this->end()); }
+
+      constexpr const_reverse_iterator
+      crend() const noexcept
+      { return const_reverse_iterator(this->begin()); }
+
+      // [string.view.capacity], capacity
+
+      constexpr size_type
+      size() const noexcept
+      { return this->_M_len; }
+
+      constexpr size_type
+      length() const noexcept
+      { return _M_len; }
+
+      constexpr size_type
+      max_size() const noexcept
+      {
+	return (npos - sizeof(size_type) - sizeof(void*))
+		/ sizeof(value_type) / 4;
+      }
+
+      constexpr bool
+      empty() const noexcept
+      { return this->_M_len == 0; }
+
+      // [string.view.access], element access
+
+      constexpr const _CharT&
+      operator[](size_type __pos) const noexcept
+      {
+	// TODO: Assert to restore in a way compatible with the constexpr.
+	// __glibcxx_assert(__pos < this->_M_len);
+	return *(this->_M_str + __pos);
+      }
+
+      constexpr const _CharT&
+      at(size_type __pos) const
+      {
+	return __pos < this->_M_len
+	     ? *(this->_M_str + __pos)
+	     : (__throw_out_of_range_fmt(__N("basic_string_view::at: __pos "
+					     "(which is %zu) >= this->size() "
+					     "(which is %zu)"),
+					 __pos, this->size()),
+		*this->_M_str);
+      }
+
+      constexpr const _CharT&
+      front() const
+      {
+	// TODO: Assert to restore in a way compatible with the constexpr.
+	// __glibcxx_assert(this->_M_len > 0);
+	return *this->_M_str;
+      }
+
+      constexpr const _CharT&
+      back() const
+      {
+	// TODO: Assert to restore in a way compatible with the constexpr.
+	// __glibcxx_assert(this->_M_len > 0);
+	return *(this->_M_str + this->_M_len - 1);
+      }
+
+      constexpr const _CharT*
+      data() const noexcept
+      { return this->_M_str; }
+
+      // [string.view.modifiers], modifiers:
+
+      constexpr void
+      remove_prefix(size_type __n)
+      {
+	__glibcxx_assert(this->_M_len >= __n);
+	this->_M_str += __n;
+	this->_M_len -= __n;
+      }
+
+      constexpr void
+      remove_suffix(size_type __n)
+      { this->_M_len -= __n; }
+
+      constexpr void
+      swap(basic_string_view& __sv) noexcept
+      {
+	auto __tmp = *this;
+	*this = __sv;
+	__sv = __tmp;
+      }
+
+
+      // [string.view.ops], string operations:
+
+      size_type
+      copy(_CharT* __str, size_type __n, size_type __pos = 0) const
+      {
+	__glibcxx_requires_string_len(__str, __n);
+	if (__pos > this->_M_len)
+	  __throw_out_of_range_fmt(__N("basic_string_view::copy: __pos "
+				       "(which is %zu) > this->size() "
+				       "(which is %zu)"),
+				   __pos, this->size());
+	size_type __rlen{std::min(__n, size_type{this->_M_len  - __pos})};
+	for (auto __begin = this->_M_str + __pos,
+	     __end = __begin + __rlen; __begin != __end;)
+	  *__str++ = *__begin++;
+	return __rlen;
+      }
+
+
+      // [string.view.ops], string operations:
+
+      constexpr basic_string_view
+      substr(size_type __pos, size_type __n=npos) const
+      {
+	return __pos <= this->_M_len
+	     ? basic_string_view{this->_M_str + __pos,
+				std::min(__n, size_type{this->_M_len  - __pos})}
+	     : (__throw_out_of_range_fmt(__N("basic_string_view::substr: __pos "
+					     "(which is %zu) > this->size() "
+					     "(which is %zu)"),
+				     __pos, this->size()), basic_string_view{});
+      }
+
+      constexpr int
+      compare(basic_string_view __str) const noexcept
+      {
+	int __ret = traits_type::compare(this->_M_str, __str._M_str,
+					 std::min(this->_M_len, __str._M_len));
+	if (__ret == 0)
+	  __ret = _S_compare(this->_M_len, __str._M_len);
+	return __ret;
+      }
+
+      constexpr int
+      compare(size_type __pos1, size_type __n1, basic_string_view __str) const
+      { return this->substr(__pos1, __n1).compare(__str); }
+
+      constexpr int
+      compare(size_type __pos1, size_type __n1,
+	      basic_string_view __str, size_type __pos2, size_type __n2) const
+      { return this->substr(__pos1, __n1).compare(__str.substr(__pos2, __n2)); }
+
+      constexpr int
+      compare(const _CharT* __str) const noexcept
+      { return this->compare(basic_string_view{__str}); }
+
+      constexpr int
+      compare(size_type __pos1, size_type __n1, const _CharT* __str) const
+      { return this->substr(__pos1, __n1).compare(basic_string_view{__str}); }
+
+      constexpr int
+      compare(size_type __pos1, size_type __n1,
+	      const _CharT* __str, size_type __n2) const
+      {
+	return this->substr(__pos1, __n1)
+		   .compare(basic_string_view(__str, __n2));
+      }
+
+      constexpr size_type
+      find(basic_string_view __str, size_type __pos = 0) const noexcept
+      { return this->find(__str._M_str, __pos, __str._M_len); }
+
+      constexpr size_type
+      find(_CharT __c, size_type __pos=0) const noexcept;
+
+      constexpr size_type
+      find(const _CharT* __str, size_type __pos, size_type __n) const noexcept;
+
+      constexpr size_type
+      find(const _CharT* __str, size_type __pos=0) const noexcept
+      { return this->find(__str, __pos, traits_type::length(__str)); }
+
+      constexpr size_type
+      rfind(basic_string_view __str, size_type __pos = npos) const noexcept
+      { return this->rfind(__str._M_str, __pos, __str._M_len); }
+
+      constexpr size_type
+      rfind(_CharT __c, size_type __pos = npos) const noexcept;
+
+      constexpr size_type
+      rfind(const _CharT* __str, size_type __pos, size_type __n) const noexcept;
+
+      constexpr size_type
+      rfind(const _CharT* __str, size_type __pos = npos) const noexcept
+      { return this->rfind(__str, __pos, traits_type::length(__str)); }
+
+      constexpr size_type
+      find_first_of(basic_string_view __str, size_type __pos = 0) const noexcept
+      { return this->find_first_of(__str._M_str, __pos, __str._M_len); }
+
+      constexpr size_type
+      find_first_of(_CharT __c, size_type __pos = 0) const noexcept
+      { return this->find(__c, __pos); }
+
+      constexpr size_type
+      find_first_of(const _CharT* __str, size_type __pos, size_type __n) const;
+
+      constexpr size_type
+      find_first_of(const _CharT* __str, size_type __pos = 0) const noexcept
+      { return this->find_first_of(__str, __pos, traits_type::length(__str)); }
+
+      constexpr size_type
+      find_last_of(basic_string_view __str,
+		   size_type __pos = npos) const noexcept
+      { return this->find_last_of(__str._M_str, __pos, __str._M_len); }
+
+      constexpr size_type
+      find_last_of(_CharT __c, size_type __pos=npos) const noexcept
+      { return this->rfind(__c, __pos); }
+
+      constexpr size_type
+      find_last_of(const _CharT* __str, size_type __pos, size_type __n) const;
+
+      constexpr size_type
+      find_last_of(const _CharT* __str, size_type __pos = npos) const noexcept
+      { return this->find_last_of(__str, __pos, traits_type::length(__str)); }
+
+      constexpr size_type
+      find_first_not_of(basic_string_view __str,
+			size_type __pos = 0) const noexcept
+      { return this->find_first_not_of(__str._M_str, __pos, __str._M_len); }
+
+      constexpr size_type
+      find_first_not_of(_CharT __c, size_type __pos = 0) const noexcept;
+
+      constexpr size_type
+      find_first_not_of(const _CharT* __str,
+			size_type __pos, size_type __n) const;
+
+      constexpr size_type
+      find_first_not_of(const _CharT* __str, size_type __pos = 0) const noexcept
+      {
+	return this->find_first_not_of(__str, __pos,
+				       traits_type::length(__str));
+      }
+
+      constexpr size_type
+      find_last_not_of(basic_string_view __str,
+		       size_type __pos = npos) const noexcept
+      { return this->find_last_not_of(__str._M_str, __pos, __str._M_len); }
+
+      constexpr size_type
+      find_last_not_of(_CharT __c, size_type __pos = npos) const noexcept;
+
+      constexpr size_type
+      find_last_not_of(const _CharT* __str,
+		       size_type __pos, size_type __n) const;
+
+      constexpr size_type
+      find_last_not_of(const _CharT* __str,
+		       size_type __pos = npos) const noexcept
+      {
+	return this->find_last_not_of(__str, __pos,
+				      traits_type::length(__str));
+      }
+
+      constexpr size_type
+      _M_check(size_type __pos, const char* __s) const
+      {
+	if (__pos > this->size())
+	  __throw_out_of_range_fmt(__N("%s: __pos (which is %zu) > "
+				       "this->size() (which is %zu)"),
+				   __s, __pos, this->size());
+	return __pos;
+      }
+
+      // NB: _M_limit doesn't check for a bad __pos value.
+      constexpr size_type
+      _M_limit(size_type __pos, size_type __off) const _GLIBCXX_NOEXCEPT
+      {
+	const bool __testoff =  __off < this->size() - __pos;
+	return __testoff ? __off : this->size() - __pos;
+      }
+      
+    private:
+
+      static constexpr int
+      _S_compare(size_type __n1, size_type __n2) noexcept
+      {
+	return difference_type{__n1 - __n2} > std::numeric_limits<int>::max()
+	     ? std::numeric_limits<int>::max()
+	     : difference_type{__n1 - __n2} < std::numeric_limits<int>::min()
+	     ? std::numeric_limits<int>::min()
+	     : static_cast<int>(difference_type{__n1 - __n2});
+      }
+
+      size_t	    _M_len;
+      const _CharT* _M_str;
+    };
+_GLIBCXX_END_NAMESPACE_VERSION
+
+  // [string.view.comparison], non-member basic_string_view comparison function
+
+  namespace __detail
+  {
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+    // Identity transform to create a non-deduced context, so that only one
+    // argument participates in template argument deduction and the other
+    // argument gets implicitly converted to the deduced type. See n3766.html.
+    template<typename _Tp>
+      using __idt = common_type_t<_Tp>;
+_GLIBCXX_END_NAMESPACE_VERSION
+  }
+
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator==(basic_string_view<_CharT, _Traits> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.size() == __y.size() && __x.compare(__y) == 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator==(basic_string_view<_CharT, _Traits> __x,
+               __detail::__idt<basic_string_view<_CharT, _Traits>> __y) noexcept
+    { return __x.size() == __y.size() && __x.compare(__y) == 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator==(__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.size() == __y.size() && __x.compare(__y) == 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator!=(basic_string_view<_CharT, _Traits> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return !(__x == __y); }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator!=(basic_string_view<_CharT, _Traits> __x,
+               __detail::__idt<basic_string_view<_CharT, _Traits>> __y) noexcept
+    { return !(__x == __y); }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator!=(__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return !(__x == __y); }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator< (basic_string_view<_CharT, _Traits> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) < 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator< (basic_string_view<_CharT, _Traits> __x,
+               __detail::__idt<basic_string_view<_CharT, _Traits>> __y) noexcept
+    { return __x.compare(__y) < 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator< (__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) < 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator> (basic_string_view<_CharT, _Traits> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) > 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator> (basic_string_view<_CharT, _Traits> __x,
+               __detail::__idt<basic_string_view<_CharT, _Traits>> __y) noexcept
+    { return __x.compare(__y) > 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator> (__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) > 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator<=(basic_string_view<_CharT, _Traits> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) <= 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator<=(basic_string_view<_CharT, _Traits> __x,
+               __detail::__idt<basic_string_view<_CharT, _Traits>> __y) noexcept
+    { return __x.compare(__y) <= 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator<=(__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) <= 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator>=(basic_string_view<_CharT, _Traits> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) >= 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator>=(basic_string_view<_CharT, _Traits> __x,
+               __detail::__idt<basic_string_view<_CharT, _Traits>> __y) noexcept
+    { return __x.compare(__y) >= 0; }
+
+  template<typename _CharT, typename _Traits>
+    constexpr bool
+    operator>=(__detail::__idt<basic_string_view<_CharT, _Traits>> __x,
+               basic_string_view<_CharT, _Traits> __y) noexcept
+    { return __x.compare(__y) >= 0; }
+
+  // [string.view.io], Inserters and extractors
+  template<typename _CharT, typename _Traits>
+    inline basic_ostream<_CharT, _Traits>&
+    operator<<(basic_ostream<_CharT, _Traits>& __os,
+	       basic_string_view<_CharT,_Traits> __str)
+    { return __ostream_insert(__os, __str.data(), __str.size()); }
+
+
+  // basic_string_view typedef names
+
+  using string_view = basic_string_view<char>;
+#ifdef _GLIBCXX_USE_WCHAR_T
+  using wstring_view = basic_string_view<wchar_t>;
+#endif
+# 570 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+  using u16string_view = basic_string_view<char16_t>;
+  using u32string_view = basic_string_view<char32_t>;
+#endif
+# 574 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+  // [string.view.hash], hash support:
+
+  template<typename _Tp>
+    struct hash;
+
+  template<>
+    struct hash<string_view>
+    : public __hash_base<size_t, string_view>
+    {
+      size_t
+      operator()(const string_view& __str) const noexcept
+      { return std::_Hash_impl::hash(__str.data(), __str.length()); }
+    };
+
+  template<>
+    struct __is_fast_hash<hash<string_view>> : std::false_type
+    { };
+
+#ifdef _GLIBCXX_USE_WCHAR_T
+  template<>
+    struct hash<wstring_view>
+    : public __hash_base<size_t, wstring>
+    {
+      size_t
+      operator()(const wstring_view& __s) const noexcept
+      { return std::_Hash_impl::hash(__s.data(),
+                                     __s.length() * sizeof(wchar_t)); }
+    };
+
+  template<>
+    struct __is_fast_hash<hash<wstring_view>> : std::false_type
+    { };
+#endif
+# 608 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+  template<>
+    struct hash<u16string_view>
+    : public __hash_base<size_t, u16string_view>
+    {
+      size_t
+      operator()(const u16string_view& __s) const noexcept
+      { return std::_Hash_impl::hash(__s.data(),
+                                     __s.length() * sizeof(char16_t)); }
+    };
+
+  template<>
+    struct __is_fast_hash<hash<u16string_view>> : std::false_type
+    { };
+
+  template<>
+    struct hash<u32string_view>
+    : public __hash_base<size_t, u32string_view>
+    {
+      size_t
+      operator()(const u32string_view& __s) const noexcept
+      { return std::_Hash_impl::hash(__s.data(),
+                                     __s.length() * sizeof(char32_t)); }
+    };
+
+  template<>
+    struct __is_fast_hash<hash<u32string_view>> : std::false_type
+    { };
+#endif
+# 638 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+_GLIBCXX_END_NAMESPACE_VERSION
+
+  inline namespace literals
+  {
+  inline namespace string_view_literals
+  {
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+    inline constexpr basic_string_view<char>
+    operator""sv(const char* __str, size_t __len) noexcept
+    { return basic_string_view<char>{__str, __len}; }
+
+#ifdef _GLIBCXX_USE_WCHAR_T
+    inline constexpr basic_string_view<wchar_t>
+    operator""sv(const wchar_t* __str, size_t __len) noexcept
+    { return basic_string_view<wchar_t>{__str, __len}; }
+#endif
+# 655 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+#ifdef _GLIBCXX_USE_C99_STDINT_TR1
+    inline constexpr basic_string_view<char16_t>
+    operator""sv(const char16_t* __str, size_t __len) noexcept
+    { return basic_string_view<char16_t>{__str, __len}; }
+
+    inline constexpr basic_string_view<char32_t>
+    operator""sv(const char32_t* __str, size_t __len) noexcept
+    { return basic_string_view<char32_t>{__str, __len}; }
+#endif
+# 665 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+_GLIBCXX_END_NAMESPACE_VERSION
+  } // namespace string_literals
+  } // namespace literals
+
+} // namespace std
+
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/string_view.tcc>
+#endif /* expanded by -frewrite-includes */
+# 672 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/string_view.tcc" 1 3
+// Components for manipulating non-owning sequences of characters -*- C++ -*-
+
+// Copyright (C) 2013-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file bits/string_view.tcc
+ *  This is an internal header file, included by other library headers.
+ *  Do not attempt to use it directly. @headername{string_view}
+ */
+
+//
+// N3762 basic_string_view library
+//
+
+#ifndef _GLIBCXX_STRING_VIEW_TCC
+#define _GLIBCXX_STRING_VIEW_TCC 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/string_view.tcc" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201703L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/string_view.tcc" 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find(const _CharT* __str, size_type __pos, size_type __n) const noexcept
+    {
+      __glibcxx_requires_string_len(__str, __n);
+
+      if (__n == 0)
+	return __pos <= this->_M_len ? __pos : npos;
+
+      if (__n <= this->_M_len)
+	{
+	  for (; __pos <= this->_M_len - __n; ++__pos)
+	    if (traits_type::eq(this->_M_str[__pos], __str[0])
+		&& traits_type::compare(this->_M_str + __pos + 1,
+					__str + 1, __n - 1) == 0)
+	      return __pos;
+	}
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find(_CharT __c, size_type __pos) const noexcept
+    {
+      size_type __ret = npos;
+      if (__pos < this->_M_len)
+	{
+	  const size_type __n = this->_M_len - __pos;
+	  const _CharT* __p = traits_type::find(this->_M_str + __pos, __n, __c);
+	  if (__p)
+	    __ret = __p - this->_M_str;
+	}
+      return __ret;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    rfind(const _CharT* __str, size_type __pos, size_type __n) const noexcept
+    {
+      __glibcxx_requires_string_len(__str, __n);
+
+      if (__n <= this->_M_len)
+	{
+	  __pos = std::min(size_type(this->_M_len - __n), __pos);
+	  do
+	    {
+	      if (traits_type::compare(this->_M_str + __pos, __str, __n) == 0)
+		return __pos;
+	    }
+	  while (__pos-- > 0);
+	}
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    rfind(_CharT __c, size_type __pos) const noexcept
+    {
+      size_type __size = this->_M_len;
+      if (__size > 0)
+	{
+	  if (--__size > __pos)
+	    __size = __pos;
+	  for (++__size; __size-- > 0; )
+	    if (traits_type::eq(this->_M_str[__size], __c))
+	      return __size;
+	}
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find_first_of(const _CharT* __str, size_type __pos, size_type __n) const
+    {
+      __glibcxx_requires_string_len(__str, __n);
+      for (; __n && __pos < this->_M_len; ++__pos)
+	{
+	  const _CharT* __p = traits_type::find(__str, __n,
+						this->_M_str[__pos]);
+	  if (__p)
+	    return __pos;
+	}
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find_last_of(const _CharT* __str, size_type __pos, size_type __n) const
+    {
+      __glibcxx_requires_string_len(__str, __n);
+      size_type __size = this->size();
+      if (__size && __n)
+	{
+	  if (--__size > __pos)
+	    __size = __pos;
+	  do
+	    {
+	      if (traits_type::find(__str, __n, this->_M_str[__size]))
+		return __size;
+	    }
+	  while (__size-- != 0);
+	}
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find_first_not_of(const _CharT* __str, size_type __pos, size_type __n) const
+    {
+      __glibcxx_requires_string_len(__str, __n);
+      for (; __pos < this->_M_len; ++__pos)
+	if (!traits_type::find(__str, __n, this->_M_str[__pos]))
+	  return __pos;
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find_first_not_of(_CharT __c, size_type __pos) const noexcept
+    {
+      for (; __pos < this->_M_len; ++__pos)
+	if (!traits_type::eq(this->_M_str[__pos], __c))
+	  return __pos;
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find_last_not_of(const _CharT* __str, size_type __pos, size_type __n) const
+    {
+      __glibcxx_requires_string_len(__str, __n);
+      size_type __size = this->_M_len;
+      if (__size)
+	{
+	  if (--__size > __pos)
+	    __size = __pos;
+	  do
+	    {
+	      if (!traits_type::find(__str, __n, this->_M_str[__size]))
+		return __size;
+	    }
+	  while (__size--);
+	}
+      return npos;
+    }
+
+  template<typename _CharT, typename _Traits>
+    constexpr typename basic_string_view<_CharT, _Traits>::size_type
+    basic_string_view<_CharT, _Traits>::
+    find_last_not_of(_CharT __c, size_type __pos) const noexcept
+    {
+      size_type __size = this->_M_len;
+      if (__size)
+	{
+	  if (--__size > __pos)
+	    __size = __pos;
+	  do
+	    {
+	      if (!traits_type::eq(this->_M_str[__size], __c))
+		return __size;
+	    }
+	  while (__size--);
+	}
+      return npos;
+    }
+
+_GLIBCXX_END_NAMESPACE_VERSION
+} // namespace std
+
+#endif // __cplusplus <= 201402L
+# 224 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/string_view.tcc" 3
+
+#endif // _GLIBCXX_STRING_VIEW_TCC
+# 226 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/string_view.tcc" 3
+# 673 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 2 3
+
+#endif // __cplusplus <= 201402L
+# 675 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+
+#endif // _GLIBCXX_EXPERIMENTAL_STRING_VIEW
+# 677 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string_view" 3
+# 49 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 2 3
 #endif
 # 50 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
 
@@ -50604,7 +48697,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 3445 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       // A helper type for avoiding boiler-plate.
       typedef basic_string_view<_CharT, _Traits> __sv_type;
@@ -50784,7 +48877,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 3593 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Construct string from a substring of a string_view.
@@ -50895,7 +48988,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 3692 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Set value to string constructed from a string_view.
@@ -51360,7 +49453,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 4114 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Append a string_view.
@@ -51464,7 +49557,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 4206 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Append a string_view.
@@ -51640,7 +49733,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 4364 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Set value from a string_view.
@@ -51859,7 +49952,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 4571 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Insert a string_view.
@@ -52267,7 +50360,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 4961 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Replace range of characters with string_view.
@@ -52446,7 +50539,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5134 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Return non-const pointer to contents.
@@ -52535,7 +50628,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5217 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Find position of a string_view.
@@ -52619,7 +50712,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5295 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Find last position of a string_view.
@@ -52708,7 +50801,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5378 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Find position of a character of a string_view.
@@ -52798,7 +50891,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5462 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Find last position of a character of string.
@@ -52885,7 +50978,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5543 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Find position of a character not in a string_view.
@@ -52973,7 +51066,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5625 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Find last position of a character not in a string_view.
@@ -53041,7 +51134,7 @@ _GLIBCXX_END_NAMESPACE_CXX11
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 5687 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.h" 3
       /**
        *  @brief  Compare to a string_view.
@@ -57391,7 +55484,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if defined(__GLIBCXX_TYPE_INT_N_0)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 83 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/std_abs.h" 3
   inline _GLIBCXX_CONSTEXPR __GLIBCXX_TYPE_INT_N_0
   abs(__GLIBCXX_TYPE_INT_N_0 __x) { return __x >= 0 ? __x : -__x; }
@@ -57432,7 +55525,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if !defined(__STRICT_ANSI__) && defined(_GLIBCXX_USE_FLOAT128) && !defined(__CUDACC__)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 100 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/std_abs.h" 3
   inline _GLIBCXX_CONSTEXPR
   __float128
@@ -57455,7 +55548,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #if __cplusplus >= 201703L && defined(_GLIBCXX_HAVE_ALIGNED_ALLOC)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 82 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cstdlib" 3
 # undef aligned_alloc
 #endif
@@ -57525,7 +55618,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus >= 201703L && defined(_GLIBCXX_HAVE_ALIGNED_ALLOC)
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 132 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/cstdlib" 3
   using ::aligned_alloc;
 #endif
@@ -65723,7 +63816,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 # if __cplusplus <= 201402L && _GLIBCXX_EXTERN_TEMPLATE > 0
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 1607 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.tcc" 3
   extern template class basic_string<char>;
 #if 0 /* disabled by -frewrite-includes */
@@ -65731,7 +63824,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 # elif ! _GLIBCXX_USE_CXX11_ABI
 #endif
 #endif /* disabled by -frewrite-includes */
-#elif 0 /* evaluated by -frewrite-includes */
+#elif 1 /* evaluated by -frewrite-includes */
 # 1609 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.tcc" 3
   // Still need to prevent implicit instantiation of the COW empty rep,
   // to ensure the definition in libstdc++.so is unique (PR 86138).
@@ -65758,7 +63851,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 # if __cplusplus <= 201402L && _GLIBCXX_EXTERN_TEMPLATE > 0
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 1 /* evaluated by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
 # 1630 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.tcc" 3
   extern template class basic_string<wchar_t>;
 #if 0 /* disabled by -frewrite-includes */
@@ -65766,7 +63859,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 # elif ! _GLIBCXX_USE_CXX11_ABI
 #endif
 #endif /* disabled by -frewrite-includes */
-#elif 0 /* evaluated by -frewrite-includes */
+#elif 1 /* evaluated by -frewrite-includes */
 # 1632 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/basic_string.tcc" 3
   extern template basic_string<wchar_t>::size_type
     basic_string<wchar_t>::_Rep::_S_empty_rep_storage[];
@@ -65799,252 +63892,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
 
 #endif /* _GLIBCXX_STRING */
 # 56 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/string" 3
-# 5 "test.cpp" 2
-#if 0 /* expanded by -frewrite-includes */
-#include <unordered_set>
-#endif /* expanded by -frewrite-includes */
-# 5 "test.cpp"
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 1 3
-// <unordered_set> -*- C++ -*-
-
-// Copyright (C) 2007-2017 Free Software Foundation, Inc.
-//
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/** @file include/unordered_set
- *  This is a Standard C++ Library header.
- */
-
-#ifndef _GLIBCXX_UNORDERED_SET
-#define _GLIBCXX_UNORDERED_SET 1
-
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
-# 33 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-#if 0 /* expanded by -frewrite-includes */
-# include <bits/c++0x_warning.h>
-#endif /* expanded by -frewrite-includes */
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-#else
-# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
-# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <type_traits>
-#endif /* expanded by -frewrite-includes */
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <initializer_list>
-#endif /* expanded by -frewrite-includes */
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <tuple>
-#endif /* expanded by -frewrite-includes */
-# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 1 3
-// <tuple> -*- C++ -*-
-
-// Copyright (C) 2007-2017 Free Software Foundation, Inc.
-//
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/** @file include/tuple
- *  This is a Standard C++ Library header.
- */
-
-#ifndef _GLIBCXX_TUPLE
-#define _GLIBCXX_TUPLE 1
-
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
-# 33 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-#if 0 /* expanded by -frewrite-includes */
-# include <bits/c++0x_warning.h>
-#endif /* expanded by -frewrite-includes */
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-#else
-# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
-# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <array>
-#endif /* expanded by -frewrite-includes */
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 1 3
-// <array> -*- C++ -*-
-
-// Copyright (C) 2007-2017 Free Software Foundation, Inc.
-//
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/** @file include/array
- *  This is a Standard C++ Library header.
- */
-
-#ifndef _GLIBCXX_ARRAY
-#define _GLIBCXX_ARRAY 1
-
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
-# 33 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-
-#if 0 /* disabled by -frewrite-includes */
-#if __cplusplus < 201103L
-#endif
-#endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-#if 0 /* expanded by -frewrite-includes */
-# include <bits/c++0x_warning.h>
-#endif /* expanded by -frewrite-includes */
-# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-#else
-# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-
-#if 0 /* expanded by -frewrite-includes */
-#include <utility>
-#endif /* expanded by -frewrite-includes */
-# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <stdexcept>
-#endif /* expanded by -frewrite-includes */
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
-# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 1 3
-// Standard exception classes  -*- C++ -*-
-
-// Copyright (C) 2001-2017 Free Software Foundation, Inc.
-//
-// This file is part of the GNU ISO C++ Library.  This library is free
-// software; you can redistribute it and/or modify it under the
-// terms of the GNU General Public License as published by the
-// Free Software Foundation; either version 3, or (at your option)
-// any later version.
-
-// This library is distributed in the hope that it will be useful,
-// but WITHOUT ANY WARRANTY; without even the implied warranty of
-// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-// GNU General Public License for more details.
-
-// Under Section 7 of GPL version 3, you are granted additional
-// permissions described in the GCC Runtime Library Exception, version
-// 3.1, as published by the Free Software Foundation.
-
-// You should have received a copy of the GNU General Public License and
-// a copy of the GCC Runtime Library Exception along with this program;
-// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
-// <http://www.gnu.org/licenses/>.
-
-/** @file include/stdexcept
- *  This is a Standard C++ Library header.
- */
-
-//
-// ISO C++ 19.1  Exception classes
-//
-
-#ifndef _GLIBCXX_STDEXCEPT
-#define _GLIBCXX_STDEXCEPT 1
-
-#if 0 /* expanded by -frewrite-includes */
-#pragma GCC system_header
-#endif /* expanded by -frewrite-includes */
-# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
-
-#if 0 /* expanded by -frewrite-includes */
-#include <exception>
-#endif /* expanded by -frewrite-includes */
-# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
-#if 0 /* expanded by -frewrite-includes */
-#include <string>
-#endif /* expanded by -frewrite-includes */
-# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 2 3
 
 namespace std _GLIBCXX_VISIBILITY(default)
 {
@@ -66368,7 +64216,6905 @@ _GLIBCXX_END_NAMESPACE_VERSION
 
 #endif /* _GLIBCXX_STDEXCEPT */
 # 268 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/stdexcept" 3
-# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 2 3
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 2 3
+#if 0 /* expanded by -frewrite-includes */
+#include <new>
+#endif /* expanded by -frewrite-includes */
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <initializer_list>
+#endif /* expanded by -frewrite-includes */
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/functexcept.h>
+#endif /* expanded by -frewrite-includes */
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/functional_hash.h>
+#endif /* expanded by -frewrite-includes */
+# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 43 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/enable_special_members.h>
+#endif /* expanded by -frewrite-includes */
+# 43 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/enable_special_members.h" 1 3
+// <bits/enable_special_members.h> -*- C++ -*-
+
+// Copyright (C) 2013-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file bits/enable_special_members.h
+ *  This is an internal header file, included by other library headers.
+ *  Do not attempt to use it directly.
+ */
+
+#ifndef _ENABLE_SPECIAL_MEMBERS_H
+#define _ENABLE_SPECIAL_MEMBERS_H 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 34 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/enable_special_members.h" 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+  struct _Enable_default_constructor_tag
+  {
+    explicit constexpr _Enable_default_constructor_tag() = default;
+  };
+
+/**
+  * @brief A mixin helper to conditionally enable or disable the default
+  * constructor.
+  * @sa _Enable_special_members
+  */
+template<bool _Switch, typename _Tag = void>
+  struct _Enable_default_constructor
+  {
+    constexpr _Enable_default_constructor() noexcept = default;
+    constexpr _Enable_default_constructor(_Enable_default_constructor const&)
+      noexcept  = default;
+    constexpr _Enable_default_constructor(_Enable_default_constructor&&)
+      noexcept = default;
+    _Enable_default_constructor&
+    operator=(_Enable_default_constructor const&) noexcept = default;
+    _Enable_default_constructor&
+    operator=(_Enable_default_constructor&&) noexcept = default;
+
+    // Can be used in other ctors.
+    constexpr explicit
+    _Enable_default_constructor(_Enable_default_constructor_tag) { }
+  };
+
+
+/**
+  * @brief A mixin helper to conditionally enable or disable the default
+  * destructor.
+  * @sa _Enable_special_members
+  */
+template<bool _Switch, typename _Tag = void>
+  struct _Enable_destructor { };
+
+/**
+  * @brief A mixin helper to conditionally enable or disable the copy/move
+  * special members.
+  * @sa _Enable_special_members
+  */
+template<bool _Copy, bool _CopyAssignment,
+         bool _Move, bool _MoveAssignment,
+         typename _Tag = void>
+  struct _Enable_copy_move { };
+
+/**
+  * @brief A mixin helper to conditionally enable or disable the special
+  * members.
+  *
+  * The @c _Tag type parameter is to make mixin bases unique and thus avoid
+  * ambiguities.
+  */
+template<bool _Default, bool _Destructor,
+         bool _Copy, bool _CopyAssignment,
+         bool _Move, bool _MoveAssignment,
+         typename _Tag = void>
+  struct _Enable_special_members
+  : private _Enable_default_constructor<_Default, _Tag>,
+    private _Enable_destructor<_Destructor, _Tag>,
+    private _Enable_copy_move<_Copy, _CopyAssignment,
+                              _Move, _MoveAssignment,
+                              _Tag>
+  { };
+
+// Boilerplate follows.
+
+template<typename _Tag>
+  struct _Enable_default_constructor<false, _Tag>
+  {
+    constexpr _Enable_default_constructor() noexcept = delete;
+    constexpr _Enable_default_constructor(_Enable_default_constructor const&)
+      noexcept  = default;
+    constexpr _Enable_default_constructor(_Enable_default_constructor&&)
+      noexcept = default;
+    _Enable_default_constructor&
+    operator=(_Enable_default_constructor const&) noexcept = default;
+    _Enable_default_constructor&
+    operator=(_Enable_default_constructor&&) noexcept = default;
+
+    // Can be used in other ctors.
+    constexpr explicit
+    _Enable_default_constructor(_Enable_default_constructor_tag) { }
+  };
+
+template<typename _Tag>
+  struct _Enable_destructor<false, _Tag>
+  { ~_Enable_destructor() noexcept = delete; };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, true, true, true, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = default;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<true, false, true, true, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = default;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = default;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, false, true, true, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = default;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<true, true, false, true, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = default;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = default;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, true, false, true, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = default;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<true, false, false, true, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = default;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = default;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, false, false, true, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = default;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<true, true, true, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = default;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, true, true, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<true, false, true, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = default;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, false, true, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<true, true, false, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = default;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, true, false, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = default;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<true, false, false, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = default;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+template<typename _Tag>
+  struct _Enable_copy_move<false, false, false, false, _Tag>
+  {
+    constexpr _Enable_copy_move() noexcept                          = default;
+    constexpr _Enable_copy_move(_Enable_copy_move const&) noexcept  = delete;
+    constexpr _Enable_copy_move(_Enable_copy_move&&) noexcept       = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move const&) noexcept                    = delete;
+    _Enable_copy_move&
+    operator=(_Enable_copy_move&&) noexcept                         = delete;
+  };
+
+_GLIBCXX_END_NAMESPACE_VERSION
+} // namespace std
+
+#endif // _ENABLE_SPECIAL_MEMBERS_H
+# 313 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/enable_special_members.h" 3
+# 44 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 2 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+  /**
+   *  @addtogroup utilities
+   *  @{
+   */
+
+#define __cpp_lib_optional 201603
+
+  template<typename _Tp>
+    class optional;
+
+  /// Tag type to disengage optional objects.
+  struct nullopt_t
+  {
+    // Do not user-declare default constructor at all for
+    // optional_value = {} syntax to work.
+    // nullopt_t() = delete;
+
+    // Used for constructing nullopt.
+    enum class _Construct { _Token };
+
+    // Must be constexpr for nullopt_t to be literal.
+    explicit constexpr nullopt_t(_Construct) { }
+  };
+
+  /// Tag to disengage optional objects.
+  inline constexpr nullopt_t nullopt { nullopt_t::_Construct::_Token };
+
+  /**
+   *  @brief Exception class thrown when a disengaged optional object is
+   *  dereferenced.
+   *  @ingroup exceptions
+   */
+  class bad_optional_access : public exception
+  {
+  public:
+    bad_optional_access() { }
+    virtual const char* what() const noexcept override
+    {return "bad optional access";}
+
+    virtual ~bad_optional_access() noexcept = default;
+  };
+
+  void
+  __throw_bad_optional_access()
+  __attribute__((__noreturn__));
+
+  // XXX Does not belong here.
+  inline void
+  __throw_bad_optional_access()
+  { _GLIBCXX_THROW_OR_ABORT(bad_optional_access()); }
+
+
+  // Payload for constexpr optionals.
+  template <typename _Tp,
+	    bool /*_TrivialCopyMove*/ =
+	      is_trivially_copy_constructible<_Tp>::value
+	      && is_trivially_move_constructible<_Tp>::value,
+	    bool /*_ShouldProvideDestructor*/ =
+	      is_trivially_destructible<_Tp>::value>
+    struct _Optional_payload
+    {
+      constexpr _Optional_payload()
+	: _M_empty() {}
+
+      template<typename... _Args>
+      constexpr _Optional_payload(in_place_t, _Args&&... __args)
+	: _M_payload(std::forward<_Args>(__args)...),
+	  _M_engaged(true)
+      {}
+
+      template<typename _Up, typename... _Args>
+      constexpr _Optional_payload(std::initializer_list<_Up> __il,
+				  _Args&&... __args)
+	: _M_payload(__il, std::forward<_Args>(__args)...),
+	  _M_engaged(true) {}
+
+      template <class _Up> struct __ctor_tag {};
+
+      constexpr _Optional_payload(__ctor_tag<bool>,
+				  const _Tp& __other)
+	: _M_payload(__other),
+	  _M_engaged(true)
+      {}
+
+      constexpr _Optional_payload(__ctor_tag<void>)
+	: _M_empty()
+      {}
+
+      constexpr _Optional_payload(__ctor_tag<bool>, _Tp&& __other)
+	: _M_payload(std::move(__other)),
+	  _M_engaged(true)
+      {}
+
+      constexpr _Optional_payload(bool __engaged,
+				  const _Optional_payload& __other)
+	: _Optional_payload(__engaged ?
+			    _Optional_payload(__ctor_tag<bool>{},
+					      __other._M_payload) :
+			    _Optional_payload(__ctor_tag<void>{}))
+      {}
+
+      constexpr _Optional_payload(bool __engaged,
+				  _Optional_payload&& __other)
+	: _Optional_payload(__engaged
+			    ? _Optional_payload(__ctor_tag<bool>{},
+						std::move(__other._M_payload))
+			    : _Optional_payload(__ctor_tag<void>{}))
+      {}
+
+      using _Stored_type = remove_const_t<_Tp>;
+      struct _Empty_byte { };
+      union {
+          _Empty_byte _M_empty;
+          _Stored_type _M_payload;
+      };
+      bool _M_engaged = false;
+    };
+
+  // Payload for non-constexpr optionals with non-trivial destructor.
+  template <typename _Tp>
+    struct _Optional_payload<_Tp, false, false>
+    {
+      constexpr _Optional_payload()
+	: _M_empty() {}
+
+      template <typename... _Args>
+      constexpr _Optional_payload(in_place_t, _Args&&... __args)
+	: _M_payload(std::forward<_Args>(__args)...),
+	  _M_engaged(true) {}
+
+      template<typename _Up, typename... _Args>
+      constexpr _Optional_payload(std::initializer_list<_Up> __il,
+				  _Args&&... __args)
+	: _M_payload(__il, std::forward<_Args>(__args)...),
+	  _M_engaged(true) {}
+      constexpr
+      _Optional_payload(bool __engaged, const _Optional_payload& __other)
+	: _Optional_payload(__other)
+      {}
+
+      constexpr
+      _Optional_payload(bool __engaged, _Optional_payload&& __other)
+	: _Optional_payload(std::move(__other))
+      {}
+
+      constexpr _Optional_payload(const _Optional_payload& __other)
+      {
+	if (__other._M_engaged)
+	  this->_M_construct(__other._M_payload);
+      }
+
+      constexpr _Optional_payload(_Optional_payload&& __other)
+      {
+	if (__other._M_engaged)
+	  this->_M_construct(std::move(__other._M_payload));
+      }
+
+      using _Stored_type = remove_const_t<_Tp>;
+      struct _Empty_byte { };
+      union {
+          _Empty_byte _M_empty;
+          _Stored_type _M_payload;
+      };
+      bool _M_engaged = false;
+
+      ~_Optional_payload()
+      {
+        if (_M_engaged)
+          _M_payload.~_Stored_type();
+      }
+
+      template<typename... _Args>
+        void
+        _M_construct(_Args&&... __args)
+        noexcept(is_nothrow_constructible<_Stored_type, _Args...>())
+        {
+          ::new ((void *) std::__addressof(this->_M_payload))
+            _Stored_type(std::forward<_Args>(__args)...);
+          this->_M_engaged = true;
+        }
+    };
+
+  // Payload for non-constexpr optionals with trivial destructor.
+  template <typename _Tp>
+    struct _Optional_payload<_Tp, false, true>
+    {
+      constexpr _Optional_payload()
+	: _M_empty() {}
+
+      template <typename... _Args>
+      constexpr _Optional_payload(in_place_t, _Args&&... __args)
+	: _M_payload(std::forward<_Args>(__args)...),
+	  _M_engaged(true) {}
+
+      template<typename _Up, typename... _Args>
+      constexpr _Optional_payload(std::initializer_list<_Up> __il,
+				  _Args&&... __args)
+	: _M_payload(__il, std::forward<_Args>(__args)...),
+	  _M_engaged(true) {}
+      constexpr
+      _Optional_payload(bool __engaged, const _Optional_payload& __other)
+	: _Optional_payload(__other)
+      {}
+
+      constexpr
+      _Optional_payload(bool __engaged, _Optional_payload&& __other)
+	: _Optional_payload(std::move(__other))
+      {}
+
+      constexpr _Optional_payload(const _Optional_payload& __other)
+      {
+	if (__other._M_engaged)
+	  this->_M_construct(__other._M_payload);
+      }
+
+      constexpr _Optional_payload(_Optional_payload&& __other)
+      {
+	if (__other._M_engaged)
+	  this->_M_construct(std::move(__other._M_payload));
+      }
+
+      using _Stored_type = remove_const_t<_Tp>;
+      struct _Empty_byte { };
+      union {
+          _Empty_byte _M_empty;
+          _Stored_type _M_payload;
+      };
+      bool _M_engaged = false;
+
+      template<typename... _Args>
+        void
+        _M_construct(_Args&&... __args)
+        noexcept(is_nothrow_constructible<_Stored_type, _Args...>())
+        {
+          ::new ((void *) std::__addressof(this->_M_payload))
+            _Stored_type(std::forward<_Args>(__args)...);
+          this->_M_engaged = true;
+        }
+    };
+
+  /**
+    * @brief Class template that holds the necessary state for @ref optional
+    * and that has the responsibility for construction and the special members.
+    *
+    * Such a separate base class template is necessary in order to
+    * conditionally enable the special members (e.g. copy/move constructors).
+    * Note that this means that @ref _Optional_base implements the
+    * functionality for copy and move assignment, but not for converting
+    * assignment.
+    *
+    * @see optional, _Enable_special_members
+    */
+  template<typename _Tp>
+    class _Optional_base
+    {
+    private:
+      // Remove const to avoid prohibition of reusing object storage for
+      // const-qualified types in [3.8/9]. This is strictly internal
+      // and even optional itself is oblivious to it.
+      using _Stored_type = remove_const_t<_Tp>;
+
+    public:
+
+      // Constructors for disengaged optionals.
+      constexpr _Optional_base() noexcept
+      { }
+
+      constexpr _Optional_base(nullopt_t) noexcept
+      { }
+
+      // Constructors for engaged optionals.
+      template<typename... _Args,
+	       enable_if_t<is_constructible_v<_Tp, _Args&&...>, bool> = false>
+        constexpr explicit _Optional_base(in_place_t, _Args&&... __args)
+        : _M_payload(in_place,
+		     std::forward<_Args>(__args)...) { }
+
+      template<typename _Up, typename... _Args,
+               enable_if_t<is_constructible_v<_Tp,
+					      initializer_list<_Up>&,
+					      _Args&&...>, bool> = false>
+        constexpr explicit _Optional_base(in_place_t,
+                                          initializer_list<_Up> __il,
+                                          _Args&&... __args)
+        : _M_payload(in_place,
+		     __il, std::forward<_Args>(__args)...)
+        { }
+
+      // Copy and move constructors.
+      constexpr _Optional_base(const _Optional_base& __other)
+	: _M_payload(__other._M_payload._M_engaged,
+		     __other._M_payload)
+      { }
+
+      constexpr _Optional_base(_Optional_base&& __other)
+      noexcept(is_nothrow_move_constructible<_Tp>())
+	: _M_payload(__other._M_payload._M_engaged,
+		     std::move(__other._M_payload))
+      { }
+
+      // Assignment operators.
+      _Optional_base&
+      operator=(const _Optional_base& __other)
+      {
+        if (this->_M_payload._M_engaged && __other._M_payload._M_engaged)
+          this->_M_get() = __other._M_get();
+        else
+	  {
+	    if (__other._M_payload._M_engaged)
+	      this->_M_construct(__other._M_get());
+	    else
+	      this->_M_reset();
+	  }
+
+        return *this;
+      }
+
+      _Optional_base&
+      operator=(_Optional_base&& __other)
+      noexcept(__and_<is_nothrow_move_constructible<_Tp>,
+		      is_nothrow_move_assignable<_Tp>>())
+      {
+	if (this->_M_payload._M_engaged && __other._M_payload._M_engaged)
+	  this->_M_get() = std::move(__other._M_get());
+	else
+	  {
+	    if (__other._M_payload._M_engaged)
+	      this->_M_construct(std::move(__other._M_get()));
+	    else
+	      this->_M_reset();
+	  }
+	return *this;
+      }
+      // The following functionality is also needed by optional, hence the
+      // protected accessibility.
+    protected:
+      constexpr bool _M_is_engaged() const noexcept
+      { return this->_M_payload._M_engaged; }
+
+      // The _M_get operations have _M_engaged as a precondition.
+      constexpr _Tp&
+      _M_get() noexcept
+      { return this->_M_payload._M_payload; }
+
+      constexpr const _Tp&
+      _M_get() const noexcept
+      { return this->_M_payload._M_payload; }
+
+      // The _M_construct operation has !_M_engaged as a precondition
+      // while _M_destruct has _M_engaged as a precondition.
+      template<typename... _Args>
+        void
+        _M_construct(_Args&&... __args)
+        noexcept(is_nothrow_constructible<_Stored_type, _Args...>())
+        {
+          ::new (std::__addressof(this->_M_payload._M_payload))
+            _Stored_type(std::forward<_Args>(__args)...);
+          this->_M_payload._M_engaged = true;
+        }
+
+      void
+      _M_destruct()
+      {
+        this->_M_payload._M_engaged = false;
+        this->_M_payload._M_payload.~_Stored_type();
+      }
+
+      // _M_reset is a 'safe' operation with no precondition.
+      void
+      _M_reset()
+      {
+        if (this->_M_payload._M_engaged)
+          this->_M_destruct();
+      }
+
+    private:
+      _Optional_payload<_Tp> _M_payload;
+    };
+
+  template<typename _Tp>
+  class optional;
+
+  template<typename _Tp, typename _Up>
+    using __converts_from_optional =
+      __or_<is_constructible<_Tp, const optional<_Up>&>,
+	    is_constructible<_Tp, optional<_Up>&>,
+	    is_constructible<_Tp, const optional<_Up>&&>,
+	    is_constructible<_Tp, optional<_Up>&&>,
+	    is_convertible<const optional<_Up>&, _Tp>,
+	    is_convertible<optional<_Up>&, _Tp>,
+	    is_convertible<const optional<_Up>&&, _Tp>,
+	    is_convertible<optional<_Up>&&, _Tp>>;
+
+  template<typename _Tp, typename _Up>
+    using __assigns_from_optional =
+      __or_<is_assignable<_Tp&, const optional<_Up>&>,
+	    is_assignable<_Tp&, optional<_Up>&>,
+	    is_assignable<_Tp&, const optional<_Up>&&>,
+	    is_assignable<_Tp&, optional<_Up>&&>>;
+
+  /**
+    * @brief Class template for optional values.
+    */
+  template<typename _Tp>
+    class optional
+    : private _Optional_base<_Tp>,
+      private _Enable_copy_move<
+        // Copy constructor.
+        is_copy_constructible<_Tp>::value,
+        // Copy assignment.
+        __and_<is_copy_constructible<_Tp>, is_copy_assignable<_Tp>>::value,
+        // Move constructor.
+        is_move_constructible<_Tp>::value,
+        // Move assignment.
+        __and_<is_move_constructible<_Tp>, is_move_assignable<_Tp>>::value,
+        // Unique tag type.
+        optional<_Tp>>
+    {
+      static_assert(__and_<__not_<is_same<remove_cv_t<_Tp>, nullopt_t>>,
+			   __not_<is_same<remove_cv_t<_Tp>, in_place_t>>,
+			   __not_<is_reference<_Tp>>>(),
+                    "Invalid instantiation of optional<T>");
+
+    private:
+      using _Base = _Optional_base<_Tp>;
+
+    public:
+      using value_type = _Tp;
+
+      constexpr optional() = default;
+
+      constexpr optional(nullopt_t) noexcept
+	: _Base(nullopt) { }
+
+      // Converting constructors for engaged optionals.
+      template <typename _Up = _Tp,
+                enable_if_t<__and_<
+			      __not_<is_same<optional<_Tp>, decay_t<_Up>>>,
+			      __not_<is_same<in_place_t, decay_t<_Up>>>,
+			      is_constructible<_Tp, _Up&&>,
+			      is_convertible<_Up&&, _Tp>
+			      >::value, bool> = true>
+      constexpr optional(_Up&& __t)
+        : _Base(std::in_place, std::forward<_Up>(__t)) { }
+
+      template <typename _Up = _Tp,
+                enable_if_t<__and_<
+			      __not_<is_same<optional<_Tp>, decay_t<_Up>>>,
+			      __not_<is_same<in_place_t, decay_t<_Up>>>,
+			      is_constructible<_Tp, _Up&&>,
+			      __not_<is_convertible<_Up&&, _Tp>>
+			      >::value, bool> = false>
+      explicit constexpr optional(_Up&& __t)
+        : _Base(std::in_place, std::forward<_Up>(__t)) { }
+
+      template <typename _Up,
+                enable_if_t<__and_<
+			    __not_<is_same<_Tp, _Up>>,
+			    is_constructible<_Tp, const _Up&>,
+			    is_convertible<const _Up&, _Tp>,
+			    __not_<__converts_from_optional<_Tp, _Up>>
+			    >::value, bool> = true>
+      constexpr optional(const optional<_Up>& __t)
+      {
+	if (__t)
+	  emplace(*__t);
+      }
+
+      template <typename _Up,
+                 enable_if_t<__and_<
+			       __not_<is_same<_Tp, _Up>>,
+			       is_constructible<_Tp, const _Up&>,
+			       __not_<is_convertible<const _Up&, _Tp>>,
+			       __not_<__converts_from_optional<_Tp, _Up>>
+			       >::value, bool> = false>
+      explicit constexpr optional(const optional<_Up>& __t)
+      {
+	if (__t)
+	  emplace(*__t);
+      }
+
+      template <typename _Up,
+                enable_if_t<__and_<
+			      __not_<is_same<_Tp, _Up>>,
+			      is_constructible<_Tp, _Up&&>,
+			      is_convertible<_Up&&, _Tp>,
+			      __not_<__converts_from_optional<_Tp, _Up>>
+			      >::value, bool> = true>
+      constexpr optional(optional<_Up>&& __t)
+      {
+	if (__t)
+	  emplace(std::move(*__t));
+      }
+
+      template <typename _Up,
+                enable_if_t<__and_<
+			    __not_<is_same<_Tp, _Up>>,
+			    is_constructible<_Tp, _Up&&>,
+			    __not_<is_convertible<_Up&&, _Tp>>,
+			    __not_<__converts_from_optional<_Tp, _Up>>
+			    >::value, bool> = false>
+      explicit constexpr optional(optional<_Up>&& __t)
+      {
+	if (__t)
+	  emplace(std::move(*__t));
+      }
+
+      template<typename... _Args,
+	       enable_if_t<is_constructible_v<_Tp, _Args&&...>, bool> = false>
+      explicit constexpr optional(in_place_t, _Args&&... __args)
+        : _Base(std::in_place, std::forward<_Args>(__args)...) { }
+
+      template<typename _Up, typename... _Args,
+               enable_if_t<is_constructible_v<_Tp,
+					      initializer_list<_Up>&,
+					      _Args&&...>, bool> = false>
+      explicit constexpr optional(in_place_t,
+				  initializer_list<_Up> __il,
+				  _Args&&... __args)
+        : _Base(std::in_place, __il, std::forward<_Args>(__args)...) { }
+
+      // Assignment operators.
+      optional&
+      operator=(nullopt_t) noexcept
+      {
+        this->_M_reset();
+        return *this;
+      }
+
+      template<typename _Up = _Tp>
+        enable_if_t<__and_<
+		      __not_<is_same<optional<_Tp>, decay_t<_Up>>>,
+		      is_constructible<_Tp, _Up>,
+		      __not_<__and_<is_scalar<_Tp>,
+				    is_same<_Tp, decay_t<_Up>>>>,
+		      is_assignable<_Tp&, _Up>>::value,
+		    optional&>
+        operator=(_Up&& __u)
+        {
+          if (this->_M_is_engaged())
+            this->_M_get() = std::forward<_Up>(__u);
+          else
+            this->_M_construct(std::forward<_Up>(__u));
+
+          return *this;
+        }
+
+      template<typename _Up>
+	enable_if_t<__and_<
+		      __not_<is_same<_Tp, _Up>>,
+		      is_constructible<_Tp, const _Up&>,
+		      is_assignable<_Tp&, _Up>,
+		      __not_<__converts_from_optional<_Tp, _Up>>,
+		      __not_<__assigns_from_optional<_Tp, _Up>>
+		      >::value,
+		    optional&>
+        operator=(const optional<_Up>& __u)
+        {
+          if (__u)
+            {
+              if (this->_M_is_engaged())
+                this->_M_get() = *__u;
+              else
+                this->_M_construct(*__u);
+            }
+          else
+            {
+              this->_M_reset();
+            }
+          return *this;
+        }
+
+      template<typename _Up>
+	enable_if_t<__and_<
+		      __not_<is_same<_Tp, _Up>>,
+		      is_constructible<_Tp, _Up>,
+		      is_assignable<_Tp&, _Up>,
+		      __not_<__converts_from_optional<_Tp, _Up>>,
+		      __not_<__assigns_from_optional<_Tp, _Up>>
+		      >::value,
+		    optional&>
+        operator=(optional<_Up>&& __u)
+        {
+          if (__u)
+            {
+              if (this->_M_is_engaged())
+                this->_M_get() = std::move(*__u);
+              else
+                this->_M_construct(std::move(*__u));
+            }
+          else
+            {
+              this->_M_reset();
+            }
+
+          return *this;
+        }
+
+      template<typename... _Args>
+	enable_if_t<is_constructible<_Tp, _Args&&...>::value, _Tp&>
+	emplace(_Args&&... __args)
+	{
+	  this->_M_reset();
+	  this->_M_construct(std::forward<_Args>(__args)...);
+	  return this->_M_get();
+	}
+
+      template<typename _Up, typename... _Args>
+	enable_if_t<is_constructible<_Tp, initializer_list<_Up>&,
+				     _Args&&...>::value, _Tp&>
+	emplace(initializer_list<_Up> __il, _Args&&... __args)
+	{
+	  this->_M_reset();
+	  this->_M_construct(__il, std::forward<_Args>(__args)...);
+	  return this->_M_get();
+	}
+
+      // Destructor is implicit, implemented in _Optional_base.
+
+      // Swap.
+      void
+      swap(optional& __other)
+      noexcept(is_nothrow_move_constructible<_Tp>()
+               && is_nothrow_swappable_v<_Tp>)
+      {
+        using std::swap;
+
+        if (this->_M_is_engaged() && __other._M_is_engaged())
+          swap(this->_M_get(), __other._M_get());
+        else if (this->_M_is_engaged())
+	  {
+	    __other._M_construct(std::move(this->_M_get()));
+	    this->_M_destruct();
+	  }
+        else if (__other._M_is_engaged())
+	  {
+	    this->_M_construct(std::move(__other._M_get()));
+	    __other._M_destruct();
+	  }
+      }
+
+      // Observers.
+      constexpr const _Tp*
+      operator->() const
+      { return std::__addressof(this->_M_get()); }
+
+      _Tp*
+      operator->()
+      { return std::__addressof(this->_M_get()); }
+
+      constexpr const _Tp&
+      operator*() const&
+      { return this->_M_get(); }
+
+      constexpr _Tp&
+      operator*()&
+      { return this->_M_get(); }
+
+      constexpr _Tp&&
+      operator*()&&
+      { return std::move(this->_M_get()); }
+
+      constexpr const _Tp&&
+      operator*() const&&
+      { return std::move(this->_M_get()); }
+
+      constexpr explicit operator bool() const noexcept
+      { return this->_M_is_engaged(); }
+
+      constexpr bool has_value() const noexcept
+      { return this->_M_is_engaged(); }
+
+      constexpr const _Tp&
+      value() const&
+      {
+	return this->_M_is_engaged()
+	  ?  this->_M_get()
+	  : (__throw_bad_optional_access(),
+	     this->_M_get());
+      }
+
+      constexpr _Tp&
+      value()&
+      {
+	return this->_M_is_engaged()
+	  ?  this->_M_get()
+	  : (__throw_bad_optional_access(),
+	     this->_M_get());
+      }
+
+      constexpr _Tp&&
+      value()&&
+      {
+	return this->_M_is_engaged()
+	  ?  std::move(this->_M_get())
+	  : (__throw_bad_optional_access(),
+	     std::move(this->_M_get()));
+      }
+
+      constexpr const _Tp&&
+      value() const&&
+      {
+	return this->_M_is_engaged()
+	  ?  std::move(this->_M_get())
+	  : (__throw_bad_optional_access(),
+	     std::move(this->_M_get()));
+      }
+
+      template<typename _Up>
+	constexpr _Tp
+	value_or(_Up&& __u) const&
+	{
+	  static_assert(__and_<is_copy_constructible<_Tp>,
+			       is_convertible<_Up&&, _Tp>>(),
+			"Cannot return value");
+
+	  return this->_M_is_engaged()
+	    ? this->_M_get()
+	    : static_cast<_Tp>(std::forward<_Up>(__u));
+	}
+
+      template<typename _Up>
+	_Tp
+	value_or(_Up&& __u) &&
+	{
+	  static_assert(__and_<is_move_constructible<_Tp>,
+			       is_convertible<_Up&&, _Tp>>(),
+			"Cannot return value" );
+
+	  return this->_M_is_engaged()
+	    ? std::move(this->_M_get())
+	    : static_cast<_Tp>(std::forward<_Up>(__u));
+	}
+      void reset() noexcept { this->_M_reset(); }
+    };
+
+  template<typename _Tp>
+    using __optional_relop_t =
+    enable_if_t<is_convertible<_Tp, bool>::value, bool>;
+
+  // Comparisons between optional values.
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator==(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() == declval<_Up>())>
+    {
+      return static_cast<bool>(__lhs) == static_cast<bool>(__rhs)
+	     && (!__lhs || *__lhs == *__rhs);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator!=(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() != declval<_Up>())>
+    {
+      return static_cast<bool>(__lhs) != static_cast<bool>(__rhs)
+	|| (static_cast<bool>(__lhs) && *__lhs != *__rhs);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator<(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() < declval<_Up>())>
+    {
+      return static_cast<bool>(__rhs) && (!__lhs || *__lhs < *__rhs);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator>(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() > declval<_Up>())>
+    {
+      return static_cast<bool>(__lhs) && (!__rhs || *__lhs > *__rhs);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator<=(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() <= declval<_Up>())>
+    {
+      return !__lhs || (static_cast<bool>(__rhs) && *__lhs <= *__rhs);
+    }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator>=(const optional<_Tp>& __lhs, const optional<_Up>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() >= declval<_Up>())>
+    {
+      return !__rhs || (static_cast<bool>(__lhs) && *__lhs >= *__rhs);
+    }
+
+  // Comparisons with nullopt.
+  template<typename _Tp>
+    constexpr bool
+    operator==(const optional<_Tp>& __lhs, nullopt_t) noexcept
+    { return !__lhs; }
+
+  template<typename _Tp>
+    constexpr bool
+    operator==(nullopt_t, const optional<_Tp>& __rhs) noexcept
+    { return !__rhs; }
+
+  template<typename _Tp>
+    constexpr bool
+    operator!=(const optional<_Tp>& __lhs, nullopt_t) noexcept
+    { return static_cast<bool>(__lhs); }
+
+  template<typename _Tp>
+    constexpr bool
+    operator!=(nullopt_t, const optional<_Tp>& __rhs) noexcept
+    { return static_cast<bool>(__rhs); }
+
+  template<typename _Tp>
+    constexpr bool
+    operator<(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept
+    { return false; }
+
+  template<typename _Tp>
+    constexpr bool
+    operator<(nullopt_t, const optional<_Tp>& __rhs) noexcept
+    { return static_cast<bool>(__rhs); }
+
+  template<typename _Tp>
+    constexpr bool
+    operator>(const optional<_Tp>& __lhs, nullopt_t) noexcept
+    { return static_cast<bool>(__lhs); }
+
+  template<typename _Tp>
+    constexpr bool
+    operator>(nullopt_t, const optional<_Tp>& /* __rhs */) noexcept
+    { return false; }
+
+  template<typename _Tp>
+    constexpr bool
+    operator<=(const optional<_Tp>& __lhs, nullopt_t) noexcept
+    { return !__lhs; }
+
+  template<typename _Tp>
+    constexpr bool
+    operator<=(nullopt_t, const optional<_Tp>& /* __rhs */) noexcept
+    { return true; }
+
+  template<typename _Tp>
+    constexpr bool
+    operator>=(const optional<_Tp>& /* __lhs */, nullopt_t) noexcept
+    { return true; }
+
+  template<typename _Tp>
+    constexpr bool
+    operator>=(nullopt_t, const optional<_Tp>& __rhs) noexcept
+    { return !__rhs; }
+
+  // Comparisons with value type.
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator==(const optional<_Tp>& __lhs, const _Up& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() == declval<_Up>())>
+    { return __lhs && *__lhs == __rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator==(const _Up& __lhs, const optional<_Tp>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Up>() == declval<_Tp>())>
+    { return __rhs && __lhs == *__rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator!=(const optional<_Tp>& __lhs, const _Up& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() != declval<_Up>())>
+    { return !__lhs || *__lhs != __rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator!=(const _Up& __lhs, const optional<_Tp>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Up>() != declval<_Tp>())>
+    { return !__rhs || __lhs != *__rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator<(const optional<_Tp>& __lhs, const _Up& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() < declval<_Up>())>
+    { return !__lhs || *__lhs < __rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator<(const _Up& __lhs, const optional<_Tp>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Up>() < declval<_Tp>())>
+    { return __rhs && __lhs < *__rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator>(const optional<_Tp>& __lhs, const _Up& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() > declval<_Up>())>
+    { return __lhs && *__lhs > __rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator>(const _Up& __lhs, const optional<_Tp>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Up>() > declval<_Tp>())>
+    { return !__rhs || __lhs > *__rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator<=(const optional<_Tp>& __lhs, const _Up& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() <= declval<_Up>())>
+    { return !__lhs || *__lhs <= __rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator<=(const _Up& __lhs, const optional<_Tp>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Up>() <= declval<_Tp>())>
+    { return __rhs && __lhs <= *__rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator>=(const optional<_Tp>& __lhs, const _Up& __rhs)
+    -> __optional_relop_t<decltype(declval<_Tp>() >= declval<_Up>())>
+    { return __lhs && *__lhs >= __rhs; }
+
+  template<typename _Tp, typename _Up>
+    constexpr auto
+    operator>=(const _Up& __lhs, const optional<_Tp>& __rhs)
+    -> __optional_relop_t<decltype(declval<_Up>() >= declval<_Tp>())>
+    { return !__rhs || __lhs >= *__rhs; }
+
+  // Swap and creation functions.
+
+  // _GLIBCXX_RESOLVE_LIB_DEFECTS
+  // 2748. swappable traits for optionals
+  template<typename _Tp>
+    inline enable_if_t<is_move_constructible_v<_Tp> && is_swappable_v<_Tp>>
+    swap(optional<_Tp>& __lhs, optional<_Tp>& __rhs)
+    noexcept(noexcept(__lhs.swap(__rhs)))
+    { __lhs.swap(__rhs); }
+
+  template<typename _Tp>
+    enable_if_t<!(is_move_constructible_v<_Tp> && is_swappable_v<_Tp>)>
+    swap(optional<_Tp>&, optional<_Tp>&) = delete;
+
+  template<typename _Tp>
+    constexpr optional<decay_t<_Tp>>
+    make_optional(_Tp&& __t)
+    { return optional<decay_t<_Tp>> { std::forward<_Tp>(__t) }; }
+
+  template<typename _Tp, typename ..._Args>
+    constexpr optional<_Tp>
+    make_optional(_Args&&... __args)
+    { return optional<_Tp> { in_place, std::forward<_Args>(__args)... }; }
+
+  template<typename _Tp, typename _Up, typename ..._Args>
+    constexpr optional<_Tp>
+    make_optional(initializer_list<_Up> __il, _Args&&... __args)
+    { return optional<_Tp> { in_place, __il, std::forward<_Args>(__args)... }; }
+
+  // Hash.
+
+  template<typename _Tp, typename _Up = remove_const_t<_Tp>,
+           bool = __poison_hash<_Up>::__enable_hash_call>
+    struct __optional_hash_call_base
+    {
+      size_t
+      operator()(const optional<_Tp>& __t) const
+      noexcept(noexcept(hash<_Up>{}(*__t)))
+      {
+        // We pick an arbitrary hash for disengaged optionals which hopefully
+        // usual values of _Tp won't typically hash to.
+        constexpr size_t __magic_disengaged_hash = static_cast<size_t>(-3333);
+        return __t ? hash<_Up>{}(*__t) : __magic_disengaged_hash;
+      }
+    };
+
+  template<typename _Tp, typename _Up>
+    struct __optional_hash_call_base<_Tp, _Up, false> {};
+
+  template<typename _Tp>
+    struct hash<optional<_Tp>>
+    : private __poison_hash<remove_const_t<_Tp>>,
+      public __optional_hash_call_base<_Tp>
+    {
+      using result_type = size_t;
+      using argument_type = optional<_Tp>;
+    };
+
+  /// @}
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cpp_deduction_guides >= 201606
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1035 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+  template <typename _Tp> optional(_Tp) -> optional<_Tp>;
+#endif
+# 1037 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+
+_GLIBCXX_END_NAMESPACE_VERSION
+} // namespace std
+
+#endif // C++17
+# 1042 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+
+#endif // _GLIBCXX_OPTIONAL
+# 1044 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/optional" 3
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 2 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/alloc_traits.h>
+#endif /* expanded by -frewrite-includes */
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/ptr_traits.h>
+#endif /* expanded by -frewrite-includes */
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+# 42 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+  /// Base class for node handle types of maps and sets.
+  template<typename _Val, typename _NodeAlloc>
+    class _Node_handle_common
+    {
+      using _AllocTraits = allocator_traits<_NodeAlloc>;
+
+    public:
+      using allocator_type = __alloc_rebind<_NodeAlloc, _Val>;
+
+      allocator_type
+      get_allocator() const noexcept
+      {
+	__glibcxx_assert(!this->empty());
+	return allocator_type(*_M_alloc);
+      }
+
+      explicit operator bool() const noexcept { return _M_ptr != nullptr; }
+
+      bool empty() const noexcept { return _M_ptr == nullptr; }
+
+    protected:
+      constexpr _Node_handle_common() noexcept : _M_ptr(), _M_alloc() {}
+
+      ~_Node_handle_common() { _M_destroy(); }
+
+      _Node_handle_common(_Node_handle_common&& __nh) noexcept
+      : _M_ptr(__nh._M_ptr), _M_alloc(std::move(__nh._M_alloc))
+      {
+	__nh._M_ptr = nullptr;
+	__nh._M_alloc = nullopt;
+      }
+
+      _Node_handle_common&
+      operator=(_Node_handle_common&& __nh) noexcept
+      {
+	_M_destroy();
+	_M_ptr = __nh._M_ptr;
+	if constexpr (is_move_assignable_v<_NodeAlloc>)
+	  {
+	    if (_AllocTraits::propagate_on_container_move_assignment::value
+		|| !this->_M_alloc)
+	      this->_M_alloc = std::move(__nh._M_alloc);
+	    else
+	      __glibcxx_assert(this->_M_alloc == __nh._M_alloc);
+	  }
+	else
+	  __glibcxx_assert(_M_alloc);
+	__nh._M_ptr = nullptr;
+	__nh._M_alloc = nullopt;
+	return *this;
+      }
+
+      _Node_handle_common(typename _AllocTraits::pointer __ptr,
+			  const _NodeAlloc& __alloc)
+      : _M_ptr(__ptr), _M_alloc(__alloc) { }
+
+      void
+      _M_swap(_Node_handle_common& __nh) noexcept
+      {
+	using std::swap;
+	swap(_M_ptr, __nh._M_ptr);
+	if (_AllocTraits::propagate_on_container_swap::value
+	    || !_M_alloc || !__nh._M_alloc)
+	  _M_alloc.swap(__nh._M_alloc);
+	else
+	  __glibcxx_assert(_M_alloc == __nh._M_alloc);
+      }
+
+    private:
+      void
+      _M_destroy() noexcept
+      {
+	if (_M_ptr != nullptr)
+	  {
+	    allocator_type __alloc(*_M_alloc);
+	    allocator_traits<allocator_type>::destroy(__alloc,
+						      _M_ptr->_M_valptr());
+	    _AllocTraits::deallocate(*_M_alloc, _M_ptr, 1);
+	  }
+      }
+
+    protected:
+      typename _AllocTraits::pointer	_M_ptr;
+    private:
+      optional<_NodeAlloc>		_M_alloc;
+
+      template<typename _Key2, typename _Value2, typename _KeyOfValue,
+	       typename _Compare, typename _ValueAlloc>
+	friend class _Rb_tree;
+    };
+
+  /// Node handle type for maps.
+  template<typename _Key, typename _Value, typename _NodeAlloc>
+    class _Node_handle : public _Node_handle_common<_Value, _NodeAlloc>
+    {
+    public:
+      constexpr _Node_handle() noexcept = default;
+      ~_Node_handle() = default;
+      _Node_handle(_Node_handle&&) noexcept = default;
+
+      _Node_handle&
+      operator=(_Node_handle&&) noexcept = default;
+
+      using key_type = _Key;
+      using mapped_type = typename _Value::second_type;
+
+      key_type&
+      key() const noexcept
+      {
+	__glibcxx_assert(!this->empty());
+	return *_M_pkey;
+      }
+
+      mapped_type&
+      mapped() const noexcept
+      {
+	__glibcxx_assert(!this->empty());
+	return *_M_pmapped;
+      }
+
+      void
+      swap(_Node_handle& __nh) noexcept
+      {
+	this->_M_swap(__nh);
+	using std::swap;
+	swap(_M_pkey, __nh._M_pkey);
+	swap(_M_pmapped, __nh._M_pmapped);
+      }
+
+      friend void
+      swap(_Node_handle& __x, _Node_handle& __y)
+      noexcept(noexcept(__x.swap(__y)))
+      { __x.swap(__y); }
+
+    private:
+      using _AllocTraits = allocator_traits<_NodeAlloc>;
+
+      _Node_handle(typename _AllocTraits::pointer __ptr,
+		   const _NodeAlloc& __alloc)
+      : _Node_handle_common<_Value, _NodeAlloc>(__ptr, __alloc)
+      {
+	if (__ptr)
+	  {
+	    auto& __key = const_cast<_Key&>(__ptr->_M_valptr()->first);
+	    _M_pkey = _S_pointer_to(__key);
+	    _M_pmapped = _S_pointer_to(__ptr->_M_valptr()->second);
+	  }
+	else
+	  {
+	    _M_pkey = nullptr;
+	    _M_pmapped = nullptr;
+	  }
+      }
+
+      template<typename _Tp>
+	using __pointer
+	  = __ptr_rebind<typename _AllocTraits::pointer,
+			 remove_reference_t<_Tp>>;
+
+      __pointer<_Key>				_M_pkey = nullptr;
+      __pointer<typename _Value::second_type>	_M_pmapped = nullptr;
+
+      template<typename _Tp>
+	__pointer<_Tp>
+	_S_pointer_to(_Tp& __obj)
+	{ return pointer_traits<__pointer<_Tp>>::pointer_to(__obj); }
+
+      const key_type&
+      _M_key() const noexcept { return key(); }
+
+      template<typename _Key2, typename _Value2, typename _KeyOfValue,
+	       typename _Compare, typename _ValueAlloc>
+	friend class _Rb_tree;
+
+      template<typename _Key2, typename _Value2, typename _ValueAlloc,
+	       typename _ExtractKey, typename _Equal,
+	       typename _H1, typename _H2, typename _Hash,
+	       typename _RehashPolicy, typename _Traits>
+	friend class _Hashtable;
+    };
+
+  /// Node handle type for sets.
+  template<typename _Value, typename _NodeAlloc>
+    class _Node_handle<_Value, _Value, _NodeAlloc>
+    : public _Node_handle_common<_Value, _NodeAlloc>
+    {
+    public:
+      constexpr _Node_handle() noexcept = default;
+      ~_Node_handle() = default;
+      _Node_handle(_Node_handle&&) noexcept = default;
+
+      _Node_handle&
+      operator=(_Node_handle&&) noexcept = default;
+
+      using value_type = _Value;
+
+      value_type&
+      value() const noexcept
+      {
+	__glibcxx_assert(!this->empty());
+	return *this->_M_ptr->_M_valptr();
+      }
+
+      void
+      swap(_Node_handle& __nh) noexcept
+      { this->_M_swap(__nh); }
+
+      friend void
+      swap(_Node_handle& __x, _Node_handle& __y)
+      noexcept(noexcept(__x.swap(__y)))
+      { __x.swap(__y); }
+
+    private:
+      using _AllocTraits = allocator_traits<_NodeAlloc>;
+
+      _Node_handle(typename _AllocTraits::pointer __ptr,
+		   const _NodeAlloc& __alloc)
+      : _Node_handle_common<_Value, _NodeAlloc>(__ptr, __alloc) { }
+
+      const value_type&
+      _M_key() const noexcept { return value(); }
+
+      template<typename _Key, typename _Val, typename _KeyOfValue,
+	       typename _Compare, typename _Alloc>
+	friend class _Rb_tree;
+
+      template<typename _Key2, typename _Value2, typename _ValueAlloc,
+	       typename _ExtractKey, typename _Equal,
+	       typename _H1, typename _H2, typename _Hash,
+	       typename _RehashPolicy, typename _Traits>
+	friend class _Hashtable;
+    };
+
+  /// Return type of insert(node_handle&&) on unique maps/sets.
+  template<typename _Iterator, typename _NodeHandle>
+    struct _Node_insert_return
+    {
+      _Iterator		position = _Iterator();
+      bool		inserted = false;
+      _NodeHandle	node;
+    };
+
+_GLIBCXX_END_NAMESPACE_VERSION
+} // namespace std
+
+#endif // C++17
+# 293 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+#endif
+# 294 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/node_handle.h" 3
+# 73 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 2 3
+#endif
+# 74 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 80 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+# define __cpp_lib_generic_associative_lookup 201304
+#endif
+# 82 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+  // Red-black tree class, designed for use in implementing STL
+  // associative containers (set, multiset, map, and multimap). The
+  // insertion and deletion algorithms are based on those in Cormen,
+  // Leiserson, and Rivest, Introduction to Algorithms (MIT Press,
+  // 1990), except that
+  //
+  // (1) the header cell is maintained with links not only to the root
+  // but also to the leftmost node of the tree, to enable constant
+  // time begin(), and to the rightmost node of the tree, to enable
+  // linear time performance when used with the generic set algorithms
+  // (set_union, etc.)
+  // 
+  // (2) when a node being deleted has two children its successor node
+  // is relinked into its place, rather than copied, so that the only
+  // iterators invalidated are those referring to the deleted node.
+
+  enum _Rb_tree_color { _S_red = false, _S_black = true };
+
+  struct _Rb_tree_node_base
+  {
+    typedef _Rb_tree_node_base* _Base_ptr;
+    typedef const _Rb_tree_node_base* _Const_Base_ptr;
+
+    _Rb_tree_color	_M_color;
+    _Base_ptr		_M_parent;
+    _Base_ptr		_M_left;
+    _Base_ptr		_M_right;
+
+    static _Base_ptr
+    _S_minimum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    {
+      while (__x->_M_left != 0) __x = __x->_M_left;
+      return __x;
+    }
+
+    static _Const_Base_ptr
+    _S_minimum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    {
+      while (__x->_M_left != 0) __x = __x->_M_left;
+      return __x;
+    }
+
+    static _Base_ptr
+    _S_maximum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    {
+      while (__x->_M_right != 0) __x = __x->_M_right;
+      return __x;
+    }
+
+    static _Const_Base_ptr
+    _S_maximum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+    {
+      while (__x->_M_right != 0) __x = __x->_M_right;
+      return __x;
+    }
+  };
+
+  // Helper type offering value initialization guarantee on the compare functor.
+  template<typename _Key_compare>
+    struct _Rb_tree_key_compare
+    {
+      _Key_compare		_M_key_compare;
+
+      _Rb_tree_key_compare()
+      _GLIBCXX_NOEXCEPT_IF(
+	is_nothrow_default_constructible<_Key_compare>::value)
+      : _M_key_compare()
+      { }
+
+      _Rb_tree_key_compare(const _Key_compare& __comp)
+      : _M_key_compare(__comp)
+      { }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 157 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      // Copy constructor added for consistency with C++98 mode.
+      _Rb_tree_key_compare(const _Rb_tree_key_compare&) = default;
+
+      _Rb_tree_key_compare(_Rb_tree_key_compare&& __x)
+	noexcept(is_nothrow_copy_constructible<_Key_compare>::value)
+      : _M_key_compare(__x._M_key_compare)
+      { }
+#endif
+# 165 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    };
+
+  // Helper type to manage default initialization of node count and header.
+  struct _Rb_tree_header
+  {
+    _Rb_tree_node_base	_M_header;
+    size_t		_M_node_count; // Keeps track of size of tree.
+
+    _Rb_tree_header() _GLIBCXX_NOEXCEPT
+    {
+      _M_header._M_color = _S_red;
+      _M_reset();
+    }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 180 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _Rb_tree_header(_Rb_tree_header&& __x) noexcept
+    {
+      if (__x._M_header._M_parent != nullptr)
+	_M_move_data(__x);
+      else
+	{
+	  _M_header._M_color = _S_red;
+	  _M_reset();
+	}
+    }
+#endif
+# 191 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+    void
+    _M_move_data(_Rb_tree_header& __from)
+    {
+      _M_header._M_color = __from._M_header._M_color;
+      _M_header._M_parent = __from._M_header._M_parent;
+      _M_header._M_left = __from._M_header._M_left;
+      _M_header._M_right = __from._M_header._M_right;
+      _M_header._M_parent->_M_parent = &_M_header;
+      _M_node_count = __from._M_node_count;
+
+      __from._M_reset();
+    }
+
+    void
+    _M_reset()
+    {
+      _M_header._M_parent = 0;
+      _M_header._M_left = &_M_header;
+      _M_header._M_right = &_M_header;
+      _M_node_count = 0;
+    }
+  };
+
+  template<typename _Val>
+    struct _Rb_tree_node : public _Rb_tree_node_base
+    {
+      typedef _Rb_tree_node<_Val>* _Link_type;
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 221 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      _Val _M_value_field;
+
+      _Val*
+      _M_valptr()
+      { return std::__addressof(_M_value_field); }
+
+      const _Val*
+      _M_valptr() const
+      { return std::__addressof(_M_value_field); }
+#else
+# 231 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      __gnu_cxx::__aligned_membuf<_Val> _M_storage;
+
+      _Val*
+      _M_valptr()
+      { return _M_storage._M_ptr(); }
+
+      const _Val*
+      _M_valptr() const
+      { return _M_storage._M_ptr(); }
+#endif
+# 241 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    };
+
+  _GLIBCXX_PURE _Rb_tree_node_base*
+  _Rb_tree_increment(_Rb_tree_node_base* __x) throw ();
+
+  _GLIBCXX_PURE const _Rb_tree_node_base*
+  _Rb_tree_increment(const _Rb_tree_node_base* __x) throw ();
+
+  _GLIBCXX_PURE _Rb_tree_node_base*
+  _Rb_tree_decrement(_Rb_tree_node_base* __x) throw ();
+
+  _GLIBCXX_PURE const _Rb_tree_node_base*
+  _Rb_tree_decrement(const _Rb_tree_node_base* __x) throw ();
+
+  template<typename _Tp>
+    struct _Rb_tree_iterator
+    {
+      typedef _Tp  value_type;
+      typedef _Tp& reference;
+      typedef _Tp* pointer;
+
+      typedef bidirectional_iterator_tag iterator_category;
+      typedef ptrdiff_t                  difference_type;
+
+      typedef _Rb_tree_iterator<_Tp>        _Self;
+      typedef _Rb_tree_node_base::_Base_ptr _Base_ptr;
+      typedef _Rb_tree_node<_Tp>*           _Link_type;
+
+      _Rb_tree_iterator() _GLIBCXX_NOEXCEPT
+      : _M_node() { }
+
+      explicit
+      _Rb_tree_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      : _M_node(__x) { }
+
+      reference
+      operator*() const _GLIBCXX_NOEXCEPT
+      { return *static_cast<_Link_type>(_M_node)->_M_valptr(); }
+
+      pointer
+      operator->() const _GLIBCXX_NOEXCEPT
+      { return static_cast<_Link_type> (_M_node)->_M_valptr(); }
+
+      _Self&
+      operator++() _GLIBCXX_NOEXCEPT
+      {
+	_M_node = _Rb_tree_increment(_M_node);
+	return *this;
+      }
+
+      _Self
+      operator++(int) _GLIBCXX_NOEXCEPT
+      {
+	_Self __tmp = *this;
+	_M_node = _Rb_tree_increment(_M_node);
+	return __tmp;
+      }
+
+      _Self&
+      operator--() _GLIBCXX_NOEXCEPT
+      {
+	_M_node = _Rb_tree_decrement(_M_node);
+	return *this;
+      }
+
+      _Self
+      operator--(int) _GLIBCXX_NOEXCEPT
+      {
+	_Self __tmp = *this;
+	_M_node = _Rb_tree_decrement(_M_node);
+	return __tmp;
+      }
+
+      bool
+      operator==(const _Self& __x) const _GLIBCXX_NOEXCEPT
+      { return _M_node == __x._M_node; }
+
+      bool
+      operator!=(const _Self& __x) const _GLIBCXX_NOEXCEPT
+      { return _M_node != __x._M_node; }
+
+      _Base_ptr _M_node;
+  };
+
+  template<typename _Tp>
+    struct _Rb_tree_const_iterator
+    {
+      typedef _Tp        value_type;
+      typedef const _Tp& reference;
+      typedef const _Tp* pointer;
+
+      typedef _Rb_tree_iterator<_Tp> iterator;
+
+      typedef bidirectional_iterator_tag iterator_category;
+      typedef ptrdiff_t                  difference_type;
+
+      typedef _Rb_tree_const_iterator<_Tp>        _Self;
+      typedef _Rb_tree_node_base::_Const_Base_ptr _Base_ptr;
+      typedef const _Rb_tree_node<_Tp>*           _Link_type;
+
+      _Rb_tree_const_iterator() _GLIBCXX_NOEXCEPT
+      : _M_node() { }
+
+      explicit
+      _Rb_tree_const_iterator(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      : _M_node(__x) { }
+
+      _Rb_tree_const_iterator(const iterator& __it) _GLIBCXX_NOEXCEPT
+      : _M_node(__it._M_node) { }
+
+      iterator
+      _M_const_cast() const _GLIBCXX_NOEXCEPT
+      { return iterator(const_cast<typename iterator::_Base_ptr>(_M_node)); }
+
+      reference
+      operator*() const _GLIBCXX_NOEXCEPT
+      { return *static_cast<_Link_type>(_M_node)->_M_valptr(); }
+
+      pointer
+      operator->() const _GLIBCXX_NOEXCEPT
+      { return static_cast<_Link_type>(_M_node)->_M_valptr(); }
+
+      _Self&
+      operator++() _GLIBCXX_NOEXCEPT
+      {
+	_M_node = _Rb_tree_increment(_M_node);
+	return *this;
+      }
+
+      _Self
+      operator++(int) _GLIBCXX_NOEXCEPT
+      {
+	_Self __tmp = *this;
+	_M_node = _Rb_tree_increment(_M_node);
+	return __tmp;
+      }
+
+      _Self&
+      operator--() _GLIBCXX_NOEXCEPT
+      {
+	_M_node = _Rb_tree_decrement(_M_node);
+	return *this;
+      }
+
+      _Self
+      operator--(int) _GLIBCXX_NOEXCEPT
+      {
+	_Self __tmp = *this;
+	_M_node = _Rb_tree_decrement(_M_node);
+	return __tmp;
+      }
+
+      bool
+      operator==(const _Self& __x) const _GLIBCXX_NOEXCEPT
+      { return _M_node == __x._M_node; }
+
+      bool
+      operator!=(const _Self& __x) const _GLIBCXX_NOEXCEPT
+      { return _M_node != __x._M_node; }
+
+      _Base_ptr _M_node;
+    };
+
+  template<typename _Val>
+    inline bool
+    operator==(const _Rb_tree_iterator<_Val>& __x,
+               const _Rb_tree_const_iterator<_Val>& __y) _GLIBCXX_NOEXCEPT
+    { return __x._M_node == __y._M_node; }
+
+  template<typename _Val>
+    inline bool
+    operator!=(const _Rb_tree_iterator<_Val>& __x,
+               const _Rb_tree_const_iterator<_Val>& __y) _GLIBCXX_NOEXCEPT
+    { return __x._M_node != __y._M_node; }
+
+  void
+  _Rb_tree_insert_and_rebalance(const bool __insert_left,
+                                _Rb_tree_node_base* __x,
+                                _Rb_tree_node_base* __p,
+                                _Rb_tree_node_base& __header) throw ();
+
+  _Rb_tree_node_base*
+  _Rb_tree_rebalance_for_erase(_Rb_tree_node_base* const __z,
+			       _Rb_tree_node_base& __header) throw ();
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 427 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+  template<typename _Cmp, typename _SfinaeType, typename = __void_t<>>
+    struct __has_is_transparent
+    { };
+
+  template<typename _Cmp, typename _SfinaeType>
+    struct __has_is_transparent<_Cmp, _SfinaeType,
+				__void_t<typename _Cmp::is_transparent>>
+    { typedef void type; };
+#endif
+# 436 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 438 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+  template<typename _Tree1, typename _Cmp2>
+    struct _Rb_tree_merge_helper { };
+#endif
+# 441 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc = allocator<_Val> >
+    class _Rb_tree
+    {
+      typedef typename __gnu_cxx::__alloc_traits<_Alloc>::template
+        rebind<_Rb_tree_node<_Val> >::other _Node_allocator;
+
+      typedef __gnu_cxx::__alloc_traits<_Node_allocator> _Alloc_traits;
+
+    protected:
+      typedef _Rb_tree_node_base* 		_Base_ptr;
+      typedef const _Rb_tree_node_base* 	_Const_Base_ptr;
+      typedef _Rb_tree_node<_Val>* 		_Link_type;
+      typedef const _Rb_tree_node<_Val>*	_Const_Link_type;
+
+    private:
+      // Functor recycling a pool of nodes and using allocation once the pool
+      // is empty.
+      struct _Reuse_or_alloc_node
+      {
+	_Reuse_or_alloc_node(_Rb_tree& __t)
+	  : _M_root(__t._M_root()), _M_nodes(__t._M_rightmost()), _M_t(__t)
+	{
+	  if (_M_root)
+	    {
+	      _M_root->_M_parent = 0;
+
+	      if (_M_nodes->_M_left)
+		_M_nodes = _M_nodes->_M_left;
+	    }
+	  else
+	    _M_nodes = 0;
+	}
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 477 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	_Reuse_or_alloc_node(const _Reuse_or_alloc_node&) = delete;
+#endif
+# 479 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+	~_Reuse_or_alloc_node()
+	{ _M_t._M_erase(static_cast<_Link_type>(_M_root)); }
+
+	template<typename _Arg>
+	  _Link_type
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 486 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  operator()(const _Arg& __arg)
+#else
+# 488 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  operator()(_Arg&& __arg)
+#endif
+# 490 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  {
+	    _Link_type __node = static_cast<_Link_type>(_M_extract());
+	    if (__node)
+	      {
+		_M_t._M_destroy_node(__node);
+		_M_t._M_construct_node(__node, _GLIBCXX_FORWARD(_Arg, __arg));
+		return __node;
+	      }
+
+	    return _M_t._M_create_node(_GLIBCXX_FORWARD(_Arg, __arg));
+	  }
+
+      private:
+	_Base_ptr
+	_M_extract()
+	{
+	  if (!_M_nodes)
+	    return _M_nodes;
+
+	  _Base_ptr __node = _M_nodes;
+	  _M_nodes = _M_nodes->_M_parent;
+	  if (_M_nodes)
+	    {
+	      if (_M_nodes->_M_right == __node)
+		{
+		  _M_nodes->_M_right = 0;
+
+		  if (_M_nodes->_M_left)
+		    {
+		      _M_nodes = _M_nodes->_M_left;
+
+		      while (_M_nodes->_M_right)
+			_M_nodes = _M_nodes->_M_right;
+
+		      if (_M_nodes->_M_left)
+			_M_nodes = _M_nodes->_M_left;
+		    }
+		}
+	      else // __node is on the left.
+		_M_nodes->_M_left = 0;
+	    }
+	  else
+	    _M_root = 0;
+
+	  return __node;
+	}
+
+	_Base_ptr _M_root;
+	_Base_ptr _M_nodes;
+	_Rb_tree& _M_t;
+      };
+
+      // Functor similar to the previous one but without any pool of nodes to
+      // recycle.
+      struct _Alloc_node
+      {
+	_Alloc_node(_Rb_tree& __t)
+	  : _M_t(__t) { }
+
+	template<typename _Arg>
+	  _Link_type
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 552 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  operator()(const _Arg& __arg) const
+#else
+# 554 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  operator()(_Arg&& __arg) const
+#endif
+# 556 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  { return _M_t._M_create_node(_GLIBCXX_FORWARD(_Arg, __arg)); }
+
+      private:
+	_Rb_tree& _M_t;
+      };
+
+    public:
+      typedef _Key 				key_type;
+      typedef _Val 				value_type;
+      typedef value_type* 			pointer;
+      typedef const value_type* 		const_pointer;
+      typedef value_type& 			reference;
+      typedef const value_type& 		const_reference;
+      typedef size_t 				size_type;
+      typedef ptrdiff_t 			difference_type;
+      typedef _Alloc 				allocator_type;
+
+      _Node_allocator&
+      _M_get_Node_allocator() _GLIBCXX_NOEXCEPT
+      { return *static_cast<_Node_allocator*>(&this->_M_impl); }
+      
+      const _Node_allocator&
+      _M_get_Node_allocator() const _GLIBCXX_NOEXCEPT
+      { return *static_cast<const _Node_allocator*>(&this->_M_impl); }
+
+      allocator_type
+      get_allocator() const _GLIBCXX_NOEXCEPT
+      { return allocator_type(_M_get_Node_allocator()); }
+
+    protected:
+      _Link_type
+      _M_get_node()
+      { return _Alloc_traits::allocate(_M_get_Node_allocator(), 1); }
+
+      void
+      _M_put_node(_Link_type __p) _GLIBCXX_NOEXCEPT
+      { _Alloc_traits::deallocate(_M_get_Node_allocator(), __p, 1); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 595 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      void
+      _M_construct_node(_Link_type __node, const value_type& __x)
+      {
+	__try
+	  { get_allocator().construct(__node->_M_valptr(), __x); }
+	__catch(...)
+	  {
+	    _M_put_node(__node);
+	    __throw_exception_again;
+	  }
+      }
+
+      _Link_type
+      _M_create_node(const value_type& __x)
+      {
+	_Link_type __tmp = _M_get_node();
+	_M_construct_node(__tmp, __x);
+	return __tmp;
+      }
+
+      void
+      _M_destroy_node(_Link_type __p)
+      { get_allocator().destroy(__p->_M_valptr()); }
+#else
+# 619 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      template<typename... _Args>
+	void
+	_M_construct_node(_Link_type __node, _Args&&... __args)
+	{
+	  __try
+	    {
+	      ::new(__node) _Rb_tree_node<_Val>;
+	      _Alloc_traits::construct(_M_get_Node_allocator(),
+				       __node->_M_valptr(),
+				       std::forward<_Args>(__args)...);
+	    }
+	  __catch(...)
+	    {
+	      __node->~_Rb_tree_node<_Val>();
+	      _M_put_node(__node);
+	      __throw_exception_again;
+	    }
+	}
+
+      template<typename... _Args>
+        _Link_type
+        _M_create_node(_Args&&... __args)
+	{
+	  _Link_type __tmp = _M_get_node();
+	  _M_construct_node(__tmp, std::forward<_Args>(__args)...);
+	  return __tmp;
+	}
+
+      void
+      _M_destroy_node(_Link_type __p) noexcept
+      {
+	_Alloc_traits::destroy(_M_get_Node_allocator(), __p->_M_valptr());
+	__p->~_Rb_tree_node<_Val>();
+      }
+#endif
+# 654 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+      void
+      _M_drop_node(_Link_type __p) _GLIBCXX_NOEXCEPT
+      {
+	_M_destroy_node(__p);
+	_M_put_node(__p);
+      }
+
+      template<typename _NodeGen>
+	_Link_type
+	_M_clone_node(_Const_Link_type __x, _NodeGen& __node_gen)
+	{
+	  _Link_type __tmp = __node_gen(*__x->_M_valptr());
+	  __tmp->_M_color = __x->_M_color;
+	  __tmp->_M_left = 0;
+	  __tmp->_M_right = 0;
+	  return __tmp;
+	}
+
+    protected:
+      // Unused _Is_pod_comparator is kept as it is part of mangled name.
+      template<typename _Key_compare,
+	       bool /* _Is_pod_comparator */ = __is_pod(_Key_compare)>
+        struct _Rb_tree_impl
+	: public _Node_allocator
+	, public _Rb_tree_key_compare<_Key_compare>
+	, public _Rb_tree_header
+        {
+	  typedef _Rb_tree_key_compare<_Key_compare> _Base_key_compare;
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 685 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  _Rb_tree_impl()
+	  { }
+#else
+# 688 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  _Rb_tree_impl() = default;
+	  _Rb_tree_impl(_Rb_tree_impl&&) = default;
+#endif
+# 691 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+	  _Rb_tree_impl(const _Rb_tree_impl& __x)
+	  : _Node_allocator(_Alloc_traits::_S_select_on_copy(__x))
+	  , _Base_key_compare(__x._M_key_compare)
+	  { }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 698 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  _Rb_tree_impl(const _Key_compare& __comp, const _Node_allocator& __a)
+	  : _Node_allocator(__a), _Base_key_compare(__comp)
+	  { }
+#else
+# 702 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  _Rb_tree_impl(const _Key_compare& __comp, _Node_allocator&& __a)
+	  : _Node_allocator(std::move(__a)), _Base_key_compare(__comp)
+	  { }
+#endif
+# 706 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	};
+
+      _Rb_tree_impl<_Compare> _M_impl;
+
+    protected:
+      _Base_ptr&
+      _M_root() _GLIBCXX_NOEXCEPT
+      { return this->_M_impl._M_header._M_parent; }
+
+      _Const_Base_ptr
+      _M_root() const _GLIBCXX_NOEXCEPT
+      { return this->_M_impl._M_header._M_parent; }
+
+      _Base_ptr&
+      _M_leftmost() _GLIBCXX_NOEXCEPT
+      { return this->_M_impl._M_header._M_left; }
+
+      _Const_Base_ptr
+      _M_leftmost() const _GLIBCXX_NOEXCEPT
+      { return this->_M_impl._M_header._M_left; }
+
+      _Base_ptr&
+      _M_rightmost() _GLIBCXX_NOEXCEPT
+      { return this->_M_impl._M_header._M_right; }
+
+      _Const_Base_ptr
+      _M_rightmost() const _GLIBCXX_NOEXCEPT
+      { return this->_M_impl._M_header._M_right; }
+
+      _Link_type
+      _M_begin() _GLIBCXX_NOEXCEPT
+      { return static_cast<_Link_type>(this->_M_impl._M_header._M_parent); }
+
+      _Const_Link_type
+      _M_begin() const _GLIBCXX_NOEXCEPT
+      {
+	return static_cast<_Const_Link_type>
+	  (this->_M_impl._M_header._M_parent);
+      }
+
+      _Base_ptr
+      _M_end() _GLIBCXX_NOEXCEPT
+      { return &this->_M_impl._M_header; }
+
+      _Const_Base_ptr
+      _M_end() const _GLIBCXX_NOEXCEPT
+      { return &this->_M_impl._M_header; }
+
+      static const_reference
+      _S_value(_Const_Link_type __x)
+      { return *__x->_M_valptr(); }
+
+      static const _Key&
+      _S_key(_Const_Link_type __x)
+      { return _KeyOfValue()(_S_value(__x)); }
+
+      static _Link_type
+      _S_left(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return static_cast<_Link_type>(__x->_M_left); }
+
+      static _Const_Link_type
+      _S_left(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return static_cast<_Const_Link_type>(__x->_M_left); }
+
+      static _Link_type
+      _S_right(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return static_cast<_Link_type>(__x->_M_right); }
+
+      static _Const_Link_type
+      _S_right(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return static_cast<_Const_Link_type>(__x->_M_right); }
+
+      static const_reference
+      _S_value(_Const_Base_ptr __x)
+      { return *static_cast<_Const_Link_type>(__x)->_M_valptr(); }
+
+      static const _Key&
+      _S_key(_Const_Base_ptr __x)
+      { return _KeyOfValue()(_S_value(__x)); }
+
+      static _Base_ptr
+      _S_minimum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return _Rb_tree_node_base::_S_minimum(__x); }
+
+      static _Const_Base_ptr
+      _S_minimum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return _Rb_tree_node_base::_S_minimum(__x); }
+
+      static _Base_ptr
+      _S_maximum(_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return _Rb_tree_node_base::_S_maximum(__x); }
+
+      static _Const_Base_ptr
+      _S_maximum(_Const_Base_ptr __x) _GLIBCXX_NOEXCEPT
+      { return _Rb_tree_node_base::_S_maximum(__x); }
+
+    public:
+      typedef _Rb_tree_iterator<value_type>       iterator;
+      typedef _Rb_tree_const_iterator<value_type> const_iterator;
+
+      typedef std::reverse_iterator<iterator>       reverse_iterator;
+      typedef std::reverse_iterator<const_iterator> const_reverse_iterator;
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 810 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      using node_type = _Node_handle<_Key, _Val, _Node_allocator>;
+      using insert_return_type = _Node_insert_return<
+	conditional_t<is_same_v<_Key, _Val>, const_iterator, iterator>,
+	node_type>;
+#endif
+# 815 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+      pair<_Base_ptr, _Base_ptr>
+      _M_get_insert_unique_pos(const key_type& __k);
+
+      pair<_Base_ptr, _Base_ptr>
+      _M_get_insert_equal_pos(const key_type& __k);
+
+      pair<_Base_ptr, _Base_ptr>
+      _M_get_insert_hint_unique_pos(const_iterator __pos,
+				    const key_type& __k);
+
+      pair<_Base_ptr, _Base_ptr>
+      _M_get_insert_hint_equal_pos(const_iterator __pos,
+				   const key_type& __k);
+
+    private:
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 832 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      template<typename _Arg, typename _NodeGen>
+        iterator
+	_M_insert_(_Base_ptr __x, _Base_ptr __y, _Arg&& __v, _NodeGen&);
+
+      iterator
+      _M_insert_node(_Base_ptr __x, _Base_ptr __y, _Link_type __z);
+
+      template<typename _Arg>
+        iterator
+        _M_insert_lower(_Base_ptr __y, _Arg&& __v);
+
+      template<typename _Arg>
+        iterator
+        _M_insert_equal_lower(_Arg&& __x);
+
+      iterator
+      _M_insert_lower_node(_Base_ptr __p, _Link_type __z);
+
+      iterator
+      _M_insert_equal_lower_node(_Link_type __z);
+#else
+# 853 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      template<typename _NodeGen>
+	iterator
+	_M_insert_(_Base_ptr __x, _Base_ptr __y,
+		   const value_type& __v, _NodeGen&);
+
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // 233. Insertion hints in associative containers.
+      iterator
+      _M_insert_lower(_Base_ptr __y, const value_type& __v);
+
+      iterator
+      _M_insert_equal_lower(const value_type& __x);
+#endif
+# 866 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+      template<typename _NodeGen>
+	_Link_type
+	_M_copy(_Const_Link_type __x, _Base_ptr __p, _NodeGen&);
+
+      template<typename _NodeGen>
+	_Link_type
+	_M_copy(const _Rb_tree& __x, _NodeGen& __gen)
+	{
+	  _Link_type __root = _M_copy(__x._M_begin(), _M_end(), __gen);
+	  _M_leftmost() = _S_minimum(__root);
+	  _M_rightmost() = _S_maximum(__root);
+	  _M_impl._M_node_count = __x._M_impl._M_node_count;
+	  return __root;
+	}
+
+      _Link_type
+      _M_copy(const _Rb_tree& __x)
+      {
+	_Alloc_node __an(*this);
+	return _M_copy(__x, __an);
+      }
+
+      void
+      _M_erase(_Link_type __x);
+
+      iterator
+      _M_lower_bound(_Link_type __x, _Base_ptr __y,
+		     const _Key& __k);
+
+      const_iterator
+      _M_lower_bound(_Const_Link_type __x, _Const_Base_ptr __y,
+		     const _Key& __k) const;
+
+      iterator
+      _M_upper_bound(_Link_type __x, _Base_ptr __y,
+		     const _Key& __k);
+
+      const_iterator
+      _M_upper_bound(_Const_Link_type __x, _Const_Base_ptr __y,
+		     const _Key& __k) const;
+
+    public:
+      // allocation/deallocation
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 911 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      _Rb_tree() { }
+#else
+# 913 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      _Rb_tree() = default;
+#endif
+# 915 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+      _Rb_tree(const _Compare& __comp,
+	       const allocator_type& __a = allocator_type())
+      : _M_impl(__comp, _Node_allocator(__a)) { }
+
+      _Rb_tree(const _Rb_tree& __x)
+      : _M_impl(__x._M_impl)
+      {
+	if (__x._M_root() != 0)
+	  _M_root() = _M_copy(__x);
+      }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 928 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      _Rb_tree(const allocator_type& __a)
+      : _M_impl(_Compare(), _Node_allocator(__a))
+      { }
+
+      _Rb_tree(const _Rb_tree& __x, const allocator_type& __a)
+      : _M_impl(__x._M_impl._M_key_compare, _Node_allocator(__a))
+      {
+	if (__x._M_root() != nullptr)
+	  _M_root() = _M_copy(__x);
+      }
+
+      _Rb_tree(_Rb_tree&&) = default;
+
+      _Rb_tree(_Rb_tree&& __x, const allocator_type& __a)
+      : _Rb_tree(std::move(__x), _Node_allocator(__a))
+      { }
+
+      _Rb_tree(_Rb_tree&& __x, _Node_allocator&& __a);
+#endif
+# 947 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+      ~_Rb_tree() _GLIBCXX_NOEXCEPT
+      { _M_erase(_M_begin()); }
+
+      _Rb_tree&
+      operator=(const _Rb_tree& __x);
+
+      // Accessors.
+      _Compare
+      key_comp() const
+      { return _M_impl._M_key_compare; }
+
+      iterator
+      begin() _GLIBCXX_NOEXCEPT
+      { return iterator(this->_M_impl._M_header._M_left); }
+
+      const_iterator
+      begin() const _GLIBCXX_NOEXCEPT
+      { return const_iterator(this->_M_impl._M_header._M_left); }
+
+      iterator
+      end() _GLIBCXX_NOEXCEPT
+      { return iterator(&this->_M_impl._M_header); }
+
+      const_iterator
+      end() const _GLIBCXX_NOEXCEPT
+      { return const_iterator(&this->_M_impl._M_header); }
+
+      reverse_iterator
+      rbegin() _GLIBCXX_NOEXCEPT
+      { return reverse_iterator(end()); }
+
+      const_reverse_iterator
+      rbegin() const _GLIBCXX_NOEXCEPT
+      { return const_reverse_iterator(end()); }
+
+      reverse_iterator
+      rend() _GLIBCXX_NOEXCEPT
+      { return reverse_iterator(begin()); }
+
+      const_reverse_iterator
+      rend() const _GLIBCXX_NOEXCEPT
+      { return const_reverse_iterator(begin()); }
+
+      bool
+      empty() const _GLIBCXX_NOEXCEPT
+      { return _M_impl._M_node_count == 0; }
+
+      size_type
+      size() const _GLIBCXX_NOEXCEPT 
+      { return _M_impl._M_node_count; }
+
+      size_type
+      max_size() const _GLIBCXX_NOEXCEPT
+      { return _Alloc_traits::max_size(_M_get_Node_allocator()); }
+
+      void
+      swap(_Rb_tree& __t)
+      _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value);
+
+      // Insert/erase.
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1009 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      template<typename _Arg>
+        pair<iterator, bool>
+        _M_insert_unique(_Arg&& __x);
+
+      template<typename _Arg>
+        iterator
+        _M_insert_equal(_Arg&& __x);
+
+      template<typename _Arg, typename _NodeGen>
+        iterator
+	_M_insert_unique_(const_iterator __pos, _Arg&& __x, _NodeGen&);
+
+      template<typename _Arg>
+	iterator
+	_M_insert_unique_(const_iterator __pos, _Arg&& __x)
+	{
+	  _Alloc_node __an(*this);
+	  return _M_insert_unique_(__pos, std::forward<_Arg>(__x), __an);
+	}
+
+      template<typename _Arg, typename _NodeGen>
+	iterator
+	_M_insert_equal_(const_iterator __pos, _Arg&& __x, _NodeGen&);
+
+      template<typename _Arg>
+	iterator
+	_M_insert_equal_(const_iterator __pos, _Arg&& __x)
+	{
+	  _Alloc_node __an(*this);
+	  return _M_insert_equal_(__pos, std::forward<_Arg>(__x), __an);
+	}
+
+      template<typename... _Args>
+	pair<iterator, bool>
+	_M_emplace_unique(_Args&&... __args);
+
+      template<typename... _Args>
+	iterator
+	_M_emplace_equal(_Args&&... __args);
+
+      template<typename... _Args>
+	iterator
+	_M_emplace_hint_unique(const_iterator __pos, _Args&&... __args);
+
+      template<typename... _Args>
+	iterator
+	_M_emplace_hint_equal(const_iterator __pos, _Args&&... __args);
+#else
+# 1057 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      pair<iterator, bool>
+      _M_insert_unique(const value_type& __x);
+
+      iterator
+      _M_insert_equal(const value_type& __x);
+
+      template<typename _NodeGen>
+	iterator
+	_M_insert_unique_(const_iterator __pos, const value_type& __x,
+			  _NodeGen&);
+
+      iterator
+      _M_insert_unique_(const_iterator __pos, const value_type& __x)
+      {
+	_Alloc_node __an(*this);
+	return _M_insert_unique_(__pos, __x, __an);
+      }
+
+      template<typename _NodeGen>
+	iterator
+	_M_insert_equal_(const_iterator __pos, const value_type& __x,
+			 _NodeGen&);
+      iterator
+      _M_insert_equal_(const_iterator __pos, const value_type& __x)
+      {
+	_Alloc_node __an(*this);
+	return _M_insert_equal_(__pos, __x, __an);
+      }
+#endif
+# 1086 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+      template<typename _InputIterator>
+        void
+        _M_insert_unique(_InputIterator __first, _InputIterator __last);
+
+      template<typename _InputIterator>
+        void
+        _M_insert_equal(_InputIterator __first, _InputIterator __last);
+
+    private:
+      void
+      _M_erase_aux(const_iterator __position);
+
+      void
+      _M_erase_aux(const_iterator __first, const_iterator __last);
+
+    public:
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1104 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 130. Associative erase should return an iterator.
+      _GLIBCXX_ABI_TAG_CXX11
+      iterator
+      erase(const_iterator __position)
+      {
+	__glibcxx_assert(__position != end());
+	const_iterator __result = __position;
+	++__result;
+	_M_erase_aux(__position);
+	return __result._M_const_cast();
+      }
+
+      // LWG 2059.
+      _GLIBCXX_ABI_TAG_CXX11
+      iterator
+      erase(iterator __position)
+      {
+	__glibcxx_assert(__position != end());
+	iterator __result = __position;
+	++__result;
+	_M_erase_aux(__position);
+	return __result;
+      }
+#else
+# 1129 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      void
+      erase(iterator __position)
+      {
+	__glibcxx_assert(__position != end());
+	_M_erase_aux(__position);
+      }
+
+      void
+      erase(const_iterator __position)
+      {
+	__glibcxx_assert(__position != end());
+	_M_erase_aux(__position);
+      }
+#endif
+# 1143 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      size_type
+      erase(const key_type& __x);
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1147 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 130. Associative erase should return an iterator.
+      _GLIBCXX_ABI_TAG_CXX11
+      iterator
+      erase(const_iterator __first, const_iterator __last)
+      {
+	_M_erase_aux(__first, __last);
+	return __last._M_const_cast();
+      }
+#else
+# 1157 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      void
+      erase(iterator __first, iterator __last)
+      { _M_erase_aux(__first, __last); }
+
+      void
+      erase(const_iterator __first, const_iterator __last)
+      { _M_erase_aux(__first, __last); }
+#endif
+# 1165 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      void
+      erase(const key_type* __first, const key_type* __last);
+
+      void
+      clear() _GLIBCXX_NOEXCEPT
+      {
+        _M_erase(_M_begin());
+	_M_impl._M_reset();
+      }
+
+      // Set operations.
+      iterator
+      find(const key_type& __k);
+
+      const_iterator
+      find(const key_type& __k) const;
+
+      size_type
+      count(const key_type& __k) const;
+
+      iterator
+      lower_bound(const key_type& __k)
+      { return _M_lower_bound(_M_begin(), _M_end(), __k); }
+
+      const_iterator
+      lower_bound(const key_type& __k) const
+      { return _M_lower_bound(_M_begin(), _M_end(), __k); }
+
+      iterator
+      upper_bound(const key_type& __k)
+      { return _M_upper_bound(_M_begin(), _M_end(), __k); }
+
+      const_iterator
+      upper_bound(const key_type& __k) const
+      { return _M_upper_bound(_M_begin(), _M_end(), __k); }
+
+      pair<iterator, iterator>
+      equal_range(const key_type& __k);
+
+      pair<const_iterator, const_iterator>
+      equal_range(const key_type& __k) const;
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1208 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	iterator
+	_M_find_tr(const _Kt& __k)
+	{
+	  const _Rb_tree* __const_this = this;
+	  return __const_this->_M_find_tr(__k)._M_const_cast();
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	const_iterator
+	_M_find_tr(const _Kt& __k) const
+	{
+	  auto __j = _M_lower_bound_tr(__k);
+	  if (__j != end() && _M_impl._M_key_compare(__k, _S_key(__j._M_node)))
+	    __j = end();
+	  return __j;
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	size_type
+	_M_count_tr(const _Kt& __k) const
+	{
+	  auto __p = _M_equal_range_tr(__k);
+	  return std::distance(__p.first, __p.second);
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	iterator
+	_M_lower_bound_tr(const _Kt& __k)
+	{
+	  const _Rb_tree* __const_this = this;
+	  return __const_this->_M_lower_bound_tr(__k)._M_const_cast();
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	const_iterator
+	_M_lower_bound_tr(const _Kt& __k) const
+	{
+	  auto __x = _M_begin();
+	  auto __y = _M_end();
+	  while (__x != 0)
+	    if (!_M_impl._M_key_compare(_S_key(__x), __k))
+	      {
+		__y = __x;
+		__x = _S_left(__x);
+	      }
+	    else
+	      __x = _S_right(__x);
+	  return const_iterator(__y);
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	iterator
+	_M_upper_bound_tr(const _Kt& __k)
+	{
+	  const _Rb_tree* __const_this = this;
+	  return __const_this->_M_upper_bound_tr(__k)._M_const_cast();
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	const_iterator
+	_M_upper_bound_tr(const _Kt& __k) const
+	{
+	  auto __x = _M_begin();
+	  auto __y = _M_end();
+	  while (__x != 0)
+	    if (_M_impl._M_key_compare(__k, _S_key(__x)))
+	      {
+		__y = __x;
+		__x = _S_left(__x);
+	      }
+	    else
+	      __x = _S_right(__x);
+	  return const_iterator(__y);
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	pair<iterator, iterator>
+	_M_equal_range_tr(const _Kt& __k)
+	{
+	  const _Rb_tree* __const_this = this;
+	  auto __ret = __const_this->_M_equal_range_tr(__k);
+	  return { __ret.first._M_const_cast(), __ret.second._M_const_cast() };
+	}
+
+      template<typename _Kt,
+	       typename _Req =
+		 typename __has_is_transparent<_Compare, _Kt>::type>
+	pair<const_iterator, const_iterator>
+	_M_equal_range_tr(const _Kt& __k) const
+	{
+	  auto __low = _M_lower_bound_tr(__k);
+	  auto __high = __low;
+	  auto& __cmp = _M_impl._M_key_compare;
+	  while (__high != end() && !__cmp(__k, _S_key(__high._M_node)))
+	    ++__high;
+	  return { __low, __high };
+	}
+#endif
+# 1323 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+      // Debugging.
+      bool
+      __rb_verify() const;
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1329 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      _Rb_tree&
+      operator=(_Rb_tree&&)
+      noexcept(_Alloc_traits::_S_nothrow_move()
+	       && is_nothrow_move_assignable<_Compare>::value);
+
+      template<typename _Iterator>
+	void
+	_M_assign_unique(_Iterator, _Iterator);
+
+      template<typename _Iterator>
+	void
+	_M_assign_equal(_Iterator, _Iterator);
+
+    private:
+      // Move elements from container with equal allocator.
+      void
+      _M_move_data(_Rb_tree& __x, std::true_type)
+      { _M_impl._M_move_data(__x._M_impl); }
+
+      // Move elements from container with possibly non-equal allocator,
+      // which might result in a copy not a move.
+      void
+      _M_move_data(_Rb_tree&, std::false_type);
+
+      // Move assignment from container with equal allocator.
+      void
+      _M_move_assign(_Rb_tree&, std::true_type);
+
+      // Move assignment from container with possibly non-equal allocator,
+      // which might result in a copy not a move.
+      void
+      _M_move_assign(_Rb_tree&, std::false_type);
+#endif
+# 1362 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1364 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    public:
+      /// Re-insert an extracted node.
+      insert_return_type
+      _M_reinsert_node_unique(node_type&& __nh)
+      {
+	insert_return_type __ret;
+	if (__nh.empty())
+	  __ret.position = end();
+	else
+	  {
+	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
+
+	    auto __res = _M_get_insert_unique_pos(__nh._M_key());
+	    if (__res.second)
+	      {
+		__ret.position
+		  = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
+		__nh._M_ptr = nullptr;
+		__ret.inserted = true;
+	      }
+	    else
+	      {
+		__ret.node = std::move(__nh);
+		__ret.position = iterator(__res.first);
+		__ret.inserted = false;
+	      }
+	  }
+	return __ret;
+      }
+
+      /// Re-insert an extracted node.
+      iterator
+      _M_reinsert_node_equal(node_type&& __nh)
+      {
+	iterator __ret;
+	if (__nh.empty())
+	  __ret = end();
+	else
+	  {
+	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
+	    auto __res = _M_get_insert_equal_pos(__nh._M_key());
+	    if (__res.second)
+	      __ret = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
+	    else
+	      __ret = _M_insert_equal_lower_node(__nh._M_ptr);
+	    __nh._M_ptr = nullptr;
+	  }
+	return __ret;
+      }
+
+      /// Re-insert an extracted node.
+      iterator
+      _M_reinsert_node_hint_unique(const_iterator __hint, node_type&& __nh)
+      {
+	iterator __ret;
+	if (__nh.empty())
+	  __ret = end();
+	else
+	  {
+	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
+	    auto __res = _M_get_insert_hint_unique_pos(__hint, __nh._M_key());
+	    if (__res.second)
+	      {
+		__ret = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
+		__nh._M_ptr = nullptr;
+	      }
+	    else
+	      __ret = iterator(__res.first);
+	  }
+	return __ret;
+      }
+
+      /// Re-insert an extracted node.
+      iterator
+      _M_reinsert_node_hint_equal(const_iterator __hint, node_type&& __nh)
+      {
+	iterator __ret;
+	if (__nh.empty())
+	  __ret = end();
+	else
+	  {
+	    __glibcxx_assert(_M_get_Node_allocator() == *__nh._M_alloc);
+	    auto __res = _M_get_insert_hint_equal_pos(__hint, __nh._M_key());
+	    if (__res.second)
+	      __ret = _M_insert_node(__res.first, __res.second, __nh._M_ptr);
+	    else
+	      __ret = _M_insert_equal_lower_node(__nh._M_ptr);
+	    __nh._M_ptr = nullptr;
+	  }
+	return __ret;
+      }
+
+      /// Extract a node.
+      node_type
+      extract(const_iterator __pos)
+      {
+	auto __ptr = _Rb_tree_rebalance_for_erase(
+	    __pos._M_const_cast()._M_node, _M_impl._M_header);
+	--_M_impl._M_node_count;
+	return { static_cast<_Link_type>(__ptr), _M_get_Node_allocator() };
+      }
+
+      /// Extract a node.
+      node_type
+      extract(const key_type& __k)
+      {
+	node_type __nh;
+	auto __pos = find(__k);
+	if (__pos != end())
+	  __nh = extract(const_iterator(__pos));
+	return __nh;
+      }
+
+      template<typename _Compare2>
+	using _Compatible_tree
+	  = _Rb_tree<_Key, _Val, _KeyOfValue, _Compare2, _Alloc>;
+
+      template<typename, typename>
+	friend class _Rb_tree_merge_helper;
+
+      /// Merge from a compatible container into one with unique keys.
+      template<typename _Compare2>
+	void
+	_M_merge_unique(_Compatible_tree<_Compare2>& __src) noexcept
+	{
+	  using _Merge_helper = _Rb_tree_merge_helper<_Rb_tree, _Compare2>;
+	  for (auto __i = __src.begin(), __end = __src.end(); __i != __end;)
+	    {
+	      auto __pos = __i++;
+	      auto __res = _M_get_insert_unique_pos(_KeyOfValue()(*__pos));
+	      if (__res.second)
+		{
+		  auto& __src_impl = _Merge_helper::_S_get_impl(__src);
+		  auto __ptr = _Rb_tree_rebalance_for_erase(
+		      __pos._M_node, __src_impl._M_header);
+		  --__src_impl._M_node_count;
+		  _M_insert_node(__res.first, __res.second,
+				 static_cast<_Link_type>(__ptr));
+		}
+	    }
+	}
+
+      /// Merge from a compatible container into one with equivalent keys.
+      template<typename _Compare2>
+	void
+	_M_merge_equal(_Compatible_tree<_Compare2>& __src) noexcept
+	{
+	  using _Merge_helper = _Rb_tree_merge_helper<_Rb_tree, _Compare2>;
+	  for (auto __i = __src.begin(), __end = __src.end(); __i != __end;)
+	    {
+	      auto __pos = __i++;
+	      auto __res = _M_get_insert_equal_pos(_KeyOfValue()(*__pos));
+	      if (__res.second)
+		{
+		  auto& __src_impl = _Merge_helper::_S_get_impl(__src);
+		  auto __ptr = _Rb_tree_rebalance_for_erase(
+		      __pos._M_node, __src_impl._M_header);
+		  --__src_impl._M_node_count;
+		  _M_insert_node(__res.first, __res.second,
+				 static_cast<_Link_type>(__ptr));
+		}
+	    }
+	}
+#endif // C++17
+# 1528 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    };
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline bool
+    operator==(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
+    {
+      return __x.size() == __y.size()
+	     && std::equal(__x.begin(), __x.end(), __y.begin());
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline bool
+    operator<(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+	      const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
+    {
+      return std::lexicographical_compare(__x.begin(), __x.end(), 
+					  __y.begin(), __y.end());
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline bool
+    operator!=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
+    { return !(__x == __y); }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline bool
+    operator>(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+	      const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
+    { return __y < __x; }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline bool
+    operator<=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
+    { return !(__y < __x); }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline bool
+    operator>=(const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+	       const _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
+    { return !(__x < __y); }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline void
+    swap(_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __x,
+	 _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>& __y)
+    { __x.swap(__y); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1586 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _Rb_tree(_Rb_tree&& __x, _Node_allocator&& __a)
+    : _M_impl(__x._M_impl._M_key_compare, std::move(__a))
+    {
+      using __eq = typename _Alloc_traits::is_always_equal;
+      if (__x._M_root() != nullptr)
+	_M_move_data(__x, __eq());
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_move_data(_Rb_tree& __x, std::false_type)
+    {
+      if (_M_get_Node_allocator() == __x._M_get_Node_allocator())
+	_M_move_data(__x, std::true_type());
+      else
+	{
+	  _Alloc_node __an(*this);
+	  auto __lbd =
+	    [&__an](const value_type& __cval)
+	    {
+	      auto& __val = const_cast<value_type&>(__cval);
+	      return __an(std::move_if_noexcept(__val));
+	    };
+	  _M_root() = _M_copy(__x, __lbd);
+	}
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_move_assign(_Rb_tree& __x, true_type)
+    {
+      clear();
+      if (__x._M_root() != nullptr)
+	_M_move_data(__x, std::true_type());
+      std::__alloc_on_move(_M_get_Node_allocator(),
+			   __x._M_get_Node_allocator());
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_move_assign(_Rb_tree& __x, false_type)
+    {
+      if (_M_get_Node_allocator() == __x._M_get_Node_allocator())
+	return _M_move_assign(__x, true_type{});
+
+      // Try to move each node reusing existing nodes and copying __x nodes
+      // structure.
+      _Reuse_or_alloc_node __roan(*this);
+      _M_impl._M_reset();
+      if (__x._M_root() != nullptr)
+	{
+	  auto __lbd =
+	    [&__roan](const value_type& __cval)
+	    {
+	      auto& __val = const_cast<value_type&>(__cval);
+	      return __roan(std::move_if_noexcept(__val));
+	    };
+	  _M_root() = _M_copy(__x, __lbd);
+	  __x.clear();
+	}
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    inline _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    operator=(_Rb_tree&& __x)
+    noexcept(_Alloc_traits::_S_nothrow_move()
+	     && is_nothrow_move_assignable<_Compare>::value)
+    {
+      _M_impl._M_key_compare = std::move(__x._M_impl._M_key_compare);
+      _M_move_assign(__x, __bool_constant<_Alloc_traits::_S_nothrow_move()>());
+      return *this;
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    template<typename _Iterator>
+      void
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_assign_unique(_Iterator __first, _Iterator __last)
+      {
+	_Reuse_or_alloc_node __roan(*this);
+	_M_impl._M_reset();
+	for (; __first != __last; ++__first)
+	  _M_insert_unique_(end(), *__first, __roan);
+      }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    template<typename _Iterator>
+      void
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_assign_equal(_Iterator __first, _Iterator __last)
+      {
+	_Reuse_or_alloc_node __roan(*this);
+	_M_impl._M_reset();
+	for (; __first != __last; ++__first)
+	  _M_insert_equal_(end(), *__first, __roan);
+      }
+#endif
+# 1696 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>&
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    operator=(const _Rb_tree& __x)
+    {
+      if (this != &__x)
+	{
+	  // Note that _Key may be a constant type.
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1707 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+	  if (_Alloc_traits::_S_propagate_on_copy_assign())
+	    {
+	      auto& __this_alloc = this->_M_get_Node_allocator();
+	      auto& __that_alloc = __x._M_get_Node_allocator();
+	      if (!_Alloc_traits::_S_always_equal()
+		  && __this_alloc != __that_alloc)
+		{
+		  // Replacement allocator cannot free existing storage, we need
+		  // to erase nodes first.
+		  clear();
+		  std::__alloc_on_copy(__this_alloc, __that_alloc);
+		}
+	    }
+#endif
+# 1721 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+	  _Reuse_or_alloc_node __roan(*this);
+	  _M_impl._M_reset();
+	  _M_impl._M_key_compare = __x._M_impl._M_key_compare;
+	  if (__x._M_root() != 0)
+	    _M_root() = _M_copy(__x, __roan);
+	}
+
+      return *this;
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1735 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _Arg, typename _NodeGen>
+#else
+# 1737 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _NodeGen>
+#endif
+# 1739 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_insert_(_Base_ptr __x, _Base_ptr __p,
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1743 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+		 _Arg&& __v,
+#else
+# 1745 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+		 const _Val& __v,
+#endif
+# 1747 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+		 _NodeGen& __node_gen)
+      {
+	bool __insert_left = (__x != 0 || __p == _M_end()
+			      || _M_impl._M_key_compare(_KeyOfValue()(__v),
+							_S_key(__p)));
+
+	_Link_type __z = __node_gen(_GLIBCXX_FORWARD(_Arg, __v));
+
+	_Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
+				      this->_M_impl._M_header);
+	++_M_impl._M_node_count;
+	return iterator(__z);
+      }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1764 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _Arg>
+#endif
+# 1766 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1769 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_lower(_Base_ptr __p, _Arg&& __v)
+#else
+# 1771 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_lower(_Base_ptr __p, const _Val& __v)
+#endif
+# 1773 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    {
+      bool __insert_left = (__p == _M_end()
+			    || !_M_impl._M_key_compare(_S_key(__p),
+						       _KeyOfValue()(__v)));
+
+      _Link_type __z = _M_create_node(_GLIBCXX_FORWARD(_Arg, __v));
+
+      _Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
+				    this->_M_impl._M_header);
+      ++_M_impl._M_node_count;
+      return iterator(__z);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1789 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _Arg>
+#endif
+# 1791 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 1794 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_equal_lower(_Arg&& __v)
+#else
+# 1796 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_equal_lower(const _Val& __v)
+#endif
+# 1798 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    {
+      _Link_type __x = _M_begin();
+      _Base_ptr __y = _M_end();
+      while (__x != 0)
+	{
+	  __y = __x;
+	  __x = !_M_impl._M_key_compare(_S_key(__x), _KeyOfValue()(__v)) ?
+	        _S_left(__x) : _S_right(__x);
+	}
+      return _M_insert_lower(__y, _GLIBCXX_FORWARD(_Arg, __v));
+    }
+
+  template<typename _Key, typename _Val, typename _KoV,
+	   typename _Compare, typename _Alloc>
+    template<typename _NodeGen>
+      typename _Rb_tree<_Key, _Val, _KoV, _Compare, _Alloc>::_Link_type
+      _Rb_tree<_Key, _Val, _KoV, _Compare, _Alloc>::
+      _M_copy(_Const_Link_type __x, _Base_ptr __p, _NodeGen& __node_gen)
+      {
+	// Structural copy. __x and __p must be non-null.
+	_Link_type __top = _M_clone_node(__x, __node_gen);
+	__top->_M_parent = __p;
+
+	__try
+	  {
+	    if (__x->_M_right)
+	      __top->_M_right = _M_copy(_S_right(__x), __top, __node_gen);
+	    __p = __top;
+	    __x = _S_left(__x);
+
+	    while (__x != 0)
+	      {
+		_Link_type __y = _M_clone_node(__x, __node_gen);
+		__p->_M_left = __y;
+		__y->_M_parent = __p;
+		if (__x->_M_right)
+		  __y->_M_right = _M_copy(_S_right(__x), __y, __node_gen);
+		__p = __y;
+		__x = _S_left(__x);
+	      }
+	  }
+	__catch(...)
+	  {
+	    _M_erase(__top);
+	    __throw_exception_again;
+	  }
+	return __top;
+      }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_erase(_Link_type __x)
+    {
+      // Erase without rebalancing.
+      while (__x != 0)
+	{
+	  _M_erase(_S_right(__x));
+	  _Link_type __y = _S_left(__x);
+	  _M_drop_node(__x);
+	  __x = __y;
+	}
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue,
+		      _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_lower_bound(_Link_type __x, _Base_ptr __y,
+		   const _Key& __k)
+    {
+      while (__x != 0)
+	if (!_M_impl._M_key_compare(_S_key(__x), __k))
+	  __y = __x, __x = _S_left(__x);
+	else
+	  __x = _S_right(__x);
+      return iterator(__y);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue,
+		      _Compare, _Alloc>::const_iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_lower_bound(_Const_Link_type __x, _Const_Base_ptr __y,
+		   const _Key& __k) const
+    {
+      while (__x != 0)
+	if (!_M_impl._M_key_compare(_S_key(__x), __k))
+	  __y = __x, __x = _S_left(__x);
+	else
+	  __x = _S_right(__x);
+      return const_iterator(__y);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue,
+		      _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_upper_bound(_Link_type __x, _Base_ptr __y,
+		   const _Key& __k)
+    {
+      while (__x != 0)
+	if (_M_impl._M_key_compare(__k, _S_key(__x)))
+	  __y = __x, __x = _S_left(__x);
+	else
+	  __x = _S_right(__x);
+      return iterator(__y);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue,
+		      _Compare, _Alloc>::const_iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_upper_bound(_Const_Link_type __x, _Const_Base_ptr __y,
+		   const _Key& __k) const
+    {
+      while (__x != 0)
+	if (_M_impl._M_key_compare(__k, _S_key(__x)))
+	  __y = __x, __x = _S_left(__x);
+	else
+	  __x = _S_right(__x);
+      return const_iterator(__y);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::iterator,
+	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::iterator>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    equal_range(const _Key& __k)
+    {
+      _Link_type __x = _M_begin();
+      _Base_ptr __y = _M_end();
+      while (__x != 0)
+	{
+	  if (_M_impl._M_key_compare(_S_key(__x), __k))
+	    __x = _S_right(__x);
+	  else if (_M_impl._M_key_compare(__k, _S_key(__x)))
+	    __y = __x, __x = _S_left(__x);
+	  else
+	    {
+	      _Link_type __xu(__x);
+	      _Base_ptr __yu(__y);
+	      __y = __x, __x = _S_left(__x);
+	      __xu = _S_right(__xu);
+	      return pair<iterator,
+		          iterator>(_M_lower_bound(__x, __y, __k),
+				    _M_upper_bound(__xu, __yu, __k));
+	    }
+	}
+      return pair<iterator, iterator>(iterator(__y),
+				      iterator(__y));
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::const_iterator,
+	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::const_iterator>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    equal_range(const _Key& __k) const
+    {
+      _Const_Link_type __x = _M_begin();
+      _Const_Base_ptr __y = _M_end();
+      while (__x != 0)
+	{
+	  if (_M_impl._M_key_compare(_S_key(__x), __k))
+	    __x = _S_right(__x);
+	  else if (_M_impl._M_key_compare(__k, _S_key(__x)))
+	    __y = __x, __x = _S_left(__x);
+	  else
+	    {
+	      _Const_Link_type __xu(__x);
+	      _Const_Base_ptr __yu(__y);
+	      __y = __x, __x = _S_left(__x);
+	      __xu = _S_right(__xu);
+	      return pair<const_iterator,
+		          const_iterator>(_M_lower_bound(__x, __y, __k),
+					  _M_upper_bound(__xu, __yu, __k));
+	    }
+	}
+      return pair<const_iterator, const_iterator>(const_iterator(__y),
+						  const_iterator(__y));
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    swap(_Rb_tree& __t)
+    _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value)
+    {
+      if (_M_root() == 0)
+	{
+	  if (__t._M_root() != 0)
+	    _M_impl._M_move_data(__t._M_impl);
+	}
+      else if (__t._M_root() == 0)
+	__t._M_impl._M_move_data(_M_impl);
+      else
+	{
+	  std::swap(_M_root(),__t._M_root());
+	  std::swap(_M_leftmost(),__t._M_leftmost());
+	  std::swap(_M_rightmost(),__t._M_rightmost());
+	  
+	  _M_root()->_M_parent = _M_end();
+	  __t._M_root()->_M_parent = __t._M_end();
+	  std::swap(this->_M_impl._M_node_count, __t._M_impl._M_node_count);
+	}
+      // No need to swap header's color as it does not change.
+      std::swap(this->_M_impl._M_key_compare, __t._M_impl._M_key_compare);
+
+      _Alloc_traits::_S_on_swap(_M_get_Node_allocator(),
+				__t._M_get_Node_allocator());
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr,
+	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_get_insert_unique_pos(const key_type& __k)
+    {
+      typedef pair<_Base_ptr, _Base_ptr> _Res;
+      _Link_type __x = _M_begin();
+      _Base_ptr __y = _M_end();
+      bool __comp = true;
+      while (__x != 0)
+	{
+	  __y = __x;
+	  __comp = _M_impl._M_key_compare(__k, _S_key(__x));
+	  __x = __comp ? _S_left(__x) : _S_right(__x);
+	}
+      iterator __j = iterator(__y);
+      if (__comp)
+	{
+	  if (__j == begin())
+	    return _Res(__x, __y);
+	  else
+	    --__j;
+	}
+      if (_M_impl._M_key_compare(_S_key(__j._M_node), __k))
+	return _Res(__x, __y);
+      return _Res(__j._M_node, 0);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr,
+	 typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_get_insert_equal_pos(const key_type& __k)
+    {
+      typedef pair<_Base_ptr, _Base_ptr> _Res;
+      _Link_type __x = _M_begin();
+      _Base_ptr __y = _M_end();
+      while (__x != 0)
+	{
+	  __y = __x;
+	  __x = _M_impl._M_key_compare(__k, _S_key(__x)) ?
+	        _S_left(__x) : _S_right(__x);
+	}
+      return _Res(__x, __y);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2078 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _Arg>
+#endif
+# 2080 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::iterator, bool>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2084 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_unique(_Arg&& __v)
+#else
+# 2086 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_unique(const _Val& __v)
+#endif
+# 2088 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    {
+      typedef pair<iterator, bool> _Res;
+      pair<_Base_ptr, _Base_ptr> __res
+	= _M_get_insert_unique_pos(_KeyOfValue()(__v));
+
+      if (__res.second)
+	{
+	  _Alloc_node __an(*this);
+	  return _Res(_M_insert_(__res.first, __res.second,
+				 _GLIBCXX_FORWARD(_Arg, __v), __an),
+		      true);
+	}
+
+      return _Res(iterator(__res.first), false);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2107 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _Arg>
+#endif
+# 2109 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2112 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_equal(_Arg&& __v)
+#else
+# 2114 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    _M_insert_equal(const _Val& __v)
+#endif
+# 2116 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    {
+      pair<_Base_ptr, _Base_ptr> __res
+	= _M_get_insert_equal_pos(_KeyOfValue()(__v));
+      _Alloc_node __an(*this);
+      return _M_insert_(__res.first, __res.second,
+			_GLIBCXX_FORWARD(_Arg, __v), __an);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr,
+         typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_get_insert_hint_unique_pos(const_iterator __position,
+				  const key_type& __k)
+    {
+      iterator __pos = __position._M_const_cast();
+      typedef pair<_Base_ptr, _Base_ptr> _Res;
+
+      // end()
+      if (__pos._M_node == _M_end())
+	{
+	  if (size() > 0
+	      && _M_impl._M_key_compare(_S_key(_M_rightmost()), __k))
+	    return _Res(0, _M_rightmost());
+	  else
+	    return _M_get_insert_unique_pos(__k);
+	}
+      else if (_M_impl._M_key_compare(__k, _S_key(__pos._M_node)))
+	{
+	  // First, try before...
+	  iterator __before = __pos;
+	  if (__pos._M_node == _M_leftmost()) // begin()
+	    return _Res(_M_leftmost(), _M_leftmost());
+	  else if (_M_impl._M_key_compare(_S_key((--__before)._M_node), __k))
+	    {
+	      if (_S_right(__before._M_node) == 0)
+		return _Res(0, __before._M_node);
+	      else
+		return _Res(__pos._M_node, __pos._M_node);
+	    }
+	  else
+	    return _M_get_insert_unique_pos(__k);
+	}
+      else if (_M_impl._M_key_compare(_S_key(__pos._M_node), __k))
+	{
+	  // ... then try after.
+	  iterator __after = __pos;
+	  if (__pos._M_node == _M_rightmost())
+	    return _Res(0, _M_rightmost());
+	  else if (_M_impl._M_key_compare(__k, _S_key((++__after)._M_node)))
+	    {
+	      if (_S_right(__pos._M_node) == 0)
+		return _Res(0, __pos._M_node);
+	      else
+		return _Res(__after._M_node, __after._M_node);
+	    }
+	  else
+	    return _M_get_insert_unique_pos(__k);
+	}
+      else
+	// Equivalent keys.
+	return _Res(__pos._M_node, 0);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2186 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _Arg, typename _NodeGen>
+#else
+# 2188 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _NodeGen>
+#endif
+# 2190 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_insert_unique_(const_iterator __position,
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2194 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+			_Arg&& __v,
+#else
+# 2196 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+			const _Val& __v,
+#endif
+# 2198 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+			_NodeGen& __node_gen)
+    {
+      pair<_Base_ptr, _Base_ptr> __res
+	= _M_get_insert_hint_unique_pos(__position, _KeyOfValue()(__v));
+
+      if (__res.second)
+	return _M_insert_(__res.first, __res.second,
+			  _GLIBCXX_FORWARD(_Arg, __v),
+			  __node_gen);
+      return iterator(__res.first);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr,
+         typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			   _Compare, _Alloc>::_Base_ptr>
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_get_insert_hint_equal_pos(const_iterator __position, const key_type& __k)
+    {
+      iterator __pos = __position._M_const_cast();
+      typedef pair<_Base_ptr, _Base_ptr> _Res;
+
+      // end()
+      if (__pos._M_node == _M_end())
+	{
+	  if (size() > 0
+	      && !_M_impl._M_key_compare(__k, _S_key(_M_rightmost())))
+	    return _Res(0, _M_rightmost());
+	  else
+	    return _M_get_insert_equal_pos(__k);
+	}
+      else if (!_M_impl._M_key_compare(_S_key(__pos._M_node), __k))
+	{
+	  // First, try before...
+	  iterator __before = __pos;
+	  if (__pos._M_node == _M_leftmost()) // begin()
+	    return _Res(_M_leftmost(), _M_leftmost());
+	  else if (!_M_impl._M_key_compare(__k, _S_key((--__before)._M_node)))
+	    {
+	      if (_S_right(__before._M_node) == 0)
+		return _Res(0, __before._M_node);
+	      else
+		return _Res(__pos._M_node, __pos._M_node);
+	    }
+	  else
+	    return _M_get_insert_equal_pos(__k);
+	}
+      else
+	{
+	  // ... then try after.  
+	  iterator __after = __pos;
+	  if (__pos._M_node == _M_rightmost())
+	    return _Res(0, _M_rightmost());
+	  else if (!_M_impl._M_key_compare(_S_key((++__after)._M_node), __k))
+	    {
+	      if (_S_right(__pos._M_node) == 0)
+		return _Res(0, __pos._M_node);
+	      else
+		return _Res(__after._M_node, __after._M_node);
+	    }
+	  else
+	    return _Res(0, 0);
+	}
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2268 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _Arg, typename _NodeGen>
+#else
+# 2270 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+    template<typename _NodeGen>
+#endif
+# 2272 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_insert_equal_(const_iterator __position,
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2276 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+		       _Arg&& __v,
+#else
+# 2278 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+		       const _Val& __v,
+#endif
+# 2280 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+		       _NodeGen& __node_gen)
+      {
+	pair<_Base_ptr, _Base_ptr> __res
+	  = _M_get_insert_hint_equal_pos(__position, _KeyOfValue()(__v));
+
+	if (__res.second)
+	  return _M_insert_(__res.first, __res.second,
+			    _GLIBCXX_FORWARD(_Arg, __v),
+			    __node_gen);
+
+	return _M_insert_equal_lower(_GLIBCXX_FORWARD(_Arg, __v));
+      }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2294 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_insert_node(_Base_ptr __x, _Base_ptr __p, _Link_type __z)
+    {
+      bool __insert_left = (__x != 0 || __p == _M_end()
+			    || _M_impl._M_key_compare(_S_key(__z),
+						      _S_key(__p)));
+
+      _Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
+				    this->_M_impl._M_header);
+      ++_M_impl._M_node_count;
+      return iterator(__z);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_insert_lower_node(_Base_ptr __p, _Link_type __z)
+    {
+      bool __insert_left = (__p == _M_end()
+			    || !_M_impl._M_key_compare(_S_key(__p),
+						       _S_key(__z)));
+
+      _Rb_tree_insert_and_rebalance(__insert_left, __z, __p,
+				    this->_M_impl._M_header);
+      ++_M_impl._M_node_count;
+      return iterator(__z);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_insert_equal_lower_node(_Link_type __z)
+    {
+      _Link_type __x = _M_begin();
+      _Base_ptr __y = _M_end();
+      while (__x != 0)
+	{
+	  __y = __x;
+	  __x = !_M_impl._M_key_compare(_S_key(__x), _S_key(__z)) ?
+	        _S_left(__x) : _S_right(__x);
+	}
+      return _M_insert_lower_node(__y, __z);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    template<typename... _Args>
+      pair<typename _Rb_tree<_Key, _Val, _KeyOfValue,
+			     _Compare, _Alloc>::iterator, bool>
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_emplace_unique(_Args&&... __args)
+      {
+	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
+
+	__try
+	  {
+	    typedef pair<iterator, bool> _Res;
+	    auto __res = _M_get_insert_unique_pos(_S_key(__z));
+	    if (__res.second)
+	      return _Res(_M_insert_node(__res.first, __res.second, __z), true);
+	
+	    _M_drop_node(__z);
+	    return _Res(iterator(__res.first), false);
+	  }
+	__catch(...)
+	  {
+	    _M_drop_node(__z);
+	    __throw_exception_again;
+	  }
+      }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    template<typename... _Args>
+      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_emplace_equal(_Args&&... __args)
+      {
+	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
+
+	__try
+	  {
+	    auto __res = _M_get_insert_equal_pos(_S_key(__z));
+	    return _M_insert_node(__res.first, __res.second, __z);
+	  }
+	__catch(...)
+	  {
+	    _M_drop_node(__z);
+	    __throw_exception_again;
+	  }
+      }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    template<typename... _Args>
+      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_emplace_hint_unique(const_iterator __pos, _Args&&... __args)
+      {
+	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
+
+	__try
+	  {
+	    auto __res = _M_get_insert_hint_unique_pos(__pos, _S_key(__z));
+
+	    if (__res.second)
+	      return _M_insert_node(__res.first, __res.second, __z);
+
+	    _M_drop_node(__z);
+	    return iterator(__res.first);
+	  }
+	__catch(...)
+	  {
+	    _M_drop_node(__z);
+	    __throw_exception_again;
+	  }
+      }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    template<typename... _Args>
+      typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::iterator
+      _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+      _M_emplace_hint_equal(const_iterator __pos, _Args&&... __args)
+      {
+	_Link_type __z = _M_create_node(std::forward<_Args>(__args)...);
+
+	__try
+	  {
+	    auto __res = _M_get_insert_hint_equal_pos(__pos, _S_key(__z));
+
+	    if (__res.second)
+	      return _M_insert_node(__res.first, __res.second, __z);
+
+	    return _M_insert_equal_lower_node(__z);
+	  }
+	__catch(...)
+	  {
+	    _M_drop_node(__z);
+	    __throw_exception_again;
+	  }
+      }
+#endif
+# 2442 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+  template<typename _Key, typename _Val, typename _KoV,
+           typename _Cmp, typename _Alloc>
+    template<class _II>
+      void
+      _Rb_tree<_Key, _Val, _KoV, _Cmp, _Alloc>::
+      _M_insert_unique(_II __first, _II __last)
+      {
+	_Alloc_node __an(*this);
+	for (; __first != __last; ++__first)
+	  _M_insert_unique_(end(), *__first, __an);
+      }
+
+  template<typename _Key, typename _Val, typename _KoV,
+           typename _Cmp, typename _Alloc>
+    template<class _II>
+      void
+      _Rb_tree<_Key, _Val, _KoV, _Cmp, _Alloc>::
+      _M_insert_equal(_II __first, _II __last)
+      {
+	_Alloc_node __an(*this);
+	for (; __first != __last; ++__first)
+	  _M_insert_equal_(end(), *__first, __an);
+      }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_erase_aux(const_iterator __position)
+    {
+      _Link_type __y =
+	static_cast<_Link_type>(_Rb_tree_rebalance_for_erase
+				(const_cast<_Base_ptr>(__position._M_node),
+				 this->_M_impl._M_header));
+      _M_drop_node(__y);
+      --_M_impl._M_node_count;
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    _M_erase_aux(const_iterator __first, const_iterator __last)
+    {
+      if (__first == begin() && __last == end())
+	clear();
+      else
+	while (__first != __last)
+	  _M_erase_aux(__first++);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    erase(const _Key& __x)
+    {
+      pair<iterator, iterator> __p = equal_range(__x);
+      const size_type __old_size = size();
+      _M_erase_aux(__p.first, __p.second);
+      return __old_size - size();
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    void
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    erase(const _Key* __first, const _Key* __last)
+    {
+      while (__first != __last)
+	erase(*__first++);
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue,
+		      _Compare, _Alloc>::iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    find(const _Key& __k)
+    {
+      iterator __j = _M_lower_bound(_M_begin(), _M_end(), __k);
+      return (__j == end()
+	      || _M_impl._M_key_compare(__k,
+					_S_key(__j._M_node))) ? end() : __j;
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue,
+		      _Compare, _Alloc>::const_iterator
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    find(const _Key& __k) const
+    {
+      const_iterator __j = _M_lower_bound(_M_begin(), _M_end(), __k);
+      return (__j == end()
+	      || _M_impl._M_key_compare(__k, 
+					_S_key(__j._M_node))) ? end() : __j;
+    }
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    typename _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type
+    _Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::
+    count(const _Key& __k) const
+    {
+      pair<const_iterator, const_iterator> __p = equal_range(__k);
+      const size_type __n = std::distance(__p.first, __p.second);
+      return __n;
+    }
+
+  _GLIBCXX_PURE unsigned int
+  _Rb_tree_black_count(const _Rb_tree_node_base* __node,
+                       const _Rb_tree_node_base* __root) throw ();
+
+  template<typename _Key, typename _Val, typename _KeyOfValue,
+           typename _Compare, typename _Alloc>
+    bool
+    _Rb_tree<_Key,_Val,_KeyOfValue,_Compare,_Alloc>::__rb_verify() const
+    {
+      if (_M_impl._M_node_count == 0 || begin() == end())
+	return _M_impl._M_node_count == 0 && begin() == end()
+	       && this->_M_impl._M_header._M_left == _M_end()
+	       && this->_M_impl._M_header._M_right == _M_end();
+
+      unsigned int __len = _Rb_tree_black_count(_M_leftmost(), _M_root());
+      for (const_iterator __it = begin(); __it != end(); ++__it)
+	{
+	  _Const_Link_type __x = static_cast<_Const_Link_type>(__it._M_node);
+	  _Const_Link_type __L = _S_left(__x);
+	  _Const_Link_type __R = _S_right(__x);
+
+	  if (__x->_M_color == _S_red)
+	    if ((__L && __L->_M_color == _S_red)
+		|| (__R && __R->_M_color == _S_red))
+	      return false;
+
+	  if (__L && _M_impl._M_key_compare(_S_key(__x), _S_key(__L)))
+	    return false;
+	  if (__R && _M_impl._M_key_compare(_S_key(__R), _S_key(__x)))
+	    return false;
+
+	  if (!__L && !__R && _Rb_tree_black_count(__x, _M_root()) != __len)
+	    return false;
+	}
+
+      if (_M_leftmost() != _Rb_tree_node_base::_S_minimum(_M_root()))
+	return false;
+      if (_M_rightmost() != _Rb_tree_node_base::_S_maximum(_M_root()))
+	return false;
+      return true;
+    }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 2596 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+  // Allow access to internals of compatible _Rb_tree specializations.
+  template<typename _Key, typename _Val, typename _Sel, typename _Cmp1,
+	   typename _Alloc, typename _Cmp2>
+    struct _Rb_tree_merge_helper<_Rb_tree<_Key, _Val, _Sel, _Cmp1, _Alloc>,
+				 _Cmp2>
+    {
+    private:
+      friend class _Rb_tree<_Key, _Val, _Sel, _Cmp1, _Alloc>;
+
+      static auto&
+      _S_get_impl(_Rb_tree<_Key, _Val, _Sel, _Cmp2, _Alloc>& __tree)
+      { return __tree._M_impl; }
+    };
+#endif // C++17
+# 2610 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+
+_GLIBCXX_END_NAMESPACE_VERSION
+} // namespace
+
+#endif
+# 2615 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_tree.h" 3
+# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 2 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/stl_set.h>
+#endif /* expanded by -frewrite-includes */
+# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 1 3
+// Set implementation -*- C++ -*-
+
+// Copyright (C) 2001-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/*
+ *
+ * Copyright (c) 1994
+ * Hewlett-Packard Company
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Hewlett-Packard Company makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ *
+ *
+ * Copyright (c) 1996,1997
+ * Silicon Graphics Computer Systems, Inc.
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Silicon Graphics makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ */
+
+/** @file bits/stl_set.h
+ *  This is an internal header file, included by other library headers.
+ *  Do not attempt to use it directly. @headername{set}
+ */
+
+#ifndef _STL_SET_H
+#define _STL_SET_H 1
+
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/concept_check.h>
+#endif /* expanded by -frewrite-includes */
+# 59 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+# 60 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <initializer_list>
+#endif /* expanded by -frewrite-includes */
+# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+#endif
+# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+
+  template<typename _Key, typename _Compare, typename _Alloc>
+    class multiset;
+
+  /**
+   *  @brief A standard container made up of unique keys, which can be
+   *  retrieved in logarithmic time.
+   *
+   *  @ingroup associative_containers
+   *
+   *  @tparam _Key  Type of key objects.
+   *  @tparam _Compare  Comparison function object type, defaults to less<_Key>.
+   *  @tparam _Alloc  Allocator type, defaults to allocator<_Key>.
+   *
+   *  Meets the requirements of a <a href="tables.html#65">container</a>, a
+   *  <a href="tables.html#66">reversible container</a>, and an
+   *  <a href="tables.html#69">associative container</a> (using unique keys).
+   *
+   *  Sets support bidirectional iterators.
+   *
+   *  The private tree data is declared exactly the same way for set and
+   *  multiset; the distinction is made entirely in how the tree functions are
+   *  called (*_unique versus *_equal, same as the standard).
+  */
+  template<typename _Key, typename _Compare = std::less<_Key>,
+	   typename _Alloc = std::allocator<_Key> >
+    class set
+    {
+#ifdef _GLIBCXX_CONCEPT_CHECKS
+      // concept requirements
+      typedef typename _Alloc::value_type		_Alloc_value_type;
+#if 0 /* disabled by -frewrite-includes */
+# if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 99 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      __glibcxx_class_requires(_Key, _SGIAssignableConcept)
+# endif
+# 101 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      __glibcxx_class_requires4(_Compare, bool, _Key, _Key,
+				_BinaryFunctionConcept)
+      __glibcxx_class_requires2(_Key, _Alloc_value_type, _SameTypeConcept)
+#endif
+# 105 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+    public:
+      // typedefs:
+      //@{
+      /// Public typedefs.
+      typedef _Key     key_type;
+      typedef _Key     value_type;
+      typedef _Compare key_compare;
+      typedef _Compare value_compare;
+      typedef _Alloc   allocator_type;
+      //@}
+
+    private:
+      typedef typename __gnu_cxx::__alloc_traits<_Alloc>::template
+	rebind<_Key>::other _Key_alloc_type;
+
+      typedef _Rb_tree<key_type, value_type, _Identity<value_type>,
+		       key_compare, _Key_alloc_type> _Rep_type;
+      _Rep_type _M_t;  // Red-black tree representing set.
+
+      typedef __gnu_cxx::__alloc_traits<_Key_alloc_type> _Alloc_traits;
+
+    public:
+      //@{
+      ///  Iterator-related typedefs.
+      typedef typename _Alloc_traits::pointer		 pointer;
+      typedef typename _Alloc_traits::const_pointer	 const_pointer;
+      typedef typename _Alloc_traits::reference		 reference;
+      typedef typename _Alloc_traits::const_reference	 const_reference;
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 103. set::iterator is required to be modifiable,
+      // but this allows modification of keys.
+      typedef typename _Rep_type::const_iterator	 iterator;
+      typedef typename _Rep_type::const_iterator	 const_iterator;
+      typedef typename _Rep_type::const_reverse_iterator reverse_iterator;
+      typedef typename _Rep_type::const_reverse_iterator const_reverse_iterator;
+      typedef typename _Rep_type::size_type		 size_type;
+      typedef typename _Rep_type::difference_type	 difference_type;
+      //@}
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 146 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      using node_type = typename _Rep_type::node_type;
+      using insert_return_type = typename _Rep_type::insert_return_type;
+#endif
+# 149 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      // allocation/deallocation
+      /**
+       *  @brief  Default constructor creates no elements.
+       */
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 155 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      set() : _M_t() { }
+#else
+# 157 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      set() = default;
+#endif
+# 159 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      /**
+       *  @brief  Creates a %set with no elements.
+       *  @param  __comp  Comparator to use.
+       *  @param  __a  An allocator object.
+       */
+      explicit
+      set(const _Compare& __comp,
+	  const allocator_type& __a = allocator_type())
+      : _M_t(__comp, _Key_alloc_type(__a)) { }
+
+      /**
+       *  @brief  Builds a %set from a range.
+       *  @param  __first  An input iterator.
+       *  @param  __last  An input iterator.
+       *
+       *  Create a %set consisting of copies of the elements from
+       *  [__first,__last).  This is linear in N if the range is
+       *  already sorted, and NlogN otherwise (where N is
+       *  distance(__first,__last)).
+       */
+      template<typename _InputIterator>
+	set(_InputIterator __first, _InputIterator __last)
+	: _M_t()
+	{ _M_t._M_insert_unique(__first, __last); }
+
+      /**
+       *  @brief  Builds a %set from a range.
+       *  @param  __first  An input iterator.
+       *  @param  __last  An input iterator.
+       *  @param  __comp  A comparison functor.
+       *  @param  __a  An allocator object.
+       *
+       *  Create a %set consisting of copies of the elements from
+       *  [__first,__last).  This is linear in N if the range is
+       *  already sorted, and NlogN otherwise (where N is
+       *  distance(__first,__last)).
+       */
+      template<typename _InputIterator>
+	set(_InputIterator __first, _InputIterator __last,
+	    const _Compare& __comp,
+	    const allocator_type& __a = allocator_type())
+	: _M_t(__comp, _Key_alloc_type(__a))
+	{ _M_t._M_insert_unique(__first, __last); }
+
+      /**
+       *  @brief  %Set copy constructor.
+       *
+       *  Whether the allocator is copied depends on the allocator traits.
+       */
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 210 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      set(const set& __x)
+      : _M_t(__x._M_t) { }
+#else
+# 213 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      set(const set&) = default;
+
+     /**
+       *  @brief %Set move constructor
+       *
+       *  The newly-created %set contains the exact contents of the moved
+       *  instance. The moved instance is a valid, but unspecified, %set.
+       */
+      set(set&&) = default;
+
+      /**
+       *  @brief  Builds a %set from an initializer_list.
+       *  @param  __l  An initializer_list.
+       *  @param  __comp  A comparison functor.
+       *  @param  __a  An allocator object.
+       *
+       *  Create a %set consisting of copies of the elements in the list.
+       *  This is linear in N if the list is already sorted, and NlogN
+       *  otherwise (where N is @a __l.size()).
+       */
+      set(initializer_list<value_type> __l,
+	  const _Compare& __comp = _Compare(),
+	  const allocator_type& __a = allocator_type())
+      : _M_t(__comp, _Key_alloc_type(__a))
+      { _M_t._M_insert_unique(__l.begin(), __l.end()); }
+
+      /// Allocator-extended default constructor.
+      explicit
+      set(const allocator_type& __a)
+      : _M_t(_Compare(), _Key_alloc_type(__a)) { }
+
+      /// Allocator-extended copy constructor.
+      set(const set& __x, const allocator_type& __a)
+      : _M_t(__x._M_t, _Key_alloc_type(__a)) { }
+
+      /// Allocator-extended move constructor.
+      set(set&& __x, const allocator_type& __a)
+      noexcept(is_nothrow_copy_constructible<_Compare>::value
+	       && _Alloc_traits::_S_always_equal())
+      : _M_t(std::move(__x._M_t), _Key_alloc_type(__a)) { }
+
+      /// Allocator-extended initialier-list constructor.
+      set(initializer_list<value_type> __l, const allocator_type& __a)
+      : _M_t(_Compare(), _Key_alloc_type(__a))
+      { _M_t._M_insert_unique(__l.begin(), __l.end()); }
+
+      /// Allocator-extended range constructor.
+      template<typename _InputIterator>
+	set(_InputIterator __first, _InputIterator __last,
+	    const allocator_type& __a)
+	: _M_t(_Compare(), _Key_alloc_type(__a))
+	{ _M_t._M_insert_unique(__first, __last); }
+
+      /**
+       *  The dtor only erases the elements, and note that if the elements
+       *  themselves are pointers, the pointed-to memory is not touched in any
+       *  way. Managing the pointer is the user's responsibility.
+       */
+      ~set() = default;
+#endif
+# 273 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      /**
+       *  @brief  %Set assignment operator.
+       *
+       *  Whether the allocator is copied depends on the allocator traits.
+       */
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 280 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      set&
+      operator=(const set& __x)
+      {
+	_M_t = __x._M_t;
+	return *this;
+      }
+#else
+# 287 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      set&
+      operator=(const set&) = default;
+
+      /// Move assignment operator.
+      set&
+      operator=(set&&) = default;
+
+      /**
+       *  @brief  %Set list assignment operator.
+       *  @param  __l  An initializer_list.
+       *
+       *  This function fills a %set with copies of the elements in the
+       *  initializer list @a __l.
+       *
+       *  Note that the assignment completely changes the %set and
+       *  that the resulting %set's size is the same as the number
+       *  of elements assigned.
+       */
+      set&
+      operator=(initializer_list<value_type> __l)
+      {
+	_M_t._M_assign_unique(__l.begin(), __l.end());
+	return *this;
+      }
+#endif
+# 312 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      // accessors:
+
+      ///  Returns the comparison object with which the %set was constructed.
+      key_compare
+      key_comp() const
+      { return _M_t.key_comp(); }
+      ///  Returns the comparison object with which the %set was constructed.
+      value_compare
+      value_comp() const
+      { return _M_t.key_comp(); }
+      ///  Returns the allocator object with which the %set was constructed.
+      allocator_type
+      get_allocator() const _GLIBCXX_NOEXCEPT
+      { return allocator_type(_M_t.get_allocator()); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points to the first
+       *  element in the %set.  Iteration is done in ascending order according
+       *  to the keys.
+       */
+      iterator
+      begin() const _GLIBCXX_NOEXCEPT
+      { return _M_t.begin(); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points one past the last
+       *  element in the %set.  Iteration is done in ascending order according
+       *  to the keys.
+       */
+      iterator
+      end() const _GLIBCXX_NOEXCEPT
+      { return _M_t.end(); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points to the last
+       *  element in the %set.  Iteration is done in descending order according
+       *  to the keys.
+       */
+      reverse_iterator
+      rbegin() const _GLIBCXX_NOEXCEPT
+      { return _M_t.rbegin(); }
+
+      /**
+       *  Returns a read-only (constant) reverse iterator that points to the
+       *  last pair in the %set.  Iteration is done in descending order
+       *  according to the keys.
+       */
+      reverse_iterator
+      rend() const _GLIBCXX_NOEXCEPT
+      { return _M_t.rend(); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 365 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      /**
+       *  Returns a read-only (constant) iterator that points to the first
+       *  element in the %set.  Iteration is done in ascending order according
+       *  to the keys.
+       */
+      iterator
+      cbegin() const noexcept
+      { return _M_t.begin(); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points one past the last
+       *  element in the %set.  Iteration is done in ascending order according
+       *  to the keys.
+       */
+      iterator
+      cend() const noexcept
+      { return _M_t.end(); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points to the last
+       *  element in the %set.  Iteration is done in descending order according
+       *  to the keys.
+       */
+      reverse_iterator
+      crbegin() const noexcept
+      { return _M_t.rbegin(); }
+
+      /**
+       *  Returns a read-only (constant) reverse iterator that points to the
+       *  last pair in the %set.  Iteration is done in descending order
+       *  according to the keys.
+       */
+      reverse_iterator
+      crend() const noexcept
+      { return _M_t.rend(); }
+#endif
+# 401 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      ///  Returns true if the %set is empty.
+      bool
+      empty() const _GLIBCXX_NOEXCEPT
+      { return _M_t.empty(); }
+
+      ///  Returns the size of the %set.
+      size_type
+      size() const _GLIBCXX_NOEXCEPT
+      { return _M_t.size(); }
+
+      ///  Returns the maximum size of the %set.
+      size_type
+      max_size() const _GLIBCXX_NOEXCEPT
+      { return _M_t.max_size(); }
+
+      /**
+       *  @brief  Swaps data with another %set.
+       *  @param  __x  A %set of the same element and allocator types.
+       *
+       *  This exchanges the elements between two sets in constant
+       *  time.  (It is only swapping a pointer, an integer, and an
+       *  instance of the @c Compare type (which itself is often
+       *  stateless and empty), so it should be quite fast.)  Note
+       *  that the global std::swap() function is specialized such
+       *  that std::swap(s1,s2) will feed to this function.
+       *
+       *  Whether the allocators are swapped depends on the allocator traits.
+       */
+      void
+      swap(set& __x)
+      _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value)
+      { _M_t.swap(__x._M_t); }
+
+      // insert/erase
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 437 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      /**
+       *  @brief Attempts to build and insert an element into the %set.
+       *  @param __args  Arguments used to generate an element.
+       *  @return  A pair, of which the first element is an iterator that points
+       *           to the possibly inserted element, and the second is a bool
+       *           that is true if the element was actually inserted.
+       *
+       *  This function attempts to build and insert an element into the %set.
+       *  A %set relies on unique keys and thus an element is only inserted if
+       *  it is not already present in the %set.
+       *
+       *  Insertion requires logarithmic time.
+       */
+      template<typename... _Args>
+	std::pair<iterator, bool>
+	emplace(_Args&&... __args)
+	{ return _M_t._M_emplace_unique(std::forward<_Args>(__args)...); }
+
+      /**
+       *  @brief Attempts to insert an element into the %set.
+       *  @param  __pos  An iterator that serves as a hint as to where the
+       *                element should be inserted.
+       *  @param  __args  Arguments used to generate the element to be
+       *                 inserted.
+       *  @return An iterator that points to the element with key equivalent to
+       *          the one generated from @a __args (may or may not be the
+       *          element itself).
+       *
+       *  This function is not concerned about whether the insertion took place,
+       *  and thus does not return a boolean like the single-argument emplace()
+       *  does.  Note that the first parameter is only a hint and can
+       *  potentially improve the performance of the insertion process.  A bad
+       *  hint would cause no gains in efficiency.
+       *
+       *  For more on @a hinting, see:
+       *  https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
+       *
+       *  Insertion requires logarithmic time (if the hint is not taken).
+       */
+      template<typename... _Args>
+	iterator
+	emplace_hint(const_iterator __pos, _Args&&... __args)
+	{
+	  return _M_t._M_emplace_hint_unique(__pos,
+					     std::forward<_Args>(__args)...);
+	}
+#endif
+# 484 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      /**
+       *  @brief Attempts to insert an element into the %set.
+       *  @param  __x  Element to be inserted.
+       *  @return  A pair, of which the first element is an iterator that points
+       *           to the possibly inserted element, and the second is a bool
+       *           that is true if the element was actually inserted.
+       *
+       *  This function attempts to insert an element into the %set.  A %set
+       *  relies on unique keys and thus an element is only inserted if it is
+       *  not already present in the %set.
+       *
+       *  Insertion requires logarithmic time.
+       */
+      std::pair<iterator, bool>
+      insert(const value_type& __x)
+      {
+	std::pair<typename _Rep_type::iterator, bool> __p =
+	  _M_t._M_insert_unique(__x);
+	return std::pair<iterator, bool>(__p.first, __p.second);
+      }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 507 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      std::pair<iterator, bool>
+      insert(value_type&& __x)
+      {
+	std::pair<typename _Rep_type::iterator, bool> __p =
+	  _M_t._M_insert_unique(std::move(__x));
+	return std::pair<iterator, bool>(__p.first, __p.second);
+      }
+#endif
+# 515 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      /**
+       *  @brief Attempts to insert an element into the %set.
+       *  @param  __position  An iterator that serves as a hint as to where the
+       *                    element should be inserted.
+       *  @param  __x  Element to be inserted.
+       *  @return An iterator that points to the element with key of
+       *           @a __x (may or may not be the element passed in).
+       *
+       *  This function is not concerned about whether the insertion took place,
+       *  and thus does not return a boolean like the single-argument insert()
+       *  does.  Note that the first parameter is only a hint and can
+       *  potentially improve the performance of the insertion process.  A bad
+       *  hint would cause no gains in efficiency.
+       *
+       *  For more on @a hinting, see:
+       *  https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
+       *
+       *  Insertion requires logarithmic time (if the hint is not taken).
+       */
+      iterator
+      insert(const_iterator __position, const value_type& __x)
+      { return _M_t._M_insert_unique_(__position, __x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 540 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      iterator
+      insert(const_iterator __position, value_type&& __x)
+      { return _M_t._M_insert_unique_(__position, std::move(__x)); }
+#endif
+# 544 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      /**
+       *  @brief A template function that attempts to insert a range
+       *  of elements.
+       *  @param  __first  Iterator pointing to the start of the range to be
+       *                   inserted.
+       *  @param  __last  Iterator pointing to the end of the range.
+       *
+       *  Complexity similar to that of the range constructor.
+       */
+      template<typename _InputIterator>
+	void
+	insert(_InputIterator __first, _InputIterator __last)
+	{ _M_t._M_insert_unique(__first, __last); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 560 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      /**
+       *  @brief Attempts to insert a list of elements into the %set.
+       *  @param  __l  A std::initializer_list<value_type> of elements
+       *               to be inserted.
+       *
+       *  Complexity similar to that of the range constructor.
+       */
+      void
+      insert(initializer_list<value_type> __l)
+      { this->insert(__l.begin(), __l.end()); }
+#endif
+# 571 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 573 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      /// Extract a node.
+      node_type
+      extract(const_iterator __pos)
+      {
+	__glibcxx_assert(__pos != end());
+	return _M_t.extract(__pos);
+      }
+
+      /// Extract a node.
+      node_type
+      extract(const key_type& __x)
+      { return _M_t.extract(__x); }
+
+      /// Re-insert an extracted node.
+      insert_return_type
+      insert(node_type&& __nh)
+      { return _M_t._M_reinsert_node_unique(std::move(__nh)); }
+
+      /// Re-insert an extracted node.
+      iterator
+      insert(const_iterator __hint, node_type&& __nh)
+      { return _M_t._M_reinsert_node_hint_unique(__hint, std::move(__nh)); }
+
+      template<typename, typename>
+	friend class _Rb_tree_merge_helper;
+
+      template<typename _Compare1>
+	void
+	merge(set<_Key, _Compare1, _Alloc>& __source)
+	{
+	  using _Merge_helper = _Rb_tree_merge_helper<set, _Compare1>;
+	  _M_t._M_merge_unique(_Merge_helper::_S_get_tree(__source));
+	}
+
+      template<typename _Compare1>
+	void
+	merge(set<_Key, _Compare1, _Alloc>&& __source)
+	{ merge(__source); }
+
+      template<typename _Compare1>
+	void
+	merge(multiset<_Key, _Compare1, _Alloc>& __source)
+	{
+	  using _Merge_helper = _Rb_tree_merge_helper<set, _Compare1>;
+	  _M_t._M_merge_unique(_Merge_helper::_S_get_tree(__source));
+	}
+
+      template<typename _Compare1>
+	void
+	merge(multiset<_Key, _Compare1, _Alloc>&& __source)
+	{ merge(__source); }
+#endif // C++17
+# 625 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 627 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 130. Associative erase should return an iterator.
+      /**
+       *  @brief Erases an element from a %set.
+       *  @param  __position  An iterator pointing to the element to be erased.
+       *  @return An iterator pointing to the element immediately following
+       *          @a __position prior to the element being erased. If no such
+       *          element exists, end() is returned.
+       *
+       *  This function erases an element, pointed to by the given iterator,
+       *  from a %set.  Note that this function only erases the element, and
+       *  that if the element is itself a pointer, the pointed-to memory is not
+       *  touched in any way.  Managing the pointer is the user's
+       *  responsibility.
+       */
+      _GLIBCXX_ABI_TAG_CXX11
+      iterator
+      erase(const_iterator __position)
+      { return _M_t.erase(__position); }
+#else
+# 647 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      /**
+       *  @brief Erases an element from a %set.
+       *  @param  position  An iterator pointing to the element to be erased.
+       *
+       *  This function erases an element, pointed to by the given iterator,
+       *  from a %set.  Note that this function only erases the element, and
+       *  that if the element is itself a pointer, the pointed-to memory is not
+       *  touched in any way.  Managing the pointer is the user's
+       *  responsibility.
+       */
+      void
+      erase(iterator __position)
+      { _M_t.erase(__position); }
+#endif
+# 661 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      /**
+       *  @brief Erases elements according to the provided key.
+       *  @param  __x  Key of element to be erased.
+       *  @return  The number of elements erased.
+       *
+       *  This function erases all the elements located by the given key from
+       *  a %set.
+       *  Note that this function only erases the element, and that if
+       *  the element is itself a pointer, the pointed-to memory is not touched
+       *  in any way.  Managing the pointer is the user's responsibility.
+       */
+      size_type
+      erase(const key_type& __x)
+      { return _M_t.erase(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 678 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 130. Associative erase should return an iterator.
+      /**
+       *  @brief Erases a [__first,__last) range of elements from a %set.
+       *  @param  __first  Iterator pointing to the start of the range to be
+       *                 erased.
+
+       *  @param __last Iterator pointing to the end of the range to
+       *  be erased.
+       *  @return The iterator @a __last.
+       *
+       *  This function erases a sequence of elements from a %set.
+       *  Note that this function only erases the element, and that if
+       *  the element is itself a pointer, the pointed-to memory is not touched
+       *  in any way.  Managing the pointer is the user's responsibility.
+       */
+      _GLIBCXX_ABI_TAG_CXX11
+      iterator
+      erase(const_iterator __first, const_iterator __last)
+      { return _M_t.erase(__first, __last); }
+#else
+# 699 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      /**
+       *  @brief Erases a [first,last) range of elements from a %set.
+       *  @param  __first  Iterator pointing to the start of the range to be
+       *                 erased.
+       *  @param __last Iterator pointing to the end of the range to
+       *  be erased.
+       *
+       *  This function erases a sequence of elements from a %set.
+       *  Note that this function only erases the element, and that if
+       *  the element is itself a pointer, the pointed-to memory is not touched
+       *  in any way.  Managing the pointer is the user's responsibility.
+       */
+      void
+      erase(iterator __first, iterator __last)
+      { _M_t.erase(__first, __last); }
+#endif
+# 715 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+      /**
+       *  Erases all elements in a %set.  Note that this function only erases
+       *  the elements, and that if the elements themselves are pointers, the
+       *  pointed-to memory is not touched in any way.  Managing the pointer is
+       *  the user's responsibility.
+       */
+      void
+      clear() _GLIBCXX_NOEXCEPT
+      { _M_t.clear(); }
+
+      // set operations:
+
+      //@{
+      /**
+       *  @brief  Finds the number of elements.
+       *  @param  __x  Element to located.
+       *  @return  Number of elements with specified key.
+       *
+       *  This function only makes sense for multisets; for set the result will
+       *  either be 0 (not present) or 1 (present).
+       */
+      size_type
+      count(const key_type& __x) const
+      { return _M_t.find(__x) == _M_t.end() ? 0 : 1; }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 742 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      template<typename _Kt>
+	auto
+	count(const _Kt& __x) const
+	-> decltype(_M_t._M_count_tr(__x))
+	{ return _M_t._M_count_tr(__x); }
+#endif
+# 748 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      //@}
+
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // 214.  set::find() missing const overload
+      //@{
+      /**
+       *  @brief Tries to locate an element in a %set.
+       *  @param  __x  Element to be located.
+       *  @return  Iterator pointing to sought-after element, or end() if not
+       *           found.
+       *
+       *  This function takes a key and tries to locate the element with which
+       *  the key matches.  If successful the function returns an iterator
+       *  pointing to the sought after element.  If unsuccessful it returns the
+       *  past-the-end ( @c end() ) iterator.
+       */
+      iterator
+      find(const key_type& __x)
+      { return _M_t.find(__x); }
+
+      const_iterator
+      find(const key_type& __x) const
+      { return _M_t.find(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 773 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      template<typename _Kt>
+	auto
+	find(const _Kt& __x)
+	-> decltype(iterator{_M_t._M_find_tr(__x)})
+	{ return iterator{_M_t._M_find_tr(__x)}; }
+
+      template<typename _Kt>
+	auto
+	find(const _Kt& __x) const
+	-> decltype(const_iterator{_M_t._M_find_tr(__x)})
+	{ return const_iterator{_M_t._M_find_tr(__x)}; }
+#endif
+# 785 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      //@}
+
+      //@{
+      /**
+       *  @brief Finds the beginning of a subsequence matching given key.
+       *  @param  __x  Key to be located.
+       *  @return  Iterator pointing to first element equal to or greater
+       *           than key, or end().
+       *
+       *  This function returns the first element of a subsequence of elements
+       *  that matches the given key.  If unsuccessful it returns an iterator
+       *  pointing to the first element that has a greater value than given key
+       *  or end() if no such element exists.
+       */
+      iterator
+      lower_bound(const key_type& __x)
+      { return _M_t.lower_bound(__x); }
+
+      const_iterator
+      lower_bound(const key_type& __x) const
+      { return _M_t.lower_bound(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 808 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      template<typename _Kt>
+	auto
+	lower_bound(const _Kt& __x)
+	-> decltype(iterator(_M_t._M_lower_bound_tr(__x)))
+	{ return iterator(_M_t._M_lower_bound_tr(__x)); }
+
+      template<typename _Kt>
+	auto
+	lower_bound(const _Kt& __x) const
+	-> decltype(const_iterator(_M_t._M_lower_bound_tr(__x)))
+	{ return const_iterator(_M_t._M_lower_bound_tr(__x)); }
+#endif
+# 820 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      //@}
+
+      //@{
+      /**
+       *  @brief Finds the end of a subsequence matching given key.
+       *  @param  __x  Key to be located.
+       *  @return Iterator pointing to the first element
+       *          greater than key, or end().
+       */
+      iterator
+      upper_bound(const key_type& __x)
+      { return _M_t.upper_bound(__x); }
+
+      const_iterator
+      upper_bound(const key_type& __x) const
+      { return _M_t.upper_bound(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 838 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      template<typename _Kt>
+	auto
+	upper_bound(const _Kt& __x)
+	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
+	{ return iterator(_M_t._M_upper_bound_tr(__x)); }
+
+      template<typename _Kt>
+	auto
+	upper_bound(const _Kt& __x) const
+	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
+	{ return const_iterator(_M_t._M_upper_bound_tr(__x)); }
+#endif
+# 850 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      //@}
+
+      //@{
+      /**
+       *  @brief Finds a subsequence matching given key.
+       *  @param  __x  Key to be located.
+       *  @return  Pair of iterators that possibly points to the subsequence
+       *           matching given key.
+       *
+       *  This function is equivalent to
+       *  @code
+       *    std::make_pair(c.lower_bound(val),
+       *                   c.upper_bound(val))
+       *  @endcode
+       *  (but is faster than making the calls separately).
+       *
+       *  This function probably only makes sense for multisets.
+       */
+      std::pair<iterator, iterator>
+      equal_range(const key_type& __x)
+      { return _M_t.equal_range(__x); }
+
+      std::pair<const_iterator, const_iterator>
+      equal_range(const key_type& __x) const
+      { return _M_t.equal_range(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 877 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      template<typename _Kt>
+	auto
+	equal_range(const _Kt& __x)
+	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
+	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
+
+      template<typename _Kt>
+	auto
+	equal_range(const _Kt& __x) const
+	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
+	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
+#endif
+# 889 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+      //@}
+
+      template<typename _K1, typename _C1, typename _A1>
+	friend bool
+	operator==(const set<_K1, _C1, _A1>&, const set<_K1, _C1, _A1>&);
+
+      template<typename _K1, typename _C1, typename _A1>
+	friend bool
+	operator<(const set<_K1, _C1, _A1>&, const set<_K1, _C1, _A1>&);
+    };
+
+
+  /**
+   *  @brief  Set equality comparison.
+   *  @param  __x  A %set.
+   *  @param  __y  A %set of the same type as @a x.
+   *  @return  True iff the size and elements of the sets are equal.
+   *
+   *  This is an equivalence relation.  It is linear in the size of the sets.
+   *  Sets are considered equivalent if their sizes are equal, and if
+   *  corresponding elements compare equal.
+  */
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator==(const set<_Key, _Compare, _Alloc>& __x,
+	       const set<_Key, _Compare, _Alloc>& __y)
+    { return __x._M_t == __y._M_t; }
+
+  /**
+   *  @brief  Set ordering relation.
+   *  @param  __x  A %set.
+   *  @param  __y  A %set of the same type as @a x.
+   *  @return  True iff @a __x is lexicographically less than @a __y.
+   *
+   *  This is a total ordering relation.  It is linear in the size of the
+   *  sets.  The elements must be comparable with @c <.
+   *
+   *  See std::lexicographical_compare() for how the determination is made.
+  */
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator<(const set<_Key, _Compare, _Alloc>& __x,
+	      const set<_Key, _Compare, _Alloc>& __y)
+    { return __x._M_t < __y._M_t; }
+
+  ///  Returns !(x == y).
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator!=(const set<_Key, _Compare, _Alloc>& __x,
+	       const set<_Key, _Compare, _Alloc>& __y)
+    { return !(__x == __y); }
+
+  ///  Returns y < x.
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator>(const set<_Key, _Compare, _Alloc>& __x,
+	      const set<_Key, _Compare, _Alloc>& __y)
+    { return __y < __x; }
+
+  ///  Returns !(y < x)
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator<=(const set<_Key, _Compare, _Alloc>& __x,
+	       const set<_Key, _Compare, _Alloc>& __y)
+    { return !(__y < __x); }
+
+  ///  Returns !(x < y)
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator>=(const set<_Key, _Compare, _Alloc>& __x,
+	       const set<_Key, _Compare, _Alloc>& __y)
+    { return !(__x < __y); }
+
+  /// See std::set::swap().
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline void
+    swap(set<_Key, _Compare, _Alloc>& __x, set<_Key, _Compare, _Alloc>& __y)
+    _GLIBCXX_NOEXCEPT_IF(noexcept(__x.swap(__y)))
+    { __x.swap(__y); }
+
+_GLIBCXX_END_NAMESPACE_CONTAINER
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 972 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+  // Allow std::set access to internals of compatible sets.
+  template<typename _Val, typename _Cmp1, typename _Alloc, typename _Cmp2>
+    struct
+    _Rb_tree_merge_helper<_GLIBCXX_STD_C::set<_Val, _Cmp1, _Alloc>, _Cmp2>
+    {
+    private:
+      friend class _GLIBCXX_STD_C::set<_Val, _Cmp1, _Alloc>;
+
+      static auto&
+      _S_get_tree(_GLIBCXX_STD_C::set<_Val, _Cmp2, _Alloc>& __set)
+      { return __set._M_t; }
+
+      static auto&
+      _S_get_tree(_GLIBCXX_STD_C::multiset<_Val, _Cmp2, _Alloc>& __set)
+      { return __set._M_t; }
+    };
+_GLIBCXX_END_NAMESPACE_VERSION
+#endif // C++17
+# 991 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+
+} //namespace std
+#endif /* _STL_SET_H */
+# 994 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_set.h" 3
+# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 2 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/stl_multiset.h>
+#endif /* expanded by -frewrite-includes */
+# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 1 3
+// Multiset implementation -*- C++ -*-
+
+// Copyright (C) 2001-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/*
+ *
+ * Copyright (c) 1994
+ * Hewlett-Packard Company
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Hewlett-Packard Company makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ *
+ *
+ * Copyright (c) 1996
+ * Silicon Graphics Computer Systems, Inc.
+ *
+ * Permission to use, copy, modify, distribute and sell this software
+ * and its documentation for any purpose is hereby granted without fee,
+ * provided that the above copyright notice appear in all copies and
+ * that both that copyright notice and this permission notice appear
+ * in supporting documentation.  Silicon Graphics makes no
+ * representations about the suitability of this software for any
+ * purpose.  It is provided "as is" without express or implied warranty.
+ */
+
+/** @file bits/stl_multiset.h
+ *  This is an internal header file, included by other library headers.
+ *  Do not attempt to use it directly. @headername{set}
+ */
+
+#ifndef _STL_MULTISET_H
+#define _STL_MULTISET_H 1
+
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/concept_check.h>
+#endif /* expanded by -frewrite-includes */
+# 59 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+# 60 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <initializer_list>
+#endif /* expanded by -frewrite-includes */
+# 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+# 62 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+#endif
+# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+namespace std _GLIBCXX_VISIBILITY(default)
+{
+_GLIBCXX_BEGIN_NAMESPACE_CONTAINER
+
+  template<typename _Key, typename _Compare, typename _Alloc>
+    class set;
+
+  /**
+   *  @brief A standard container made up of elements, which can be retrieved
+   *  in logarithmic time.
+   *
+   *  @ingroup associative_containers
+   *
+   *
+   *  @tparam _Key  Type of key objects.
+   *  @tparam _Compare  Comparison function object type, defaults to less<_Key>.
+   *  @tparam _Alloc  Allocator type, defaults to allocator<_Key>.
+   *
+   *  Meets the requirements of a <a href="tables.html#65">container</a>, a
+   *  <a href="tables.html#66">reversible container</a>, and an
+   *  <a href="tables.html#69">associative container</a> (using equivalent
+   *  keys).  For a @c multiset<Key> the key_type and value_type are Key.
+   *
+   *  Multisets support bidirectional iterators.
+   *
+   *  The private tree data is declared exactly the same way for set and
+   *  multiset; the distinction is made entirely in how the tree functions are
+   *  called (*_unique versus *_equal, same as the standard).
+  */
+  template <typename _Key, typename _Compare = std::less<_Key>,
+	    typename _Alloc = std::allocator<_Key> >
+    class multiset
+    {
+#ifdef _GLIBCXX_CONCEPT_CHECKS
+      // concept requirements
+      typedef typename _Alloc::value_type		_Alloc_value_type;
+#if 0 /* disabled by -frewrite-includes */
+# if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 101 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      __glibcxx_class_requires(_Key, _SGIAssignableConcept)
+# endif
+# 103 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      __glibcxx_class_requires4(_Compare, bool, _Key, _Key,
+				_BinaryFunctionConcept)
+      __glibcxx_class_requires2(_Key, _Alloc_value_type, _SameTypeConcept)
+#endif
+# 107 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+    public:
+      // typedefs:
+      typedef _Key     key_type;
+      typedef _Key     value_type;
+      typedef _Compare key_compare;
+      typedef _Compare value_compare;
+      typedef _Alloc   allocator_type;
+
+    private:
+      /// This turns a red-black tree into a [multi]set.
+      typedef typename __gnu_cxx::__alloc_traits<_Alloc>::template
+	rebind<_Key>::other _Key_alloc_type;
+
+      typedef _Rb_tree<key_type, value_type, _Identity<value_type>,
+		       key_compare, _Key_alloc_type> _Rep_type;
+      /// The actual tree structure.
+      _Rep_type _M_t;
+
+      typedef __gnu_cxx::__alloc_traits<_Key_alloc_type> _Alloc_traits;
+
+    public:
+      typedef typename _Alloc_traits::pointer		 pointer;
+      typedef typename _Alloc_traits::const_pointer	 const_pointer;
+      typedef typename _Alloc_traits::reference		 reference;
+      typedef typename _Alloc_traits::const_reference	 const_reference;
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 103. set::iterator is required to be modifiable,
+      // but this allows modification of keys.
+      typedef typename _Rep_type::const_iterator	 iterator;
+      typedef typename _Rep_type::const_iterator	 const_iterator;
+      typedef typename _Rep_type::const_reverse_iterator reverse_iterator;
+      typedef typename _Rep_type::const_reverse_iterator const_reverse_iterator;
+      typedef typename _Rep_type::size_type		 size_type;
+      typedef typename _Rep_type::difference_type	 difference_type;
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 144 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      using node_type = typename _Rep_type::node_type;
+#endif
+# 146 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      // allocation/deallocation
+      /**
+       *  @brief  Default constructor creates no elements.
+       */
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 152 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      multiset() : _M_t() { }
+#else
+# 154 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      multiset() = default;
+#endif
+# 156 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      /**
+       *  @brief  Creates a %multiset with no elements.
+       *  @param  __comp  Comparator to use.
+       *  @param  __a  An allocator object.
+       */
+      explicit
+      multiset(const _Compare& __comp,
+	       const allocator_type& __a = allocator_type())
+      : _M_t(__comp, _Key_alloc_type(__a)) { }
+
+      /**
+       *  @brief  Builds a %multiset from a range.
+       *  @param  __first  An input iterator.
+       *  @param  __last  An input iterator.
+       *
+       *  Create a %multiset consisting of copies of the elements from
+       *  [first,last).  This is linear in N if the range is already sorted,
+       *  and NlogN otherwise (where N is distance(__first,__last)).
+       */
+      template<typename _InputIterator>
+	multiset(_InputIterator __first, _InputIterator __last)
+	: _M_t()
+	{ _M_t._M_insert_equal(__first, __last); }
+
+      /**
+       *  @brief  Builds a %multiset from a range.
+       *  @param  __first  An input iterator.
+       *  @param  __last  An input iterator.
+       *  @param  __comp  A comparison functor.
+       *  @param  __a  An allocator object.
+       *
+       *  Create a %multiset consisting of copies of the elements from
+       *  [__first,__last).  This is linear in N if the range is already sorted,
+       *  and NlogN otherwise (where N is distance(__first,__last)).
+       */
+      template<typename _InputIterator>
+	multiset(_InputIterator __first, _InputIterator __last,
+		 const _Compare& __comp,
+		 const allocator_type& __a = allocator_type())
+	: _M_t(__comp, _Key_alloc_type(__a))
+	{ _M_t._M_insert_equal(__first, __last); }
+
+      /**
+       *  @brief  %Multiset copy constructor.
+       *
+       *  Whether the allocator is copied depends on the allocator traits.
+       */
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 205 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      multiset(const multiset& __x)
+      : _M_t(__x._M_t) { }
+#else
+# 208 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      multiset(const multiset&) = default;
+
+     /**
+       *  @brief  %Multiset move constructor.
+       *
+       *  The newly-created %multiset contains the exact contents of the
+       *  moved instance. The moved instance is a valid, but unspecified
+       *  %multiset.
+       */
+      multiset(multiset&&) = default;
+
+      /**
+       *  @brief  Builds a %multiset from an initializer_list.
+       *  @param  __l  An initializer_list.
+       *  @param  __comp  A comparison functor.
+       *  @param  __a  An allocator object.
+       *
+       *  Create a %multiset consisting of copies of the elements from
+       *  the list.  This is linear in N if the list is already sorted,
+       *  and NlogN otherwise (where N is @a __l.size()).
+       */
+      multiset(initializer_list<value_type> __l,
+	       const _Compare& __comp = _Compare(),
+	       const allocator_type& __a = allocator_type())
+      : _M_t(__comp, _Key_alloc_type(__a))
+      { _M_t._M_insert_equal(__l.begin(), __l.end()); }
+
+      /// Allocator-extended default constructor.
+      explicit
+      multiset(const allocator_type& __a)
+      : _M_t(_Compare(), _Key_alloc_type(__a)) { }
+
+      /// Allocator-extended copy constructor.
+      multiset(const multiset& __m, const allocator_type& __a)
+      : _M_t(__m._M_t, _Key_alloc_type(__a)) { }
+
+      /// Allocator-extended move constructor.
+      multiset(multiset&& __m, const allocator_type& __a)
+      noexcept(is_nothrow_copy_constructible<_Compare>::value
+	       && _Alloc_traits::_S_always_equal())
+      : _M_t(std::move(__m._M_t), _Key_alloc_type(__a)) { }
+
+      /// Allocator-extended initialier-list constructor.
+      multiset(initializer_list<value_type> __l, const allocator_type& __a)
+      : _M_t(_Compare(), _Key_alloc_type(__a))
+      { _M_t._M_insert_equal(__l.begin(), __l.end()); }
+
+      /// Allocator-extended range constructor.
+      template<typename _InputIterator>
+	multiset(_InputIterator __first, _InputIterator __last,
+		 const allocator_type& __a)
+	: _M_t(_Compare(), _Key_alloc_type(__a))
+	{ _M_t._M_insert_equal(__first, __last); }
+
+      /**
+       *  The dtor only erases the elements, and note that if the elements
+       *  themselves are pointers, the pointed-to memory is not touched in any
+       *  way. Managing the pointer is the user's responsibility.
+       */
+      ~multiset() = default;
+#endif
+# 269 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      /**
+       *  @brief  %Multiset assignment operator.
+       *
+       *  Whether the allocator is copied depends on the allocator traits.
+       */
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 276 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      multiset&
+      operator=(const multiset& __x)
+      {
+	_M_t = __x._M_t;
+	return *this;
+      }
+#else
+# 283 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      multiset&
+      operator=(const multiset&) = default;
+
+      /// Move assignment operator.
+      multiset&
+      operator=(multiset&&) = default;
+
+      /**
+       *  @brief  %Multiset list assignment operator.
+       *  @param  __l  An initializer_list.
+       *
+       *  This function fills a %multiset with copies of the elements in the
+       *  initializer list @a __l.
+       *
+       *  Note that the assignment completely changes the %multiset and
+       *  that the resulting %multiset's size is the same as the number
+       *  of elements assigned.
+       */
+      multiset&
+      operator=(initializer_list<value_type> __l)
+      {
+	_M_t._M_assign_equal(__l.begin(), __l.end());
+	return *this;
+      }
+#endif
+# 308 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      // accessors:
+
+      ///  Returns the comparison object.
+      key_compare
+      key_comp() const
+      { return _M_t.key_comp(); }
+      ///  Returns the comparison object.
+      value_compare
+      value_comp() const
+      { return _M_t.key_comp(); }
+      ///  Returns the memory allocation object.
+      allocator_type
+      get_allocator() const _GLIBCXX_NOEXCEPT
+      { return allocator_type(_M_t.get_allocator()); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points to the first
+       *  element in the %multiset.  Iteration is done in ascending order
+       *  according to the keys.
+       */
+      iterator
+      begin() const _GLIBCXX_NOEXCEPT
+      { return _M_t.begin(); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points one past the last
+       *  element in the %multiset.  Iteration is done in ascending order
+       *  according to the keys.
+       */
+      iterator
+      end() const _GLIBCXX_NOEXCEPT
+      { return _M_t.end(); }
+
+      /**
+       *  Returns a read-only (constant) reverse iterator that points to the
+       *  last element in the %multiset.  Iteration is done in descending order
+       *  according to the keys.
+       */
+      reverse_iterator
+      rbegin() const _GLIBCXX_NOEXCEPT
+      { return _M_t.rbegin(); }
+
+      /**
+       *  Returns a read-only (constant) reverse iterator that points to the
+       *  last element in the %multiset.  Iteration is done in descending order
+       *  according to the keys.
+       */
+      reverse_iterator
+      rend() const _GLIBCXX_NOEXCEPT
+      { return _M_t.rend(); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 361 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      /**
+       *  Returns a read-only (constant) iterator that points to the first
+       *  element in the %multiset.  Iteration is done in ascending order
+       *  according to the keys.
+       */
+      iterator
+      cbegin() const noexcept
+      { return _M_t.begin(); }
+
+      /**
+       *  Returns a read-only (constant) iterator that points one past the last
+       *  element in the %multiset.  Iteration is done in ascending order
+       *  according to the keys.
+       */
+      iterator
+      cend() const noexcept
+      { return _M_t.end(); }
+
+      /**
+       *  Returns a read-only (constant) reverse iterator that points to the
+       *  last element in the %multiset.  Iteration is done in descending order
+       *  according to the keys.
+       */
+      reverse_iterator
+      crbegin() const noexcept
+      { return _M_t.rbegin(); }
+
+      /**
+       *  Returns a read-only (constant) reverse iterator that points to the
+       *  last element in the %multiset.  Iteration is done in descending order
+       *  according to the keys.
+       */
+      reverse_iterator
+      crend() const noexcept
+      { return _M_t.rend(); }
+#endif
+# 397 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      ///  Returns true if the %set is empty.
+      bool
+      empty() const _GLIBCXX_NOEXCEPT
+      { return _M_t.empty(); }
+
+      ///  Returns the size of the %set.
+      size_type
+      size() const _GLIBCXX_NOEXCEPT
+      { return _M_t.size(); }
+
+      ///  Returns the maximum size of the %set.
+      size_type
+      max_size() const _GLIBCXX_NOEXCEPT
+      { return _M_t.max_size(); }
+
+      /**
+       *  @brief  Swaps data with another %multiset.
+       *  @param  __x  A %multiset of the same element and allocator types.
+       *
+       *  This exchanges the elements between two multisets in constant time.
+       *  (It is only swapping a pointer, an integer, and an instance of the @c
+       *  Compare type (which itself is often stateless and empty), so it should
+       *  be quite fast.)
+       *  Note that the global std::swap() function is specialized such that
+       *  std::swap(s1,s2) will feed to this function.
+       *
+       *  Whether the allocators are swapped depends on the allocator traits.
+       */
+      void
+      swap(multiset& __x)
+      _GLIBCXX_NOEXCEPT_IF(__is_nothrow_swappable<_Compare>::value)
+      { _M_t.swap(__x._M_t); }
+
+      // insert/erase
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 433 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      /**
+       *  @brief Builds and inserts an element into the %multiset.
+       *  @param  __args  Arguments used to generate the element instance to be
+       *                 inserted.
+       *  @return An iterator that points to the inserted element.
+       *
+       *  This function inserts an element into the %multiset.  Contrary
+       *  to a std::set the %multiset does not rely on unique keys and thus
+       *  multiple copies of the same element can be inserted.
+       *
+       *  Insertion requires logarithmic time.
+       */
+      template<typename... _Args>
+	iterator
+	emplace(_Args&&... __args)
+	{ return _M_t._M_emplace_equal(std::forward<_Args>(__args)...); }
+
+      /**
+       *  @brief Builds and inserts an element into the %multiset.
+       *  @param  __pos  An iterator that serves as a hint as to where the
+       *                element should be inserted.
+       *  @param  __args  Arguments used to generate the element instance to be
+       *                 inserted.
+       *  @return An iterator that points to the inserted element.
+       *
+       *  This function inserts an element into the %multiset.  Contrary
+       *  to a std::set the %multiset does not rely on unique keys and thus
+       *  multiple copies of the same element can be inserted.
+       *
+       *  Note that the first parameter is only a hint and can potentially
+       *  improve the performance of the insertion process.  A bad hint would
+       *  cause no gains in efficiency.
+       *
+       *  See https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
+       *  for more on @a hinting.
+       *
+       *  Insertion requires logarithmic time (if the hint is not taken).
+       */
+      template<typename... _Args>
+	iterator
+	emplace_hint(const_iterator __pos, _Args&&... __args)
+	{
+	  return _M_t._M_emplace_hint_equal(__pos,
+					    std::forward<_Args>(__args)...);
+	}
+#endif
+# 479 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      /**
+       *  @brief Inserts an element into the %multiset.
+       *  @param  __x  Element to be inserted.
+       *  @return An iterator that points to the inserted element.
+       *
+       *  This function inserts an element into the %multiset.  Contrary
+       *  to a std::set the %multiset does not rely on unique keys and thus
+       *  multiple copies of the same element can be inserted.
+       *
+       *  Insertion requires logarithmic time.
+       */
+      iterator
+      insert(const value_type& __x)
+      { return _M_t._M_insert_equal(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 496 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      iterator
+      insert(value_type&& __x)
+      { return _M_t._M_insert_equal(std::move(__x)); }
+#endif
+# 500 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      /**
+       *  @brief Inserts an element into the %multiset.
+       *  @param  __position  An iterator that serves as a hint as to where the
+       *                    element should be inserted.
+       *  @param  __x  Element to be inserted.
+       *  @return An iterator that points to the inserted element.
+       *
+       *  This function inserts an element into the %multiset.  Contrary
+       *  to a std::set the %multiset does not rely on unique keys and thus
+       *  multiple copies of the same element can be inserted.
+       *
+       *  Note that the first parameter is only a hint and can potentially
+       *  improve the performance of the insertion process.  A bad hint would
+       *  cause no gains in efficiency.
+       *
+       *  See https://gcc.gnu.org/onlinedocs/libstdc++/manual/associative.html#containers.associative.insert_hints
+       *  for more on @a hinting.
+       *
+       *  Insertion requires logarithmic time (if the hint is not taken).
+       */
+      iterator
+      insert(const_iterator __position, const value_type& __x)
+      { return _M_t._M_insert_equal_(__position, __x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 526 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      iterator
+      insert(const_iterator __position, value_type&& __x)
+      { return _M_t._M_insert_equal_(__position, std::move(__x)); }
+#endif
+# 530 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      /**
+       *  @brief A template function that tries to insert a range of elements.
+       *  @param  __first  Iterator pointing to the start of the range to be
+       *                   inserted.
+       *  @param  __last  Iterator pointing to the end of the range.
+       *
+       *  Complexity similar to that of the range constructor.
+       */
+      template<typename _InputIterator>
+	void
+	insert(_InputIterator __first, _InputIterator __last)
+	{ _M_t._M_insert_equal(__first, __last); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 545 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      /**
+       *  @brief Attempts to insert a list of elements into the %multiset.
+       *  @param  __l  A std::initializer_list<value_type> of elements
+       *               to be inserted.
+       *
+       *  Complexity similar to that of the range constructor.
+       */
+      void
+      insert(initializer_list<value_type> __l)
+      { this->insert(__l.begin(), __l.end()); }
+#endif
+# 556 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 558 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      /// Extract a node.
+      node_type
+      extract(const_iterator __pos)
+      {
+	__glibcxx_assert(__pos != end());
+	return _M_t.extract(__pos);
+      }
+
+      /// Extract a node.
+      node_type
+      extract(const key_type& __x)
+      { return _M_t.extract(__x); }
+
+      /// Re-insert an extracted node.
+      iterator
+      insert(node_type&& __nh)
+      { return _M_t._M_reinsert_node_equal(std::move(__nh)); }
+
+      /// Re-insert an extracted node.
+      iterator
+      insert(const_iterator __hint, node_type&& __nh)
+      { return _M_t._M_reinsert_node_hint_equal(__hint, std::move(__nh)); }
+
+      template<typename, typename>
+	friend class _Rb_tree_merge_helper;
+
+      template<typename _Compare1>
+	void
+	merge(multiset<_Key, _Compare1, _Alloc>& __source)
+	{
+	  using _Merge_helper = _Rb_tree_merge_helper<multiset, _Compare1>;
+	  _M_t._M_merge_equal(_Merge_helper::_S_get_tree(__source));
+	}
+
+      template<typename _Compare1>
+	void
+	merge(multiset<_Key, _Compare1, _Alloc>&& __source)
+	{ merge(__source); }
+
+      template<typename _Compare1>
+	void
+	merge(set<_Key, _Compare1, _Alloc>& __source)
+	{
+	  using _Merge_helper = _Rb_tree_merge_helper<multiset, _Compare1>;
+	  _M_t._M_merge_equal(_Merge_helper::_S_get_tree(__source));
+	}
+
+      template<typename _Compare1>
+	void
+	merge(set<_Key, _Compare1, _Alloc>&& __source)
+	{ merge(__source); }
+#endif // C++17
+# 610 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 612 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 130. Associative erase should return an iterator.
+      /**
+       *  @brief Erases an element from a %multiset.
+       *  @param  __position  An iterator pointing to the element to be erased.
+       *  @return An iterator pointing to the element immediately following
+       *          @a position prior to the element being erased. If no such
+       *          element exists, end() is returned.
+       *
+       *  This function erases an element, pointed to by the given iterator,
+       *  from a %multiset.  Note that this function only erases the element,
+       *  and that if the element is itself a pointer, the pointed-to memory is
+       *  not touched in any way.  Managing the pointer is the user's
+       *  responsibility.
+       */
+      _GLIBCXX_ABI_TAG_CXX11
+      iterator
+      erase(const_iterator __position)
+      { return _M_t.erase(__position); }
+#else
+# 632 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      /**
+       *  @brief Erases an element from a %multiset.
+       *  @param  __position  An iterator pointing to the element to be erased.
+       *
+       *  This function erases an element, pointed to by the given iterator,
+       *  from a %multiset.  Note that this function only erases the element,
+       *  and that if the element is itself a pointer, the pointed-to memory is
+       *  not touched in any way.  Managing the pointer is the user's
+       *  responsibility.
+       */
+      void
+      erase(iterator __position)
+      { _M_t.erase(__position); }
+#endif
+# 646 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      /**
+       *  @brief Erases elements according to the provided key.
+       *  @param  __x  Key of element to be erased.
+       *  @return  The number of elements erased.
+       *
+       *  This function erases all elements located by the given key from a
+       *  %multiset.
+       *  Note that this function only erases the element, and that if
+       *  the element is itself a pointer, the pointed-to memory is not touched
+       *  in any way.  Managing the pointer is the user's responsibility.
+       */
+      size_type
+      erase(const key_type& __x)
+      { return _M_t.erase(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus >= 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 663 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // DR 130. Associative erase should return an iterator.
+      /**
+       *  @brief Erases a [first,last) range of elements from a %multiset.
+       *  @param  __first  Iterator pointing to the start of the range to be
+       *                   erased.
+       *  @param __last Iterator pointing to the end of the range to
+       *                be erased.
+       *  @return The iterator @a last.
+       *
+       *  This function erases a sequence of elements from a %multiset.
+       *  Note that this function only erases the elements, and that if
+       *  the elements themselves are pointers, the pointed-to memory is not
+       *  touched in any way.  Managing the pointer is the user's
+       *  responsibility.
+       */
+      _GLIBCXX_ABI_TAG_CXX11
+      iterator
+      erase(const_iterator __first, const_iterator __last)
+      { return _M_t.erase(__first, __last); }
+#else
+# 684 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      /**
+       *  @brief Erases a [first,last) range of elements from a %multiset.
+       *  @param  first  Iterator pointing to the start of the range to be
+       *                 erased.
+       *  @param  last  Iterator pointing to the end of the range to be erased.
+       *
+       *  This function erases a sequence of elements from a %multiset.
+       *  Note that this function only erases the elements, and that if
+       *  the elements themselves are pointers, the pointed-to memory is not
+       *  touched in any way.  Managing the pointer is the user's
+       *  responsibility.
+       */
+      void
+      erase(iterator __first, iterator __last)
+      { _M_t.erase(__first, __last); }
+#endif
+# 700 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+      /**
+       *  Erases all elements in a %multiset.  Note that this function only
+       *  erases the elements, and that if the elements themselves are pointers,
+       *  the pointed-to memory is not touched in any way.  Managing the pointer
+       *  is the user's responsibility.
+       */
+      void
+      clear() _GLIBCXX_NOEXCEPT
+      { _M_t.clear(); }
+
+      // multiset operations:
+
+      //@{
+      /**
+       *  @brief Finds the number of elements with given key.
+       *  @param  __x  Key of elements to be located.
+       *  @return Number of elements with specified key.
+       */
+      size_type
+      count(const key_type& __x) const
+      { return _M_t.count(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 724 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      template<typename _Kt>
+	auto
+	count(const _Kt& __x) const -> decltype(_M_t._M_count_tr(__x))
+	{ return _M_t._M_count_tr(__x); }
+#endif
+# 729 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      //@}
+
+      // _GLIBCXX_RESOLVE_LIB_DEFECTS
+      // 214.  set::find() missing const overload
+      //@{
+      /**
+       *  @brief Tries to locate an element in a %set.
+       *  @param  __x  Element to be located.
+       *  @return  Iterator pointing to sought-after element, or end() if not
+       *           found.
+       *
+       *  This function takes a key and tries to locate the element with which
+       *  the key matches.  If successful the function returns an iterator
+       *  pointing to the sought after element.  If unsuccessful it returns the
+       *  past-the-end ( @c end() ) iterator.
+       */
+      iterator
+      find(const key_type& __x)
+      { return _M_t.find(__x); }
+
+      const_iterator
+      find(const key_type& __x) const
+      { return _M_t.find(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 754 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      template<typename _Kt>
+	auto
+	find(const _Kt& __x)
+	-> decltype(iterator{_M_t._M_find_tr(__x)})
+	{ return iterator{_M_t._M_find_tr(__x)}; }
+
+      template<typename _Kt>
+	auto
+	find(const _Kt& __x) const
+	-> decltype(const_iterator{_M_t._M_find_tr(__x)})
+	{ return const_iterator{_M_t._M_find_tr(__x)}; }
+#endif
+# 766 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      //@}
+
+      //@{
+      /**
+       *  @brief Finds the beginning of a subsequence matching given key.
+       *  @param  __x  Key to be located.
+       *  @return  Iterator pointing to first element equal to or greater
+       *           than key, or end().
+       *
+       *  This function returns the first element of a subsequence of elements
+       *  that matches the given key.  If unsuccessful it returns an iterator
+       *  pointing to the first element that has a greater value than given key
+       *  or end() if no such element exists.
+       */
+      iterator
+      lower_bound(const key_type& __x)
+      { return _M_t.lower_bound(__x); }
+
+      const_iterator
+      lower_bound(const key_type& __x) const
+      { return _M_t.lower_bound(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 789 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      template<typename _Kt>
+	auto
+	lower_bound(const _Kt& __x)
+	-> decltype(iterator(_M_t._M_lower_bound_tr(__x)))
+	{ return iterator(_M_t._M_lower_bound_tr(__x)); }
+
+      template<typename _Kt>
+	auto
+	lower_bound(const _Kt& __x) const
+	-> decltype(iterator(_M_t._M_lower_bound_tr(__x)))
+	{ return iterator(_M_t._M_lower_bound_tr(__x)); }
+#endif
+# 801 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      //@}
+
+      //@{
+      /**
+       *  @brief Finds the end of a subsequence matching given key.
+       *  @param  __x  Key to be located.
+       *  @return Iterator pointing to the first element
+       *          greater than key, or end().
+       */
+      iterator
+      upper_bound(const key_type& __x)
+      { return _M_t.upper_bound(__x); }
+
+      const_iterator
+      upper_bound(const key_type& __x) const
+      { return _M_t.upper_bound(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 819 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      template<typename _Kt>
+	auto
+	upper_bound(const _Kt& __x)
+	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
+	{ return iterator(_M_t._M_upper_bound_tr(__x)); }
+
+      template<typename _Kt>
+	auto
+	upper_bound(const _Kt& __x) const
+	-> decltype(iterator(_M_t._M_upper_bound_tr(__x)))
+	{ return iterator(_M_t._M_upper_bound_tr(__x)); }
+#endif
+# 831 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      //@}
+
+      //@{
+      /**
+       *  @brief Finds a subsequence matching given key.
+       *  @param  __x  Key to be located.
+       *  @return  Pair of iterators that possibly points to the subsequence
+       *           matching given key.
+       *
+       *  This function is equivalent to
+       *  @code
+       *    std::make_pair(c.lower_bound(val),
+       *                   c.upper_bound(val))
+       *  @endcode
+       *  (but is faster than making the calls separately).
+       *
+       *  This function probably only makes sense for multisets.
+       */
+      std::pair<iterator, iterator>
+      equal_range(const key_type& __x)
+      { return _M_t.equal_range(__x); }
+
+      std::pair<const_iterator, const_iterator>
+      equal_range(const key_type& __x) const
+      { return _M_t.equal_range(__x); }
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 858 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      template<typename _Kt>
+	auto
+	equal_range(const _Kt& __x)
+	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
+	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
+
+      template<typename _Kt>
+	auto
+	equal_range(const _Kt& __x) const
+	-> decltype(pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)))
+	{ return pair<iterator, iterator>(_M_t._M_equal_range_tr(__x)); }
+#endif
+# 870 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+      //@}
+
+      template<typename _K1, typename _C1, typename _A1>
+	friend bool
+	operator==(const multiset<_K1, _C1, _A1>&,
+		   const multiset<_K1, _C1, _A1>&);
+
+      template<typename _K1, typename _C1, typename _A1>
+	friend bool
+	operator< (const multiset<_K1, _C1, _A1>&,
+		   const multiset<_K1, _C1, _A1>&);
+    };
+
+  /**
+   *  @brief  Multiset equality comparison.
+   *  @param  __x  A %multiset.
+   *  @param  __y  A %multiset of the same type as @a __x.
+   *  @return  True iff the size and elements of the multisets are equal.
+   *
+   *  This is an equivalence relation.  It is linear in the size of the
+   *  multisets.
+   *  Multisets are considered equivalent if their sizes are equal, and if
+   *  corresponding elements compare equal.
+  */
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator==(const multiset<_Key, _Compare, _Alloc>& __x,
+	       const multiset<_Key, _Compare, _Alloc>& __y)
+    { return __x._M_t == __y._M_t; }
+
+  /**
+   *  @brief  Multiset ordering relation.
+   *  @param  __x  A %multiset.
+   *  @param  __y  A %multiset of the same type as @a __x.
+   *  @return  True iff @a __x is lexicographically less than @a __y.
+   *
+   *  This is a total ordering relation.  It is linear in the size of the
+   *  sets.  The elements must be comparable with @c <.
+   *
+   *  See std::lexicographical_compare() for how the determination is made.
+  */
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator<(const multiset<_Key, _Compare, _Alloc>& __x,
+	      const multiset<_Key, _Compare, _Alloc>& __y)
+    { return __x._M_t < __y._M_t; }
+
+  ///  Returns !(x == y).
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator!=(const multiset<_Key, _Compare, _Alloc>& __x,
+	       const multiset<_Key, _Compare, _Alloc>& __y)
+    { return !(__x == __y); }
+
+  ///  Returns y < x.
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator>(const multiset<_Key,_Compare,_Alloc>& __x,
+	      const multiset<_Key,_Compare,_Alloc>& __y)
+    { return __y < __x; }
+
+  ///  Returns !(y < x)
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator<=(const multiset<_Key, _Compare, _Alloc>& __x,
+	       const multiset<_Key, _Compare, _Alloc>& __y)
+    { return !(__y < __x); }
+
+  ///  Returns !(x < y)
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline bool
+    operator>=(const multiset<_Key, _Compare, _Alloc>& __x,
+	       const multiset<_Key, _Compare, _Alloc>& __y)
+    { return !(__x < __y); }
+
+  /// See std::multiset::swap().
+  template<typename _Key, typename _Compare, typename _Alloc>
+    inline void
+    swap(multiset<_Key, _Compare, _Alloc>& __x,
+	 multiset<_Key, _Compare, _Alloc>& __y)
+    _GLIBCXX_NOEXCEPT_IF(noexcept(__x.swap(__y)))
+    { __x.swap(__y); }
+
+_GLIBCXX_END_NAMESPACE_CONTAINER
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus > 201402L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
+# 956 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+_GLIBCXX_BEGIN_NAMESPACE_VERSION
+  // Allow std::multiset access to internals of compatible sets.
+  template<typename _Val, typename _Cmp1, typename _Alloc, typename _Cmp2>
+    struct
+    _Rb_tree_merge_helper<_GLIBCXX_STD_C::multiset<_Val, _Cmp1, _Alloc>,
+			  _Cmp2>
+    {
+    private:
+      friend class _GLIBCXX_STD_C::multiset<_Val, _Cmp1, _Alloc>;
+
+      static auto&
+      _S_get_tree(_GLIBCXX_STD_C::set<_Val, _Cmp2, _Alloc>& __set)
+      { return __set._M_t; }
+
+      static auto&
+      _S_get_tree(_GLIBCXX_STD_C::multiset<_Val, _Cmp2, _Alloc>& __set)
+      { return __set._M_t; }
+    };
+_GLIBCXX_END_NAMESPACE_VERSION
+#endif // C++17
+# 976 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+
+} // namespace std
+
+#endif /* _STL_MULTISET_H */
+# 980 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/stl_multiset.h" 3
+# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 2 3
+#if 0 /* expanded by -frewrite-includes */
+#include <bits/range_access.h>
+#endif /* expanded by -frewrite-includes */
+# 63 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+# 64 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+
+#ifdef _GLIBCXX_DEBUG
+#if 0 /* expanded by -frewrite-includes */
+# include <debug/set>
+#endif /* expanded by -frewrite-includes */
+# 66 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+# 67 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+#endif
+# 68 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+
+#ifdef _GLIBCXX_PROFILE
+#if 0 /* expanded by -frewrite-includes */
+# include <profile/set>
+#endif /* expanded by -frewrite-includes */
+# 70 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+# 71 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+#endif
+# 72 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+
+#endif /* _GLIBCXX_SET */
+# 74 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/set" 3
+# 4 "test.cpp" 2
+#if 0 /* expanded by -frewrite-includes */
+#include <unordered_set>
+#endif /* expanded by -frewrite-includes */
+# 4 "test.cpp"
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 1 3
+// <unordered_set> -*- C++ -*-
+
+// Copyright (C) 2007-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file include/unordered_set
+ *  This is a Standard C++ Library header.
+ */
+
+#ifndef _GLIBCXX_UNORDERED_SET
+#define _GLIBCXX_UNORDERED_SET 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 33 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+#if 0 /* expanded by -frewrite-includes */
+# include <bits/c++0x_warning.h>
+#endif /* expanded by -frewrite-includes */
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+#else
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+
+#if 0 /* expanded by -frewrite-includes */
+#include <utility>
+#endif /* expanded by -frewrite-includes */
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <type_traits>
+#endif /* expanded by -frewrite-includes */
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <initializer_list>
+#endif /* expanded by -frewrite-includes */
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <tuple>
+#endif /* expanded by -frewrite-includes */
+# 41 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 1 3
+// <tuple> -*- C++ -*-
+
+// Copyright (C) 2007-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file include/tuple
+ *  This is a Standard C++ Library header.
+ */
+
+#ifndef _GLIBCXX_TUPLE
+#define _GLIBCXX_TUPLE 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 33 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+#if 0 /* expanded by -frewrite-includes */
+# include <bits/c++0x_warning.h>
+#endif /* expanded by -frewrite-includes */
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+#else
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+
+#if 0 /* expanded by -frewrite-includes */
+#include <utility>
+#endif /* expanded by -frewrite-includes */
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <array>
+#endif /* expanded by -frewrite-includes */
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
+# 1 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 1 3
+// <array> -*- C++ -*-
+
+// Copyright (C) 2007-2017 Free Software Foundation, Inc.
+//
+// This file is part of the GNU ISO C++ Library.  This library is free
+// software; you can redistribute it and/or modify it under the
+// terms of the GNU General Public License as published by the
+// Free Software Foundation; either version 3, or (at your option)
+// any later version.
+
+// This library is distributed in the hope that it will be useful,
+// but WITHOUT ANY WARRANTY; without even the implied warranty of
+// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+// GNU General Public License for more details.
+
+// Under Section 7 of GPL version 3, you are granted additional
+// permissions described in the GCC Runtime Library Exception, version
+// 3.1, as published by the Free Software Foundation.
+
+// You should have received a copy of the GNU General Public License and
+// a copy of the GCC Runtime Library Exception along with this program;
+// see the files COPYING3 and COPYING.RUNTIME respectively.  If not, see
+// <http://www.gnu.org/licenses/>.
+
+/** @file include/array
+ *  This is a Standard C++ Library header.
+ */
+
+#ifndef _GLIBCXX_ARRAY
+#define _GLIBCXX_ARRAY 1
+
+#if 0 /* expanded by -frewrite-includes */
+#pragma GCC system_header
+#endif /* expanded by -frewrite-includes */
+# 33 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+
+#if 0 /* disabled by -frewrite-includes */
+#if __cplusplus < 201103L
+#endif
+#endif /* disabled by -frewrite-includes */
+#if 0 /* evaluated by -frewrite-includes */
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+#if 0 /* expanded by -frewrite-includes */
+# include <bits/c++0x_warning.h>
+#endif /* expanded by -frewrite-includes */
+# 35 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+# 36 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+#else
+# 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+
+#if 0 /* expanded by -frewrite-includes */
+#include <utility>
+#endif /* expanded by -frewrite-includes */
+# 38 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+#if 0 /* expanded by -frewrite-includes */
+#include <stdexcept>
+#endif /* expanded by -frewrite-includes */
+# 39 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
+# 40 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
 #if 0 /* expanded by -frewrite-includes */
 #include <bits/stl_algobase.h>
 #endif /* expanded by -frewrite-includes */
@@ -66583,7 +71329,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cpp_deduction_guides >= 201606
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 243 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/array" 3
   template<typename _Tp, typename... _Up>
     array(_Tp, _Up...)
@@ -66891,7 +71637,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 118 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/uses_allocator.h" 3
   template <typename _Tp, typename _Alloc>
     inline constexpr bool uses_allocator_v =
@@ -67944,7 +72690,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cpp_deduction_guides >= 201606
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 876 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
   template<typename... _UTypes>
     tuple(_UTypes...) -> tuple<_UTypes...>;
@@ -68344,7 +73090,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 1270 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
   template <typename _Tp>
     inline constexpr size_t tuple_size_v = tuple_size<_Tp>::value;
@@ -68755,7 +73501,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 1656 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/tuple" 3
 # define __cpp_lib_apply 201603
 
@@ -71030,7 +75776,7 @@ _GLIBCXX_END_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 37 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/hashtable.h" 3
 #if 0 /* expanded by -frewrite-includes */
 # include <bits/node_handle.h>
@@ -71318,7 +76064,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 315 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/hashtable.h" 3
       using node_type = _Node_handle<_Key, _Value, __node_alloc_type>;
       using insert_return_type = _Node_insert_return<iterator, node_type>;
@@ -71783,7 +76529,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 774 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/hashtable.h" 3
       /// Re-insert an extracted node into a container with unique keys.
       insert_return_type
@@ -73228,7 +77974,7 @@ _GLIBCXX_BEGIN_NAMESPACE_VERSION
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 2213 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/hashtable.h" 3
   template<typename, typename, typename> class _Hash_merge_helper { };
 #endif // C++17
@@ -73374,7 +78120,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 127 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/unordered_set.h" 3
       using node_type = typename _Hashtable::node_type;
       using insert_return_type = typename _Hashtable::insert_return_type;
@@ -73735,7 +78481,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 482 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/unordered_set.h" 3
       /// Extract a node.
       node_type
@@ -73848,7 +78594,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 589 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/unordered_set.h" 3
       template<typename, typename, typename>
 	friend class _Hash_merge_helper;
@@ -74126,7 +78872,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 861 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/unordered_set.h" 3
       using node_type = typename _Hashtable::node_type;
 #endif
@@ -74464,7 +79210,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 1193 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/unordered_set.h" 3
       /// Extract a node.
       node_type
@@ -74582,7 +79328,7 @@ _GLIBCXX_BEGIN_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 1305 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/unordered_set.h" 3
       template<typename, typename, typename>
 	friend class _Hash_merge_helper;
@@ -74843,7 +79589,7 @@ _GLIBCXX_END_NAMESPACE_CONTAINER
 #if __cplusplus > 201402L
 #endif
 #endif /* disabled by -frewrite-includes */
-#if 0 /* evaluated by -frewrite-includes */
+#if 1 /* evaluated by -frewrite-includes */
 # 1560 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/bits/unordered_set.h" 3
 _GLIBCXX_BEGIN_NAMESPACE_VERSION
   // Allow std::unordered_set access to internals of compatible sets.
@@ -74929,25 +79675,29 @@ _GLIBCXX_END_NAMESPACE_VERSION
 
 #endif // _GLIBCXX_UNORDERED_SET
 # 61 "/usr/lib/gcc/x86_64-linux-gnu/7.4.0/../../../../include/c++/7.4.0/unordered_set" 3
-# 6 "test.cpp" 2
-
+# 5 "test.cpp" 2
+#if 0 /* expanded by -frewrite-includes */
+#include <string>
+#endif /* expanded by -frewrite-includes */
+# 5 "test.cpp"
+# 6 "test.cpp"
 
 int foo(int n);
 
 int Cilk_for_range_tests(int n) {
-  vector<int> v(n);
+  std::vector<int> v(n);
   for (int i = 0; i < n; i++) v[i] = i;
 
   _Cilk_for(auto x : v); // expected-warning {{Cilk for loop has empty body}}
   _Cilk_for(auto& x : v); // expected-warning {{Cilk for loop has empty body}}
   _Cilk_for(int x : v); // expected-warning {{Cilk for loop has empty body}}
-  _Cilk_for(string x : v); // expected-error {{no viable conversion from 'int' to 'std::string'}}
-  _Cilk_for(string x : {"a", "b"}); // expected-warning {{range-based for loop has empty body}}
+  _Cilk_for(std::string x : v); // expected-error {{no viable conversion from 'int' to 'std::string'}}
+  _Cilk_for(std::string x : {"a", "b"}); // expected-warning {{range-based for loop has empty body}}
 
   // Pairs are aggregate types, which initially had a bug. Assert that they work
-  vector<pair<int,int>> vp(n);
+  std::vector<std::pair<int,int>> vp(n);
   for (int i = 0; i < n; i++) {
-    v[i] = make_pair(i,i+1);
+    vp[i] = std::make_pair(i,i+1);
   }
   _Cilk_for(auto p : vp)
     continue;
@@ -74959,9 +79709,9 @@ int Cilk_for_range_tests(int n) {
   _Cilk_for(int x : a)
       continue;
 
-  set<long> s(v.begin(), v.end());
+  std::set<long> s(v.begin(), v.end());
   _Cilk_for(int x : s); // expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}}
-  unordered_set<long> us(v.begin(), v.end());
+  std::unordered_set<long> us(v.begin(), v.end());
   _Cilk_for(int x : us); // expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}}
 
   // Check for return statements, which cannot appear anywhere in the body of a
@@ -74982,7 +79732,7 @@ int Cilk_for_range_tests(int n) {
 }
 
 int range_pragma_tests(int n) {
-  vector<int> v(n);
+  std::vector<int> v(n);
   for (int i = 0; i < n; i++) v[i] = i;
 
 #pragma clang loop unroll_count(4)
@@ -75006,7 +79756,7 @@ int range_pragma_tests(int n) {
 }
 
 int range_scope_tests(int n) {
-  vector<int> v(n);
+  std::vector<int> v(n);
   for (int i = 0; i < n; i++) v[i] = i;
   int A[5];
   _Cilk_for(int i : v) {
