@@ -1,4 +1,4 @@
-// RUN: %clang_cc1 -std=c++17 -verify %s
+// RUN: %clang_cc1 -std=c++17 -verify -verify-ignore-unexpected=note %s
 
 // To test the range-based cilk_for, we want to test it on real containers.
 // Clang-test does not support including the standard library, so we could either define mocks
@@ -79691,7 +79691,7 @@ int Cilk_for_range_tests(int n) {
   _Cilk_for(auto x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
   _Cilk_for(auto& x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
   _Cilk_for(int x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-  _Cilk_for(std::string x : v); // expected-warning {{Cilk for loop has empty body}} expected-error {{no viable conversion from 'int' to 'std::string' (aka 'basic_string<char>')}} expected-note {{candidate constructor not viable: no known conversion from 'int' to 'const std::basic_string<char, std::char_traits<char>, std::allocator<char> > &' for 1st argument}} expected-note {{candidate constructor not viable: no known conversion from 'int' to 'const char *' for 1st argument}} expected-note {{candidate constructor not viable: no known conversion from 'int' to 'std::basic_string<char, std::char_traits<char>, std::allocator<char> > &&' for 1st argument}} expected-note {{candidate constructor not viable: no known conversion from 'int' to 'initializer_list<char>' for 1st argument}} expected-note {{explicit constructor is not a candidate}} expected-note {{selected 'begin' function with iterator type 'std::vector<int, std::allocator<int> >::iterator' (aka '__normal_iterator<int *, std::vector<int, std::allocator<int> > >'}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(std::string x : v); // expected-warning {{Cilk for loop has empty body}} expected-error {{no viable conversion from 'int' to 'std::string' (aka 'basic_string<char>')}}       expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
   _Cilk_for(std::string x : {"a", "b"}); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
 
   // Pairs are aggregate types, which initially had a bug. Assert that they work
@@ -79710,9 +79710,9 @@ int Cilk_for_range_tests(int n) {
       continue;
 
   std::set<long> s(v.begin(), v.end());
-  _Cilk_for(int x : s); // expected-warning {{Cilk for loop has empty body}} expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::_Rb_tree_const_iterator<long>' and 'std::_Rb_tree_const_iterator<long>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}} expected-note {{candidate function not viable: no known conversion from 'std::_Rb_tree_const_iterator<long>' to 'const std::_Bit_iterator_base' for 1st argument}} expected-note {{candidate template ignored: could not match 'reverse_iterator' against '_Rb_tree_const_iterator'}} expected-note {{candidate template ignored: could not match 'move_iterator' against '_Rb_tree_const_iterator'}}
+  _Cilk_for(int x : s); // expected-warning {{Cilk for loop has empty body}} expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::_Rb_tree_const_iterator<long>' and 'std::_Rb_tree_const_iterator<long>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
   std::unordered_set<long> us(v.begin(), v.end());
-  _Cilk_for(int x : us); // expected-warning {{Cilk for loop has empty body}} expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::__detail::_Node_iterator<long, true, false>' and 'std::__detail::_Node_iterator<long, true, false>')}} expected-error {{invalid operands to binary expression ('std::__detail::_Node_iterator<long, true, false>' and 'std::__detail::_Node_iterator<long, true, false>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(int x : us); // expected-warning {{Cilk for loop has empty body}} expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::__detail::_Node_iterator<long, true, false>' and 'std::__detail::_Node_iterator<long, true, false>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
 
   // Check for return statements, which cannot appear anywhere in the body of a
   // _Cilk_for loop.
