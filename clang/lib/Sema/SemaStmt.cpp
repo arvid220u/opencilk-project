@@ -3516,17 +3516,23 @@ StmtResult Sema::FinishCilkForRangeStmt(Stmt *S, Stmt *B) {
   const QualType BeginRefNonRefType = BeginType.getNonReferenceType();
   ExprResult BeginRef = BuildDeclRefExpr(BeginVar, BeginRefNonRefType,
                                          VK_LValue, CXXForRange->getColonLoc());
+  if (BeginRef.isInvalid())
+    return StmtError();
 
   VarDecl *LoopIndex = CilkForRange->getLocalLoopIndex();
   QualType LoopIndexType = LoopIndex->getType();
   const QualType LoopIndexRefNonRefType = LoopIndexType.getNonReferenceType();
   ExprResult LoopIndexRef = BuildDeclRefExpr(
       LoopIndex, LoopIndexRefNonRefType, VK_LValue, CXXForRange->getColonLoc());
+  if (LoopIndexRef.isInvalid())
+    return StmtError();
 
   VarDecl *LoopVar = CXXForRange->getLoopVariable();
   SourceLocation LoopVarLoc = LoopVar->getBeginLoc();
   ExprResult NewLoopVarInit = ActOnBinOp(getCurScope(), LoopVarLoc, tok::plus,
                                          BeginRef.get(), LoopIndexRef.get());
+  if (NewLoopVarInit.isInvalid())
+    return StmtError();
 
   ExprResult DerefExpr =
       ActOnUnaryOp(getCurScope(), LoopVarLoc, tok::star, NewLoopVarInit.get());
