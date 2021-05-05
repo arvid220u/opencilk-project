@@ -3576,12 +3576,18 @@ StmtResult Sema::BuildCilkForRangeStmt(CXXForRangeStmt *ForRange) {
   const QualType BeginRefNonRefType = BeginType.getNonReferenceType();
   ExprResult BeginRef = BuildDeclRefExpr(BeginVar, BeginRefNonRefType,
                                          VK_LValue, ForRange->getColonLoc());
+  if (BeginRef.isInvalid()) {
+    return StmtError();
+  }
 
   VarDecl *EndVar = cast<VarDecl>(ForRange->getEndStmt()->getSingleDecl());
   QualType EndType = EndVar->getType();
   const QualType EndRefNonRefType = EndType.getNonReferenceType();
   ExprResult EndRef = BuildDeclRefExpr(EndVar, EndRefNonRefType, VK_LValue,
                                        ForRange->getColonLoc());
+  if (EndRef.isInvalid()) {
+    return StmtError();
+  }
   ExprResult LimitExpr = ActOnBinOp(S, ForRange->getColonLoc(), tok::minus,
                                     EndRef.get(), BeginRef.get());
   if (LimitExpr.isInvalid()) {
