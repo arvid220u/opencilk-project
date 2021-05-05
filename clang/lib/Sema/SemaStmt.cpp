@@ -3561,8 +3561,14 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc,
   if (ForRangeStmt.isInvalid())
     return ForRangeStmt;
 
-  return BuildCilkForRangeStmt(
-      cast_or_null<CXXForRangeStmt>(ForRangeStmt.get()));
+  CXXForRangeStmt *ForRange = cast_or_null<CXXForRangeStmt>(ForRangeStmt.get());
+
+  SearchForReturnInStmt(*this, ForRange->getBody());
+
+  if (BreakContinueFinder(*this, ForRange->getBody()).BreakFound())
+    Diag(ForLoc, diag::err_cilk_for_cannot_break);
+
+  return BuildCilkForRangeStmt(ForRange);
 }
 
 StmtResult Sema::BuildCilkForRangeStmt(CXXForRangeStmt *ForRange) {
