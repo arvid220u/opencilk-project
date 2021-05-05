@@ -3510,6 +3510,16 @@ StmtResult Sema::FinishCilkForRangeStmt(Stmt *S, Stmt *B) {
 
   CXXForRangeStmt *CXXForRange = cast<CXXForRangeStmt>(ForRange.get());
 
+  if (isa<NullStmt>(CXXForRange->getBody())) {
+    Diag(CXXForRange->getForLoc(), diag::warn_empty_cilk_for_body);
+    getCurCompoundScope().setHasEmptyLoopBodies();
+  }
+
+  SearchForReturnInStmt(*this, CXXForRange->getBody());
+
+  if (BreakContinueFinder(*this, CXXForRange->getBody()).BreakFound())
+    Diag(CXXForRange->getForLoc(), diag::err_cilk_for_cannot_break);
+
   VarDecl *BeginVar =
       cast<VarDecl>(CXXForRange->getBeginStmt()->getSingleDecl());
   QualType BeginType = BeginVar->getType();
@@ -3568,15 +3578,6 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc,
 
 StmtResult Sema::BuildCilkForRangeStmt(CXXForRangeStmt *ForRange) {
 
-//  if (isa<NullStmt>(ForRange->getBody())) {
-//    Diag(ForRange->getForLoc(), diag::warn_empty_cilk_for_body);
-//    getCurCompoundScope().setHasEmptyLoopBodies();
-//  }
-
-  SearchForReturnInStmt(*this, ForRange->getBody());
-
-  if (BreakContinueFinder(*this, ForRange->getBody()).BreakFound())
-    Diag(ForRange->getForLoc(), diag::err_cilk_for_cannot_break);
 
   Scope *S = getCurScope();
 
