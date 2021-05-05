@@ -9,6 +9,7 @@ struct C {
     It operator++();
     It operator--();
     int operator*();
+    bool operator!=(It &);
   };
   It begin();
   It end();
