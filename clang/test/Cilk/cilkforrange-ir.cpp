@@ -7,8 +7,7 @@ struct C {
   struct It {
     int val;
     operator int &() { return val; }
-    It operator+(It &);
-    It operator-(It &);
+    int operator-(It &);
     It operator++();
     It operator--();
 //    int operator*();
