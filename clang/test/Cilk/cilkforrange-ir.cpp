@@ -49,6 +49,11 @@ void up(X::C c) {
 // CHECK-NEXT: store i32 %call, i32* %__cilk_looplimit, align 4
 // CHECK-NEXT: br label %[[PFORCOND:.+]]
 
+// TODO: continue with the IR checks :))
+//  useful commands:
+//    ./clang++ -std=c++11 -fopencilk -ftapir=none -S -emit-llvm ../opencilk-project/clang/test/Cilk/cilkforrange-ir.cpp
+//    cat cilkforrange-ir.ll | grep Z2upN1 -C 50
+
 // CHECK: [[PFORPH]]:
 // CHECK-NEXT: store i64 0, i64* %[[BEGIN:.+]], align 8
 // CHECK-NEXT: %[[ENDLIMIT:.+]] = load i64, i64* %[[LIMIT]]
