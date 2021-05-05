@@ -1379,6 +1379,9 @@ public:
     return getSema().BuildCilkForRangeStmt(
         cast_or_null<CXXForRangeStmt>(ForRange));
   }
+  StmtResult FinishCilkForRangeStmt(Stmt *ForRange, Stmt *Body) {
+    return getSema().FinishCilkForRangeStmt(ForRange, Body);
+  }
 
   /// Build a new goto statement.
   ///
