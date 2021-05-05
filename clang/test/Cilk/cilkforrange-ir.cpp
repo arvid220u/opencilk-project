@@ -6,6 +6,7 @@ struct C {
   C();
   struct It {
     int operator-(It &);
+    It operator+(int);
     It operator++();
     It operator--();
     int operator*();
