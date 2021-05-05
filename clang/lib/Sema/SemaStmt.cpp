@@ -3569,14 +3569,14 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc,
 StmtResult Sema::BuildCilkForRangeStmt(CXXForRangeStmt *ForRange) {
 
   if (isa<NullStmt>(ForRange->getBody())) {
-    Diag(ForLoc, diag::warn_empty_cilk_for_body);
+    Diag(ForRange->getForLoc(), diag::warn_empty_cilk_for_body);
     getCurCompoundScope().setHasEmptyLoopBodies();
   }
 
   SearchForReturnInStmt(*this, ForRange->getBody());
 
   if (BreakContinueFinder(*this, ForRange->getBody()).BreakFound())
-    Diag(ForLoc, diag::err_cilk_for_cannot_break);
+    Diag(ForRange->getForLoc(), diag::err_cilk_for_cannot_break);
 
   Scope *S = getCurScope();
 
