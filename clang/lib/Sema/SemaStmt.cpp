@@ -3577,8 +3577,6 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc,
 }
 
 StmtResult Sema::BuildCilkForRangeStmt(CXXForRangeStmt *ForRange) {
-
-
   Scope *S = getCurScope();
 
   // 1. Build an induction variable of type difference_type<iterator>
