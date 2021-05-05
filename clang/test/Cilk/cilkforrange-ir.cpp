@@ -12,7 +12,9 @@ struct C {
     int operator*();
     bool operator!=(It &);
   };
-  It begin();
+  It begin() {
+    return It();
+  }
   It end();
 };
 
@@ -25,9 +27,30 @@ void up(X::C c) {
     bar(x);
 }
 
-// CHECK-LABEL: define void @_Z2upmm(
 
-// CHECK: %[[START:.+]] = load i64, i64*
+
+// CHECK-LABEL: define void @_Z2upN1X1CE(
+
+// CHECK: %c = alloca %"struct.X::C", align 1
+// CHECK-NEXT: %syncreg = call token @llvm.syncregion.start()
+// CHECK-NEXT: %__range1 = alloca %"struct.X::C"*, align 8
+// CHECK-NEXT: %__begin1 = alloca %"struct.X::C::It", align 1
+// CHECK-NEXT: %undef.agg.tmp = alloca %"struct.X::C::It", align 1
+// CHECK-NEXT: %__end1 = alloca %"struct.X::C::It", align 1
+// CHECK-NEXT: %undef.agg.tmp1 = alloca %"struct.X::C::It", align 1
+// CHECK-NEXT: %__cilk_loopindex = alloca i32, align 4
+// CHECK-NEXT: %__cilk_looplimit = alloca i32, align 4
+// CHECK-NEXT: store %"struct.X::C"* %c, %"struct.X::C"** %__range1, align 8
+// CHECK-NEXT: %0 = load %"struct.X::C"*, %"struct.X::C"** %__range1, align 8
+// CHECK-NEXT: call void @_ZN1X1C5beginEv(%"struct.X::C"* %0)
+// CHECK-NEXT: %1 = load %"struct.X::C"*, %"struct.X::C"** %__range1, align 8
+// CHECK-NEXT: call void @_ZN1X1C3endEv(%"struct.X::C"* %1)
+// CHECK-NEXT: store i32 0, i32* %__cilk_loopindex, align 4
+// CHECK-NEXT: %call = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %__end1, %"struct.X::C::It"* dereferenceable(1) %__begin1)
+// CHECK-NEXT: store i32 %call, i32* %__cilk_looplimit, align 4
+// CHECK-NEXT: br label %[[PFORCOND:.+]]
+
+// CHECK: %__range1 = alloca %"struct.X::
 // CHECK-NEXT: store i64 %[[START]], i64* %[[INIT:.+]], align 8
 // CHECK-NEXT: %[[END:.+]] = load i64, i64*
 // CHECK-NEXT: store i64 %[[END]], i64* %[[LIMIT:.+]], align 8
