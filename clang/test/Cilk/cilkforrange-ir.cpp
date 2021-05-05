@@ -5,6 +5,7 @@ namespace X {
 struct C {
   C();
   struct It {
+    int value;
     int operator-(It &);
     It operator+(int);
     It operator++();
