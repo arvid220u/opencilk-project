@@ -3568,10 +3568,10 @@ StmtResult Sema::ActOnCilkForRangeStmt(Scope *S, SourceLocation ForLoc,
 
 StmtResult Sema::BuildCilkForRangeStmt(CXXForRangeStmt *ForRange) {
 
-  if (isa<NullStmt>(ForRange->getBody())) {
-    Diag(ForRange->getForLoc(), diag::warn_empty_cilk_for_body);
-    getCurCompoundScope().setHasEmptyLoopBodies();
-  }
+//  if (isa<NullStmt>(ForRange->getBody())) {
+//    Diag(ForRange->getForLoc(), diag::warn_empty_cilk_for_body);
+//    getCurCompoundScope().setHasEmptyLoopBodies();
+//  }
 
   SearchForReturnInStmt(*this, ForRange->getBody());
 
