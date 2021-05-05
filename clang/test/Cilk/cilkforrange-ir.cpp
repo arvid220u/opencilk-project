@@ -1,6 +1,7 @@
 // RUN: %clang_cc1 %s -std=c++11 -triple x86_64-unknown-linux-gnu -fcilkplus -ftapir=none -verify -S -emit-llvm -o - | FileCheck %s
 // expected-no-diagnostics
 
+namespace X {
 struct C {
   C();
   struct It {
@@ -16,10 +17,12 @@ struct C {
   It end();
 };
 
+constexpr int operator*(const C::It &) { return 0; }
+}
 
 void bar(int i);
 
-void up(C c) {
+void up(X::C c) {
   _Cilk_for (int x : c)
     bar(x);
 }
