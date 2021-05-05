@@ -12,7 +12,7 @@ struct C {
     int operator*();
     bool operator!=(It &);
   };
-  It *begin() {
+  It begin() {
     return It();
   }
   It end();
