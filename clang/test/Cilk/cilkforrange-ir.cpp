@@ -21,7 +21,7 @@ struct C {
 void bar(int i);
 
 void up(X::C c) {
-  for (int x : c)
+  _Cilk_for (int x : c)
     bar(x);
 }
 
