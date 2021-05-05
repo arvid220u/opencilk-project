@@ -12,9 +12,7 @@ struct C {
     int operator*();
     bool operator!=(It &);
   };
-  It begin() {
-    return It();
-  }
+  It begin();
   It end();
 };
 
@@ -23,11 +21,12 @@ struct C {
 void bar(int i);
 
 void up(X::C c) {
-  for (int x : c)
+  _Cilk_for (int x : c)
     bar(x);
 }
 
-
+// TODO: why does the @_ZN1X1C3endEv call return void? it feels like this IR is wrong
+//  but it also seems like the IR for the corresponding normal for-range is wrong...
 
 // CHECK-LABEL: define void @_Z2upN1X1CE(
 
@@ -49,15 +48,6 @@ void up(X::C c) {
 // CHECK-NEXT: %call = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %__end1, %"struct.X::C::It"* dereferenceable(1) %__begin1)
 // CHECK-NEXT: store i32 %call, i32* %__cilk_looplimit, align 4
 // CHECK-NEXT: br label %[[PFORCOND:.+]]
-
-// CHECK: %__range1 = alloca %"struct.X::
-// CHECK-NEXT: store i64 %[[START]], i64* %[[INIT:.+]], align 8
-// CHECK-NEXT: %[[END:.+]] = load i64, i64*
-// CHECK-NEXT: store i64 %[[END]], i64* %[[LIMIT:.+]], align 8
-// CHECK-NEXT: %[[INITCMPINIT:.+]] = load i64, i64* %[[INIT]]
-// CHECK-NEXT: %[[INITCMPLIMIT:.+]] = load i64, i64* %[[LIMIT]]
-// CHECK-NEXT: %[[INITCMP:.+]] = icmp ult i64 %[[INITCMPINIT]], %[[INITCMPLIMIT]]
-// CHECK-NEXT: br i1 %[[INITCMP]], label %[[PFORPH:.+]], label %[[PFOREND:.+]]
 
 // CHECK: [[PFORPH]]:
 // CHECK-NEXT: store i64 0, i64* %[[BEGIN:.+]], align 8
