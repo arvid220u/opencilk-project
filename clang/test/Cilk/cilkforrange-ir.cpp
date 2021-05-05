@@ -23,7 +23,7 @@ constexpr int operator*(const C::It &) { return 0; }
 void bar(int i);
 
 void up(X::C c) {
-  _Cilk_for (int x : c)
+  _Cilk_for (auto x : c)
     bar(x);
 }
 
