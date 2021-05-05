@@ -10,6 +10,7 @@ struct C {
     It operator-(It &);
     It operator++();
     It operator--();
+    int operator*();
   };
   It begin();
   It end();
