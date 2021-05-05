@@ -19,7 +19,7 @@ struct C {
 void bar(int i);
 
 void up(C c) {
-  _Cilk_for (int x : C)
+  _Cilk_for (int x : c)
     bar(x);
 }
 
