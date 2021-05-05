@@ -10,13 +10,12 @@ struct C {
     int operator-(It &);
     It operator++();
     It operator--();
-//    int operator*();
+    int operator*();
   };
   It begin();
   It end();
 };
 
-int operator*(const C::It &) { return 0; }
 }
 
 void bar(int i);
