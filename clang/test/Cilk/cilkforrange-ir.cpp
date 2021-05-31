@@ -86,7 +86,7 @@ void iterate(X::C c) {
 // CHECK-NEXT: sync within %[[SYNCREG]]
 
 void iterate_ref(X::C c) {
-  _Cilk_for (int& x : c)
+  _Cilk_for (int& x : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
     bar(x);
 }
 
@@ -122,7 +122,7 @@ void iterate_ref(X::C c) {
 
 // CHECK: [[DETACHED]]:
 // CHECK-NEXT: %__local_loopindex = alloca i32, align 4
-// CHECK-NEXT: %[[X:.+]] = alloca i32, align 4
+// CHECK-NEXT: %[[X:.+]] = alloca i32*, align 8
 // CHECK-NEXT: %[[ITER:.+]] = alloca %"struct.X::C::It", align 4
 // CHECK-NEXT: store i32 %[[INITITER]], i32* %__local_loopindex, align 4
 // CHECK-NEXT: %[[LOOPINDEXCOPY:.+]] = load i32, i32* %__local_loopindex, align 4
@@ -130,8 +130,7 @@ void iterate_ref(X::C c) {
 // CHECK-NEXT: %[[ITER2:.+]] = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %[[ITER]], i32 0, i32 0
 // CHECK-NEXT: store i32 %[[ITERREF]], i32* %[[ITER2]], align 4
 // CHECK-NEXT: %[[ELEM:.+]] = call dereferenceable(4) i32* @_ZN1X1C2ItdeEv(%"struct.X::C::It"* %[[ITER]])
-// CHECK-NEXT: %[[ELEMVAL:.+]] = load i32, i32* %[[ELEM]], align 4
-// CHECK-NEXT: store i32 %[[ELEMVAL]], i32* %[[X]], align 4
+// CHECK-NEXT: store i32* %[[ELEM]], i32** %[[X]], align 8
 
 // CHECK: [[PFORINC]]:
 // CHECK-NEXT: %[[INCBEGIN:.+]] = load i32, i32* %[[CILKLOOPINDEX]], align 4
