@@ -5,7 +5,7 @@ template <class T>
 struct Vector {
   T* arr;
   Vector(int n) {
-    arr = malloc(n * sizeof(T));
+    // malloc
   }
   struct It {
     T value;
