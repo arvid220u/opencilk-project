@@ -90,7 +90,7 @@ void iterate_ref(X::C c) {
     bar(x);
 }
 
-// CHECK-LABEL: define void @_Z7iterateN1X1CE(
+// CHECK-LABEL: define void @_Z11iterate_refN1X1CE(
 
 // CHECK: %[[C:.+]] = alloca %"struct.X::C", align 1
 // CHECK-NEXT: %syncreg = call token @llvm.syncregion.start()
