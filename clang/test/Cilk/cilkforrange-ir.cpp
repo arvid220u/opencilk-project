@@ -21,7 +21,7 @@ struct C {
 
 void bar(int i);
 
-void up(X::C c) {
+void iterate(X::C c) {
   _Cilk_for (int x : c)
     bar(x);
 }
@@ -29,25 +29,27 @@ void up(X::C c) {
 // TODO: why does the @_ZN1X1C3endEv call return void? it feels like this IR is wrong
 //  but it also seems like the IR for the corresponding normal for-range is wrong...
 
-// CHECK-LABEL: define void @_Z2upN1X1CE(
+// CHECK-LABEL: define void @_Z2iterateN1X1CE(
 
 // CHECK: %c = alloca %"struct.X::C", align 1
 // CHECK-NEXT: %syncreg = call token @llvm.syncregion.start()
 // CHECK-NEXT: %__range1 = alloca %"struct.X::C"*, align 8
-// CHECK-NEXT: %__begin1 = alloca %"struct.X::C::It", align 1
-// CHECK-NEXT: %undef.agg.tmp = alloca %"struct.X::C::It", align 1
-// CHECK-NEXT: %__end1 = alloca %"struct.X::C::It", align 1
-// CHECK-NEXT: %undef.agg.tmp1 = alloca %"struct.X::C::It", align 1
+// CHECK-NEXT: %__begin1 = alloca %"struct.X::C::It", align 4
+// CHECK-NEXT: %__end1 = alloca %"struct.X::C::It", align 4
 // CHECK-NEXT: %__cilk_loopindex = alloca i32, align 4
 // CHECK-NEXT: %__cilk_looplimit = alloca i32, align 4
 // CHECK-NEXT: store %"struct.X::C"* %c, %"struct.X::C"** %__range1, align 8
 // CHECK-NEXT: %0 = load %"struct.X::C"*, %"struct.X::C"** %__range1, align 8
-// CHECK-NEXT: call void @_ZN1X1C5beginEv(%"struct.X::C"* %0)
+// CHECK-NEXT: %call = call i32 @_ZN1X1C5beginEv(%"struct.X::C"* %0)
+// CHECK-NEXT: %coerce.dive = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %__begin1, i32 0, i32 0
+// CHECK-NEXT: store i32 %call, i32* %coerce.dive, align 4
 // CHECK-NEXT: %1 = load %"struct.X::C"*, %"struct.X::C"** %__range1, align 8
-// CHECK-NEXT: call void @_ZN1X1C3endEv(%"struct.X::C"* %1)
+// CHECK-NEXT: %call1 = call i32 @_ZN1X1C3endEv(%"struct.X::C"* %1)
+// CHECK-NEXT: %coerce.dive2 = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %__end1, i32 0, i32 0
+// CHECK-NEXT: store i32 %call1, i32* %coerce.dive2, align 4
 // CHECK-NEXT: store i32 0, i32* %__cilk_loopindex, align 4
-// CHECK-NEXT: %call = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %__end1, %"struct.X::C::It"* dereferenceable(1) %__begin1)
-// CHECK-NEXT: store i32 %call, i32* %__cilk_looplimit, align 4
+// CHECK-NEXT: %call3 = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %__end1, %"struct.X::C::It"* dereferenceable(1) %__begin1)
+// CHECK-NEXT: store i32 %call3, i32* %__cilk_looplimit, align 4
 // CHECK-NEXT: br label %[[PFORCOND:.+]]
 
 // TODO: continue with the IR checks :))
@@ -86,3 +88,18 @@ void up(X::C c) {
 
 // CHECK: [[PFORCONDCLEANUP]]:
 // CHECK-NEXT: sync within %[[SYNCREG]]
+
+void iterate_ref(X::C c) {
+  _Cilk_for (int& x : c)
+    bar(x);
+}
+
+void iterate_auto(X::C c) {
+  _Cilk_for (auto x : c)
+    bar(x);
+}
+
+void iterate_autoref(X::C c) {
+  _Cilk_for (auto& x : c)
+    bar(x);
+}
