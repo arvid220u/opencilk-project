@@ -73,7 +73,7 @@ int Cilk_for_range_tests(int n) {
       continue;
 
   StdMock::Set<int> s(n);
-  _Cilk_for(int x : s); // expected-warning {{range-based for loop has empty body}} expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::_Rb_tree_const_iterator<long>' and 'std::_Rb_tree_const_iterator<long>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(int x : s); // expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('StdMock::Set<int>::It' and 'StdMock::Set<int>::It')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
 
   // Check for return statements, which cannot appear anywhere in the body of a
   // _Cilk_for loop.
