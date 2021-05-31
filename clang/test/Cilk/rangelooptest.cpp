@@ -23,6 +23,11 @@ struct Vector {
   }
 };
 struct Empty {};
+template <class T, class U>
+struct Pair {
+  T first;
+  U second;
+};
 }
 
 int foo(int n);
@@ -31,21 +36,21 @@ int Cilk_for_range_tests(int n) {
   StdMock::Vector<int> v(n);
   for (int i = 0; i < n; i++) v[i] = i;
 
-  _Cilk_for(auto x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-  _Cilk_for(auto& x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-  _Cilk_for(int x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-  _Cilk_for(StdMock::Empty x : v); // expected-warning {{Cilk for loop has empty body}} expected-error {{no viable conversion from 'int' to 'std::string' (aka 'basic_string<char>')}}       expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(auto x : v); // expected-warning {{range-based for loop has empty body}} expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(auto& x : v); // expected-warning {{range-based for loop has empty body}} expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(int x : v); // expected-warning {{range-based for loop has empty body}} expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(StdMock::Empty x : v); // expected-warning {{range-based for loop has empty body}} expected-warning {{Cilk for loop has empty body}} expected-error {{no viable conversion from 'int' to 'StdMock::Empty'}}       expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
 
   // Pairs are aggregate types, which initially had a bug. Assert that they work
-//  std::vector<std::pair<int,int>> vp(n);
-//  for (int i = 0; i < n; i++) {
-//    vp[i] = std::make_pair(i,i+1);
-//  }
-//  _Cilk_for(auto p : vp) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//    continue;
-//  _Cilk_for(auto& p : vp) { // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//    continue;
-//  }
+  StdMock::Vector<StdMock::Pair<int,int>> vp(n);
+  for (int i = 0; i < n; i++) {
+    vp[i] = {i, i+1};
+  }
+  _Cilk_for(auto p : vp) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+    continue;
+  _Cilk_for(auto& p : vp) { // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+    continue;
+  }
 //
 //  int a[5];
 //  _Cilk_for(int x : a) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
