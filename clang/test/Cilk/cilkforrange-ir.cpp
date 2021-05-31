@@ -211,7 +211,7 @@ void iterate_autoref(X::C c) {
     bar(x);
 }
 
-// CHECK-LABEL: define void @_Z13iterate_autorefN1X1CE(
+// CHECK-LABEL: define void @_Z15iterate_autorefN1X1CE(
 
 // CHECK: %[[C:.+]] = alloca %"struct.X::C", align 1
 // CHECK-NEXT: %syncreg = call token @llvm.syncregion.start()
