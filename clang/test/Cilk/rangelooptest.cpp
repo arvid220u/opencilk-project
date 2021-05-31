@@ -3,7 +3,10 @@
 namespace StdMock {
 template <class T>
 struct Vector {
-  Vector();
+  T* arr;
+  Vector(int n) {
+    arr = malloc(n * sizeof(T));
+  }
   struct It {
     T value;
     int operator-(It &);
@@ -15,6 +18,9 @@ struct Vector {
   };
   It begin();
   It end();
+  T &operator[](int i) {
+    return arr[i];
+  }
 };
 }
 
