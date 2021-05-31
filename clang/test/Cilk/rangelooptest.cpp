@@ -22,6 +22,7 @@ struct Vector {
     return arr[i];
   }
 };
+struct Empty {};
 }
 
 int foo(int n);
@@ -33,7 +34,7 @@ int Cilk_for_range_tests(int n) {
   _Cilk_for(auto x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
   _Cilk_for(auto& x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
   _Cilk_for(int x : v); // expected-warning {{Cilk for loop has empty body}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-  _Cilk_for(char x : v); // expected-warning {{Cilk for loop has empty body}} expected-error {{no viable conversion from 'int' to 'std::string' (aka 'basic_string<char>')}}       expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for(StdMock::Empty x : v); // expected-warning {{Cilk for loop has empty body}} expected-error {{no viable conversion from 'int' to 'std::string' (aka 'basic_string<char>')}}       expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
 
   // Pairs are aggregate types, which initially had a bug. Assert that they work
 //  std::vector<std::pair<int,int>> vp(n);
