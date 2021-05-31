@@ -38,7 +38,7 @@ void iterate(X::C c) {
 // CHECK-NEXT: %[[BEGIN:.+]] = alloca %"struct.X::C::It", align 4
 // CHECK-NEXT: %[[END:.+]] = alloca %"struct.X::C::It", align 4
 // CHECK-NEXT: %[[CILKLOOPINDEX:.+]] = alloca i32, align 4
-// CHECK-NEXT: %[[CILKLOOPLIMIT:.+]]= alloca i32, align 4
+// CHECK-NEXT: %[[CILKLOOPLIMIT:.+]] = alloca i32, align 4
 // CHECK-NEXT: store %"struct.X::C"* %[[C]], %"struct.X::C"** %[[RANGE]], align 8
 // CHECK-NEXT: %[[CONTAINER:.+]] = load %"struct.X::C"*, %"struct.X::C"** %[[RANGE]], align 8
 // CHECK-NEXT: %[[BEGINCALL:.+]] = call i32 @_ZN1X1C5beginEv(%"struct.X::C"* %[[CONTAINER]])
