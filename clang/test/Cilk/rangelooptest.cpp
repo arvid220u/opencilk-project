@@ -13,7 +13,7 @@ struct Vector {
     It operator+(int);
     It operator++();
     It operator--();
-    const T operator*();
+    T& operator*();
     bool operator!=(It &);
   };
   It begin();
