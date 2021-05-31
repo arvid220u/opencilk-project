@@ -22,6 +22,22 @@ struct Vector {
     return arr[i];
   }
 };
+template <class T>
+struct Set {
+  T* set;
+  Set(int n) {
+    // malloc
+  }
+  struct It {
+    T value;
+    It operator++();
+    It operator--();
+    T& operator*();
+    bool operator!=(It &);
+  };
+  It begin();
+  It end();
+};
 struct Empty {};
 template <class T, class U>
 struct Pair {
@@ -51,30 +67,28 @@ int Cilk_for_range_tests(int n) {
   _Cilk_for(auto& p : vp) { // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
     continue;
   }
-//
-//  int a[5];
-//  _Cilk_for(int x : a) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//      continue;
-//
-//  std::set<long> s(v.begin(), v.end());
-//  _Cilk_for(int x : s); // expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::_Rb_tree_const_iterator<long>' and 'std::_Rb_tree_const_iterator<long>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//  std::unordered_set<long> us(v.begin(), v.end());
-//  _Cilk_for(int x : us); // expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::__detail::_Node_iterator<long, true, false>' and 'std::__detail::_Node_iterator<long, true, false>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//
-//  // Check for return statements, which cannot appear anywhere in the body of a
-//  // _Cilk_for loop.
-//  _Cilk_for (int i : v) return 7; // expected-error{{cannot return}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//  _Cilk_for (int i : v) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//    for (int j = 1; j < i; ++j)
-//      return 7; // expected-error{{cannot return}}
-//
-//  // Check for illegal break statements, which cannot bind to the scope of a
-//  // _Cilk_for loop, but can bind to loops nested within.
-//  _Cilk_for (int i : v) break; // expected-error{{cannot break}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//  _Cilk_for (int i : v) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-//    for (int j = 1; j < i; ++j)
-//      break;
-//
+
+  int a[5];
+  _Cilk_for(int x : a) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+      continue;
+
+  StdMock::Set<int> s(n);
+  _Cilk_for(int x : s); // expected-warning {{range-based for loop has empty body}} expected-error {{Cannot determine length with '__end - __begin'. Please use a random access iterator.}} expected-error {{invalid operands to binary expression ('std::_Rb_tree_const_iterator<long>' and 'std::_Rb_tree_const_iterator<long>')}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+
+  // Check for return statements, which cannot appear anywhere in the body of a
+  // _Cilk_for loop.
+  _Cilk_for (int i : v) return 7; // expected-error{{cannot return}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for (int i : v) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+    for (int j = 1; j < i; ++j)
+      return 7; // expected-error{{cannot return}}
+
+  // Check for illegal break statements, which cannot bind to the scope of a
+  // _Cilk_for loop, but can bind to loops nested within.
+  _Cilk_for (int i : v) break; // expected-error{{cannot break}} expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+  _Cilk_for (int i : v) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+    for (int j = 1; j < i; ++j)
+      break;
+
   return 0;
 }
 
