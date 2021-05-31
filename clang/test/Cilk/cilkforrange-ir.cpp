@@ -32,32 +32,32 @@ void iterate(X::C c) {
 
 // CHECK-LABEL: define void @_Z7iterateN1X1CE(
 
-// CHECK: %c = alloca %"struct.X::C", align 1
+// CHECK: %[[C:.+]] = alloca %"struct.X::C", align 1
 // CHECK-NEXT: %syncreg = call token @llvm.syncregion.start()
-// CHECK-NEXT: %__range1 = alloca %"struct.X::C"*, align 8
+// CHECK-NEXT: %[[RANGE:.+]] = alloca %"struct.X::C"*, align 8
 // CHECK-NEXT: %[[BEGIN:.+]] = alloca %"struct.X::C::It", align 4
-// CHECK-NEXT: %__end1 = alloca %"struct.X::C::It", align 4
-// CHECK-NEXT: %__cilk_loopindex = alloca i32, align 4
-// CHECK-NEXT: %__cilk_looplimit = alloca i32, align 4
-// CHECK-NEXT: store %"struct.X::C"* %c, %"struct.X::C"** %__range1, align 8
-// CHECK-NEXT: %0 = load %"struct.X::C"*, %"struct.X::C"** %__range1, align 8
-// CHECK-NEXT: %call = call i32 @_ZN1X1C5beginEv(%"struct.X::C"* %0)
-// CHECK-NEXT: %coerce.dive = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %[[BEGIN]], i32 0, i32 0
-// CHECK-NEXT: store i32 %call, i32* %coerce.dive, align 4
-// CHECK-NEXT: %1 = load %"struct.X::C"*, %"struct.X::C"** %__range1, align 8
-// CHECK-NEXT: %call1 = call i32 @_ZN1X1C3endEv(%"struct.X::C"* %1)
-// CHECK-NEXT: %coerce.dive2 = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %__end1, i32 0, i32 0
-// CHECK-NEXT: store i32 %call1, i32* %coerce.dive2, align 4
-// CHECK-NEXT: store i32 0, i32* %__cilk_loopindex, align 4
-// CHECK-NEXT: %call3 = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %__end1, %"struct.X::C::It"* dereferenceable(4) %[[BEGIN]])
-// CHECK-NEXT: store i32 %call3, i32* %__cilk_looplimit, align 4
+// CHECK-NEXT: %[[END:.+]] = alloca %"struct.X::C::It", align 4
+// CHECK-NEXT: %[[CILKLOOPINDEX:.+]] = alloca i32, align 4
+// CHECK-NEXT: %[[CILKLOOPLIMIT:.+]]= alloca i32, align 4
+// CHECK-NEXT: store %"struct.X::C"* %[[C]], %"struct.X::C"** %[[RANGE]], align 8
+// CHECK-NEXT: %[[CONTAINER:.+]] = load %"struct.X::C"*, %"struct.X::C"** %[[RANGE]], align 8
+// CHECK-NEXT: %[[BEGINCALL:.+]] = call i32 @_ZN1X1C5beginEv(%"struct.X::C"* %[[CONTAINER]])
+// CHECK-NEXT: %[[BEGINCOERCE:.+]] = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %[[BEGIN]], i32 0, i32 0
+// CHECK-NEXT: store i32 %[[BEGINCALL]], i32* %[[BEGINCOERCE]], align 4
+// CHECK-NEXT: %[[CONTAINERAGAIN:.+]] = load %"struct.X::C"*, %"struct.X::C"** %[[RANGE]], align 8
+// CHECK-NEXT: %[[ENDCALL:.+]] = call i32 @_ZN1X1C3endEv(%"struct.X::C"* %[[CONTAINERAGAIN]])
+// CHECK-NEXT: %[[ENDCOERCE:.+]] = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %[[END]], i32 0, i32 0
+// CHECK-NEXT: store i32 %[[ENDCALL]], i32* %[[ENDCOERCE]], align 4
+// CHECK-NEXT: store i32 0, i32* %[[CILKLOOPINDEX]], align 4
+// CHECK-NEXT: %[[CONTAINERLENGTH:.+]] = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %[[END]], %"struct.X::C::It"* dereferenceable(4) %[[BEGIN]])
+// CHECK-NEXT: store i32 %[[CONTAINERLENGTH]], i32* %[[CILKLOOPLIMIT]], align 4
 // CHECK-NEXT: br label %[[PFORCOND:.+]]
 
 // CHECK: [[PFORCOND]]:
 // CHECK-NEXT: br label %[[PFORDETACH:.+]]
 
 // CHECK: [[PFORDETACH]]:
-// CHECK-NEXT: %[[INITITER:.+]] = load i32, i32* %__cilk_loopindex, align 4
+// CHECK-NEXT: %[[INITITER:.+]] = load i32, i32* %[[CILKLOOPINDEX]], align 4
 // CHECK-NEXT: detach within %[[SYNCREG:.+]], label %[[DETACHED:.+]], label %[[PFORINC:.+]]
 
 // CHECK: [[DETACHED]]:
@@ -74,11 +74,11 @@ void iterate(X::C c) {
 // CHECK-NEXT: store i32 %[[ELEMVAL]], i32* %[[X]], align 4
 
 // CHECK: [[PFORINC]]:
-// CHECK-NEXT: %[[INCBEGIN:.+]] = load i32, i32* %__cilk_loopindex, align 4
+// CHECK-NEXT: %[[INCBEGIN:.+]] = load i32, i32* %[[CILKLOOPINDEX]], align 4
 // CHECK-NEXT: %[[INC:.+]] = add nsw i32 %[[INCBEGIN]], 1
-// CHECK-NEXT: store i32 %[[INC]], i32* %__cilk_loopindex, align 4
-// CHECK-NEXT: %[[CONDBEGIN:.+]] = load i32, i32* %__cilk_loopindex, align 4
-// CHECK-NEXT: %[[CONDEND:.+]] = load i32, i32* %__cilk_looplimit, align 4
+// CHECK-NEXT: store i32 %[[INC]], i32* %[[CILKLOOPINDEX]], align 4
+// CHECK-NEXT: %[[CONDBEGIN:.+]] = load i32, i32* %[[CILKLOOPINDEX]], align 4
+// CHECK-NEXT: %[[CONDEND:.+]] = load i32, i32* %[[CILKLOOPLIMIT]], align 4
 // CHECK-NEXT: %[[COND:.+]] = icmp ne i32 %[[CONDBEGIN]], %[[CONDEND]]
 // CHECK-NEXT: br i1 %[[COND]], label %{{.+}}, label %[[PFORCONDCLEANUP:.+]], !llvm.loop ![[LOOPMD:.+]]
 
