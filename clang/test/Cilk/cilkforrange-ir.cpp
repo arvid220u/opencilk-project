@@ -49,7 +49,7 @@ void iterate(X::C c) {
 // CHECK-NEXT: %coerce.dive2 = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %__end1, i32 0, i32 0
 // CHECK-NEXT: store i32 %call1, i32* %coerce.dive2, align 4
 // CHECK-NEXT: store i32 0, i32* %__cilk_loopindex, align 4
-// CHECK-NEXT: %call3 = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %__end1, %"struct.X::C::It"* dereferenceable(1) %[[BEGIN]])
+// CHECK-NEXT: %call3 = call i32 @_ZN1X1C2ItmiERS1_(%"struct.X::C::It"* %__end1, %"struct.X::C::It"* dereferenceable(4) %[[BEGIN]])
 // CHECK-NEXT: store i32 %call3, i32* %__cilk_looplimit, align 4
 // CHECK-NEXT: br label %[[PFORCOND:.+]]
 
