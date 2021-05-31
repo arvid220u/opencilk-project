@@ -66,7 +66,7 @@ void iterate(X::C c) {
 // CHECK-NEXT: %[[ITER:.+]] = alloca %"struct.X::C::It", align 4
 // CHECK-NEXT: store i32 %[[INITITER]], i32* %__local_loopindex, align 4
 // CHECK-NEXT: %[[LOOPINDEXCOPY:.+]] = load i32, i32* %__local_loopindex, align 4
-// CHECK-NEXT: %[[ITERREF:.+]] = call i32 @_ZN1X1C2ItplEi(%"struct.X::C::It"* %[[BEGIN]], i32 [[LOOPINDEXCOPY]])
+// CHECK-NEXT: %[[ITERREF:.+]] = call i32 @_ZN1X1C2ItplEi(%"struct.X::C::It"* %[[BEGIN]], i32 %[[LOOPINDEXCOPY]])
 // CHECK-NEXT: %[[ITER2:.+]] = getelementptr inbounds %"struct.X::C::It", %"struct.X::C::It"* %[[ITER]], i32 0, i32 0
 // CHECK-NEXT: store i32 %[[ITERREF]], i32* %[[ITER2]], align 4
 // CHECK-NEXT: %[[ELEM:.+]] = call dereferenceable(4) i32* @_ZN1X1C2ItdeEv(%"struct.X::C::It"* %[[ITER]])
