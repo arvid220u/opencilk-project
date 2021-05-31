@@ -10,7 +10,7 @@ struct C {
     It operator+(int);
     It operator++();
     It operator--();
-    int operator*();
+    int& operator*();
     bool operator!=(It &);
   };
   It begin();
@@ -89,17 +89,17 @@ void iterate(X::C c) {
 // CHECK: [[PFORCONDCLEANUP]]:
 // CHECK-NEXT: sync within %[[SYNCREG]]
 
-void iterate_ref(X::C c) {
-  _Cilk_for (int& x : c)
-    bar(x);
-}
-
-void iterate_auto(X::C c) {
-  _Cilk_for (auto x : c)
-    bar(x);
-}
-
-void iterate_autoref(X::C c) {
-  _Cilk_for (auto& x : c)
-    bar(x);
-}
+//void iterate_ref(X::C c) {
+//  _Cilk_for (int& x : c)
+//    bar(x);
+//}
+//
+//void iterate_auto(X::C c) {
+//  _Cilk_for (auto x : c)
+//    bar(x);
+//}
+//
+//void iterate_autoref(X::C c) {
+//  _Cilk_for (auto& x : c)
+//    bar(x);
+//}
