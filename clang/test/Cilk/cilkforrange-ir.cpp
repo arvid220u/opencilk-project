@@ -27,11 +27,11 @@ struct C {
 void bar(int i);
 
 void iterate(X::C c) {
-  _Cilk_for (int x : c)
+  _Cilk_for (int x : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
     bar(x);
 }
 
-// CHECK-LABEL: define void @_Z2iterateN1X1CE(
+// CHECK-LABEL: define void @_Z7iterateN1X1CE(
 
 // CHECK: %c = alloca %"struct.X::C", align 1
 // CHECK-NEXT: %syncreg = call token @llvm.syncregion.start()
