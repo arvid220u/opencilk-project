@@ -100,7 +100,7 @@ static Attr *handleLoopHintAttr(Sema &S, Stmt *St, const ParsedAttr &A,
       St->getStmtClass() != Stmt::WhileStmtClass &&
       St->getStmtClass() != Stmt::CilkForStmtClass &&
       St->getStmtClass() != Stmt::CilkForRangeStmtClass) {
-      std::string Pragma = "#pragma " + std::string(PragmaName);
+    std::string Pragma = "#pragma " + std::string(PragmaName);
     S.Diag(St->getBeginLoc(), diag::err_pragma_loop_precedes_nonloop) << Pragma;
     return nullptr;
   }

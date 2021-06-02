@@ -13883,11 +13883,13 @@ TreeTransform<Derived>::TransformCilkForRangeStmt(CilkForRangeStmt *S) {
   if (ForRange.isInvalid())
     return StmtError();
 
-  StmtResult CilkForRange = getDerived().RebuildCilkForRangeStmt(ForRange.get());
+  StmtResult CilkForRange =
+      getDerived().RebuildCilkForRangeStmt(ForRange.get());
   if (CilkForRange.isInvalid())
     return StmtError();
 
-  return getDerived().FinishCilkForRangeStmt(CilkForRange.get(), cast<CXXForRangeStmt>(ForRange.get())->getBody());
+  return getDerived().FinishCilkForRangeStmt(
+      CilkForRange.get(), cast<CXXForRangeStmt>(ForRange.get())->getBody());
 }
 
 } // end namespace clang

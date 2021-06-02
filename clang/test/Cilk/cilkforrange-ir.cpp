@@ -4,7 +4,6 @@
 //    ./clang++ -std=c++11 -fopencilk -ftapir=none -S -emit-llvm ../opencilk-project/clang/test/Cilk/cilkforrange-ir.cpp
 //    cat cilkforrange-ir.ll | grep Z2upN1 -C 50
 
-
 namespace X {
 struct C {
   C();
@@ -14,20 +13,21 @@ struct C {
     It operator+(int);
     It operator++();
     It operator--();
-    int& operator*();
+    int &operator*();
     bool operator!=(It &);
   };
   It begin();
   It end();
 };
 
-}
+} // namespace X
 
 void bar(int i);
 
 void iterate(X::C c) {
-  _Cilk_for (int x : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-    bar(x);
+  _Cilk_for(int x
+            : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+      bar(x);
 }
 
 // CHECK-LABEL: define void @_Z7iterateN1X1CE(
@@ -86,8 +86,9 @@ void iterate(X::C c) {
 // CHECK-NEXT: sync within %[[SYNCREG]]
 
 void iterate_ref(X::C c) {
-  _Cilk_for (int& x : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-    bar(x);
+  _Cilk_for(int &x
+            : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+      bar(x);
 }
 
 // CHECK-LABEL: define void @_Z11iterate_refN1X1CE(
@@ -144,10 +145,10 @@ void iterate_ref(X::C c) {
 // CHECK: [[PFORCONDCLEANUP]]:
 // CHECK-NEXT: sync within %[[SYNCREG]]
 
-
 void iterate_auto(X::C c) {
-  _Cilk_for (auto x : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-    bar(x);
+  _Cilk_for(auto x
+            : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+      bar(x);
 }
 
 // CHECK-LABEL: define void @_Z12iterate_autoN1X1CE(
@@ -205,10 +206,10 @@ void iterate_auto(X::C c) {
 // CHECK: [[PFORCONDCLEANUP]]:
 // CHECK-NEXT: sync within %[[SYNCREG]]
 
-
 void iterate_autoref(X::C c) {
-  _Cilk_for (auto& x : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
-    bar(x);
+  _Cilk_for(auto &x
+            : c) // expected-warning {{'_Cilk_for' support for for-range loops is currently EXPERIMENTAL only!}}
+      bar(x);
 }
 
 // CHECK-LABEL: define void @_Z15iterate_autorefN1X1CE(
